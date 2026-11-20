@@ -1,0 +1,255 @@
+package com.juni.io.data.scrobbling
+
+import io.ktor.client.HttpClient
+import io.ktor.client.engine.okhttp.OkHttp
+import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
+import io.ktor.client.request.HttpRequestBuilder
+import io.ktor.client.request.forms.FormDataContent
+import io.ktor.client.request.post
+import io.ktor.client.request.setBody
+import io.ktor.client.statement.bodyAsText
+import io.ktor.http.HttpHeaders
+import io.ktor.http.Parameters
+import io.ktor.http.isSuccess
+import io.ktor.serialization.kotlinx.json.json
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.json.Json
+import java.security.MessageDigest
+import java.nio.charset.StandardCharsets
+import java.util.Locale
+
+object LastFM {
+    const val DEFAULT_API_ENDPOINT = "https://ws.audioscrobbler.com/2.0/"
+
+    @Serializable
+    data class Session(val name: String, val key: String, val subscriber: Int)
+
+    @Serializable
+    data class Authentication(val session: Session)
+
+    @Serializable
+    data class TokenResponse(val token: String)
+
+    @Serializable
+    data class LastFmError(val error: Int, val message: String)
+
+    data class RuntimeConfig(
+        val apiKey: String,
+        val secret: String,
+        val sessionKey: String?,
+    )
+
+    @Volatile
+    private var runtimeConfig =
+        RuntimeConfig(
+            apiKey = "",
+            secret = "",
+            sessionKey = null,
+        )
+
+    var sessionKey: String?
+        get() = runtimeConfig.sessionKey
+        set(value) {
+            runtimeConfig = runtimeConfig.copy(sessionKey = value)
+        }
+
+    private val json =
+        Json {
+            isLenient = true
+            ignoreUnknownKeys = true
+        }
+
+    private val client by lazy {
+        HttpClient(OkHttp) {
+            install(ContentNegotiation) {
+                json(json)
+            }
+            expectSuccess = false
+        }
+    }
+
+    private fun Map<String, String>.apiSig(secret: String): String {
+        val sorted = toSortedMap()
+        val toHash = sorted.entries.joinToString("") { it.key + it.value } + secret
+        val digest = MessageDigest.getInstance("MD5").digest(toHash.toByteArray(StandardCharsets.UTF_8))
+        return digest.joinToString("") { byte ->
+            "%02x".format(Locale.ROOT, byte.toInt() and 0xff)
+        }
+    }
+
+    private fun HttpRequestBuilder.lastfmParams(
+        method: String,
+        apiKey: String,
+        secret: String,
+        sessionKey: String? = null,
+        extra: Map<String, String> = emptyMap(),
+        format: String = "json",
+    ) {
+        headers.append(HttpHeaders.UserAgent, "Juni (https://github.com/nejuni/Juni)")
+        val paramsForSig =
+            mutableMapOf(
+                "method" to method,
+                "api_key" to apiKey,
+            ).apply {
+                sessionKey?.let { put("sk", it) }
+                putAll(extra)
+            }
+        val apiSig = paramsForSig.apiSig(secret)
+
+        setBody(
+            FormDataContent(
+                Parameters.build {
+                    paramsForSig.forEach { (key, value) -> append(key, value) }
+                    append("api_sig", apiSig)
+                    append("format", format)
+                },
+            ),
+        )
+    }
+
+    suspend fun getToken() =
+        runCatching {
+            postAndDecode<TokenResponse>(
+                method = "auth.getToken",
+            )
+        }
+
+    suspend fun getSession(token: String) =
+        runCatching {
+            postAndDecode<Authentication>(
+                method = "auth.getSession",
+                extra = mapOf("token" to token),
+            )
+        }
+
+    suspend fun getMobileSession(
+        username: String,
+        password: String,
+    ) = runCatching {
+        postAndDecode<Authentication>(
+            method = "auth.getMobileSession",
+            extra = mapOf("username" to username, "password" to password),
+        )
+    }
+
+    class LastFmException(
+        val code: Int,
+        override val message: String,
+    ) : Exception(message)
+
+    suspend fun updateNowPlaying(
+        artist: String,
+        track: String,
+        album: String? = null,
+        trackNumber: Int? = null,
+        duration: Int? = null,
+    ) = runCatching {
+        postAndRead(
+            method = "track.updateNowPlaying",
+            sessionKey = requireSessionKey(),
+            extra =
+                buildMap {
+                    put("artist", artist)
+                    put("track", track)
+                    album?.let { put("album", it) }
+                    trackNumber?.let { put("trackNumber", it.toString()) }
+                    duration?.let { put("duration", it.toString()) }
+                },
+        )
+    }
+
+    suspend fun scrobble(
+        artist: String,
+        track: String,
+        timestamp: Long,
+        album: String? = null,
+        trackNumber: Int? = null,
+        duration: Int? = null,
+    ) = runCatching {
+        postAndRead(
+            method = "track.scrobble",
+            sessionKey = requireSessionKey(),
+            extra =
+                buildMap {
+                    put("artist[0]", artist)
+                    put("track[0]", track)
+                    put("timestamp[0]", timestamp.toString())
+                    album?.let { put("album[0]", it) }
+                    trackNumber?.let { put("trackNumber[0]", it.toString()) }
+                    duration?.let { put("duration[0]", it.toString()) }
+                },
+        )
+    }
+
+    fun initialize(
+        apiKey: String,
+        secret: String,
+    ) {
+        require(apiKey.isNotBlank() && secret.isNotBlank()) {
+            "Last.fm API credentials are not configured for this build"
+        }
+        configure(
+            apiKey = apiKey,
+            secret = secret,
+            sessionKey = runtimeConfig.sessionKey,
+        )
+    }
+
+    fun configure(
+        apiKey: String,
+        secret: String,
+        sessionKey: String? = runtimeConfig.sessionKey,
+    ) {
+        runtimeConfig =
+            RuntimeConfig(
+                apiKey = apiKey,
+                secret = secret,
+                sessionKey = sessionKey,
+            )
+    }
+
+    fun isInitialized(): Boolean = runtimeConfig.apiKey.isNotEmpty() && runtimeConfig.secret.isNotEmpty()
+
+    private fun requireSessionKey(): String = runtimeConfig.sessionKey ?: throw LastFmException(9, "Session key missing")
+
+    private suspend inline fun <reified T> postAndDecode(
+        method: String,
+        sessionKey: String? = null,
+        extra: Map<String, String> = emptyMap(),
+    ): T =
+        json.decodeFromString(
+            postAndRead(
+                method = method,
+                sessionKey = sessionKey,
+                extra = extra,
+            ),
+        )
+
+    private suspend fun postAndRead(
+        method: String,
+        sessionKey: String? = null,
+        extra: Map<String, String> = emptyMap(),
+    ): String {
+        val response =
+            client.post(DEFAULT_API_ENDPOINT) {
+                lastfmParams(
+                    method = method,
+                    apiKey = runtimeConfig.apiKey,
+                    secret = runtimeConfig.secret,
+                    sessionKey = sessionKey,
+                    extra = extra,
+                )
+            }
+
+        val responseText = response.bodyAsText()
+        if (!response.status.isSuccess()) {
+            throw LastFmException(response.status.value, response.status.description)
+        }
+        val error = runCatching { json.decodeFromString<LastFmError>(responseText) }.getOrNull()
+        if (error != null) {
+            throw LastFmException(error.error, error.message)
+        }
+        return responseText
+    }
+
+}

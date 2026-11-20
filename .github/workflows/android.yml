@@ -1,0 +1,180 @@
+name: Build & Release
+
+# Every push to main builds all three APKs as downloadable artifacts. Pushing a
+# tag like v1.0.0 (or running the workflow with a tag) also publishes them as a
+# GitHub Release, signed with the same release key every run.
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag to publish (e.g. v1.0.0). Leave empty for a build-only run.'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      # Compose resources must be regular files (Gradle rejects symlinks in the
+      # resource tree). Rebuild the tree from the plain-file mirror, following
+      # any symlinks. A temp copy is made first so a link that points into the
+      # tree being replaced cannot dangle.
+      - name: Materialize Compose resources
+        run: |
+          resources=sharedUi/src/commonMain/composeResources
+          tmp="$(mktemp -d)"
+          cp -RL build-support/composeResources/. "$tmp/"
+          rm -rf "$resources"
+          mkdir -p "$resources"
+          cp -R "$tmp/." "$resources/"
+          if find "$resources" -type l -print -quit | grep -q .; then
+            echo "Compose resources contain an unexpected symbolic link" >&2
+            find "$resources" -type l >&2
+            exit 1
+          fi
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v6
+        with:
+          java-version: '17'
+          distribution: temurin
+          cache: gradle
+
+      - name: Grant execute permission for Gradle wrapper
+        run: chmod +x ./gradlew
+
+      # Release tags set both the version shown in Settings and Android's
+      # monotonically increasing versionCode. Untagged CI builds are marked
+      # as development builds so a stable tag can update them.
+      - name: Resolve version
+        id: version
+        env:
+          INPUT_TAG: ${{ github.event.inputs.tag }}
+        run: |
+          if [ -n "$INPUT_TAG" ]; then
+            tag="$INPUT_TAG"
+          elif [[ "$GITHUB_REF" == refs/tags/v* ]]; then
+            tag="$GITHUB_REF_NAME"
+          else
+            tag=""
+          fi
+          if [ -n "$tag" ]; then
+            if [[ ! "$tag" =~ ^v(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$ ]]; then
+              echo "::error::Release tags must use vMAJOR.MINOR.PATCH, for example v1.0.0 (received: $tag)."
+              exit 1
+            fi
+            major="${BASH_REMATCH[1]}"
+            minor="${BASH_REMATCH[2]}"
+            patch="${BASH_REMATCH[3]}"
+            if (( ${#major} > 4 || ${#minor} > 3 || ${#patch} > 3 )); then
+              echo "::error::Version components exceed the supported Android versionCode range: $tag"
+              exit 1
+            fi
+            name="${tag#v}"
+            # Reserve codes below 1,000,000 for development builds. Encode
+            # semver as MAJOR*1,000,000 + MINOR*1,000 + PATCH, with the
+            # reserved offset. Thus v1.0.0 is 2,000,000 and remains above the
+            # previous 10,902 code; later semver tags increase monotonically.
+            code=$((1000000 + major * 1000000 + minor * 1000 + patch))
+            if (( minor > 999 || patch > 999 || code > 2100000000 )); then
+              echo "::error::Version tag exceeds Android's supported versionCode range: $tag"
+              exit 1
+            fi
+          else
+            name=$(sed -n 's/.*gradleProperty("juniVersionName").*?: "\([^"]*\)".*/\1/p' build.gradle.kts | head -n1)
+            code=$(sed -n 's/.*gradleProperty("juniVersionCode").*?: \([0-9]*\).*/\1/p' build.gradle.kts | head -n1)
+            name=${name:-1.0.0-dev}
+            code=${code:-999999}
+          fi
+          echo "name=$name" >> "$GITHUB_OUTPUT"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          {
+            echo "## Android app version"
+            echo "- Version name: \`$name\`"
+            echo "- Version code: \`$code\`"
+            if [ -n "$tag" ]; then echo "- Source tag: \`$tag\`"; fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # One key signs arm64, armeabi-v7a and the universal APK — and every
+      # future release. Without it a release build falls back to the debug key,
+      # which is fine for local testing but cannot update an installed release.
+      - name: Restore release signing key
+        env:
+          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+          RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
+          RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: |
+          if [ -n "$RELEASE_KEYSTORE_BASE64" ]; then
+            echo "$RELEASE_KEYSTORE_BASE64" | base64 -d > juni-release.jks
+            {
+              echo "storeFile=juni-release.jks"
+              echo "storePassword=$RELEASE_STORE_PASSWORD"
+              echo "keyAlias=$RELEASE_KEY_ALIAS"
+              echo "keyPassword=$RELEASE_KEY_PASSWORD"
+            } > keystore.properties
+            echo "Release keystore restored."
+          elif [ -n "${{ steps.version.outputs.tag }}" ]; then
+            echo "::error::RELEASE_KEYSTORE_BASE64 (and the three password/alias secrets) are required to publish a release."
+            exit 1
+          else
+            echo "No release keystore secret; using the debug key for this build-only run."
+          fi
+
+      - name: Build all APKs (arm64-v8a, armeabi-v7a, universal)
+        env:
+          LASTFM_API_KEY: ${{ secrets.LASTFM_API_KEY }}
+          LASTFM_SECRET: ${{ secrets.LASTFM_SECRET }}
+        run: ./gradlew --no-daemon "-PapkAbis=arm64-v8a,armeabi-v7a" "-PjuniVersionName=${{ steps.version.outputs.name }}" "-PjuniVersionCode=${{ steps.version.outputs.code }}" assembleProdRelease
+
+      - name: Collect release APKs
+        id: apks
+        env:
+          VERSION_NAME: ${{ steps.version.outputs.name }}
+        run: |
+          mkdir -p dist
+          for abi in arm64-v8a armeabi-v7a universal; do
+            src="app/build/outputs/apk/prod/release/app-prod-${abi}-release.apk"
+            test -f "$src"
+            cp "$src" "dist/Juni-v${VERSION_NAME}-${abi}.apk"
+          done
+          ls -l dist
+
+      - name: Upload APK artifacts
+        uses: actions/upload-artifact@v7
+        with:
+          name: Juni-v${{ steps.version.outputs.name }}-apks
+          path: dist/*.apk
+          if-no-files-found: error
+
+      # Publishes only when a tag was pushed or supplied. The three APKs are
+      # attached to the Release; GitHub's generated notes list the commits since
+      # the previous tag.
+      - name: Publish GitHub Release
+        if: steps.version.outputs.tag != ''
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: Juni ${{ steps.version.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          generate_release_notes: true
+          make_latest: true
+          files: dist/*.apk
+          fail_on_unmatched_files: true

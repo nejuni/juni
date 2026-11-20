@@ -1,0 +1,6 @@
+{
+    global:
+        Java_com_juni_io_playback_audio_bitperfect_*;
+    local: *;
+};
+

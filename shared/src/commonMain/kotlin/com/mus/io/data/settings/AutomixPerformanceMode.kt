@@ -1,0 +1,10 @@
+package com.juni.io.data.settings
+
+/** CPU budget for Automix's background analysis, not its audible mix algorithm. */
+enum class AutomixPerformanceMode(val inferenceThreads: Int) {
+    EFFICIENT(1),
+    BALANCED(2),
+    PERFORMANCE(4),
+    ;
+
+}

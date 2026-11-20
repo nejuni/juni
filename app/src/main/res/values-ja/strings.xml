@@ -1,0 +1,692 @@
+<resources>
+    <string name="app_name">Juni</string>
+    <string name="playback_channel_name">再生中</string>
+    <string name="cancel">キャンセル</string>
+    <string name="save">保存</string>
+    <string name="close">閉じる</string>
+    <string name="back">戻る</string>
+    <string name="settings">設定</string>
+    <string name="search">検索</string>
+    <string name="clear_search">検索をクリア</string>
+    <string name="library">ライブラリ</string>
+    <string name="play">再生</string>
+    <string name="local_music">ローカルの音楽</string>
+    <string name="audio_files_on_device">デバイス内のオーディオファイル</string>
+    <string name="playlists">プレイリスト</string>
+    <string name="new_playlist">新しいプレイリスト</string>
+    <string name="sign_in">ログイン</string>
+    <string name="shuffle">シャッフル</string>
+    <string name="more">その他</string>
+    <string name="add_to_playlist">プレイリストに追加</string>
+    <string name="top_songs">よく聴いた曲</string>
+    <plurals name="song_count_plural">
+        <item quantity="other">%1$d曲</item>
+    </plurals>
+    <string name="songs">曲</string>
+    <string name="artists">アーティスト</string>
+    <string name="albums">アルバム</string>
+    <string name="storage_required_read">ローカルの音声ファイルを読み込むにはストレージの権限が必要です</string>
+    <string name="test">テスト</string>
+    <string name="testing">テスト中…</string>
+    <string name="connected">接続済み</string>
+    <string name="account_scrobbling">アカウントとスクロブリング</string>
+    <string name="scrobbling">スクロブリング</string>
+    <string name="now_playing">再生中</string>
+    <string name="selected">選択済み</string>
+    <string name="password">パスワード</string>
+    <string name="username">ユーザー名</string>
+    <string name="login_failed">ログインに失敗しました</string>
+    <string name="image_cache_cleared">画像のキャッシュを削除しました</string>
+    <string name="no_equalizer">このデバイスにはシステムイコライザーがありません</string>
+    <string name="try_again">再試行</string>
+    <string name="play_next">次に再生</string>
+    <string name="queue">再生キュー</string>
+    <string name="failed">失敗しました</string>
+    <string name="widget_square_label">再生中 2×2</string>
+    <string name="widget_wide_label">再生中 4×2</string>
+    <string name="widget_square_description">再生コントロール付きのアルバムアート（正方形）。</string>
+    <string name="widget_wide_description">曲名と再生コントロール付きのアルバムアート（横幅いっぱい）。</string>
+    <string name="widget_play">再生</string>
+    <string name="widget_pause">一時停止</string>
+    <string name="widget_next">次へ</string>
+    <string name="widget_previous">前へ</string>
+    <string name="widget_artwork">アルバムアート</string>
+    <string name="widget_nothing_played">まだ何も再生されていません</string>
+    <string name="widget_preview_title">曲名</string>
+    <string name="widget_preview_artist">アーティスト</string>
+    <string name="widget_pill_label">再生中 4×1</string>
+    <string name="widget_pill_description">曲名といいね、シャッフル、再生コントロールを1行に。</string>
+    <string name="widget_preview_pill">曲名 - アーティスト</string>
+    <string name="spatial_audio">空間オーディオ</string>
+    <string name="spatial_audio_subtitle">よりイマーシブな体験のためにステレオトラックを広げます</string>
+    <string name="spatial_audio_atmos_subtitle">この曲では一時停止中 — Dolby Atmosはすでに空間オーディオです</string>
+    <string name="replay">Replay</string>
+    <string name="replay_subtitle">よく聴いた曲、アーティスト、アルバム、ジャンル</string>
+    <string name="work_out_genres">ジャンルを推定</string>
+    <string name="export_data">データをエクスポート</string>
+    <string name="export_data_subtitle">設定と再生履歴を1つのJSONファイルとして保存</string>
+    <string name="import_data">データをインポート</string>
+    <string name="import_data_subtitle">このデバイスの設定と履歴を置き換えます</string>
+    <string name="import_backup_title">バックアップをインポートしますか？</string>
+    <string name="choose_file">ファイルを選択</string>
+    <string name="top_artists">よく聴いたアーティスト</string>
+    <string name="top_albums">よく聴いたアルバム</string>
+    <string name="top_genres">よく聴いたジャンル</string>
+    <string name="language">言語</string>
+    <string name="app_language">アプリの言語</string>
+    <string name="app_language_description">bitで使用する言語を選択してください。</string>
+    <string name="english">英語</string>
+    <string name="spanish">スペイン語</string>
+    <string name="french">フランス語</string>
+    <string name="german">ドイツ語</string>
+    <string name="polish">ポーランド語</string>
+    <string name="portuguese">ポルトガル語</string>
+    <string name="indonesian">インドネシア語</string>
+    <string name="hindi">ヒンディー語</string>
+    <string name="japanese">日本語</string>
+    <string name="russian">ロシア語</string>
+    <string name="chinese_simplified">中国語（簡体字）</string>
+    <string name="chinese_traditional">中国語（繁体字）</string>
+    <string name="hebrew">ヘブライ語</string>
+    <string name="italian">イタリア語</string>
+    <string name="turkish">トルコ語</string>
+    <string name="thai">タイ語</string>
+    <string name="korean">韓国語</string>
+    <string name="show_all">すべて表示</string>
+    <string name="switch_to_grid_view">グリッド表示に切り替え</string>
+    <string name="switch_to_list_view">リスト表示に切り替え</string>
+    <string name="playback">再生</string>
+    <string name="appearance">外観</string>
+    <string name="storage">ストレージ</string>
+    <string name="your_data">あなたのデータ</string>
+    <string name="miscellaneous">その他</string>
+    <string name="crossfade">クロスフェード</string>
+    <string name="crossfade_subtitle">1曲を次の曲へなめらかにつなげます</string>
+    <string name="automix">オートミックス [BETA]</string>
+    <string name="skip_silence">無音をスキップ</string>
+    <string name="skip_silence_subtitle">1秒より長い無音部分をカットします</string>
+    <string name="skip_silence_float_subtitle">32ビット浮動小数点出力では使用できません</string>
+    <string name="equalizer">イコライザー</string>
+    <string name="equalizer_subtitle">デバイスのシステムパネル</string>
+    <string name="show_nerd_stats">技術情報を表示</string>
+    <string name="show_nerd_stats_subtitle">プレイヤーにコーデック、ビットレート、サンプルレートを表示</string>
+    <string name="theme">テーマ</string>
+    <string name="reduce_animation">アニメーションを減らす</string>
+    <string name="reduce_animation_subtitle">メインプレイヤーのグラデーションを動かさず固定します</string>
+    <string name="reduce_dynamic_blur">動的なぼかしを減らす</string>
+    <string name="reduce_dynamic_blur_subtitle">アプリ全体ですりガラス効果を単色の塗りつぶしに置き換えます</string>
+    <string name="disable_blend_effects">ブレンド効果をオフ</string>
+    <string name="disable_blend_effects_subtitle">プレーヤーのアイコン、テキスト、ダークメニューをアートワークの色に染めず、白で表示します</string>
+    <string name="full_screen_cover_art">全画面カバーアート</string>
+    <string name="synced_lyrics">同期歌詞</string>
+    <string name="synced_lyrics_subtitle">歌われている歌詞をプレイヤー上でハイライト表示します</string>
+    <string name="lyrics_sources">歌詞のソース</string>
+    <string name="clear_image_cache">画像のキャッシュを削除</string>
+    <string name="clear_image_cache_subtitle">アルバムアートが使用している容量を解放します</string>
+    <string name="play_next_on_swipe">スワイプで次に再生</string>
+    <string name="stop_music_on_close">最近のアプリから終了したら音楽を停止</string>
+    <string name="stop_music_on_close_subtitle">アプリを最近のアプリから消すと再生を停止します</string>
+    <string name="hide_volume_bar">音量バーを隠す</string>
+    <string name="hide_volume_bar_subtitle">メインプレイヤーから音量スライダーを削除します</string>
+    <string name="hide_status_bar_in_player">プレイヤーでステータスバーを隠す</string>
+    <string name="hide_status_bar_in_player_subtitle">メインプレイヤーを開いている間、時計・バッテリー・通知アイコンを非表示にします</string>
+    <string name="hide_song_status">曲のステータスを隠す</string>
+    <string name="hide_song_status_subtitle">メインプレーヤーの「再生元」や「再生者」の表示を隠します</string>
+    <string name="off">オフ</string>
+    <string name="system">システム</string>
+    <string name="light">ライト</string>
+    <string name="dark">ダーク</string>
+    <string name="full_screen_cover_art_subtitle">正方形のジャケットの代わりにカバーをプレイヤーの端まで広げます</string>
+    <string name="full_screen_detail_cover">アルバム/プレイリストの全画面カバー</string>
+    <string name="full_screen_detail_cover_subtitle">アルバムとプレイリストのカバーを枠に収めず、ページの端まで広げます</string>
+    <string name="filter_non_music_audio">音楽以外の音声を除外</string>
+    <string name="filter_non_music_audio_subtitle">30秒未満のクリップ、WAVファイル、ボイスメモ、録音、システム音を非表示にします</string>
+    <string name="performance">パフォーマンス</string>
+    <string name="high_performance_mode">高パフォーマンスモード</string>
+    <string name="high_performance_subtitle">フルアニメーションとぼかしを使用し、より高いディスプレイリフレッシュレートをリクエストします</string>
+    <string name="high_performance_active">%1$d Hzをリクエスト中です。必要に応じてAndroidが下げることがあります。</string>
+    <string name="refresh_rate">リフレッシュレート</string>
+    <string name="high_performance_before_enabling">有効にする前に</string>
+    <string name="high_performance_battery_warning">まずbitのバッテリー使用を「制限なし」に設定してください。リフレッシュレートを上げるとバッテリー、CPU、GPUの消費が増え、デバイスが熱くなることがあります。</string>
+    <string name="open_battery_settings">バッテリー設定を開く</string>
+    <string name="enable_high_performance_title">高パフォーマンスモードを有効にしますか？</string>
+    <string name="enable_high_performance_confirmation">bitのバッテリー使用が「制限なし」に設定されている場合のみ有効にしてください。デバイスが熱くなったり電力が少なくなったりすると、Androidがリフレッシュレートを制限することがあります。</string>
+    <string name="enable">有効にする</string>
+    <string name="not_yet">今はしない</string>
+    <string name="add_to_queue">再生キューに追加</string>
+    <string name="after_this_song">この曲の後に</string>
+    <string name="clear_name">名前を消去</string>
+    <string name="copy_log">ログをコピー</string>
+    <string name="couldnt_find">%1$sが見つかりませんでした</string>
+    <string name="create_playlist">プレイリストを作成</string>
+    <string name="done">完了</string>
+    <string name="drag_to_reorder">ドラッグして並べ替え</string>
+    <string name="enabled">有効</string>
+    <string name="pause">一時停止</string>
+    <string name="shuffle_on">シャッフル: オン</string>
+    <string name="shuffle_off">シャッフル: オフ</string>
+    <string name="mono">モノラル</string>
+    <string name="stereo">ステレオ</string>
+    <string name="history">履歴</string>
+    <string name="couldnt_load_tracks">これらのトラックを読み込めませんでした</string>
+    <string name="history_empty">まだ何も再生されていません</string>
+    <string name="no_local_audio_found">このデバイスにオーディオファイルが見つかりません</string>
+    <string name="unknown_artist">不明なアーティスト</string>
+    <string name="your_playlists">あなたのプレイリスト</string>
+    <string name="who_can_see_it">公開範囲</string>
+    <string name="nothing_matches">「%1$s」に一致するものはありません</string>
+    <string name="close_search">検索を閉じる</string>
+    <string name="less">折りたたむ</string>
+    <plurals name="songs_will_play_next">
+        <item quantity="other">%1$d曲が次に再生されます</item>
+    </plurals>
+    <plurals name="songs_added_to_queue">
+        <item quantity="other">%1$d曲を再生キューに追加しました</item>
+    </plurals>
+    <plurals name="log_copied_line_count">
+        <item quantity="other">ログをコピーしました · %1$d行</item>
+    </plurals>
+    <string name="lastfm_login">Last.fmログイン</string>
+    <string name="lastfm_login_description">Last.fmアカウントでログインするとスクロブリングが有効になります。</string>
+    <string name="lastfm_now_playing_subtitle">今聴いているものをLast.fmに反映します</string>
+    <string name="like">高評価</string>
+    <string name="listening_history">再生履歴</string>
+    <string name="lyrics_sources_order">ソースはこの順番で試されます。ドラッグして並べ替えられます。音節単位の歌詞が優先されていない限り、歌詞が見つかった最初のソースが採用されます。</string>
+    <string name="no_playlists_yet">プレイリストはまだありません。上の行から作成してください。</string>
+    <string name="no_tracks_here">ここにはトラックがありません</string>
+    <string name="one_hour">1時間</string>
+    <string name="open_album">アルバムを開く</string>
+    <string name="open_artist">アーティストを開く</string>
+    <string name="pause_after_a_while">しばらくしたら再生を一時停止</string>
+    <string name="pause_after_song">この曲が終わったら一時停止します</string>
+    <string name="pause_countdown">あと%1$sで再生が一時停止します</string>
+    <string name="playlist_name">プレイリスト名</string>
+    <string name="prioritize_syllable_lyrics">音節単位の歌詞を優先</string>
+    <string name="prioritize_syllable_lyrics_subtitle">行単位で一致しても、単語ごとの歌詞を求めて検索を続けます</string>
+    <string name="remove_from_liked">高く評価した音楽から削除</string>
+    <string name="remove_from_playlist">このプレイリストから削除</string>
+    <string name="rename_playlist">プレイリスト名を変更</string>
+    <string name="reorder_songs">曲を並べ替え</string>
+    <string name="reset_to_default">デフォルトに戻す</string>
+    <string name="save_name">名前を保存</string>
+    <string name="saved_to_youtube_music_account">YouTube Musicアカウントに保存済み</string>
+    <string name="scrobble_tracks">トラックをスクロブル</string>
+    <string name="scrobble_tracks_subtitle">再生をLast.fmのタイムラインに記録します</string>
+    <string name="search_this_list">このリスト内を検索</string>
+    <string name="share">共有</string>
+    <string name="signed_in_as">%1$sとしてログイン済み</string>
+    <string name="signing_in">ログイン中…</string>
+    <string name="sleep_timer">スリープタイマー</string>
+    <string name="clear_queue">キューをクリア</string>
+    <string name="sleep_timer_custom">カスタム</string>
+    <string name="start_sleep_timer">タイマーを開始</string>
+    <string name="tap_to_sign_in">タップしてログイン</string>
+    <string name="turn_off_timer">タイマーをオフにする</string>
+    <plurals name="minute_count">
+        <item quantity="other">%1$d分</item>
+    </plurals>
+    <string name="biggest_day_note">最も聴いた日は%1$sで、%2$sの再生時間でした。</string>
+    <string name="close_replay">Replayを閉じる</string>
+    <string name="couldnt_draw_picture">画像を作成できませんでした</string>
+    <string name="default_replay_holder">Juni listener</string>
+    <string name="different_albums">さまざまなアルバム</string>
+    <string name="genres_pending">再生履歴が増えるとジャンルが表示されます</string>
+    <string name="hour_am">午前%1$d時</string>
+    <string name="hour_pm">午後%1$d時</string>
+    <string name="hours_minutes_short">%1$d時間%2$d分</string>
+    <string name="listen_most_around">最もよく聴くのは%1$s頃です。</string>
+    <string name="lyrics_share_title">歌詞を共有</string>
+    <string name="lyrics_share_description">選んだ行を、ジャケットと一緒にカードにレイアウトします。</string>
+    <string name="lyrics_share_story">ストーリー用にする</string>
+    <string name="lyrics_share_story_revert">カードに戻す</string>
+    <string name="listening_shape">あなたの再生パターン</string>
+    <string name="member_since_value">登録日：%1$s</string>
+    <string name="midday">正午</string>
+    <string name="midnight">真夜中</string>
+    <string name="minutes">分</string>
+    <string name="minutes_grouped_short">%1$s分</string>
+    <string name="minutes_listened">再生時間（分）</string>
+    <string name="minutes_short">%1$d分</string>
+    <string name="not_enough_listening">再生履歴がまだ十分ではありません</string>
+    <string name="not_enough_this_month">今月もう少し曲を再生するとReplayが解放されます。</string>
+    <string name="replay_across">にわたって</string>
+    <string name="replay_album_end">があなたの心を掴みました。</string>
+    <string name="replay_album_focus">1枚のアルバム</string>
+    <string name="replay_album_start">今回は、</string>
+    <string name="replay_artist_end">に何度も戻ってきました。</string>
+    <string name="replay_artist_focus">1組のアーティスト</string>
+    <string name="replay_artist_start">今月はずっと、</string>
+    <string name="replay_empty_description">もう少し聴くと、bitがあなたの履歴からReplayを作成します。</string>
+    <string name="replay_genre_end">があなたのサウンドを形作りました。</string>
+    <string name="replay_genre_focus">あなたのジャンル</string>
+    <string name="replay_genre_start">合わせて、</string>
+    <string name="replay_habits_middle">、そのきっかけは</string>
+    <string name="replay_habits_start">あなたが探求したのは</string>
+    <string name="replay_hours_across">%1$s時間</string>
+    <string name="replay_intro_end">の準備ができました。</string>
+    <string name="replay_intro_start">あなたの</string>
+    <string name="replay_minutes_end">です。</string>
+    <string name="replay_minutes_start">音楽と過ごした時間は</string>
+    <plurals name="replay_minutes_unit">
+        <item quantity="other">%1$s分</item>
+    </plurals>
+    <string name="replay_private_counting">このデバイス内の再生履歴から非公開で集計されています</string>
+    <string name="replay_share_card_description">主な再生ハイライトをまとめた、洗練されたカードです。</string>
+    <string name="replay_share_summary_description">曲、アーティスト、アルバム、ジャンル、傾向をまとめた全体像です。</string>
+    <string name="replay_songs_end">があなたの1か月を彩りました。</string>
+    <string name="replay_songs_start">合計</string>
+    <string name="replay_summary_start">あなたの再生スタイルは</string>
+    <string name="saved">保存済み</string>
+    <string name="saved_bang">保存しました！</string>
+    <string name="share_my_replay">自分のReplayを共有</string>
+    <string name="share_your_lyrics">歌詞カードを送る</string>
+    <string name="share_your_replay">あなたのReplayを共有</string>
+    <string name="tap_share_for_picture">共有をタップして画像を作成</string>
+    <string name="top_album">トップアルバム</string>
+    <string name="top_artist">トップアーティスト</string>
+    <string name="top_genre">トップジャンル</string>
+    <string name="top_song">トップ曲</string>
+    <string name="when_you_listen_the_most">最もよく聴く時間帯</string>
+    <string name="your_biggest_day">最も聴いた日：%1$s</string>
+    <string name="your_lyrics_card">歌詞カード</string>
+    <string name="your_replay">あなたのReplay</string>
+    <plurals name="replay_artist_count">
+        <item quantity="other">%1$s組のアーティスト</item>
+    </plurals>
+    <plurals name="replay_play_count">
+        <item quantity="other">%1$s回再生</item>
+    </plurals>
+    <plurals name="replay_song_count">
+        <item quantity="other">%1$s曲</item>
+    </plurals>
+    <string name="all_audio_folders">すべてのオーディオフォルダ</string>
+    <string name="local_music_folder">ローカルミュージックフォルダ</string>
+    <string name="scan_library">ライブラリをスキャン</string>
+    <string name="scan_library_subtitle">新しい音声ファイルを探し、なくなったものを除外します。スキャンは手動で実行したときだけ行われます。</string>
+    <string name="scanning_library">端末の音声ファイルを読み込み中…</string>
+    <string name="scanning">スキャン中…</string>
+    <string name="sort_music">音楽を並べ替え</string>
+    <string name="sort_title_ascending">アルファベット順（A→Z）</string>
+    <string name="sort_title_descending">アルファベット順（Z→A）</string>
+    <string name="sort_date_added">追加日（新しい順）</string>
+    <string name="sort_date_modified">更新日（新しい順）</string>
+    <string name="use_all_audio_folders">すべてのオーディオフォルダを使用</string>
+    <string name="use_all_audio_folders_subtitle">フォルダの制限を解除し、デバイス全体の音楽をスキャンします</string>
+    <string name="album">アルバム</string>
+    <string name="artist">アーティスト</string>
+    <string name="playlist">プレイリスト</string>
+    <string name="open">開く</string>
+    <string name="open_playlist">プレイリストを開く</string>
+    <string name="pin">ピン留め</string>
+    <string name="unpin">ピン留めを解除</string>
+    <string name="rename">名前を変更</string>
+    <string name="delete_playlist">プレイリストを削除</string>
+    <string name="delete_playlist_confirmation">「%1$s」を削除しますか？もう一度タップして確定します。</string>
+    <string name="automix_enabled_subtitle">トラック自体からすべての切り替えのタイミングとブレンドを計算します。端末が熱くなったり再生が途切れたりする場合はオフにしてください。</string>
+    <string name="automix_disabled_subtitle">スライダーなしで切り替えのタイミングとブレンドを自動的に計算します。低スペック端末ではパフォーマンスが変わることがあります。</string>
+    <string name="no_lyrics_sources_enabled">なし。歌詞は取得されません。</string>
+    <string name="replay_genres_enabled_subtitle">Last.fmにアーティストのジャンルを問い合わせます。送信されるのはアーティスト名のみです。</string>
+    <string name="replay_genres_disabled_subtitle">オフの間はReplayのジャンルグラフが表示されません</string>
+    <string name="swipe_plays_next">曲をスワイプすると次に再生します</string>
+    <string name="swipe_adds_to_queue">オフにすると、スワイプした曲は再生キューの末尾に追加されます</string>
+    <string name="import_backup_warning">これによりこのデバイスの設定と再生履歴がファイルの内容で置き換えられます。保持したい場合は先に現在のデータをエクスポートしてください。</string>
+    <string name="export_succeeded">設定と%1$sをエクスポートしました</string>
+    <string name="export_failed">エクスポートに失敗しました：%1$s</string>
+    <string name="import_succeeded">v%2$sから%1$sをインポートしました</string>
+    <string name="import_failed">インポートに失敗しました：%1$s</string>
+    <string name="unknown_error">不明なエラー</string>
+    <string name="no_listening_history">再生履歴なし</string>
+    <plurals name="listening_month_count">
+        <item quantity="other">%1$dか月の再生履歴</item>
+    </plurals>
+    <string name="no_local_albums">ここにはまだアルバムやプレイリストに属するものがありません。完全なアルバムやプレイリストをダウンロードするとここに表示されます。</string>
+    <string name="play_your_replay">あなたのReplayを再生</string>
+    <string name="counted_on_device_with_bit">bitでこのデバイス内で集計</string>
+    <string name="this_month">今月</string>
+    <string name="this_year">今年</string>
+    <string name="all_time">すべての期間</string>
+
+    <!-- Listen together -->
+
+    <string name="vietnamese">ベトナム語</string>
+
+
+    <string name="output_precision">出力精度</string>
+
+    <string name="prefer_usb_dac">USB DAC を優先</string>
+    <string name="loudness_normalization">音量の正規化</string>
+    <string name="loudness_normalization_subtitle">すべての曲を同じラウドネスにそろえます</string>
+    <string name="loudness_off_on_speaker">バイトフォンで無効化</string>
+    <string name="pipeline_loudness_gain">ゲイン</string>
+    <string name="pipeline_loudness_measured">測定値</string>
+    <string name="pipeline_bit_exact">ビットパーフェクト</string>
+    <string name="loudness_gain_db">%1$s dB</string>
+    <string name="loudness_lufs">%1$s LUFS</string>
+
+    <string name="blur_unfocused_lyrics">フォーカスされていない歌詞をぼかす</string>
+
+    <string name="blur_unfocused_lyrics_subtitle">現在の行をハイライトします</string>
+
+
+
+    <plurals name="track_count_plural">
+        <item quantity="other">%1$d 曲</item>
+    </plurals>
+
+    <string name="automix_mode_balanced">バランス</string>
+
+    <string name="automix_mode_balanced_subtitle">2 スレッド · 速度、発熱、バッテリーのバランスを推奨</string>
+
+    <string name="automix_mode_efficient">省電力</string>
+
+    <string name="automix_mode_efficient_subtitle">1 スレッド · 最低限の発熱とバッテリー消費 · 分析に時間がかかる場合があります</string>
+
+    <string name="automix_mode_performance">高パフォーマンス</string>
+
+    <string name="automix_mode_performance_subtitle">4 スレッド · 最速分析 · 発熱とバッテリー消費が高くなります</string>
+
+
+    <string name="automix_performance">Automix パフォーマンス</string>
+
+    <string name="automix_performance_subtitle">バックグラウンド分析で使用できる CPU 使用量を設定します</string>
+
+    <string name="automix_performance_warning">高いパフォーマンスを設定すると分析が速くなりますが、バッテリーを多く消費し端末が温かくなる可能性があります。</string>
+
+    <string name="player_theme">プレーヤーのテーマ</string>
+    <string name="player_theme_default">デフォルト</string>
+    <string name="player_theme_legacy">従来</string>
+    <string name="player_theme_simple">シンプル</string>
+    <string name="player_theme_default_subtitle">カバーの色がその下へと続きます</string>
+    <string name="player_theme_simple_subtitle">ぼかしたカバーをプレーヤー全体の背景に表示します</string>
+
+    <string name="player_theme_legacy_subtitle">v1.5 のプレーヤー背面の流れるカラー アニメーションを復元します</string>
+
+    <string name="liquid_glass">リキッド グラス</string>
+
+    <string name="liquid_glass_subtitle">フローティング ナビゲーション バーの屈折ガラス効果。Android 12 以降のみ。</string>
+
+    <string name="liquid_glass_unavailable">Android 12 以降が必要です</string>
+
+
+    <string name="scrobble_primary_artist_only">メイン アーティストのみスクロブル</string>
+
+    <string name="scrobble_primary_artist_only_subtitle">曲に複数のアーティストがクレジットされている場合は最初のアーティストを使用します</string>
+
+    <string name="select_all">すべて選択</string>
+
+    <string name="sort_date_added_oldest">追加日（古い順）</string>
+
+    <string name="sort_date_added_toggle">追加日</string>
+
+    <string name="sort_default">デフォルトの順序</string>
+
+    <string name="sort_songs">曲を並べ替え</string>
+
+
+    <string name="lyrics_offset">Lyrics offset</string>
+
+
+
+
+
+    <string name="auto_recents">Recent</string>
+
+    <string name="auto_liked">Liked songs</string>
+
+    <string name="auto_empty_recents_title">No recent songs</string>
+
+    <string name="auto_empty_recents_subtitle">Songs you play will appear here</string>
+
+    <string name="auto_empty_playlists_title">No playlists available</string>
+
+    <string name="auto_empty_playlists_subtitle">Check your connection and try again</string>
+
+    <string name="auto_empty_liked_title">No liked songs</string>
+
+    <string name="auto_empty_liked_subtitle">Tap the heart on a song to save it here</string>
+
+    <string name="auto_empty_offline_title">No offline songs</string>
+
+    <string name="auto_empty_offline_subtitle">Download songs on your phone to listen here</string>
+
+    <string name="auto_unavailable_title">Content unavailable</string>
+
+    <string name="auto_unavailable_subtitle">Reopen the folder and try again</string>
+
+    <string name="settings_search_hint">Search settings</string>
+
+    <string name="settings_search_empty">No settings match “%1$s”</string>
+
+
+    <string name="equalizer_footer">Shapes the sound inside bit， before it reaches the system.</string>
+
+    <string name="equalizer_dynamic">Dynamic</string>
+
+    <string name="equalizer_manual">Manual</string>
+
+    <string name="equalizer_tone">Tone</string>
+
+    <string name="equalizer_tilt">Tilt</string>
+
+    <string name="equalizer_contour">Contour</string>
+
+    <string name="equalizer_broad">Broad</string>
+
+    <string name="equalizer_focused">Focused</string>
+
+    <string name="equalizer_broad_footer">Drag left for a warmer sound and right for a brighter one； down scoops the middle， up brings it forward. Broad moves wide stretches of the spectrum at once.</string>
+
+    <string name="equalizer_focused_footer">Drag left for a warmer sound and right for a brighter one； down scoops the middle， up brings it forward. Focused works on narrower stretches， so it changes less around what it moves.</string>
+
+    <string name="equalizer_preset">Preset</string>
+
+    <string name="equalizer_bands">Bands</string>
+
+    <string name="equalizer_bands_footer">Moving a band leaves the preset behind and the curve becomes your own.</string>
+
+    <string name="equalizer_reset">Reset all bands</string>
+
+    <string name="equalizer_balance">Balance</string>
+
+    <string name="equalizer_balance_left">L</string>
+
+    <string name="equalizer_balance_right">R</string>
+
+    <string name="equalizer_balance_footer">Shifts the sound towards one ear by quietening the other.</string>
+    <string name="equalizer_bitstream_title">現在は動作していません</string>
+    <string name="equalizer_bitstream_subtitle">この曲はデコードされずに出力へ送られます</string>
+    <string name="equalizer_bitstream_footer">イコライザーはデコード済みの音声に作用します。この曲はデバイス側でデコードするビットストリームとしてそのまま渡されるため、ここには処理できるサンプルがありません。</string>
+
+    <string name="system_equalizer">System equalizer</string>
+
+    <string name="system_equalizer_subtitle">Your device\'s own panel</string>
+
+    <string name="system_equalizer_footer">Runs after bit\'s， on the whole audio session. Using both applies both.</string>
+
+    <string name="eq_preset_flat">Flat</string>
+
+    <string name="eq_preset_acoustic">Acoustic</string>
+
+    <string name="eq_preset_bass_boost">Bass boost</string>
+
+    <string name="eq_preset_bass_cut">Bass cut</string>
+
+    <string name="eq_preset_vocal">Vocal</string>
+
+    <string name="eq_preset_treble_boost">Treble boost</string>
+
+    <string name="eq_preset_treble_cut">Treble cut</string>
+
+    <string name="eq_preset_loudness">Loudness</string>
+
+    <string name="eq_preset_spoken_word">Spoken word</string>
+
+    <string name="eq_preset_electronic">Electronic</string>
+
+    <string name="eq_preset_rock">Rock</string>
+
+    <string name="eq_preset_hip_hop">Hip-hop</string>
+
+    <string name="eq_preset_jazz">Jazz</string>
+
+    <string name="eq_preset_classical">Classical</string>
+
+    <string name="eq_preset_small_speakers">Small speakers</string>
+
+    <string name="eq_preset_late_night">Late night</string>
+
+    <string name="eq_preset_custom">Custom</string>
+
+    <string name="translation_language">Translation language</string>
+
+    <string name="translation_language_description">The language the translate button turns lyrics into.</string>
+
+    <string name="translation_language_app_default">App language</string>
+
+    <string name="translation_language_subtitle">Follows the app language</string>
+
+    <string name="search_languages">Search languages</string>
+
+    <string name="no_languages_match">No languages match</string>
+
+
+
+    <string name="audio_pipeline">Audio Pipeline</string>
+    <string name="audio_pipeline_subtitle">デコーダーから出力までのリアルタイム信号経路</string>
+
+    <string name="pipeline_track_info">Track Info</string>
+
+    <string name="pipeline_decoder">Decoder</string>
+
+    <string name="pipeline_resampler">Resampler</string>
+
+    <string name="pipeline_dsp">DSP</string>
+
+    <string name="pipeline_output_device">Output Device</string>
+
+    <string name="pipeline_source">Source</string>
+
+    <string name="pipeline_format">Format</string>
+
+    <string name="pipeline_bit_depth">Bit Depth</string>
+
+    <string name="pipeline_sample_rate">Sample Rate</string>
+
+    <string name="pipeline_bitrate">Bitrate</string>
+
+    <string name="pipeline_channels">Channels</string>
+
+    <string name="pipeline_decoder_name">Decoder Name</string>
+
+    <string name="pipeline_io_rate">I/O Rate</string>
+
+    <string name="pipeline_type">Type</string>
+
+    <string name="pipeline_cutoff">Cutoff</string>
+
+    <string name="pipeline_quality">Quality</string>
+
+    <string name="pipeline_pcm_format">PCM Format</string>
+
+    <string name="pipeline_eq_preset">EQ Preset</string>
+
+    <string name="pipeline_stereo_expand">Stereo Expand</string>
+
+    <string name="pipeline_buffers">Buffers</string>
+
+    <string name="pipeline_output_api">Output API</string>
+
+    <string name="pipeline_device_name">Device Name</string>
+
+
+
+    <string name="song_will_play_next">Song will play next</string>
+
+    <string name="song_added_to_queue">Song added to queue</string>
+    <string name="song_added_to_playlist">プレイリストに追加しました</string>
+    <string name="song_already_in_playlist">すでにプレイリストにあります</string>
+    <plurals name="add_to_playlists_count">
+        <item quantity="other">%1$d件のプレイリストに追加</item>
+    </plurals>
+    <plurals name="added_to_playlists_notice">
+        <item quantity="other">%1$d件のプレイリストに追加しました</item>
+    </plurals>
+
+    <string name="paxsenix_api_key">PaxSenix API key</string>
+
+    <string name="paxsenix_api_key_configured">PaxSenix API key — configured</string>
+
+    <string name="paxsenix_api_key_missing">PaxSenix API key — optional， not configured</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string name="local_playlist_subtitle">%1$d 曲 · この端末内</string>
+    <string name="spotify_import_empty_playlist">このプレイリストに曲はありません</string>
+    <string name="show_queue_history">キューの履歴を表示</string>
+    <string name="show_queue_history_subtitle">キューの「再生中」の上に、再生済みの曲を最大25曲表示します</string>
+    <string name="not_enough_this_week">今週もう少し曲を再生するとReplayが解放されます。</string>
+    <string name="replay_artist_start_week">今週はずっと、</string>
+    <string name="replay_songs_end_week">があなたの1週間を彩りました。</string>
+    <string name="replay_summary_end_week">週</string>
+    <string name="replay_this_week">今週</string>
+    <string name="replay_period_weekly">週間</string>
+    <string name="replay_period_monthly">月間</string>
+    <string name="replay_period_yearly">年間</string>
+    <string name="replay_period_lifetime">全期間</string>
+    <string name="opened_file">開いたファイル</string>
+    <string name="folders">フォルダ</string>
+    <string name="folder">フォルダ</string>
+    <string name="no_local_folders">音楽が入ったフォルダはありません</string>
+    <string name="offline_playlist_empty">このプレイリストはまだ空です。曲のメニューから追加できます。</string>
+    <string name="offline_liked_empty">このデバイスで高く評価した曲がここに表示されます</string>
+    <string name="saved_on_this_device">このデバイスに保存</string>
+    <string name="progressive_blur">段階的なぼかし</string>
+    <string name="glass_performance">ガラスのパフォーマンス向上</string>
+    <string name="remove_from_history">履歴から削除</string>
+    <string name="font">フォント</string>
+    <string name="font_default">デフォルト</string>
+    <string name="font_legacy">従来</string>
+    <string name="font_default_subtitle">SF Pro Display · Apple Music のウェイト</string>
+    <string name="font_legacy_subtitle">SF Pro Display · 元の太いウェイト</string>
+    <string name="font_footer">「従来」では、Apple Music に合わせる前にアプリで使われていた、太めで詰まった書体に戻します。</string>
+    <string name="bit_perfect_output">ビットパーフェクト出力</string>
+    <string name="bit_perfect_bypassed_footer">ビットパーフェクト出力の準備ができているため、淡色表示の設定はバイパスされ、Dolby Atmos 版はリクエストされません。DAC を取り外すかモードをオフにすると、再び機能します。</string>
+    <string name="bit_perfect_sheet_warning">トラックを変更せずに DAC に送ります。イコライザー、音量の正規化、クロスフェード、オートミックス、再生速度、bit の音量はバイパスされます。</string>
+    <string name="bit_perfect_mode_off_subtitle">音声は Android のミキサーと bit のエフェクトを通ります。</string>
+    <string name="bit_perfect_mode_usb_android">USB DAC</string>
+    <string name="bit_perfect_mode_usb_android_subtitle">Android 14 が各トラックのサンプルレートとビット深度で DAC を開きます。ミキシングやリサンプリングは行いません。</string>
+    <string name="bit_perfect_requires_android_14">Android 14 以降が必要です</string>
+    <string name="bit_perfect_mode_dap_exclusive">内蔵 DAC（AAudio 排他）</string>
+    <string name="bit_perfect_mode_dap_exclusive_subtitle">独自の DAC を備えた音楽プレーヤー向けです。ヘッドホン出力またはライン出力を各トラックのサンプルレートで排他的に開きます。排他モードを許可しないデバイスもあります。</string>
+    <string name="bit_perfect_requires_android_8_1">Android 8.1 以降が必要です</string>
+    <string name="bit_perfect_mode_usb_direct">USB DAC（ダイレクトドライバー）</string>
+    <string name="bit_perfect_mode_usb_direct_subtitle">どの Android バージョンでも bit が DAC を直接制御し、音量は DAC 側で設定します。USB の権限を求めます。通常の出力よりかなり大きな音になることがあります。</string>
+    <string name="dac_volume">DAC の音量</string>
+    <string name="dac_volume_subtitle">DAC 本体で設定します。音楽データは変更されません</string>
+    <string name="usb_allow_fixed_volume">音量調節のない DAC を許可</string>
+    <string name="usb_allow_fixed_volume_subtitle">許可しない場合、そのような DAC は通常の出力で再生します</string>
+    <string name="usb_allow_fixed_volume_confirm_title">フルスケールで再生しますか？</string>
+    <string name="usb_allow_fixed_volume_confirm_message">bit はこの種の DAC の音量を設定できないため、フルスケールで再生され、DAC 自体のつまみ（ある場合）でのみ音量を調節できます。感度の高いヘッドホンでは危険なほど大きな音になることがあります。</string>
+    <string name="convert_for_limited_dac">低スペック DAC 向けに変換</string>
+    <string name="convert_for_limited_dac_subtitle">DAC の上限を超えるトラックを、DAC の最高フォーマットに変換します。再生開始に時間がかかることがあり、元の音源に対してビットパーフェクトにはなりません。</string>
+    <string name="bit_perfect_confirm_title">ビットパーフェクト出力をオンにしますか？</string>
+    <string name="bit_perfect_confirm_message">DAC にはフルスケールで音楽が送られ、スマートフォンの音量ボタンが機能しなくなることがあります。再生前に DAC またはアンプの音量を下げてください。</string>
+    <string name="bit_perfect_status_active">%1$s · %2$s kHz · %3$d ビット</string>
+    <string name="bit_perfect_status_dac_limited">%1$s · %2$s kHz · %3$d ビット · DAC の最大値、このトラックの形式から変換</string>
+    <string name="bit_perfect_status_inexact">%1$s · 正確ではありません： このソースはロスレス PCM ではありません</string>
+    <string name="bit_perfect_status_waiting">対応する出力でロスレスのトラックを待っています</string>
+    <string name="bit_perfect_status_unavailable">このトラックでは利用できません（%1$s）</string>
+    <string name="automix_overview">Automix overview</string>
+    <string name="diwali_title">bit wishes you a Happy Diwali</string>
+    <string name="diwali_subtitle">May this festival of lights fill your home with joy and your days with music.</string>
+    <string name="diwali_cta">Let\'s Celebrate</string>
+    <string name="sort_size_descending">サイズ（大きい順）</string>
+</resources>
