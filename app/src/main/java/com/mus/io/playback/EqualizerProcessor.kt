@@ -411,7 +411,7 @@ class EqualizerProcessor : BaseAudioProcessor() {
     }
 
     companion object {
-        private const val TAG = "umesieEqualizer"
+        private const val TAG = "juniEqualizer"
 
         private const val BYTES_PER_SAMPLE = 2
 

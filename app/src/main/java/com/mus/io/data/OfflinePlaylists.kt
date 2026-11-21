@@ -52,7 +52,7 @@ object OfflinePlaylists {
     const val PREFIX = "local:offline:"
     const val LIKED_ID = "liked"
 
-    private const val PREF_NAME = "umesie_offline_playlists"
+    private const val PREF_NAME = "juni_offline_playlists"
     private const val KEY_PLAYLISTS = "playlists_json"
 
     private lateinit var prefs: SharedPreferences
@@ -216,7 +216,7 @@ object OfflinePlaylists {
                 )
             }
         }.getOrElse {
-            DebugLog.w("umesie", "Offline playlists unreadable: ${it.message}")
+            DebugLog.w("juni", "Offline playlists unreadable: ${it.message}")
             emptyList()
         }
     }
@@ -235,7 +235,7 @@ object OfflinePlaylists {
                 )
             }
             prefs.edit().putString(KEY_PLAYLISTS, array.toString()).apply()
-        }.onFailure { DebugLog.w("umesie", "Offline playlists not saved: ${it.message}") }
+        }.onFailure { DebugLog.w("juni", "Offline playlists not saved: ${it.message}") }
     }
 
     private fun Song.toJson(): JSONObject = JSONObject().apply {

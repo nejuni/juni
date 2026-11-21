@@ -126,7 +126,7 @@ import java.util.UUID
 /** Session command used by album/playlist playback to install a bounded context. */
 const val ACTION_START_BOUNDED_CONTEXT = "com.nejuni.juni.action.START_BOUNDED_CONTEXT"
 const val ACTION_CLEAR_BOUNDED_CONTEXT = "com.nejuni.juni.action.CLEAR_BOUNDED_CONTEXT"
-const val EXTRA_BOUNDED_CONTEXT_SONGS = "umesie.boundedContext.songs"
+const val EXTRA_BOUNDED_CONTEXT_SONGS = "juni.boundedContext.songs"
 
 /** Drops every queue row but the one playing (or paused) now. */
 const val ACTION_CLEAR_QUEUE = "com.nejuni.juni.action.CLEAR_QUEUE"
@@ -397,7 +397,7 @@ class PlaybackService : MediaLibraryService() {
             if (isPlaying) {
                 trackSelectedAt?.let {
                     TrackLog.d(
-                        "umesie",
+                        "juni",
                         "TIMING first audio: ${SystemClock.elapsedRealtime() - it}ms since track selected",
                         about = exoPlayer.currentMediaItem?.mediaId,
                     )
@@ -621,7 +621,7 @@ class PlaybackService : MediaLibraryService() {
             val cutAt = swapCutAt ?: return
             swapCutAt = null
             TrackLog.d(
-                "umesie",
+                "juni",
                 "swap seam: ${SystemClock.elapsedRealtime() - cutAt}ms of silence",
                 about = eventTime.mediaId(),
             )
@@ -637,7 +637,7 @@ class PlaybackService : MediaLibraryService() {
             val cutAt = swapCutAt ?: return
             if (state == Player.STATE_READY) {
                 TrackLog.d(
-                    "umesie",
+                    "juni",
                     "swap leg: ready ${SystemClock.elapsedRealtime() - cutAt}ms after the cut",
                     about = eventTime.mediaId(),
                 )
@@ -658,7 +658,7 @@ class PlaybackService : MediaLibraryService() {
             )
             val cutAt = swapCutAt ?: return
             TrackLog.d(
-                "umesie",
+                "juni",
                 "swap leg: $decoderName stood up in ${initializationDurationMs}ms, " +
                     "${SystemClock.elapsedRealtime() - cutAt}ms after the cut",
                 about = eventTime.mediaId(),
@@ -1637,7 +1637,7 @@ class PlaybackService : MediaLibraryService() {
         trackSelectedAt = if (alreadyAudible) null else SystemClock.elapsedRealtime()
         if (alreadyAudible) {
             TrackLog.d(
-                "umesie",
+                "juni",
                 "TIMING first audio: 0ms, the crossfade covered it",
                 about = mediaItem?.mediaId,
             )
@@ -1653,7 +1653,7 @@ class PlaybackService : MediaLibraryService() {
         mediaItem?.mediaId?.let(TrackLog::onTrackStarted)
 
         TrackLog.d(
-            "umesie",
+            "juni",
             "TIMING track selected: ${mediaItem?.mediaId} (reason=$reason)",
             about = mediaItem?.mediaId,
         )
@@ -1724,7 +1724,7 @@ class PlaybackService : MediaLibraryService() {
         val attempts = recoveries.getOrDefault(mediaId, 0) + 1
         recoveries[mediaId] = attempts
         TrackLog.w(
-            "umesie",
+            "juni",
             "playback failed for $mediaId at ${position}ms (${error.errorCodeName}), attempt $attempts",
             error,
             about = mediaId,
@@ -1804,7 +1804,7 @@ class PlaybackService : MediaLibraryService() {
             withContext(Dispatchers.Main) {
                 val player = this@PlaybackService.player ?: return@withContext
                 if (player.currentMediaItem?.mediaId != mediaId) return@withContext
-                TrackLog.d("umesie", "retrying $mediaId from ${position}ms")
+                TrackLog.d("juni", "retrying $mediaId from ${position}ms")
                 // Claimed before the seek, so the transition it may fire is
                 // recognised as this retry rather than read as a fresh start and
                 // handed a fresh attempt budget.
@@ -1852,7 +1852,7 @@ class PlaybackService : MediaLibraryService() {
         val restreamed = item.toSong().copy(localUri = null, localPath = null).toMediaItem()
         if (restreamed.localConfiguration?.uri == uri) {
             TrackLog.w(
-                "umesie",
+                "juni",
                 "$mediaId is a local file that is gone and has no stream behind it",
                 about = mediaId,
             )
@@ -1860,7 +1860,7 @@ class PlaybackService : MediaLibraryService() {
         }
 
         TrackLog.w(
-            "umesie",
+            "juni",
             "$mediaId was downloaded but $uri is gone; streaming it instead",
             about = mediaId,
         )
@@ -1919,7 +1919,7 @@ class PlaybackService : MediaLibraryService() {
         if (!neverStarted) return null
         if (consecutiveErrorSkips >= MAX_CONSECUTIVE_SKIPS) {
             TrackLog.w(
-                "umesie",
+                "juni",
                 "$MAX_CONSECUTIVE_SKIPS tracks in a row failed to start; " +
                     "this is the queue or the connection, not the track — stopping here",
             )
@@ -1952,10 +1952,10 @@ class PlaybackService : MediaLibraryService() {
         val exoPlayer = player ?: return
         if (exoPlayer.currentMediaItem?.mediaId != mediaId) return
         if (!exoPlayer.hasNextMediaItem()) {
-            TrackLog.w("umesie", "$reason — and nothing after it in the queue", about = mediaId)
+            TrackLog.w("juni", "$reason — and nothing after it in the queue", about = mediaId)
             return
         }
-        TrackLog.w("umesie", "$reason — skipping to the next track", about = mediaId)
+        TrackLog.w("juni", "$reason — skipping to the next track", about = mediaId)
         exoPlayer.seekToNextMediaItem()
         // No play() here: an error does not clear playWhenReady, so prepare()
         // resumes exactly as far as the listener had asked for. Calling play()
@@ -4362,8 +4362,8 @@ class PlaybackService : MediaLibraryService() {
         /** Length of a FLAC STREAMINFO block, which the format fixes at 34 bytes. */
         const val STREAM_INFO_BYTES = 34
 
-        const val CHANNEL_ID = "umesie_playback"
-        const val SESSION_ID = "umesiePlayback"
+        const val CHANNEL_ID = "juni_playback"
+        const val SESSION_ID = "juniPlayback"
 
         /** How often played-seconds are sampled off the player. */
         const val PROGRESS_SAMPLE_MS = 5_000L

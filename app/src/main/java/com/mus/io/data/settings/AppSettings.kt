@@ -588,7 +588,7 @@ object AppSettings {
     val streamCeilingOverride = MutableStateFlow<AudioQuality?>(null)
 
     fun init(context: Context) {
-        prefs = context.getSharedPreferences("umesie_settings", Context.MODE_PRIVATE)
+        prefs = context.getSharedPreferences("juni_settings", Context.MODE_PRIVATE)
         // Erase credentials left by older builds after ListenBrainz support was removed.
         prefs.edit()
             .remove("listenbrainz_enabled")

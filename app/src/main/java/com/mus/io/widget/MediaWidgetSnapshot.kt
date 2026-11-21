@@ -97,7 +97,7 @@ internal data class MediaWidgetSnapshot(
         }
 
         private fun prefs(context: Context) =
-            context.getSharedPreferences("umesie_widget", Context.MODE_PRIVATE)
+            context.getSharedPreferences("juni_widget", Context.MODE_PRIVATE)
 
         private const val KEY_MEDIA_ID = "media_id"
         private const val KEY_TITLE = "title"

@@ -13,7 +13,7 @@ object LocalListeningHistory {
     private val json = Json { ignoreUnknownKeys = true }
 
     fun init(context: Context) {
-        preferences = context.getSharedPreferences("umesie_local_listening_history", Context.MODE_PRIVATE)
+        preferences = context.getSharedPreferences("juni_local_listening_history", Context.MODE_PRIVATE)
     }
 
     @Synchronized

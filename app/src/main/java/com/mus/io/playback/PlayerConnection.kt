@@ -410,9 +410,9 @@ val MediaItem.queueEntryId: String?
     get() = mediaMetadata.extras?.getString(EXTRA_QUEUE_ENTRY_ID) ?: mediaItemEntryIds[this]
 
 /** Public metadata keys for queue categorization and immutable queue entry identity. */
-const val EXTRA_QUEUE_TIER = "umesie.queueTier"
-const val EXTRA_QUEUE_ENTRY_ID = "umesie.queueEntryId"
-const val EXTRA_CANONICAL_INDEX = "umesie.canonicalIndex"
+const val EXTRA_QUEUE_TIER = "juni.queueTier"
+const val EXTRA_QUEUE_ENTRY_ID = "juni.queueEntryId"
+const val EXTRA_CANONICAL_INDEX = "juni.canonicalIndex"
 
 /** Provenance index within the canonical collection (0-based). */
 val MediaItem.canonicalIndex: Int?
@@ -430,15 +430,15 @@ val MediaItem.canonicalIndex: Int?
  * MediaItem so it survives the trip through the session — the queue belongs to
  * the player, and the UI only ever sees it back through a MediaController.
  */
-private const val EXTRA_FROM_AUTOPLAY = "umesie.fromAutoplay"
+private const val EXTRA_FROM_AUTOPLAY = "juni.fromAutoplay"
 
 /** @see Song.radioName */
-private const val EXTRA_RADIO_NAME = "umesie.radioName"
+private const val EXTRA_RADIO_NAME = "juni.radioName"
 
 /** @see Song.playbackSource */
-private const val EXTRA_PLAYBACK_SOURCE = "umesie.playbackSource"
-private const val EXTRA_PLAYBACK_SOURCE_TYPE = "umesie.playbackSourceType"
-private const val EXTRA_PLAYBACK_SOURCE_ID = "umesie.playbackSourceId"
+private const val EXTRA_PLAYBACK_SOURCE = "juni.playbackSource"
+private const val EXTRA_PLAYBACK_SOURCE_TYPE = "juni.playbackSourceType"
+private const val EXTRA_PLAYBACK_SOURCE_ID = "juni.playbackSourceId"
 
 /**
  * The artist and album pages this track hangs under, when they are known.
@@ -448,17 +448,17 @@ private const val EXTRA_PLAYBACK_SOURCE_ID = "umesie.playbackSourceId"
  * `links`), but a queue restored after a restart, or a track read back by the
  * service, has only what the item carries.
  */
-private const val EXTRA_ARTIST_ID = "umesie.artistId"
-private const val EXTRA_ALBUM_ID = "umesie.albumId"
+private const val EXTRA_ARTIST_ID = "juni.artistId"
+private const val EXTRA_ALBUM_ID = "juni.albumId"
 
 /** @see Song.setVideoId */
-private const val EXTRA_SET_VIDEO_ID = "umesie.setVideoId"
+private const val EXTRA_SET_VIDEO_ID = "juni.setVideoId"
 
 /** @see Song.localUri */
-internal const val EXTRA_LOCAL_URI = "umesie.localUri"
+internal const val EXTRA_LOCAL_URI = "juni.localUri"
 
 /** @see Song.localPath */
-internal const val EXTRA_LOCAL_PATH = "umesie.localPath"
+internal const val EXTRA_LOCAL_PATH = "juni.localPath"
 
 /**
  * How long the track runs, as the row that queued it said.
@@ -469,17 +469,17 @@ internal const val EXTRA_LOCAL_PATH = "umesie.localPath"
  * two disagree often enough that overwriting either with the other loses
  * information. Carried so that [toSong] can give it back to the live queue.
  */
-private const val EXTRA_DURATION = "umesie.durationText"
-private const val EXTRA_EXPLICIT = "umesie.explicit"
+private const val EXTRA_DURATION = "juni.durationText"
+private const val EXTRA_EXPLICIT = "juni.explicit"
 
 /**
  * @see Song.sourceQuality — carried so a row rebuilt from the queue (a restore,
  * a reorder) keeps the tier it was queued with.
  */
-private const val EXTRA_SOURCE_QUALITY = "umesie.sourceQuality"
-private const val EXTRA_SOURCE_HI_RES = "umesie.sourceHiRes"
-private const val EXTRA_IS_VIDEO = "umesie.isVideo"
-private const val EXTRA_VIDEO_ORIGIN = "umesie.isVideoOrigin"
+private const val EXTRA_SOURCE_QUALITY = "juni.sourceQuality"
+private const val EXTRA_SOURCE_HI_RES = "juni.sourceHiRes"
+private const val EXTRA_IS_VIDEO = "juni.isVideo"
+private const val EXTRA_VIDEO_ORIGIN = "juni.isVideoOrigin"
 
 /** Whether this item was selected from a music-video row, even after conversion. */
 val MediaItem.isVideoOrigin: Boolean

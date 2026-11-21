@@ -46,7 +46,7 @@ import java.io.InputStream
  */
 object EmbeddedLyrics {
 
-    private const val TAG = "umesie"
+    private const val TAG = "juni"
 
     /**
      * Most bytes worth pulling to find a tag.

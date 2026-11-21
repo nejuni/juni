@@ -14,11 +14,10 @@ Network-dependent features are optional, but the app does request network access
 ## App identity
 
 - App name: **Juni**
-- Android application ID: `com.juni.io`
+- Android application ID: `com.nejuni.juni`
 - Minimum Android version: API 26 (Android 8.0)
 - Maintainer: [Sharavan Kumar](https://github.com/nejuni) · <ume@aster.cx>
 
-The new application ID differs from the previous Umesie package (`io.github.nejuni.umesie`) and the original Bit package (`com.bit.io`). Android installs Juni as a separate app; it cannot update either old package in place, and Android keeps each app’s private data separate. Export data from an old installation and import it into Juni if needed.
 
 ## Build
 

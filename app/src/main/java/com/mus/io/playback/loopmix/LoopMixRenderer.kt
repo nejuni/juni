@@ -74,7 +74,7 @@ class LoopMixRenderer(val sampleRate: Int) : AutoCloseable {
         const val KIND_HIGH_PASS_HZ = 2
 
         val available: Boolean = runCatching { System.loadLibrary("bit_loopmix") }
-            .onFailure { Log.w("umesieLoopMix", "Loop mix renderer unavailable", it) }
+            .onFailure { Log.w("juniLoopMix", "Loop mix renderer unavailable", it) }
             .isSuccess
 
         @JvmStatic private external fun nativeCreate(sampleRate: Int): Long

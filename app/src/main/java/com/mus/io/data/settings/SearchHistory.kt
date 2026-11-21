@@ -37,7 +37,7 @@ object SearchHistory {
     val recent: StateFlow<List<SearchHistoryEntity>> = _recent.asStateFlow()
 
     fun init(context: Context) {
-        prefs = context.getSharedPreferences("umesie_settings", Context.MODE_PRIVATE)
+        prefs = context.getSharedPreferences("juni_settings", Context.MODE_PRIVATE)
         reload()
     }
 

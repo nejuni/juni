@@ -26,7 +26,7 @@ import java.util.Locale
 
 object LocalMediaRepository {
 
-    private const val TAG = "umesie"
+    private const val TAG = "juni"
     private const val MIN_LOCAL_MUSIC_DURATION_MS = 30_000L
 
     /** Serialises scans: the launch page and the Search tab can ask at once. */

@@ -199,7 +199,7 @@ class TrackAnalyzer(private val context: Context) {
      */
 
     private val executor = Executors.newSingleThreadExecutor { runnable ->
-        Thread(runnable, "umesie-smart-analysis").apply {
+        Thread(runnable, "juni-smart-analysis").apply {
             isDaemon = true
             priority = Thread.NORM_PRIORITY
         }
@@ -973,7 +973,7 @@ class TrackAnalyzer(private val context: Context) {
     }
 
     private companion object {
-        const val TAG = "umesieTrackAnalyzer"
+        const val TAG = "juniTrackAnalyzer"
 
         /**
          * What an unmeasured instant reads as. Below the policy's VOCAL_ACTIVE_THRESHOLD by

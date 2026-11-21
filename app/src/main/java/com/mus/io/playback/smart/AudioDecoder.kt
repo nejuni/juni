@@ -47,7 +47,7 @@ import kotlin.math.max
  */
 object AudioDecoder {
 
-    private const val TAG = "umesieAudioDecoder"
+    private const val TAG = "juniAudioDecoder"
     private const val TIMEOUT_US = 10_000L
 
     /** Decoded mono PCM at the container's own sample rate; the caller resamples. */

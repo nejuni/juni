@@ -44,7 +44,7 @@ import java.util.Locale
  */
 internal object LocalAudioSource {
 
-    private const val TAG = "umesieLocalAudio"
+    private const val TAG = "juniLocalAudio"
 
     /** Whether [uri] names a file on the device rather than something to fetch. */
     fun isLocal(uri: Uri): Boolean = when (uri.scheme?.lowercase(Locale.ROOT)) {

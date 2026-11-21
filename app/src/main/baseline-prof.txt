@@ -7,7 +7,7 @@
 # Wildcards rather than a recorded profile: recording one needs a macrobenchmark
 # run on an API 33+ or rooted device. This is a superset of any recorded journey
 # for our own code; the libraries' own profiles cover theirs.
-HSPLcom/juni/io/**->**(**)**
+HSPLcom/nejuni/juni/**->**(**)**
 HSPLcom/my/kizzy/**->**(**)**
-Lcom/juni/io/**;
+Lcom/nejuni/juni/**;
 

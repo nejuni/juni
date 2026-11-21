@@ -101,7 +101,7 @@ class LoopMixSession private constructor(
     }
 
     companion object {
-        private const val TAG = "umesieLoopMix"
+        private const val TAG = "juniLoopMix"
 
         /** Mix seconds into the mix at which the incoming player starts, silent. */
         const val STARTUP_LEAD = 0.5

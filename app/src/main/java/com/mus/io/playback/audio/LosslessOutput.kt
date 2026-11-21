@@ -176,5 +176,5 @@ object LosslessOutput {
         31, // TYPE_DOCK_ANALOG, API 34
     )
 
-    private const val TAG = "umesie"
+    private const val TAG = "juni"
 }

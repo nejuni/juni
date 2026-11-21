@@ -24,7 +24,7 @@ sealed interface LinkRequest {
  * Intents handed to bit from elsewhere on the device.
  *
  * The same relay [PlayerDeepLink] is, and for the same reason: what has to
- * happen — start a queue, resume one — is all inside `umesieApp`'s composition,
+ * happen — start a queue, resume one — is all inside `juniApp`'s composition,
  * which [MainActivity][com.nejuni.juni.MainActivity] has no handle on. The activity
  * reads the intent, this holds the answer, and the composition serves it once
  * its controller and view model exist.
@@ -44,7 +44,7 @@ object MusicLink {
      * returning the link that launched it. Without this, rotating the phone an
      * hour later would replay the opened file over whatever is playing.
      */
-    private const val EXTRA_CONSUMED = "umesie.linkConsumed"
+    private const val EXTRA_CONSUMED = "juni.linkConsumed"
 
     private val _pending = MutableStateFlow<LinkRequest?>(null)
 
