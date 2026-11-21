@@ -1,8 +1,8 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
-import com.juni.io.data.model.ArtistPage
-import com.juni.io.data.model.HomeShelf
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.ArtistPage
+import com.nejuni.juni.data.model.HomeShelf
+import com.nejuni.juni.data.model.Song
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject

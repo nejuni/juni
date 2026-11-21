@@ -1,8 +1,8 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.LocalLibraryCache
-import com.juni.io.data.model.ArtistRef
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.LocalLibraryCache
+import com.nejuni.juni.data.model.ArtistRef
+import com.nejuni.juni.data.model.Song
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import java.io.ByteArrayInputStream

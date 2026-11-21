@@ -8,11 +8,11 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
 
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
-import com.juni.io.data.NerdStats
-import com.juni.io.data.TelemetryProvenance
-import com.juni.io.data.StreamFormat
+import com.nejuni.juni.data.NerdStats
+import com.nejuni.juni.data.TelemetryProvenance
+import com.nejuni.juni.data.StreamFormat
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull

@@ -1,4 +1,4 @@
-package com.juni.io.data.scrobbling
+package com.nejuni.juni.data.scrobbling
 
 /**
  * Returns the first credited artist for services that do not handle joint

@@ -2,7 +2,7 @@
  * Adapted from Convx's IosOverscroll.kt (GPL-3.0):
  * https://github.com/cosmictaserdev-creator/Convx
  */
-package com.juni.io.ui.utils
+package com.nejuni.juni.ui.utils
 
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animate

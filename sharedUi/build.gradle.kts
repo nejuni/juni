@@ -103,7 +103,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.juni.io.sharedui"
+    namespace = "com.nejuni.juni.sharedui"
     compileSdk = 36
     defaultConfig {
         minSdk = 26
@@ -112,6 +112,6 @@ android {
 
 compose.resources {
     publicResClass = true
-    packageOfResClass = "com.juni.io.sharedui.resources"
+    packageOfResClass = "com.nejuni.juni.sharedui.resources"
     generateResClass = always
 }

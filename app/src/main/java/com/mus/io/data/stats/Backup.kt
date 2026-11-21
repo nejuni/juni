@@ -1,10 +1,10 @@
-package com.juni.io.data.stats
+package com.nejuni.juni.data.stats
 
 import android.content.Context
 import android.net.Uri
-import com.juni.io.BuildConfig
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.data.settings.SearchHistory
+import com.nejuni.juni.BuildConfig
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.data.settings.SearchHistory
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlinx.serialization.Serializable

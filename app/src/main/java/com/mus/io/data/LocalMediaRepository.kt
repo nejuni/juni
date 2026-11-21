@@ -1,4 +1,4 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
 import android.Manifest
 import android.content.ContentUris
@@ -12,11 +12,11 @@ import android.os.SystemClock
 import android.provider.DocumentsContract
 import android.provider.MediaStore
 import android.provider.OpenableColumns
-import com.juni.io.data.DebugLog as Log
+import com.nejuni.juni.data.DebugLog as Log
 import androidx.core.content.ContextCompat
-import com.juni.io.data.model.Song
-import com.juni.io.data.StartupTrace
-import com.juni.io.data.settings.AppSettings
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.StartupTrace
+import com.nejuni.juni.data.settings.AppSettings
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock

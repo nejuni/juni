@@ -1,12 +1,12 @@
-package com.juni.io
+package com.nejuni.juni
 
 import androidx.media3.common.Player
-import com.juni.io.playback.MAX_QUEUE_HISTORY
-import com.juni.io.playback.LastPlayed
-import com.juni.io.playback.queueHistoryTrimCount
-import com.juni.io.playback.queueStartingAt
-import com.juni.io.playback.rotateExpiredHistory
-import com.juni.io.playback.skippedByQueueJump
+import com.nejuni.juni.playback.MAX_QUEUE_HISTORY
+import com.nejuni.juni.playback.LastPlayed
+import com.nejuni.juni.playback.queueHistoryTrimCount
+import com.nejuni.juni.playback.queueStartingAt
+import com.nejuni.juni.playback.rotateExpiredHistory
+import com.nejuni.juni.playback.skippedByQueueJump
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Test

@@ -1,7 +1,7 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test

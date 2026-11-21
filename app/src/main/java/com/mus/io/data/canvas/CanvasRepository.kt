@@ -1,6 +1,6 @@
-package com.juni.io.data.canvas
+package com.nejuni.juni.data.canvas
 
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.Song
 
 /** Motion artwork lookup is disabled in the local only build. */
 object CanvasRepository {

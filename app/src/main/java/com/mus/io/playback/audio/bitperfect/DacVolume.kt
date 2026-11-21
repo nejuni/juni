@@ -7,9 +7,9 @@
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
-package com.juni.io.playback.audio.bitperfect
+package com.nejuni.juni.playback.audio.bitperfect
 
-import com.juni.io.playback.audio.bitperfect.usb.UsbVolume
+import com.nejuni.juni.playback.audio.bitperfect.usb.UsbVolume
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

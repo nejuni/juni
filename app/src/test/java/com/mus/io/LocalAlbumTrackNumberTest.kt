@@ -1,9 +1,9 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.LocalMediaRepository
-import com.juni.io.data.model.Song
-import com.juni.io.data.sortedForAlbum
-import com.juni.io.data.useTrackTags
+import com.nejuni.juni.data.LocalMediaRepository
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.sortedForAlbum
+import com.nejuni.juni.data.useTrackTags
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

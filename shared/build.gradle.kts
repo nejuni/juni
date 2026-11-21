@@ -57,6 +57,6 @@ kotlin {
 }
 
 android {
-    namespace = "com.juni.io.shared"
+    namespace = "com.nejuni.juni.shared"
     compileSdk = 36
 }

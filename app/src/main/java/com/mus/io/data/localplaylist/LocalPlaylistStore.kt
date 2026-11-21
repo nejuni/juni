@@ -1,8 +1,8 @@
-package com.juni.io.data.localplaylist
+package com.nejuni.juni.data.localplaylist
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.Song
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import org.json.JSONArray

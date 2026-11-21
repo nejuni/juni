@@ -7,7 +7,7 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop.effects
+package com.nejuni.juni.ui.components.backdrop.effects
 
 import androidx.annotation.FloatRange
 import androidx.compose.foundation.shape.AbsoluteRoundedCornerShape
@@ -15,11 +15,11 @@ import androidx.compose.foundation.shape.CornerBasedShape
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.util.fastCoerceAtLeast
 import androidx.compose.ui.util.fastCoerceAtMost
-import com.juni.io.ui.components.backdrop.BackdropEffectScope
-import com.juni.io.ui.components.backdrop.internal.RoundedRectRefractionShaderString
-import com.juni.io.ui.components.backdrop.internal.RoundedRectRefractionWithDispersionShaderString
-import com.juni.io.ui.components.backdrop.internal.RuntimeShaderEffect
-import com.juni.io.ui.components.backdrop.isRuntimeShaderSupported
+import com.nejuni.juni.ui.components.backdrop.BackdropEffectScope
+import com.nejuni.juni.ui.components.backdrop.internal.RoundedRectRefractionShaderString
+import com.nejuni.juni.ui.components.backdrop.internal.RoundedRectRefractionWithDispersionShaderString
+import com.nejuni.juni.ui.components.backdrop.internal.RuntimeShaderEffect
+import com.nejuni.juni.ui.components.backdrop.isRuntimeShaderSupported
 
 fun BackdropEffectScope.lens(
     @FloatRange(from = 0.0) refractionHeight: Float,

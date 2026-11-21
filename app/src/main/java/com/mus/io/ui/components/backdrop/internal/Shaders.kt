@@ -23,7 +23,7 @@
    limitations under the License.
  */
 
-package com.juni.io.ui.components.backdrop.internal
+package com.nejuni.juni.ui.components.backdrop.internal
 
 import org.intellij.lang.annotations.Language
 

@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.background
@@ -28,7 +28,7 @@ import androidx.compose.foundation.text.BasicTextField
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
-import com.juni.io.ui.icons.SfIcons
+import com.nejuni.juni.ui.icons.SfIcons
 import androidx.compose.material.icons.rounded.CheckCircle
 import androidx.compose.material.icons.rounded.Close
 import androidx.compose.material.icons.rounded.Link
@@ -68,14 +68,14 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import com.juni.io.R
-import com.juni.io.data.model.PlaylistPrivacy
-import com.juni.io.data.model.ROW_ART_PX
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.UserPlaylist
-import com.juni.io.data.model.artworkAt
-import com.juni.io.ui.components.thumbnailBorder
-import com.juni.io.ui.icons.JuniIcons
+import com.nejuni.juni.R
+import com.nejuni.juni.data.model.PlaylistPrivacy
+import com.nejuni.juni.data.model.ROW_ART_PX
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.UserPlaylist
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.ui.components.thumbnailBorder
+import com.nejuni.juni.ui.icons.JuniIcons
 import java.util.Locale
 import kotlinx.coroutines.launch
 

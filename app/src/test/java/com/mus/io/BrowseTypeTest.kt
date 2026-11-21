@@ -1,9 +1,9 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.LocalGroups
-import com.juni.io.data.OfflinePlaylists
-import com.juni.io.data.model.BrowseType
-import com.juni.io.ui.MainViewModel
+import com.nejuni.juni.data.LocalGroups
+import com.nejuni.juni.data.OfflinePlaylists
+import com.nejuni.juni.data.model.BrowseType
+import com.nejuni.juni.ui.MainViewModel
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

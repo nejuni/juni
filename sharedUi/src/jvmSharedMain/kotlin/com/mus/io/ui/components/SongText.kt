@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.border
@@ -35,8 +35,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.juni.io.data.model.Song
-import com.juni.io.ui.graphics.fadingEdges
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.ui.graphics.fadingEdges
 
 fun Modifier.thumbnailBorder(shape: Shape): Modifier = composed {
     this.border(

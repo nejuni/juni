@@ -7,7 +7,7 @@
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
-package com.juni.io.playback.audio.bitperfect
+package com.nejuni.juni.playback.audio.bitperfect
 
 import android.media.AudioTrack
 import android.os.SystemClock
@@ -42,7 +42,7 @@ import kotlin.math.abs
  * ignored. Nothing upstream may scale a sample, and a speed other than 1x
  * would have to be resampled to be heard.
  *
- * The one exception, only with [com.juni.io.data.settings.AppSettings.convertForLimitedDac]
+ * The one exception, only with [com.nejuni.juni.data.settings.AppSettings.convertForLimitedDac]
  * on, is a track the DAC cannot take at all. [DacFormatConverter] then fits it
  * to what the transport opened at, and the status says so.
  *

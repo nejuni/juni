@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.SizeTransform
@@ -124,21 +124,21 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.playback.PlaybackPosition
-import com.juni.io.sharedui.resources.*
-import com.juni.io.data.LocaleTags
-import com.juni.io.data.lyrics.CharGrowth
-import com.juni.io.data.lyrics.isGeniusSectionHeader
-import com.juni.io.data.lyrics.GrowingWord
-import com.juni.io.data.lyrics.LyricAlignment
-import com.juni.io.data.lyrics.LyricLine
-import com.juni.io.data.lyrics.LyricsSource
-import com.juni.io.data.lyrics.translationLanguageName
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.Haptics
-import com.juni.io.ui.haptics.rememberHaptics
-import com.juni.io.ui.icons.JuniIcons
-import com.juni.io.ui.rememberIsForeground
+import com.nejuni.juni.playback.PlaybackPosition
+import com.nejuni.juni.sharedui.resources.*
+import com.nejuni.juni.data.LocaleTags
+import com.nejuni.juni.data.lyrics.CharGrowth
+import com.nejuni.juni.data.lyrics.isGeniusSectionHeader
+import com.nejuni.juni.data.lyrics.GrowingWord
+import com.nejuni.juni.data.lyrics.LyricAlignment
+import com.nejuni.juni.data.lyrics.LyricLine
+import com.nejuni.juni.data.lyrics.LyricsSource
+import com.nejuni.juni.data.lyrics.translationLanguageName
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.Haptics
+import com.nejuni.juni.ui.haptics.rememberHaptics
+import com.nejuni.juni.ui.icons.JuniIcons
+import com.nejuni.juni.ui.rememberIsForeground
 import java.util.Locale
 import kotlin.math.PI
 import kotlin.math.abs
@@ -217,7 +217,7 @@ private const val UNSUNG_ALPHA_STRIP = 0.55f
  * every line, which is a lamp being dragged along under the words: a shape that
  * belongs to the highlight rather than to the singing, present on patter and
  * held notes alike. It is now attached to the letters of the held words
- * themselves — see [LyricLine.growingWords][com.juni.io.data.lyrics.LyricLine.growingWords]
+ * themselves — see [LyricLine.growingWords][com.nejuni.juni.data.lyrics.LyricLine.growingWords]
  * — so a line of quick syllables has no glow at all and a carried note lights
  * up letter by letter, which is where the light was always meant to come from.
  */

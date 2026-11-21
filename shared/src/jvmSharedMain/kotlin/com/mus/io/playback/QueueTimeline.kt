@@ -1,8 +1,8 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
-import com.juni.io.data.model.PlaybackSourceType
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.PlaybackSourceType
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
 import java.util.UUID
 
 /**

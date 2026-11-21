@@ -1,8 +1,8 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
 import android.content.Context
-import com.juni.io.data.model.ArtistRef
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.ArtistRef
+import com.nejuni.juni.data.model.Song
 import java.io.BufferedInputStream
 import java.io.BufferedOutputStream
 import java.io.DataInputStream

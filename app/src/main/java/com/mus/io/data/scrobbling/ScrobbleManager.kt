@@ -1,7 +1,7 @@
-package com.juni.io.data.scrobbling
+package com.nejuni.juni.data.scrobbling
 
-import com.juni.io.data.DebugLog as Log
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.DebugLog as Log
+import com.nejuni.juni.data.model.Song
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job

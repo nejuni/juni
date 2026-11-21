@@ -1,7 +1,7 @@
-package com.juni.io.data.stats
+package com.nejuni.juni.data.stats
 
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.durationMillis
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.durationMillis
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

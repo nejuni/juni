@@ -19,7 +19,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 import kotlin.math.log10
 import kotlin.math.pow

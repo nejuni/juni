@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.ui.player.SHARE_CARD_CHAR_BUDGET
-import com.juni.io.ui.player.fitsOnCard
+import com.nejuni.juni.ui.player.SHARE_CARD_CHAR_BUDGET
+import com.nejuni.juni.ui.player.fitsOnCard
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test

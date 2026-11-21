@@ -1,13 +1,13 @@
-package com.juni.io
+package com.nejuni.juni
 
 import androidx.media3.common.C
 import androidx.media3.common.audio.AudioProcessor
-import com.juni.io.playback.EqLayout
-import com.juni.io.playback.EqualizerPreset
-import com.juni.io.playback.EqualizerProcessor
-import com.juni.io.playback.PeakLimiter
-import com.juni.io.playback.manualCurve
-import com.juni.io.playback.toneCurve
+import com.nejuni.juni.playback.EqLayout
+import com.nejuni.juni.playback.EqualizerPreset
+import com.nejuni.juni.playback.EqualizerProcessor
+import com.nejuni.juni.playback.PeakLimiter
+import com.nejuni.juni.playback.manualCurve
+import com.nejuni.juni.playback.toneCurve
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import kotlin.math.PI
@@ -52,7 +52,7 @@ class EqualizerProcessorTest {
     }
 
     /**
-     * The two end bands are shelves, not bells — see [com.juni.io.playback.FilterKind].
+     * The two end bands are shelves, not bells — see [com.nejuni.juni.playback.FilterKind].
      * A shelf's labelled frequency is its corner, which is the half-way point of
      * its travel, so 60 Hz reads +3 dB when the slider says +6 and the full +6
      * arrives below it.

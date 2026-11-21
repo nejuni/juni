@@ -1,4 +1,4 @@
-package com.juni.io.ui.festive
+package com.nejuni.juni.ui.festive
 
 import java.util.Calendar
 import java.util.TimeZone

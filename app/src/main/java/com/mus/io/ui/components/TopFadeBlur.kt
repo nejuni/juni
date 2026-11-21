@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.animation.core.EaseInOut
 import androidx.compose.foundation.layout.Box
@@ -16,7 +16,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
+import com.nejuni.juni.data.settings.AppSettings
 import dev.chrisbanes.haze.ExperimentalHazeApi
 import dev.chrisbanes.haze.HazeInputScale
 import dev.chrisbanes.haze.HazeProgressive

@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
@@ -79,17 +79,17 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.Dispatchers
-import com.juni.io.ui.graphics.toImageBitmap
-import com.juni.io.ui.graphics.forPixelAccess
+import com.nejuni.juni.ui.graphics.toImageBitmap
+import com.nejuni.juni.ui.graphics.forPixelAccess
 import coil3.request.SuccessResult
 import coil3.request.ImageRequest
 import coil3.compose.LocalPlatformContext
 import coil3.SingletonImageLoader
-import com.juni.io.data.settings.MixDeck
-import com.juni.io.data.settings.MixTransitionView
-import com.juni.io.sharedui.resources.*
-import com.juni.io.ui.components.optimizedHazeEffect
-import com.juni.io.ui.utils.containSheetGestures
+import com.nejuni.juni.data.settings.MixDeck
+import com.nejuni.juni.data.settings.MixTransitionView
+import com.nejuni.juni.sharedui.resources.*
+import com.nejuni.juni.ui.components.optimizedHazeEffect
+import com.nejuni.juni.ui.utils.containSheetGestures
 import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.materials.ExperimentalHazeMaterialsApi
 import dev.chrisbanes.haze.materials.HazeMaterials

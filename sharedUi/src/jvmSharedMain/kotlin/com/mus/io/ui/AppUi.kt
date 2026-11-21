@@ -1,8 +1,8 @@
-package com.juni.io.ui
+package com.nejuni.juni.ui
 
 import androidx.compose.runtime.staticCompositionLocalOf
-import com.juni.io.data.canvas.CanvasArtwork
-import com.juni.io.data.settings.LibrarySort
+import com.nejuni.juni.data.canvas.CanvasArtwork
+import com.nejuni.juni.data.settings.LibrarySort
 import kotlinx.coroutines.flow.StateFlow
 
 /**
@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.StateFlow
  * built from — need from the app around them: a handful of the user's settings
  * and which tracks are on disk. The phone answers from `AppSettings` and
  * `Downloads`, the desktop from its own stores; the pages read the same values
- * either way. Installed once at start, beside [com.juni.io.ui.player.PlayerPlatform].
+ * either way. Installed once at start, beside [com.nejuni.juni.ui.player.PlayerPlatform].
  */
 interface AppUiHost {
     /** A swipe on a track row plays it next rather than adding it to the end of the queue. */

@@ -1,6 +1,6 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
-import com.juni.io.data.settings.OutputPcmMode
+import com.nejuni.juni.data.settings.OutputPcmMode
 
 /**
  * Decides whether Media3 may open a PCM-float AudioTrack.

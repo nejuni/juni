@@ -1,4 +1,4 @@
-package com.juni.io.ui.performance
+package com.nejuni.juni.ui.performance
 
 import android.view.Display
 import kotlin.math.abs

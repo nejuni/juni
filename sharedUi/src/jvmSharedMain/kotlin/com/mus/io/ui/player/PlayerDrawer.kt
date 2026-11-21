@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.FastOutSlowInEasing
@@ -54,10 +54,10 @@ import androidx.compose.ui.unit.Velocity
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.ui.components.MENU_FROST_ALPHA
-import com.juni.io.ui.components.MenuFrostDark
-import com.juni.io.ui.components.liveMenuFrost
-import com.juni.io.ui.utils.containSheetGestures
+import com.nejuni.juni.ui.components.MENU_FROST_ALPHA
+import com.nejuni.juni.ui.components.MenuFrostDark
+import com.nejuni.juni.ui.components.liveMenuFrost
+import com.nejuni.juni.ui.utils.containSheetGestures
 import dev.chrisbanes.haze.HazeState
 import kotlin.math.roundToInt
 

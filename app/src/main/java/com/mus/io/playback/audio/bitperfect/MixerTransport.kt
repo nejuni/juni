@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: LGPL-3.0-only
  */
-package com.juni.io.playback.audio.bitperfect
+package com.nejuni.juni.playback.audio.bitperfect
 
 import android.media.AudioAttributes
 import android.media.AudioDeviceInfo

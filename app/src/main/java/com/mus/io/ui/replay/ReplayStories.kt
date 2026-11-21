@@ -1,4 +1,4 @@
-package com.juni.io.ui.replay
+package com.nejuni.juni.ui.replay
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.LinearEasing
@@ -67,16 +67,16 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.graphics.ColorUtils
 import coil3.compose.AsyncImage
-import com.juni.io.R
-import com.juni.io.data.model.CARD_ART_PX
-import com.juni.io.data.model.HEADER_ART_PX
-import com.juni.io.data.model.ROW_ART_PX
-import com.juni.io.data.model.artworkAt
-import com.juni.io.data.stats.ReplaySummary
-import com.juni.io.ui.player.MeshGradientBackground
-import com.juni.io.ui.player.MeshPalette
-import com.juni.io.ui.player.rememberArtworkColors
-import com.juni.io.ui.theme.AccentRed
+import com.nejuni.juni.R
+import com.nejuni.juni.data.model.CARD_ART_PX
+import com.nejuni.juni.data.model.HEADER_ART_PX
+import com.nejuni.juni.data.model.ROW_ART_PX
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.data.stats.ReplaySummary
+import com.nejuni.juni.ui.player.MeshGradientBackground
+import com.nejuni.juni.ui.player.MeshPalette
+import com.nejuni.juni.ui.player.rememberArtworkColors
+import com.nejuni.juni.ui.theme.AccentRed
 import kotlinx.coroutines.launch
 
 /**

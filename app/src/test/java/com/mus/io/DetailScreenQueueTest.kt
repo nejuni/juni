@@ -1,12 +1,12 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.model.PlaybackSourceType
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
-import com.juni.io.playback.QueueCoordinator
-import com.juni.io.playback.QueueCoordinator.asQueueEntry
-import com.juni.io.playback.QueueSource
-import com.juni.io.ui.screens.matching
+import com.nejuni.juni.data.model.PlaybackSourceType
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.playback.QueueCoordinator
+import com.nejuni.juni.playback.QueueCoordinator.asQueueEntry
+import com.nejuni.juni.playback.QueueSource
+import com.nejuni.juni.ui.screens.matching
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

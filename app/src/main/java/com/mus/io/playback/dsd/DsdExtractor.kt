@@ -1,4 +1,4 @@
-package com.juni.io.playback.dsd
+package com.nejuni.juni.playback.dsd
 
 import android.net.Uri
 import androidx.media3.common.C

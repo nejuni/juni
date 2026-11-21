@@ -1,4 +1,4 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
 import kotlinx.coroutines.flow.MutableStateFlow
 import java.util.concurrent.ConcurrentHashMap
@@ -244,7 +244,7 @@ object NerdStats {
     /**
      * YouTube video ids with a module lookup racing YouTube's own resolve
      * for the stream to actually play — see
-     * [PlaybackService][com.juni.io.playback.PlaybackService]'s
+     * [PlaybackService][com.nejuni.juni.playback.PlaybackService]'s
      * resolving data source. Both start together and whichever answers first
      * plays; the module is the one still worth hearing about, because a
      * YouTube win only means the search continues under the music — so this
@@ -343,7 +343,7 @@ object NerdStats {
      *
      * For when a swap to a claimed-better stream doesn't pan out and the
      * player falls back to what it had — see
-     * [PlaybackService][com.juni.io.playback.PlaybackService]'s
+     * [PlaybackService][com.nejuni.juni.playback.PlaybackService]'s
      * upgrade revert. Without this the claim from the abandoned stream keeps
      * describing the one that's actually playing, which is how a reverted
      * FLAC swap leaves the "Lossless" badge lit over plain Opus. [picked] is
@@ -371,7 +371,7 @@ object NerdStats {
      * [mediaId] is keyed by the track and was recorded by the resolver before
      * this point: a read-ahead resolve, or the standby deck's during a
      * crossfade. Clearing it here would erase the incoming track's own claim,
-     * which [PlaybackService][com.juni.io.playback.PlaybackService]
+     * which [PlaybackService][com.nejuni.juni.playback.PlaybackService]
      * reads straight after this call to decide whether it is Dolby Atmos.
      */
     fun onTrackTransition(mediaId: String? = null) {
@@ -386,7 +386,7 @@ object NerdStats {
      *
      * All of this describes a stream that a particular player was reading, and
      * it is scoped to the *process* while the player it describes is scoped to
-     * [PlaybackService][com.juni.io.playback.PlaybackService] — which the
+     * [PlaybackService][com.nejuni.juni.playback.PlaybackService] — which the
      * app being closed destroys while leaving the process alive to be reused.
      * Nothing else clears it: [current] is nulled when the queue moves on, and
      * a service standing back up is not the queue moving on.

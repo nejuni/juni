@@ -7,7 +7,7 @@
  *
  * SPDX-License-Identifier: LGPL-3.0-only
  */
-package com.juni.io.playback.audio.bitperfect
+package com.nejuni.juni.playback.audio.bitperfect
 
 import androidx.annotation.OptIn
 import androidx.media3.common.C

@@ -1,4 +1,4 @@
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 /**
  * Keeps Automix analysis on the canonical YouTube Opus rendition.

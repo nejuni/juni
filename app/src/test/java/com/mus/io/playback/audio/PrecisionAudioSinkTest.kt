@@ -1,4 +1,4 @@
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import androidx.media3.common.AudioAttributes
 import androidx.media3.common.AuxEffectInfo
@@ -9,10 +9,10 @@ import androidx.media3.common.PlaybackParameters
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.common.util.Util
 import androidx.media3.exoplayer.audio.AudioSink
-import com.juni.io.playback.AudioOutputStatus
-import com.juni.io.playback.EqualizerProcessor
-import com.juni.io.playback.SpatialAudioProcessor
-import com.juni.io.playback.TransitionFilterProcessor
+import com.nejuni.juni.playback.AudioOutputStatus
+import com.nejuni.juni.playback.EqualizerProcessor
+import com.nejuni.juni.playback.SpatialAudioProcessor
+import com.nejuni.juni.playback.TransitionFilterProcessor
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
@@ -359,7 +359,7 @@ class PrecisionAudioSinkTest {
     fun `precision stays active for a 5 point 1 stream`() {
         val fakeDelegate = FakeAudioSink()
         val equalizer = EqualizerProcessor().apply {
-            setTuning(enabled = true, curve = com.juni.io.playback.EqCurve.FLAT, balance = 0f)
+            setTuning(enabled = true, curve = com.nejuni.juni.playback.EqCurve.FLAT, balance = 0f)
         }
         val sink = createSink(
             fakeDelegate,
@@ -430,7 +430,7 @@ class PrecisionAudioSinkTest {
     @Test
     fun `the DSP chain is reached when it is switched on`() {
         val equalizer = EqualizerProcessor().apply {
-            setTuning(enabled = true, curve = com.juni.io.playback.EqCurve.FLAT, balance = 1f)
+            setTuning(enabled = true, curve = com.nejuni.juni.playback.EqCurve.FLAT, balance = 1f)
         }
         val fakeDelegate = FakeAudioSink()
         val sink = createSink(
@@ -1113,7 +1113,7 @@ class PrecisionAudioSinkTest {
         sink.configure(AudioSink.AudioSinkConfig.Builder(format).build())
 
         // Set high preamp (+6 dB ~= 2x gain)
-        eq.setTuning(enabled = true, com.juni.io.playback.EqCurve(FloatArray(10), FloatArray(10), 6.0f), balance = 0f)
+        eq.setTuning(enabled = true, com.nejuni.juni.playback.EqCurve(FloatArray(10), FloatArray(10), 6.0f), balance = 0f)
 
         val frameCount = 2048
         val inputBuffer = ByteBuffer.allocateDirect(frameCount * 2 * 4).order(ByteOrder.LITTLE_ENDIAN)
@@ -1151,7 +1151,7 @@ class PrecisionAudioSinkTest {
         sink.configure(AudioSink.AudioSinkConfig.Builder(format).build())
 
         // Set high preamp (+6 dB ~= 2x gain)
-        eq.setTuning(enabled = true, com.juni.io.playback.EqCurve(FloatArray(10), FloatArray(10), 6.0f), balance = 0f)
+        eq.setTuning(enabled = true, com.nejuni.juni.playback.EqCurve(FloatArray(10), FloatArray(10), 6.0f), balance = 0f)
 
         val frameCount = 2048
         val inputBuffer = ByteBuffer.allocateDirect(frameCount * 2 * 2).order(ByteOrder.LITTLE_ENDIAN)

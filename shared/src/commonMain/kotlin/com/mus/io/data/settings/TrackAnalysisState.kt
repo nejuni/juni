@@ -1,4 +1,4 @@
-package com.juni.io.data.settings
+package com.nejuni.juni.data.settings
 
 /*
  * Shared between the Android and desktop players: both run the same analyser

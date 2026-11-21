@@ -1,16 +1,16 @@
-package com.juni.io.ui.navigation
+package com.nejuni.juni.ui.navigation
 
 import androidx.compose.runtime.Stable
 import androidx.compose.runtime.mutableStateListOf
-import com.juni.io.ui.screens.SettingsCategory
-import com.juni.io.ui.screens.SettingsChoiceKind
+import com.nejuni.juni.ui.screens.SettingsCategory
+import com.nejuni.juni.ui.screens.SettingsChoiceKind
 
 /**
  * A page pushed over the tabs: Settings and every page under it, and the
  * handful of pages a tab opens that are not a release.
  *
  * Album, artist and playlist pages are not routes. They live on
- * [com.juni.io.ui.MainViewModel.detailStack], which loads them and
+ * [com.nejuni.juni.ui.MainViewModel.detailStack], which loads them and
  * updates them in place, and [AppNavigator] interleaves the two stacks into
  * one — see [RouteEntry.detailDepth].
  */

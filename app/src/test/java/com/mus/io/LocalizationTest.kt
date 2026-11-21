@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.ui.components.SUPPORTED_LANGUAGES
-import com.juni.io.ui.components.languageDisplayNameRes
+import com.nejuni.juni.ui.components.SUPPORTED_LANGUAGES
+import com.nejuni.juni.ui.components.languageDisplayNameRes
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertTrue

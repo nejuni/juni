@@ -1,4 +1,4 @@
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import java.nio.ByteBuffer
 import java.nio.ByteOrder

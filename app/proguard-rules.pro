@@ -47,7 +47,7 @@
 -keep class io.ktor.** { *; }
 # Our own @Serializable models, whole: kotlinx.serialization's bundled rules
 # cover the generated serializers, and keeping the classes too costs little.
--keep @kotlinx.serialization.Serializable class com.juni.io.** { *; }
+-keep @kotlinx.serialization.Serializable class com.nejuni.juni.** { *; }
 
 # ---- JVM-only APIs ------------------------------------------------------------
 # Referenced by Ktor's IntelliJ debugger probe and mbassy's EL filters. None of

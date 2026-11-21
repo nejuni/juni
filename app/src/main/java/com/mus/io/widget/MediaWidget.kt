@@ -1,4 +1,4 @@
-package com.juni.io.widget
+package com.nejuni.juni.widget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -12,9 +12,9 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.view.View
 import android.widget.RemoteViews
-import com.juni.io.MainActivity
-import com.juni.io.R
-import com.juni.io.playback.PlayerDeepLink
+import com.nejuni.juni.MainActivity
+import com.nejuni.juni.R
+import com.nejuni.juni.playback.PlayerDeepLink
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -121,7 +121,7 @@ abstract class MediaWidget : AppWidgetProvider() {
          * Redraws every placed widget of any kind, the 4×1 included.
          *
          * Called by
-         * [PlaybackService][com.juni.io.playback.PlaybackService] whenever
+         * [PlaybackService][com.nejuni.juni.playback.PlaybackService] whenever
          * what the widget shows has changed — which is on every play, pause and
          * track change, so it does nothing on the calling thread beyond handing
          * off. Even asking the system which widgets exist is a binder round trip,

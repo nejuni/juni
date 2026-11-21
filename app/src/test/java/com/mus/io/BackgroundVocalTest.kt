@@ -1,8 +1,8 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.lyrics.LyricLine
-import com.juni.io.data.lyrics.LyricWord
-import com.juni.io.data.lyrics.withBackgroundVocals
+import com.nejuni.juni.data.lyrics.LyricLine
+import com.nejuni.juni.data.lyrics.LyricWord
+import com.nejuni.juni.data.lyrics.withBackgroundVocals
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue

@@ -1,4 +1,4 @@
-package com.juni.io.ui.festive
+package com.nejuni.juni.ui.festive
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.spring
@@ -44,7 +44,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.juni.io.R
+import com.nejuni.juni.R
 
 /**
  * One-time Diwali greeting: the illustration full-bleed, with the wish set at

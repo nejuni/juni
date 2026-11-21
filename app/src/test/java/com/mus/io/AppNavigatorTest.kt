@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.ui.navigation.AppNavigator
-import com.juni.io.ui.navigation.AppRoute
+import com.nejuni.juni.ui.navigation.AppNavigator
+import com.nejuni.juni.ui.navigation.AppRoute
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

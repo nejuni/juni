@@ -1,4 +1,4 @@
-package com.juni.io
+package com.nejuni.juni
 
 import android.app.Application
 import android.content.ComponentName
@@ -16,17 +16,17 @@ import coil3.memory.MemoryCache
 import coil3.request.allowHardware
 import coil3.request.crossfade
 import coil3.svg.SvgDecoder
-import com.juni.io.data.DebugLog
-import com.juni.io.data.StartupTrace
-import com.juni.io.ui.player.AndroidPlayerHost
-import com.juni.io.ui.player.PlayerPlatform
-import com.juni.io.playback.LastPlayed
-import com.juni.io.playback.BoundedContextPersistence
-import com.juni.io.data.scrobbling.LastFM
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.data.settings.SearchHistory
-import com.juni.io.data.stats.ArtistFacts
-import com.juni.io.data.stats.ListeningStats
+import com.nejuni.juni.data.DebugLog
+import com.nejuni.juni.data.StartupTrace
+import com.nejuni.juni.ui.player.AndroidPlayerHost
+import com.nejuni.juni.ui.player.PlayerPlatform
+import com.nejuni.juni.playback.LastPlayed
+import com.nejuni.juni.playback.BoundedContextPersistence
+import com.nejuni.juni.data.scrobbling.LastFM
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.data.settings.SearchHistory
+import com.nejuni.juni.data.stats.ArtistFacts
+import com.nejuni.juni.data.stats.ListeningStats
 import kotlinx.coroutines.launch
 
 class JuniApplication : Application(), SingletonImageLoader.Factory {
@@ -41,7 +41,7 @@ class JuniApplication : Application(), SingletonImageLoader.Factory {
         // The player is drawn by the shared UI module; this is what it reads
         // underneath — settings, the Canvas decoder, outputs.
         PlayerPlatform.install(AndroidPlayerHost(this))
-        com.juni.io.ui.AppUi.install(com.juni.io.ui.AndroidAppUiHost)
+        com.nejuni.juni.ui.AppUi.install(com.nejuni.juni.ui.AndroidAppUiHost)
         StartupTrace.log("app", "platform installed")
         // The shared data layer (lyrics, the YouTube Music client) logs to
         // logcat on debug builds only, as the app's own DebugLog always has.
@@ -78,10 +78,10 @@ class JuniApplication : Application(), SingletonImageLoader.Factory {
         StartupTrace.log("app", "settings")
         // Before anything resolves a track: the decoder format gate reads "no"
         // until it has looked.
-        com.juni.io.playback.audio.LosslessOutput.init(this)
+        com.nejuni.juni.playback.audio.LosslessOutput.init(this)
         SearchHistory.init(this)
         LastPlayed.init(this)
-        com.juni.io.playback.LocalListeningHistory.init(this)
+        com.nejuni.juni.playback.LocalListeningHistory.init(this)
         BoundedContextPersistence.init(this)
         StartupTrace.log("app", "session stores")
         // The device's own listening record. Opened here rather than in

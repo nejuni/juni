@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 import java.util.Locale
 

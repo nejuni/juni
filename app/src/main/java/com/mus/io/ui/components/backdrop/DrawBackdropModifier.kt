@@ -7,7 +7,7 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop
+package com.nejuni.juni.ui.components.backdrop
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableFloatStateOf
@@ -39,15 +39,15 @@ import androidx.compose.ui.platform.InspectorInfo
 import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
-import com.juni.io.ui.components.backdrop.backdrops.LayerBackdrop
-import com.juni.io.ui.components.backdrop.highlight.Highlight
-import com.juni.io.ui.components.backdrop.highlight.HighlightElement
-import com.juni.io.ui.components.backdrop.internal.ShapeProvider
-import com.juni.io.ui.components.backdrop.internal.recordLayer
-import com.juni.io.ui.components.backdrop.shadow.InnerShadow
-import com.juni.io.ui.components.backdrop.shadow.InnerShadowElement
-import com.juni.io.ui.components.backdrop.shadow.Shadow
-import com.juni.io.ui.components.backdrop.shadow.ShadowElement
+import com.nejuni.juni.ui.components.backdrop.backdrops.LayerBackdrop
+import com.nejuni.juni.ui.components.backdrop.highlight.Highlight
+import com.nejuni.juni.ui.components.backdrop.highlight.HighlightElement
+import com.nejuni.juni.ui.components.backdrop.internal.ShapeProvider
+import com.nejuni.juni.ui.components.backdrop.internal.recordLayer
+import com.nejuni.juni.ui.components.backdrop.shadow.InnerShadow
+import com.nejuni.juni.ui.components.backdrop.shadow.InnerShadowElement
+import com.nejuni.juni.ui.components.backdrop.shadow.Shadow
+import com.nejuni.juni.ui.components.backdrop.shadow.ShadowElement
 
 private val DefaultHighlight = { Highlight.Default }
 private val DefaultShadow = { Shadow.Default }

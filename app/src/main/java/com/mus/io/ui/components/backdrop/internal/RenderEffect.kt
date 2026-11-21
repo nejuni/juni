@@ -7,7 +7,7 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop.internal
+package com.nejuni.juni.ui.components.backdrop.internal
 
 import android.os.Build
 import androidx.annotation.RequiresApi
@@ -15,8 +15,8 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.graphics.RenderEffect
 import androidx.compose.ui.graphics.asAndroidColorFilter
 import androidx.compose.ui.graphics.asComposeRenderEffect
-import com.juni.io.ui.components.backdrop.RuntimeShader
-import com.juni.io.ui.components.backdrop.asAndroidRuntimeShader
+import com.nejuni.juni.ui.components.backdrop.RuntimeShader
+import com.nejuni.juni.ui.components.backdrop.asAndroidRuntimeShader
 
 @RequiresApi(Build.VERSION_CODES.S)
 internal fun RenderEffect?.chain(other: RenderEffect): RenderEffect {

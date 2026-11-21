@@ -1,11 +1,11 @@
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
-import com.juni.io.playback.EqCurve
-import com.juni.io.playback.EqLayout
-import com.juni.io.playback.EqualizerProcessor
-import com.juni.io.playback.PeakLimiter
-import com.juni.io.playback.SpatialAudioProcessor
-import com.juni.io.playback.TransitionFilterProcessor
+import com.nejuni.juni.playback.EqCurve
+import com.nejuni.juni.playback.EqLayout
+import com.nejuni.juni.playback.EqualizerProcessor
+import com.nejuni.juni.playback.PeakLimiter
+import com.nejuni.juni.playback.SpatialAudioProcessor
+import com.nejuni.juni.playback.TransitionFilterProcessor
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue

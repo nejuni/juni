@@ -1,4 +1,4 @@
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json

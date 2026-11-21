@@ -8,12 +8,12 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
 
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import android.media.AudioFormat
-import com.juni.io.data.settings.OutputPcmMode
-import com.juni.io.playback.AudioOutputStatus
-import com.juni.io.playback.AudioRouting
+import com.nejuni.juni.data.settings.OutputPcmMode
+import com.nejuni.juni.playback.AudioOutputStatus
+import com.nejuni.juni.playback.AudioRouting
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

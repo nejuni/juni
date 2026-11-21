@@ -1,4 +1,4 @@
-package com.juni.io.data.settings
+package com.nejuni.juni.data.settings
 
 /**
  * Stable persisted ordering for a Library "Show all" grid — playlists or

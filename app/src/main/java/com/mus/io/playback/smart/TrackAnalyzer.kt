@@ -21,7 +21,7 @@
  * with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 import android.content.Context
 import android.media.MediaDataSource
@@ -32,8 +32,8 @@ import android.os.Process
 import android.os.SystemClock
 import android.util.Log
 import androidx.media3.common.util.UnstableApi
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.data.settings.AutomixPerformanceMode
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.data.settings.AutomixPerformanceMode
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.Executors
 import kotlin.math.abs
@@ -905,7 +905,7 @@ class TrackAnalyzer(private val context: Context) {
         fromSeconds: Double,
         toSeconds: Double,
         sampleRate: Int,
-    ): com.juni.io.playback.loopmix.LoopRegion? {
+    ): com.nejuni.juni.playback.loopmix.LoopRegion? {
         if (uri.getQueryParameter("v") == null && uri.authority == "source") return null
         val began = SystemClock.elapsedRealtime()
         val copy = runCatching { copyToRead(trackId, uri) }.getOrNull() ?: return null
@@ -929,7 +929,7 @@ class TrackAnalyzer(private val context: Context) {
                 "got ${"%.3f".format(Locale.ROOT, start)}s + ${"%.2f".format(Locale.ROOT, left.size / rate)}s " +
                 "at ${stereo.sampleRate.toInt()}->$sampleRate Hz in ${SystemClock.elapsedRealtime() - began}ms",
         )
-        return com.juni.io.playback.loopmix.LoopRegion(left, right, start)
+        return com.nejuni.juni.playback.loopmix.LoopRegion(left, right, start)
     }
 
     /**

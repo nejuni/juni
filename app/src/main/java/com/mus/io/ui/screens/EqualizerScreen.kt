@@ -1,6 +1,6 @@
-package com.juni.io.ui.screens
+package com.nejuni.juni.ui.screens
 
-import com.juni.io.ui.icons.SfIcons
+import com.nejuni.juni.ui.icons.SfIcons
 import androidx.compose.animation.core.Spring
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
@@ -31,7 +31,7 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import com.juni.io.ui.components.IosSwitch
+import com.nejuni.juni.ui.components.IosSwitch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
@@ -55,14 +55,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.toSize
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.R
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.data.settings.EqualizerMode
-import com.juni.io.playback.AudioOutputStatus
-import com.juni.io.playback.EqLayout
-import com.juni.io.playback.EqualizerPreset
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
+import com.nejuni.juni.R
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.data.settings.EqualizerMode
+import com.nejuni.juni.playback.AudioOutputStatus
+import com.nejuni.juni.playback.EqLayout
+import com.nejuni.juni.playback.EqualizerPreset
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
 import java.util.Locale
 import kotlin.math.abs
 import kotlin.math.roundToInt

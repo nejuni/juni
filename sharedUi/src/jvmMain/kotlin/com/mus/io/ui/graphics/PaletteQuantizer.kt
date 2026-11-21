@@ -1,4 +1,4 @@
-package com.juni.io.ui.graphics
+package com.nejuni.juni.ui.graphics
 
 import androidx.compose.ui.graphics.ImageBitmap
 import java.util.PriorityQueue

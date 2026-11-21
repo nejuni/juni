@@ -1,8 +1,8 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import androidx.media3.common.Player
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
 
 /**
  * The tier of the queue row at [index]. The functions below take this as a

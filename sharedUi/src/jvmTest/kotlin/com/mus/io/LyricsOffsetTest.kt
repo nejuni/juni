@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.ui.player.adjustedLyricsPosition
-import com.juni.io.ui.player.adjustedLyricsSeekTarget
+import com.nejuni.juni.ui.player.adjustedLyricsPosition
+import com.nejuni.juni.ui.player.adjustedLyricsSeekTarget
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

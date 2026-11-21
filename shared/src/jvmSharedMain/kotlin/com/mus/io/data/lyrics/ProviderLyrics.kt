@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement

@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import android.provider.Settings
 import androidx.activity.compose.BackHandler
@@ -48,8 +48,8 @@ import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.util.lerp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.ui.player.additiveChrome
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.ui.player.additiveChrome
 import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.materials.ExperimentalHazeMaterialsApi
 import dev.chrisbanes.haze.materials.HazeMaterials

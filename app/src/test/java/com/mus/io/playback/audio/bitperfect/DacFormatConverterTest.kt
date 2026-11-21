@@ -1,8 +1,8 @@
-package com.juni.io.playback.audio.bitperfect
+package com.nejuni.juni.playback.audio.bitperfect
 
 import androidx.media3.common.C
 import androidx.media3.common.util.UnstableApi
-import com.juni.io.playback.audio.bitperfect.usb.UsbDescriptors
+import com.nejuni.juni.playback.audio.bitperfect.usb.UsbDescriptors
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue

@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

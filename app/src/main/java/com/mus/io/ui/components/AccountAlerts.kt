@@ -1,6 +1,6 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
-import com.juni.io.R
+import com.nejuni.juni.R
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -49,7 +49,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
+import com.nejuni.juni.data.settings.AppSettings
 import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.materials.ExperimentalHazeMaterialsApi
 import dev.chrisbanes.haze.materials.HazeMaterials

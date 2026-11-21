@@ -1,8 +1,8 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.lyrics.LrcRed
-import com.juni.io.data.lyrics.TtmlLyrics
-import com.juni.io.data.lyrics.lyricsJson
+import com.nejuni.juni.data.lyrics.LrcRed
+import com.nejuni.juni.data.lyrics.TtmlLyrics
+import com.nejuni.juni.data.lyrics.lyricsJson
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull

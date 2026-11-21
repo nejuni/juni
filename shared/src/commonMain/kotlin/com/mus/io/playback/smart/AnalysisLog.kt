@@ -1,4 +1,4 @@
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 /** Where the analyser's warnings go, without it having to know the platform. */
 object AnalysisLog {

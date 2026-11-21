@@ -1,10 +1,10 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.content.SharedPreferences
-import com.juni.io.data.model.ArtistRef
-import com.juni.io.data.model.PlaybackSourceType
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.ArtistRef
+import com.nejuni.juni.data.model.PlaybackSourceType
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull

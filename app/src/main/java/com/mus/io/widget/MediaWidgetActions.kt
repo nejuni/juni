@@ -1,4 +1,4 @@
-package com.juni.io.widget
+package com.nejuni.juni.widget
 
 import android.app.PendingIntent
 import android.content.BroadcastReceiver
@@ -13,9 +13,9 @@ import androidx.media3.common.Player
 import androidx.media3.session.MediaController
 import androidx.media3.session.SessionCommand
 import androidx.media3.session.SessionToken
-import com.juni.io.playback.ACTION_TOGGLE_FAVORITE
-import com.juni.io.playback.ACTION_TOGGLE_SHUFFLE
-import com.juni.io.playback.PlaybackService
+import com.nejuni.juni.playback.ACTION_TOGGLE_FAVORITE
+import com.nejuni.juni.playback.ACTION_TOGGLE_SHUFFLE
+import com.nejuni.juni.playback.PlaybackService
 import java.util.concurrent.atomic.AtomicBoolean
 
 /**
@@ -26,7 +26,7 @@ import java.util.concurrent.atomic.AtomicBoolean
  * `startForegroundService` are refused from the background on API 26+ and 31+,
  * and a tap on a home-screen widget is the background — but `bindService` is not
  * restricted, and a `MediaController` binds. Same handshake the app itself uses,
- * from [rememberMediaController][com.juni.io.playback.rememberMediaController].
+ * from [rememberMediaController][com.nejuni.juni.playback.rememberMediaController].
  *
  * Binding also creates [PlaybackService] when needed; its bounded persisted
  * queue is restored before the controller connects, so widget playback works
@@ -119,11 +119,11 @@ class MediaWidgetActions : BroadcastReceiver() {
 
     companion object {
 
-        const val ACTION_TOGGLE = "com.juni.io.widget.TOGGLE"
-        const val ACTION_NEXT = "com.juni.io.widget.NEXT"
-        const val ACTION_PREVIOUS = "com.juni.io.widget.PREVIOUS"
-        const val ACTION_LIKE = "com.juni.io.widget.LIKE"
-        const val ACTION_SHUFFLE = "com.juni.io.widget.SHUFFLE"
+        const val ACTION_TOGGLE = "com.nejuni.juni.widget.TOGGLE"
+        const val ACTION_NEXT = "com.nejuni.juni.widget.NEXT"
+        const val ACTION_PREVIOUS = "com.nejuni.juni.widget.PREVIOUS"
+        const val ACTION_LIKE = "com.nejuni.juni.widget.LIKE"
+        const val ACTION_SHUFFLE = "com.nejuni.juni.widget.SHUFFLE"
 
         fun pendingIntent(context: Context, action: String): PendingIntent =
             PendingIntent.getBroadcast(

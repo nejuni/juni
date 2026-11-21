@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import android.media.AudioFormat
 import android.provider.Settings
@@ -61,13 +61,13 @@ import androidx.compose.ui.text.withStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.R
-import com.juni.io.data.NerdStats
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.playback.AudioOutputStatus
-import com.juni.io.playback.audio.bitperfect.BitPerfectOutput
-import com.juni.io.playback.dsd.DsdFilter
-import com.juni.io.playback.dsd.DsdFormat
+import com.nejuni.juni.R
+import com.nejuni.juni.data.NerdStats
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.playback.AudioOutputStatus
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectOutput
+import com.nejuni.juni.playback.dsd.DsdFilter
+import com.nejuni.juni.playback.dsd.DsdFormat
 import dev.chrisbanes.haze.HazeState
 import kotlinx.coroutines.isActive
 import java.util.Locale
@@ -129,7 +129,7 @@ private fun bitExactVerdict(
 
 /**
  * Full audio playback pipeline inspection surface, opened from the "Audio Pipeline"
- * row at the bottom of [com.juni.io.ui.player.AudioOutputSheet].
+ * row at the bottom of [com.nejuni.juni.ui.player.AudioOutputSheet].
  *
  * Displays live, authoritative details for each stage in the audio pipeline:
  * Track Info -> Decoder -> Resampler -> DSP -> Output Device.
@@ -518,7 +518,7 @@ fun AudioPipelineDialog(
                     PipelineNote("Reported by Android for the connected USB device. This describes device capabilities and may differ from the active playback format.")
                 }
 
-                if (outputStatus.routeKind == com.juni.io.playback.AudioRouting.Kind.BLUETOOTH) {
+                if (outputStatus.routeKind == com.nejuni.juni.playback.AudioRouting.Kind.BLUETOOTH) {
                     val bt = outputStatus.bluetoothTelemetry
                     outputStatus.bluetoothProfile?.let { PipelineRow("Bluetooth", it) }
                     if (bt != null && bt.isConnected) {
@@ -532,7 +532,7 @@ fun AudioPipelineDialog(
                     }
                 }
 
-                if (outputStatus.fallbackReason != com.juni.io.playback.audio.FallbackReason.NONE) {
+                if (outputStatus.fallbackReason != com.nejuni.juni.playback.audio.FallbackReason.NONE) {
                     val fallbackText = outputStatus.fallbackDetail ?: outputStatus.fallbackReason.label
                     PipelineRow("Fallback", fallbackText)
                 }

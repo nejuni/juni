@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 /**
  * A YouTube title, as a lyrics database would have indexed it.

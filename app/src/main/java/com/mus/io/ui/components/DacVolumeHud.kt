@@ -7,7 +7,7 @@
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.Spring
@@ -57,8 +57,8 @@ import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.window.DialogWindowProvider
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.playback.audio.bitperfect.DacVolume
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.playback.audio.bitperfect.DacVolume
 import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.materials.ExperimentalHazeMaterialsApi
 import dev.chrisbanes.haze.materials.HazeMaterials

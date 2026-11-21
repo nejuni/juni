@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.animation.animateColorAsState
@@ -27,14 +27,14 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.graphics.toArgb
 import coil3.compose.LocalPlatformContext
-import com.juni.io.ui.graphics.FADE_CURVE_STOPS
-import com.juni.io.ui.graphics.forPixelAccess
-import com.juni.io.ui.graphics.paletteSwatches
-import com.juni.io.ui.graphics.smootherStep
-import com.juni.io.ui.graphics.toImageBitmap
+import com.nejuni.juni.ui.graphics.FADE_CURVE_STOPS
+import com.nejuni.juni.ui.graphics.forPixelAccess
+import com.nejuni.juni.ui.graphics.paletteSwatches
+import com.nejuni.juni.ui.graphics.smootherStep
+import com.nejuni.juni.ui.graphics.toImageBitmap
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.juni.io.ui.graphics.ColorUtils
+import com.nejuni.juni.ui.graphics.ColorUtils
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.SingletonImageLoader
 import coil3.request.ImageRequest

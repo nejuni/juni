@@ -1,4 +1,4 @@
-package com.juni.io.ui.replay
+package com.nejuni.juni.ui.replay
 
 import android.content.Context
 import androidx.compose.runtime.Composable
@@ -8,11 +8,11 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import com.juni.io.data.stats.ArtistFacts
-import com.juni.io.data.stats.ListeningStats
-import com.juni.io.data.stats.ReplayPeriod
-import com.juni.io.data.stats.ReplaySummary
-import com.juni.io.R
+import com.nejuni.juni.data.stats.ArtistFacts
+import com.nejuni.juni.data.stats.ListeningStats
+import com.nejuni.juni.data.stats.ReplayPeriod
+import com.nejuni.juni.data.stats.ReplaySummary
+import com.nejuni.juni.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collectLatest
@@ -26,7 +26,7 @@ import java.util.Locale
  * The Replay's state: which stretch of listening is being shown, and the
  * numbers for it.
  *
- * Held here rather than in [com.juni.io.ui.MainViewModel] because it is
+ * Held here rather than in [com.nejuni.juni.ui.MainViewModel] because it is
  * only alive while the page is: the summary is a merge of a few files and is
  * cheap to make, and keeping a copy of every chart in a view model that outlives
  * the screen would hold artwork URLs and a few hundred rows for the rest of the
@@ -371,7 +371,7 @@ fun ReplaySummary.albumRows(limit: Int): List<ReplayRow> =
  *
  * The cover of whichever artist happened to lead the genre is not a picture of
  * the genre, and putting it there makes a row of five look like five artists
- * mislabelled. [com.juni.io.ui.replay.InitialTile] stands in instead.
+ * mislabelled. [com.nejuni.juni.ui.replay.InitialTile] stands in instead.
  */
 fun ReplaySummary.genreRows(limit: Int): List<ReplayRow> =
     genres.take(limit).mapIndexed { index, entry ->

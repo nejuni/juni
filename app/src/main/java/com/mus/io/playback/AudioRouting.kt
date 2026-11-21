@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothClass

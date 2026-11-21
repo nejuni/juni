@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import androidx.compose.runtime.Stable
 import androidx.compose.runtime.getValue

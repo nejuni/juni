@@ -1,9 +1,9 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
-import com.juni.io.ui.icons.SfIcons
-import com.juni.io.ui.components.trackArtSize
+import com.nejuni.juni.ui.icons.SfIcons
+import com.nejuni.juni.ui.components.trackArtSize
 import androidx.compose.ui.layout.ContentScale
-import com.juni.io.R
+import com.nejuni.juni.R
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -47,18 +47,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
-import com.juni.io.ui.player.ThinSlider
+import com.nejuni.juni.ui.player.ThinSlider
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
-import com.juni.io.data.model.LikeStatus
-import com.juni.io.data.model.ROW_ART_PX
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.artworkAt
-import com.juni.io.playback.SleepTimer
-import com.juni.io.ui.components.thumbnailBorder
-import com.juni.io.ui.theme.ArtworkPalette
+import com.nejuni.juni.data.model.LikeStatus
+import com.nejuni.juni.data.model.ROW_ART_PX
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.playback.SleepTimer
+import com.nejuni.juni.ui.components.thumbnailBorder
+import com.nejuni.juni.ui.theme.ArtworkPalette
 import kotlinx.coroutines.delay
 import java.util.Locale
 
@@ -74,7 +74,7 @@ import java.util.Locale
  * finished download (`song.localUri != null`) carries no YouTube identity to
  * rate, fetch again or share, so it gets the offline player's rows instead:
  * Like and Add to playlist against the device's own playlists (see
- * [com.juni.io.data.OfflinePlaylists]), signed in or not.
+ * [com.nejuni.juni.data.OfflinePlaylists]), signed in or not.
  *
  * [showSleepTimer] and [onShare] are the player's extras: a sleep timer isn't a
  * property of some row in a list, so it only appears where it means something.

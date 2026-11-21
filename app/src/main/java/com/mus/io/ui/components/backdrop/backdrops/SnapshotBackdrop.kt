@@ -1,4 +1,4 @@
-package com.juni.io.ui.components.backdrop.backdrops
+package com.nejuni.juni.ui.components.backdrop.backdrops
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.Stable
@@ -23,8 +23,8 @@ import androidx.compose.ui.layout.positionInWindow
 import androidx.compose.ui.platform.LocalGraphicsContext
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.IntSize
-import com.juni.io.ui.components.backdrop.Backdrop
-import com.juni.io.ui.components.backdrop.internal.InverseLayerScope
+import com.nejuni.juni.ui.components.backdrop.Backdrop
+import com.nejuni.juni.ui.components.backdrop.internal.InverseLayerScope
 import kotlinx.coroutines.launch
 import kotlin.math.roundToInt
 

@@ -1,9 +1,9 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
-import com.juni.io.data.model.ArtistCredit
-import com.juni.io.data.model.ArtistNameIndex
-import com.juni.io.data.model.ArtistRef
-import com.juni.io.data.model.CreditJoiner
+import com.nejuni.juni.data.model.ArtistCredit
+import com.nejuni.juni.data.model.ArtistNameIndex
+import com.nejuni.juni.data.model.ArtistRef
+import com.nejuni.juni.data.model.CreditJoiner
 
 /**
  * The credits to draw for a track, and how the line is cut into the stretches

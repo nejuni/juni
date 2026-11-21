@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 import org.w3c.dom.Element
 import org.w3c.dom.Node

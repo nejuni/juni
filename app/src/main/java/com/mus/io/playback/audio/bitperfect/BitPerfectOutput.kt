@@ -7,17 +7,17 @@
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
-package com.juni.io.playback.audio.bitperfect
+package com.nejuni.juni.playback.audio.bitperfect
 
 import android.content.Context
 import android.media.AudioManager
 import android.os.Build
 import android.util.Log
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.data.settings.BitPerfectMode
-import com.juni.io.playback.audio.bitperfect.usb.UsbDirectDevices
-import com.juni.io.playback.audio.bitperfect.usb.UsbDirectTransport
-import com.juni.io.playback.audio.bitperfect.usb.UsbVolume
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.data.settings.BitPerfectMode
+import com.nejuni.juni.playback.audio.bitperfect.usb.UsbDirectDevices
+import com.nejuni.juni.playback.audio.bitperfect.usb.UsbDirectTransport
+import com.nejuni.juni.playback.audio.bitperfect.usb.UsbVolume
 import java.util.concurrent.Executors
 import java.util.concurrent.atomic.AtomicReference
 import kotlinx.coroutines.flow.MutableStateFlow

@@ -1,6 +1,6 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.ui.components.SUPPORTED_LANGUAGES
+import com.nejuni.juni.ui.components.SUPPORTED_LANGUAGES
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith

@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.playback.QueueShuffle
-import com.juni.io.playback.queueStartIndex
+import com.nejuni.juni.playback.QueueShuffle
+import com.nejuni.juni.playback.queueStartIndex
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

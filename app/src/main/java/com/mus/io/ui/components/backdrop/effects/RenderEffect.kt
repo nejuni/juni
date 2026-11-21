@@ -7,12 +7,12 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop.effects
+package com.nejuni.juni.ui.components.backdrop.effects
 
 import androidx.compose.ui.graphics.RenderEffect
-import com.juni.io.ui.components.backdrop.BackdropEffectScope
-import com.juni.io.ui.components.backdrop.internal.chain
-import com.juni.io.ui.components.backdrop.isRenderEffectSupported
+import com.nejuni.juni.ui.components.backdrop.BackdropEffectScope
+import com.nejuni.juni.ui.components.backdrop.internal.chain
+import com.nejuni.juni.ui.components.backdrop.isRenderEffectSupported
 
 fun BackdropEffectScope.effect(effect: RenderEffect) {
     if (!isRenderEffectSupported()) return

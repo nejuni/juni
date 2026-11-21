@@ -1,6 +1,6 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
-import com.juni.io.sharedui.resources.*
+import com.nejuni.juni.sharedui.resources.*
 import org.jetbrains.compose.resources.stringResource
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable

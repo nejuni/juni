@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -50,9 +50,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.sharedui.resources.*
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
+import com.nejuni.juni.sharedui.resources.*
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
 import dev.chrisbanes.haze.HazeState
 import kotlinx.coroutines.delay
 import java.util.Locale
@@ -119,7 +119,7 @@ internal fun AudioOutputSheet(
 }
 
 /**
- * Drills into [com.juni.io.ui.components.AudioPipelineDialog] — the
+ * Drills into [com.nejuni.juni.ui.components.AudioPipelineDialog] — the
  * subtitle is the negotiated output itself, read live off
  * [AudioOutputStatus], so the row states what's actually leaving the phone
  * before anyone taps in for the rest of the chain.

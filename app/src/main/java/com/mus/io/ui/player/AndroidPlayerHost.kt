@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import android.content.Context
 import android.database.ContentObserver
@@ -13,22 +13,22 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
-import com.juni.io.data.canvas.CanvasArtwork
-import com.juni.io.data.canvas.CanvasRepository
-import com.juni.io.data.lyrics.LyricLine
-import com.juni.io.data.lyrics.LyricsTranslation
-import com.juni.io.data.model.Song
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.data.settings.LastPlayerScreen
-import com.juni.io.playback.AudioOutputStatus
-import com.juni.io.playback.AudioRouting
-import com.juni.io.playback.audio.bitperfect.BitPerfectOutput
-import com.juni.io.playback.audio.bitperfect.DacVolume
-import com.juni.io.ui.components.backdrop.backdrops.SnapshotBackdrop
-import com.juni.io.ui.components.backdrop.backdrops.rememberSnapshotBackdrop
-import com.juni.io.ui.components.backdrop.backdrops.snapshotBackdropSource
-import com.juni.io.ui.components.isGlassSupported
-import com.juni.io.ui.components.menuBackdropFrost
+import com.nejuni.juni.data.canvas.CanvasArtwork
+import com.nejuni.juni.data.canvas.CanvasRepository
+import com.nejuni.juni.data.lyrics.LyricLine
+import com.nejuni.juni.data.lyrics.LyricsTranslation
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.data.settings.LastPlayerScreen
+import com.nejuni.juni.playback.AudioOutputStatus
+import com.nejuni.juni.playback.AudioRouting
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectOutput
+import com.nejuni.juni.playback.audio.bitperfect.DacVolume
+import com.nejuni.juni.ui.components.backdrop.backdrops.SnapshotBackdrop
+import com.nejuni.juni.ui.components.backdrop.backdrops.rememberSnapshotBackdrop
+import com.nejuni.juni.ui.components.backdrop.backdrops.snapshotBackdropSource
+import com.nejuni.juni.ui.components.isGlassSupported
+import com.nejuni.juni.ui.components.menuBackdropFrost
 import dev.chrisbanes.haze.HazeState
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -156,7 +156,7 @@ class AndroidPlayerHost(context: Context) : PlayerHost {
 
     @Composable
     override fun AudioPipelineDialog(hazeState: HazeState, isPlaying: Boolean, onDismiss: () -> Unit) =
-        com.juni.io.ui.components.AudioPipelineDialog(
+        com.nejuni.juni.ui.components.AudioPipelineDialog(
             hazeState = hazeState,
             onDismiss = onDismiss,
             isPlaying = isPlaying,

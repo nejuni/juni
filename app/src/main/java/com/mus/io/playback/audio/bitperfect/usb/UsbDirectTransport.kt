@@ -7,14 +7,14 @@
  *
  * SPDX-License-Identifier: LGPL-3.0-only
  */
-package com.juni.io.playback.audio.bitperfect.usb
+package com.nejuni.juni.playback.audio.bitperfect.usb
 
 import android.hardware.usb.UsbDevice
 import android.hardware.usb.UsbDeviceConnection
 import android.hardware.usb.UsbManager
-import com.juni.io.playback.audio.bitperfect.BitPerfectDriver
-import com.juni.io.playback.audio.bitperfect.BitPerfectTransport
-import com.juni.io.playback.audio.bitperfect.BitPerfectTransportException
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectDriver
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectTransport
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectTransportException
 import java.nio.ByteBuffer
 
 /** JNI over `usb_transport.cpp`. Handles are opaque ids, never pointers. */

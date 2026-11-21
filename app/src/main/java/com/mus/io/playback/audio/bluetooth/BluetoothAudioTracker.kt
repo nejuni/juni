@@ -10,7 +10,7 @@
 
 @file:Suppress("DEPRECATION") // Preserve Bluetooth codec discovery across Android releases and older devices.
 
-package com.juni.io.playback.audio.bluetooth
+package com.nejuni.juni.playback.audio.bluetooth
 
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothA2dp

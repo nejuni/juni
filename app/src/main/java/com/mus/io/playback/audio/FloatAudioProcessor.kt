@@ -1,4 +1,4 @@
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 /**
  * Common contract for high-precision, in-place Float32 audio DSP processors.
@@ -31,8 +31,8 @@ interface FloatAudioProcessor {
     fun reset()
 }
 
-/** Adapts [com.juni.io.playback.SpatialAudioProcessor] to [FloatAudioProcessor]. */
-fun com.juni.io.playback.SpatialAudioProcessor.asFloatAudioProcessor(): FloatAudioProcessor =
+/** Adapts [com.nejuni.juni.playback.SpatialAudioProcessor] to [FloatAudioProcessor]. */
+fun com.nejuni.juni.playback.SpatialAudioProcessor.asFloatAudioProcessor(): FloatAudioProcessor =
     object : FloatAudioProcessor {
         override fun configure(sampleRate: Int, channelCount: Int) =
             this@asFloatAudioProcessor.configure(sampleRate, channelCount)
@@ -43,8 +43,8 @@ fun com.juni.io.playback.SpatialAudioProcessor.asFloatAudioProcessor(): FloatAud
         override fun reset() = this@asFloatAudioProcessor.reset()
     }
 
-/** Adapts [com.juni.io.playback.EqualizerProcessor] to [FloatAudioProcessor]. */
-fun com.juni.io.playback.EqualizerProcessor.asFloatAudioProcessor(): FloatAudioProcessor =
+/** Adapts [com.nejuni.juni.playback.EqualizerProcessor] to [FloatAudioProcessor]. */
+fun com.nejuni.juni.playback.EqualizerProcessor.asFloatAudioProcessor(): FloatAudioProcessor =
     object : FloatAudioProcessor {
         override fun configure(sampleRate: Int, channelCount: Int) =
             this@asFloatAudioProcessor.configure(sampleRate, channelCount)
@@ -55,8 +55,8 @@ fun com.juni.io.playback.EqualizerProcessor.asFloatAudioProcessor(): FloatAudioP
         override fun reset() = this@asFloatAudioProcessor.reset()
     }
 
-/** Adapts [com.juni.io.playback.TransitionFilterProcessor] to [FloatAudioProcessor]. */
-fun com.juni.io.playback.TransitionFilterProcessor.asFloatAudioProcessor(): FloatAudioProcessor =
+/** Adapts [com.nejuni.juni.playback.TransitionFilterProcessor] to [FloatAudioProcessor]. */
+fun com.nejuni.juni.playback.TransitionFilterProcessor.asFloatAudioProcessor(): FloatAudioProcessor =
     object : FloatAudioProcessor {
         override fun configure(sampleRate: Int, channelCount: Int) =
             this@asFloatAudioProcessor.configure(sampleRate, channelCount)

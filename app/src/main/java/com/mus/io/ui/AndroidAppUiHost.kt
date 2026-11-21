@@ -1,6 +1,6 @@
-package com.juni.io.ui
+package com.nejuni.juni.ui
 
-import com.juni.io.data.settings.AppSettings
+import com.nejuni.juni.data.settings.AppSettings
 
 /** The shared pages' settings, answered from the phone's own stores. */
 object AndroidAppUiHost : AppUiHost {

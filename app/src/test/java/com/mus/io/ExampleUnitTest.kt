@@ -1,4 +1,4 @@
-package com.juni.io
+package com.nejuni.juni
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.animation.core.EaseInCubic
 import androidx.compose.animation.core.animateDpAsState

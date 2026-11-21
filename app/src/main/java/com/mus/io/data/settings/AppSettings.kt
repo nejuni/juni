@@ -1,4 +1,4 @@
-package com.juni.io.data.settings
+package com.nejuni.juni.data.settings
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -6,10 +6,10 @@ import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
 import androidx.media3.common.Player
-import com.juni.io.BuildConfig
-import com.juni.io.data.lyrics.LyricsSource
-import com.juni.io.playback.EqLayout
-import com.juni.io.playback.EqualizerPreset
+import com.nejuni.juni.BuildConfig
+import com.nejuni.juni.data.lyrics.LyricsSource
+import com.nejuni.juni.playback.EqLayout
+import com.nejuni.juni.playback.EqualizerPreset
 import kotlinx.coroutines.flow.MutableStateFlow
 
 
@@ -35,7 +35,7 @@ enum class OutputPcmMode(val label: String) {
  * crossfade, Automix, playback speed and software volume: any of them would
  * change the samples. Volume belongs to the DAC.
  *
- * See [com.juni.io.playback.audio.bitperfect.BitPerfectOutput].
+ * See [com.nejuni.juni.playback.audio.bitperfect.BitPerfectOutput].
  */
 enum class BitPerfectMode {
     OFF,
@@ -143,7 +143,7 @@ object AppSettings {
      * still being analysed. Off by default: analysis costs a background
      * decode per track.
      *
-     * See [com.juni.io.playback.smart.TransitionPlanner].
+     * See [com.nejuni.juni.playback.smart.TransitionPlanner].
      */
     val smartFadeEnabled = MutableStateFlow(false)
 
@@ -177,7 +177,7 @@ object AppSettings {
     /**
      * Level every track to the same loudness, using YouTube's own
      * normalization figure for it — see
-     * [com.juni.io.playback.PlaybackService.setupLoudnessEnhancer].
+     * [com.nejuni.juni.playback.PlaybackService.setupLoudnessEnhancer].
      *
      * On by default, which is the one genuinely contentious thing about it.
      * The case for it: a queue drawn from several sources is a queue of
@@ -200,7 +200,7 @@ object AppSettings {
     val loudnessOffOnSpeaker = MutableStateFlow(true)
 
     /**
-     * Widens stereo output via [com.juni.io.playback.SpatialAudioProcessor],
+     * Widens stereo output via [com.nejuni.juni.playback.SpatialAudioProcessor],
      * a stereo widening + cross-feed effect running inside ExoPlayer's own
      * pipeline. Not true object-based spatial audio — YouTube only ever hands
      * us a stereo stream, so there's no Atmos-style source to render.
@@ -343,7 +343,7 @@ object AppSettings {
      * Costs a video stream on top of the audio one and reaches three
      * services that have nothing to do with playback, so it stays a switch —
      * but it is the better default, and most tracks resolve to no canvas at
-     * all. See [CanvasRepository][com.juni.io.data.canvas.CanvasRepository].
+     * all. See [CanvasRepository][com.nejuni.juni.data.canvas.CanvasRepository].
      */
     val animatedCanvas = MutableStateFlow(true)
 
@@ -354,7 +354,7 @@ object AppSettings {
      *
      * Off by default. A canvas clip loops for as long as its track plays,
      * and every loop past the first re-fetches the same few seconds of video
-     * — see [CanvasCache][com.juni.io.data.canvas.CanvasCache] for why
+     * — see [CanvasCache][com.nejuni.juni.data.canvas.CanvasCache] for why
      * that costs network at all rather than being answered from a buffer —
      * so a few-second clip behind a four-minute track on cellular is not a
      * flat video cost, it is that cost repeated dozens of times per song.
@@ -375,7 +375,7 @@ object AppSettings {
      * Off restores the card: the sleeve keeps its corners, its shadow and its
      * shrink-while-paused, and only a clip goes full-bleed. Phones only either
      * way — see the hero notes in
-     * [NowPlayingScreen][com.juni.io.ui.player.NowPlayingScreen].
+     * [NowPlayingScreen][com.nejuni.juni.ui.player.NowPlayingScreen].
      */
     val fullBleedArtwork = MutableStateFlow(true)
 
@@ -393,10 +393,10 @@ object AppSettings {
      *
      * [PlayerTheme.DEFAULT] because that is the look people asked to have back,
      * and because the alternatives each give something up: see
-     * [ArtworkMesh][com.juni.io.ui.player.ArtworkMesh] for what
+     * [ArtworkMesh][com.nejuni.juni.ui.player.ArtworkMesh] for what
      * [PlayerTheme.LEGACY]'s quantiser does to a cover that is nine-tenths black
      * with a red stripe (a red screen), and
-     * [ArtworkMeshBackdrop][com.juni.io.ui.player.ArtworkMeshBackdrop] for
+     * [ArtworkMeshBackdrop][com.nejuni.juni.ui.player.ArtworkMeshBackdrop] for
      * its cost (blobs that drift are a full-screen blur redrawn while they move,
      * where a mesh is drawn once per track and then composited).
      */
@@ -418,7 +418,7 @@ object AppSettings {
     val lyricsSources = MutableStateFlow(LyricsSource.offered.toSet())
 
     /**
-     * The order [lyricsSources] are asked in — see [LyricsRepository][com.juni.io.data.lyrics.LyricsRepository]:
+     * The order [lyricsSources] are asked in — see [LyricsRepository][com.nejuni.juni.data.lyrics.LyricsRepository]:
      * every enabled source is asked at once, but a higher-priority one still
      * pending is never preempted by a lower one that happened to answer first.
      * Reordered from Settings, so this is a full permutation of
@@ -450,7 +450,7 @@ object AppSettings {
      * Its own switch because it is the one part of Replay that isn't purely
      * local: everything else on that page is counted on this device and never
      * leaves it, while a genre has to be looked up by artist name — see
-     * [ArtistFacts][com.juni.io.data.stats.ArtistFacts]. On by default,
+     * [ArtistFacts][com.nejuni.juni.data.stats.ArtistFacts]. On by default,
      * since it sends a name and nothing else and the answer is what makes a
      * quarter of the page exist; off, the genre chart simply isn't drawn.
      */
@@ -595,10 +595,10 @@ object AppSettings {
             .remove("listenbrainz_token")
             .remove("listenbrainz_primary_artist_only")
             .apply()
-        com.juni.io.data.localplaylist.LocalPlaylistStore.init(context)
-        com.juni.io.data.OfflinePlaylists.init(
+        com.nejuni.juni.data.localplaylist.LocalPlaylistStore.init(context)
+        com.nejuni.juni.data.OfflinePlaylists.init(
             context,
-            likedTitle = context.getString(com.juni.io.R.string.auto_liked),
+            likedTitle = context.getString(com.nejuni.juni.R.string.auto_liked),
         )
         readAll()
         watchConnection(context)
@@ -607,7 +607,7 @@ object AppSettings {
     /**
      * Re-reads every setting off disk.
      *
-     * The one caller is an import ([Backup][com.juni.io.data.stats.Backup]),
+     * The one caller is an import ([Backup][com.nejuni.juni.data.stats.Backup]),
      * which writes the whole preference file underneath these flows. Nothing
      * else in the app changes a preference without going through the setter
      * beside it, so nothing else has a reason to ask.
@@ -714,7 +714,7 @@ object AppSettings {
         lyricsSourceOrder.value = readLyricsSourceOrder()
         prioritizeSyllableSync.value = prefs.getBoolean(KEY_PRIORITIZE_SYLLABLE_SYNC, false)
         paxSenixApiKey.value = prefs.getString(KEY_PAXSENIX_API_KEY, "").orEmpty()
-        com.juni.io.data.lyrics.PaxSenix.setApiKey(paxSenixApiKey.value)
+        com.nejuni.juni.data.lyrics.PaxSenix.setApiKey(paxSenixApiKey.value)
         lastfmEnabled.value = prefs.getBoolean(KEY_LASTFM_ENABLED, false)
         lastfmUsername.value = prefs.getString(KEY_LASTFM_USERNAME, "").orEmpty()
         lastfmSessionKey.value = prefs.getString(KEY_LASTFM_SESSION_KEY, "").orEmpty()
@@ -1138,10 +1138,10 @@ object AppSettings {
     }
 
     fun setPaxSenixApiKey(value: String) {
-        val normalized = com.juni.io.data.lyrics.normalizePaxSenixApiKey(value)
+        val normalized = com.nejuni.juni.data.lyrics.normalizePaxSenixApiKey(value)
         paxSenixApiKey.value = normalized
         prefs.edit().putString(KEY_PAXSENIX_API_KEY, normalized).apply()
-        com.juni.io.data.lyrics.PaxSenix.setApiKey(normalized)
+        com.nejuni.juni.data.lyrics.PaxSenix.setApiKey(normalized)
     }
 
     /**
@@ -1388,7 +1388,7 @@ object AppSettings {
      * Preferences that describe *this device* rather than this configuration,
      * and so are neither exported nor overwritten by an import.
      *
-     * [Downloads][com.juni.io.download.Downloads] keeps its record of
+     * [Downloads][com.nejuni.juni.download.Downloads] keeps its record of
      * what is saved in this same preference file, and that record is a list of
      * files on this phone's storage. Carrying it into a backup would restore a
      * folder full of tracks that are not here; clearing it on import would leave

@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 /** `ttm:agent` types, as both TTML and LyricsPlus name them. */
 private const val PERSON = "person"

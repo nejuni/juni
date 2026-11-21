@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -23,8 +23,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.playback.AudioOutputStatus
-import com.juni.io.playback.AudioRouting
+import com.nejuni.juni.playback.AudioOutputStatus
+import com.nejuni.juni.playback.AudioRouting
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.map
 
@@ -55,7 +55,7 @@ import kotlinx.coroutines.flow.map
  * `PlaybackService.resolveActiveOutputDevice` just handed the player — because
  * this function's own [AudioRouting.activeOf] and that resolution can name two
  * different devices: `activeOf` falls back through Bluetooth-then-wired-then-USB
- * on its own, while the player also weighs [com.juni.io.data.settings.AppSettings.preferUsbDac].
+ * on its own, while the player also weighs [com.nejuni.juni.data.settings.AppSettings.preferUsbDac].
  * Two independent guesses is exactly what let the picker mark one output active
  * while the caption under the transport kept naming another. The picker still
  * decides *which devices exist to choose between*; only which one is lit comes

@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.EnterTransition
@@ -23,7 +23,7 @@ import androidx.compose.ui.semantics.liveRegion
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
+import com.nejuni.juni.data.settings.AppSettings
 
 /** A unique queue result, so repeating the same action restarts its lifetime. */
 data class QueueActionNotice(

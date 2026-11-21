@@ -1,6 +1,6 @@
-package com.juni.io.ui.replay
+package com.nejuni.juni.ui.replay
 
-import com.juni.io.R
+import com.nejuni.juni.R
 
 import android.content.ContentValues
 import android.content.Context
@@ -55,7 +55,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.content.FileProvider
-import com.juni.io.data.stats.ReplaySummary
+import com.nejuni.juni.data.stats.ReplaySummary
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

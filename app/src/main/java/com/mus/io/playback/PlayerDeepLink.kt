@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.content.Intent
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.asStateFlow
  * nothing to hand that intent to: whether the sheet is up is `showNowPlaying`, a
  * `remember`ed boolean inside `umesieApp`, which only exists once the
  * composition is running and which
- * [MainActivity][com.juni.io.MainActivity] cannot reach. Because the
+ * [MainActivity][com.nejuni.juni.MainActivity] cannot reach. Because the
  * activity is `singleTask`, the intent also arrives down two different paths
  * depending on whether the app happened to be alive — `onCreate` for a cold
  * launch, `onNewIntent` for every other time — so both relay through here and

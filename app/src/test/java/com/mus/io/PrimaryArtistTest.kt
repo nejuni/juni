@@ -1,6 +1,6 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.scrobbling.primaryArtist
+import com.nejuni.juni.data.scrobbling.primaryArtist
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

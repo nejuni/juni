@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 /**
  * Pending logical edits for a bounded context queue.

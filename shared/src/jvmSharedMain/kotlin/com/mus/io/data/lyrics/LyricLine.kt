@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 /**
  * One word of a line, with the stretch of the song it is sung over.

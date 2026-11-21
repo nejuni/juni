@@ -1,8 +1,8 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.canvas.normalizeForMatch
-import com.juni.io.data.model.isExactArtistMatch
-import com.juni.io.data.model.normalizedArtistName
+import com.nejuni.juni.data.canvas.normalizeForMatch
+import com.nejuni.juni.data.model.isExactArtistMatch
+import com.nejuni.juni.data.model.normalizedArtistName
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotEquals

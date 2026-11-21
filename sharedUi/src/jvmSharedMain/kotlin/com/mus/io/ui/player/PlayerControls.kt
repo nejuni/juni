@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.ui.graphics.graphicsLayer
@@ -8,10 +8,10 @@ import androidx.compose.ui.graphics.BlendMode
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.graphics.vector.rememberVectorPainter
 import androidx.compose.ui.unit.isSpecified
-import com.juni.io.data.model.ArtistCredit
-import com.juni.io.data.model.CreditSegment
-import com.juni.io.data.model.creditSegments
-import com.juni.io.sharedui.resources.*
+import com.nejuni.juni.data.model.ArtistCredit
+import com.nejuni.juni.data.model.CreditSegment
+import com.nejuni.juni.data.model.creditSegments
+import com.nejuni.juni.sharedui.resources.*
 
 import org.jetbrains.compose.resources.DrawableResource
 import androidx.compose.animation.animateContentSize
@@ -104,16 +104,16 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.juni.io.ui.components.LINE_FADE
-import com.juni.io.ui.graphics.fadingEdges
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
-import com.juni.io.ui.icons.JuniIcons
+import com.nejuni.juni.ui.components.LINE_FADE
+import com.nejuni.juni.ui.graphics.fadingEdges
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
+import com.nejuni.juni.ui.icons.JuniIcons
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.NerdStats
-import com.juni.io.data.settings.TrackAnalysisState
-import com.juni.io.data.settings.AudioQuality
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.NerdStats
+import com.nejuni.juni.data.settings.TrackAnalysisState
+import com.nejuni.juni.data.settings.AudioQuality
+import com.nejuni.juni.data.model.Song
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 import kotlin.math.roundToInt

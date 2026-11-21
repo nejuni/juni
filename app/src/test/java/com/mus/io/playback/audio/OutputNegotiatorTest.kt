@@ -8,12 +8,12 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
 
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import android.media.AudioFormat
-import com.juni.io.data.settings.OutputPcmMode
-import com.juni.io.playback.AudioRouting
-import com.juni.io.playback.audio.bluetooth.BluetoothTelemetry
+import com.nejuni.juni.data.settings.OutputPcmMode
+import com.nejuni.juni.playback.AudioRouting
+import com.nejuni.juni.playback.audio.bluetooth.BluetoothTelemetry
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotNull
@@ -362,11 +362,11 @@ class OutputNegotiatorTest {
 
     @Test
     fun bluetoothTelemetryFormattingAccuratelyReportsLdacBitrate() {
-        val (bitrateLabel, mode) = com.juni.io.playback.audio.bluetooth.BluetoothAudioTracker.parseLdacBitrate(1000L)
+        val (bitrateLabel, mode) = com.nejuni.juni.playback.audio.bluetooth.BluetoothAudioTracker.parseLdacBitrate(1000L)
         assertEquals("Not exposed by Android", bitrateLabel)
         assertEquals("High Quality (990 kbps nominal)", mode)
 
-        val telemetry = com.juni.io.playback.audio.bluetooth.BluetoothTelemetry(
+        val telemetry = com.nejuni.juni.playback.audio.bluetooth.BluetoothTelemetry(
             isConnected = true,
             deviceName = "Sony WH-1000XM5",
             codecName = "LDAC",

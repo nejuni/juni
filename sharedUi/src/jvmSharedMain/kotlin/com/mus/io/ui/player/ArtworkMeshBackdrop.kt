@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.animation.core.Animatable
@@ -25,21 +25,21 @@ import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.painter.BitmapPainter
 import androidx.compose.ui.layout.ContentScale
 import coil3.compose.LocalPlatformContext
-import com.juni.io.ui.graphics.argbPixels
-import com.juni.io.ui.graphics.forPixelAccess
-import com.juni.io.ui.graphics.imageBitmapOf
-import com.juni.io.ui.graphics.toImageBitmap
+import com.nejuni.juni.ui.graphics.argbPixels
+import com.nejuni.juni.ui.graphics.forPixelAccess
+import com.nejuni.juni.ui.graphics.imageBitmapOf
+import com.nejuni.juni.ui.graphics.toImageBitmap
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import com.juni.io.ui.graphics.ColorUtils
+import com.nejuni.juni.ui.graphics.ColorUtils
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.SingletonImageLoader
 import coil3.request.ImageRequest
 import coil3.request.SuccessResult
-import com.juni.io.data.model.CARD_ART_PX
-import com.juni.io.data.model.artworkAt
+import com.nejuni.juni.data.model.CARD_ART_PX
+import com.nejuni.juni.data.model.artworkAt
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.withContext
@@ -128,7 +128,7 @@ fun rememberFullArtworkBlurImage(
 /**
  * The player's backdrop wherever there is no sleeve to hang a mesh off: the
  * lyrics, the queue and a tablet — and the main player too under
- * [PlayerTheme.SIMPLE][com.juni.io.data.settings.PlayerTheme.SIMPLE]. One
+ * [PlayerTheme.SIMPLE][com.nejuni.juni.data.settings.PlayerTheme.SIMPLE]. One
  * copy of the cover cropped across the complete bounds and blurred in place,
  * with any artwork above feathering its own bottom edge into it.
  *

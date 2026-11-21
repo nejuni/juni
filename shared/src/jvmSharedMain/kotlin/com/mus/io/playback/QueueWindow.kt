@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import kotlin.random.Random
 
@@ -159,9 +159,9 @@ class QueueWindow(
 
     /** Convenience factory for callers that want a fully started window in one expression. */
     companion object {
-        const val WINDOW_AHEAD: Int = com.juni.io.playback.WINDOW_AHEAD
-        const val WINDOW_LOW_WATER: Int = com.juni.io.playback.WINDOW_LOW_WATER
-        const val LOW_WATER: Int = com.juni.io.playback.LOW_WATER
+        const val WINDOW_AHEAD: Int = com.nejuni.juni.playback.WINDOW_AHEAD
+        const val WINDOW_LOW_WATER: Int = com.nejuni.juni.playback.WINDOW_LOW_WATER
+        const val LOW_WATER: Int = com.nejuni.juni.playback.LOW_WATER
 
         fun startAt(
             canonicalSize: Int,

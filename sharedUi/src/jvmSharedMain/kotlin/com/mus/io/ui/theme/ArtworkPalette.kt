@@ -1,4 +1,4 @@
-package com.juni.io.ui.theme
+package com.nejuni.juni.ui.theme
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.AnimationSpec
@@ -16,17 +16,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.toArgb
 import androidx.compose.ui.graphics.ImageBitmap
 import coil3.compose.LocalPlatformContext
-import com.juni.io.ui.graphics.ColorUtils
-import com.juni.io.ui.graphics.forPixelAccess
-import com.juni.io.ui.graphics.paletteSwatches
-import com.juni.io.ui.graphics.toImageBitmap
+import com.nejuni.juni.ui.graphics.ColorUtils
+import com.nejuni.juni.ui.graphics.forPixelAccess
+import com.nejuni.juni.ui.graphics.paletteSwatches
+import com.nejuni.juni.ui.graphics.toImageBitmap
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.SingletonImageLoader
 import coil3.request.ImageRequest
 import coil3.request.SuccessResult
-import com.juni.io.data.model.CARD_ART_PX
-import com.juni.io.data.model.artworkAt
-import com.juni.io.ui.player.PlayerPlatform
+import com.nejuni.juni.data.model.CARD_ART_PX
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.ui.player.PlayerPlatform
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import kotlin.math.pow

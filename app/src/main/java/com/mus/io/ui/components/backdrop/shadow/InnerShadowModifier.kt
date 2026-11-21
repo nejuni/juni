@@ -7,7 +7,7 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop.shadow
+package com.nejuni.juni.ui.components.backdrop.shadow
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.BlendMode
@@ -28,9 +28,9 @@ import androidx.compose.ui.node.invalidateDraw
 import androidx.compose.ui.node.requireGraphicsContext
 import androidx.compose.ui.platform.InspectorInfo
 import androidx.compose.ui.unit.Density
-import com.juni.io.ui.components.backdrop.internal.ShapeProvider
-import com.juni.io.ui.components.backdrop.internal.clipOutline
-import com.juni.io.ui.components.backdrop.isRenderEffectSupported
+import com.nejuni.juni.ui.components.backdrop.internal.ShapeProvider
+import com.nejuni.juni.ui.components.backdrop.internal.clipOutline
+import com.nejuni.juni.ui.components.backdrop.isRenderEffectSupported
 
 internal class InnerShadowElement(
     val shapeProvider: ShapeProvider,

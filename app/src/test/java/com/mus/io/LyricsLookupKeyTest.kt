@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.lyrics.LyricsSource
-import com.juni.io.ui.lyricsLookupKey
+import com.nejuni.juni.data.lyrics.LyricsSource
+import com.nejuni.juni.ui.lyricsLookupKey
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotEquals
 import org.junit.Test

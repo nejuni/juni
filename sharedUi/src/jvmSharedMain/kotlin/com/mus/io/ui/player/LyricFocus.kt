@@ -1,6 +1,6 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
-import com.juni.io.data.lyrics.LyricLine
+import com.nejuni.juni.data.lyrics.LyricLine
 
 /** Keep every unfinished vocal visible, including overlaps spanning more than two rows. */
 internal fun activeLyricRows(lines: List<LyricLine>, positionMs: Long): List<Int> {

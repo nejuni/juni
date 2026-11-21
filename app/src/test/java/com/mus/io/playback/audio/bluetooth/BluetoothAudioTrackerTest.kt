@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
 
-package com.juni.io.playback.audio.bluetooth
+package com.nejuni.juni.playback.audio.bluetooth
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse

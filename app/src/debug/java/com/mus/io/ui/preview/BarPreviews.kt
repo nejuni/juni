@@ -1,4 +1,4 @@
-package com.juni.io.ui.preview
+package com.nejuni.juni.ui.preview
 
 import android.content.res.Configuration
 import androidx.compose.foundation.background
@@ -24,16 +24,16 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.juni.io.data.model.Song
-import com.juni.io.ui.components.BottomFadeScrim
-import com.juni.io.ui.components.BottomTab
-import com.juni.io.ui.components.FloatingBottomBar
-import com.juni.io.ui.components.FrostedTopBar
-import com.juni.io.ui.components.MiniPlayer
-import com.juni.io.ui.components.TopFadeBlur
-import com.juni.io.ui.components.TopBarBlur
-import com.juni.io.ui.icons.JuniIcons
-import com.juni.io.ui.theme.juniTheme
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.ui.components.BottomFadeScrim
+import com.nejuni.juni.ui.components.BottomTab
+import com.nejuni.juni.ui.components.FloatingBottomBar
+import com.nejuni.juni.ui.components.FrostedTopBar
+import com.nejuni.juni.ui.components.MiniPlayer
+import com.nejuni.juni.ui.components.TopFadeBlur
+import com.nejuni.juni.ui.components.TopBarBlur
+import com.nejuni.juni.ui.icons.JuniIcons
+import com.nejuni.juni.ui.theme.juniTheme
 import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.hazeSource
 
@@ -116,7 +116,7 @@ private val PreviewTabs = listOf(
 )
 
 /**
- * The whole chrome stack in the order [com.juni.io.MainActivity] draws
+ * The whole chrome stack in the order [com.nejuni.juni.MainActivity] draws
  * it: feed, bounded top blur, bar, bottom scrim, pill.
  */
 @Composable

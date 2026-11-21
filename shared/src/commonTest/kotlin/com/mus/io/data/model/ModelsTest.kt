@@ -1,4 +1,4 @@
-package com.juni.io.data.model
+package com.nejuni.juni.data.model
 
 import kotlin.test.Test
 import kotlin.test.assertEquals

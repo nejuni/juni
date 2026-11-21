@@ -1,8 +1,8 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.Song
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 
@@ -151,10 +151,10 @@ object LastPlayed {
     ) {
         fun toSong(): Song {
             val resolvedTier = when (tier) {
-                "USER_QUEUE" -> com.juni.io.data.model.QueueTier.USER_QUEUE
-                "CONTEXT" -> com.juni.io.data.model.QueueTier.CONTEXT
-                "AUTOPLAY" -> com.juni.io.data.model.QueueTier.AUTOPLAY
-                else -> if (auto) com.juni.io.data.model.QueueTier.AUTOPLAY else com.juni.io.data.model.QueueTier.CONTEXT
+                "USER_QUEUE" -> com.nejuni.juni.data.model.QueueTier.USER_QUEUE
+                "CONTEXT" -> com.nejuni.juni.data.model.QueueTier.CONTEXT
+                "AUTOPLAY" -> com.nejuni.juni.data.model.QueueTier.AUTOPLAY
+                else -> if (auto) com.nejuni.juni.data.model.QueueTier.AUTOPLAY else com.nejuni.juni.data.model.QueueTier.CONTEXT
             }
             return Song(
                 videoId = id,
@@ -170,7 +170,7 @@ object LastPlayed {
                 radioName = radio,
                 playbackSource = source,
                 playbackSourceType = sourceType?.let {
-                    runCatching { com.juni.io.data.model.PlaybackSourceType.valueOf(it) }.getOrNull()
+                    runCatching { com.nejuni.juni.data.model.PlaybackSourceType.valueOf(it) }.getOrNull()
                 },
                 playbackSourceId = sourceId,
                 localUri = local,

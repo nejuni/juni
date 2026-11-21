@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.lyrics.LrcLib
-import com.juni.io.data.lyrics.LyricLine
+import com.nejuni.juni.data.lyrics.LrcLib
+import com.nejuni.juni.data.lyrics.LyricLine
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test

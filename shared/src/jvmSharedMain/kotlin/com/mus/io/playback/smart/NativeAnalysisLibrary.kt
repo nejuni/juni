@@ -1,4 +1,4 @@
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 /** Loads the analyser's native library, however the platform keeps it. */
 object NativeAnalysisLibrary {

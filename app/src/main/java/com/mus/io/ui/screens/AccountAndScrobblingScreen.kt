@@ -1,4 +1,4 @@
-package com.juni.io.ui.screens
+package com.nejuni.juni.ui.screens
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
@@ -12,10 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.compose.ui.unit.dp
-import com.juni.io.R
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.ui.components.IosSwitch
-import com.juni.io.ui.icons.SfIcons
+import com.nejuni.juni.R
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.ui.components.IosSwitch
+import com.nejuni.juni.ui.icons.SfIcons
 
 /** Last.fm-only account controls exposed by the local-only fork. */
 @Composable

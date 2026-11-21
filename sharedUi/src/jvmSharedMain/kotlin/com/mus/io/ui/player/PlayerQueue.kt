@@ -1,9 +1,9 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
-import com.juni.io.ui.components.trackArtSize
+import com.nejuni.juni.ui.components.trackArtSize
 import androidx.compose.ui.layout.ContentScale
-import com.juni.io.sharedui.resources.*
-import com.juni.io.ui.components.ExplicitSongTitle
+import com.nejuni.juni.sharedui.resources.*
+import com.nejuni.juni.ui.components.ExplicitSongTitle
 
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
@@ -75,11 +75,11 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.Velocity
 import coil3.compose.AsyncImage
-import com.juni.io.ui.components.thumbnailBorder
-import com.juni.io.ui.icons.JuniIcons
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
-import com.juni.io.playback.autoplaySectionStart
+import com.nejuni.juni.ui.components.thumbnailBorder
+import com.nejuni.juni.ui.icons.JuniIcons
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.playback.autoplaySectionStart
 import kotlin.math.abs
 import kotlin.math.roundToInt
 

@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 /**
  * Pulls the answering vocal out of a line and hangs it underneath, as

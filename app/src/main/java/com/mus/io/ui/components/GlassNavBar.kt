@@ -1,13 +1,13 @@
 /*
  * The bar's structure and its inline/expanded behaviour are
  * EchoMusicApp/Echo-Music's AppFloatingNavBar + FloatingMiniPlayer (GPL-3.0),
- * over the FloatingTabBar vendored in [com.juni.io.ui.components.floatingtabbar].
+ * over the FloatingTabBar vendored in [com.nejuni.juni.ui.components.floatingtabbar].
  * Juni's own tabs, song model, transport and haptics are wired through it in
  * place of Echo's Screens routing and PlayerConnection.
  */
 @file:OptIn(ExperimentalSharedTransitionApi::class)
 
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.animation.AnimatedVisibilityScope
 import androidx.compose.animation.ExperimentalSharedTransitionApi
@@ -53,16 +53,16 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import com.juni.io.R
-import com.juni.io.data.model.ROW_ART_PX
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.artworkAt
-import com.juni.io.ui.components.floatingtabbar.FloatingTabBar
-import com.juni.io.ui.components.floatingtabbar.FloatingTabBarDefaults
-import com.juni.io.ui.components.floatingtabbar.FloatingTabBarScrollConnection
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
-import com.juni.io.ui.player.PlayerDock
+import com.nejuni.juni.R
+import com.nejuni.juni.data.model.ROW_ART_PX
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.ui.components.floatingtabbar.FloatingTabBar
+import com.nejuni.juni.ui.components.floatingtabbar.FloatingTabBarDefaults
+import com.nejuni.juni.ui.components.floatingtabbar.FloatingTabBarScrollConnection
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
+import com.nejuni.juni.ui.player.PlayerDock
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.foundation.layout.fillMaxSize

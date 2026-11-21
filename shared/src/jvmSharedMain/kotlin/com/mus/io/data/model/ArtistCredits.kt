@@ -1,4 +1,4 @@
-package com.juni.io.data.model
+package com.nejuni.juni.data.model
 
 import java.text.Normalizer
 import java.util.Locale
@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap
 /**
  * Folds a name to the form two spellings of one artist have in common.
  *
- * ## Why this is not [com.juni.io.data.canvas.normalizeForMatch]
+ * ## Why this is not [com.nejuni.juni.data.canvas.normalizeForMatch]
  *
  * That one is right for the Spotify-canvas matcher and wrong here, because it
  * reduces to `[^a-z0-9\s]` before comparing — every character that is not a

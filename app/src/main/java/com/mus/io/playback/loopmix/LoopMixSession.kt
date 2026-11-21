@@ -1,7 +1,7 @@
-package com.juni.io.playback.loopmix
+package com.nejuni.juni.playback.loopmix
 
 import android.util.Log
-import com.juni.io.playback.smart.LoopMix
+import com.nejuni.juni.playback.smart.LoopMix
 import kotlin.math.abs
 import kotlin.math.max
 import kotlin.math.roundToLong

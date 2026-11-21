@@ -21,7 +21,7 @@
  *
  * Taken from EchoMusicApp/Echo-Music, which carries the three modifications
  * listed above; Juni's own use of it is in
- * [com.juni.io.ui.components.GlassNavBar]. One further change here:
+ * [com.nejuni.juni.ui.components.GlassNavBar]. One further change here:
  *
  * - `tabBarContentModifier` is a `@Composable () -> Modifier` factory rather
  *   than a single Modifier value. It is applied to three surfaces of three
@@ -37,7 +37,7 @@
  *   resist at the ends, tick across tab boundaries, and settle on release.
  */
 
-package com.juni.io.ui.components.floatingtabbar
+package com.nejuni.juni.ui.components.floatingtabbar
 
 import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibilityScope
@@ -112,14 +112,14 @@ import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.ui.components.GlassSpring
-import com.juni.io.ui.components.LocalGlassExport
-import com.juni.io.ui.components.backdrop.backdrops.layerBackdrop
-import com.juni.io.ui.components.backdrop.backdrops.rememberLayerBackdrop
-import com.juni.io.ui.components.isGlassSupported
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.ui.components.GlassSpring
+import com.nejuni.juni.ui.components.LocalGlassExport
+import com.nejuni.juni.ui.components.backdrop.backdrops.layerBackdrop
+import com.nejuni.juni.ui.components.backdrop.backdrops.rememberLayerBackdrop
+import com.nejuni.juni.ui.components.isGlassSupported
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
 import kotlin.math.roundToInt
 
 /** Hoisted so the default is one stable lambda rather than a new one per call. */

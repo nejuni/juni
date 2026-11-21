@@ -1,6 +1,6 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
-import com.juni.io.sharedui.resources.*
+import com.nejuni.juni.sharedui.resources.*
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.animation.AnimatedContent
@@ -60,14 +60,14 @@ import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
 import coil3.compose.AsyncImagePainter
 import coil3.request.ImageRequest
-import com.juni.io.ui.components.ExplicitBadge
-import com.juni.io.ui.components.menuAnchor
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.icons.JuniIcons
-import com.juni.io.ui.theme.stableStatusBarInsets
-import com.juni.io.data.canvas.CanvasArtwork
-import com.juni.io.data.model.LikeStatus
-import com.juni.io.data.model.Song
+import com.nejuni.juni.ui.components.ExplicitBadge
+import com.nejuni.juni.ui.components.menuAnchor
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.icons.JuniIcons
+import com.nejuni.juni.ui.theme.stableStatusBarInsets
+import com.nejuni.juni.data.canvas.CanvasArtwork
+import com.nejuni.juni.data.model.LikeStatus
+import com.nejuni.juni.data.model.Song
 
 /**
  * The widest the two columns are allowed to get between them, centred in

@@ -1,9 +1,9 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.model.EntityType
-import com.juni.io.data.model.SearchHistoryEntity
-import com.juni.io.data.model.toSong
-import com.juni.io.data.model.withCorrectedType
+import com.nejuni.juni.data.model.EntityType
+import com.nejuni.juni.data.model.SearchHistoryEntity
+import com.nejuni.juni.data.model.toSong
+import com.nejuni.juni.data.model.withCorrectedType
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNotNull
 import org.junit.Assert.assertNull

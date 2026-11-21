@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -20,7 +20,7 @@ import dev.chrisbanes.haze.hazeEffect
  * once the blur radius is large enough for it to be confident, which left the
  * mini player and the nav bar sampling at full resolution on every frame of
  * every scroll. A third is what the liquid glass surfaces already sample at, and
- * what [com.juni.io.ui.components.TopFadeBlur] was moved to for the same
+ * what [com.nejuni.juni.ui.components.TopFadeBlur] was moved to for the same
  * reason: the blur is what hides the upscale, so the pixels that were being paid
  * for could not be seen either way. [block] can still override it per call site.
  */

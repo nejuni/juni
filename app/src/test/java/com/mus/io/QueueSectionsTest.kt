@@ -1,6 +1,6 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.playback.autoplaySectionStart
+import com.nejuni.juni.playback.autoplaySectionStart
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

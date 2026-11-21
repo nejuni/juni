@@ -1,9 +1,9 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
 import android.content.Context
 import android.os.Build
 import android.os.SystemClock
-import com.juni.io.BuildConfig
+import com.nejuni.juni.BuildConfig
 import java.io.File
 import java.util.concurrent.Executors
 

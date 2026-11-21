@@ -1,6 +1,6 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
-import com.juni.io.playback.audio.AudioBlock
+import com.nejuni.juni.playback.audio.AudioBlock
 import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue

@@ -9,7 +9,7 @@
  * refracts the tab bar's exported glass and its recorded tab row rather than a
  * screen capture.
  */
-package com.juni.io.ui.components.floatingtabbar
+package com.nejuni.juni.ui.components.floatingtabbar
 
 import android.os.Build
 import androidx.compose.foundation.background
@@ -36,14 +36,14 @@ import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.DpOffset
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.ui.components.LocalAppBackdrop
-import com.juni.io.ui.components.backdrop.Backdrop
-import com.juni.io.ui.components.backdrop.backdrops.LayerBackdrop
-import com.juni.io.ui.components.backdrop.drawBackdrop
-import com.juni.io.ui.components.backdrop.effects.lens
-import com.juni.io.ui.components.backdrop.highlight.Highlight
-import com.juni.io.ui.components.backdrop.shadow.Shadow
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.ui.components.LocalAppBackdrop
+import com.nejuni.juni.ui.components.backdrop.Backdrop
+import com.nejuni.juni.ui.components.backdrop.backdrops.LayerBackdrop
+import com.nejuni.juni.ui.components.backdrop.drawBackdrop
+import com.nejuni.juni.ui.components.backdrop.effects.lens
+import com.nejuni.juni.ui.components.backdrop.highlight.Highlight
+import com.nejuni.juni.ui.components.backdrop.shadow.Shadow
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import kotlin.math.abs

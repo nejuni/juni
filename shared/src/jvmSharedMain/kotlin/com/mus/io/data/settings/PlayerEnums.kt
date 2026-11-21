@@ -1,4 +1,4 @@
-package com.juni.io.data.settings
+package com.nejuni.juni.data.settings
 
 /**
  * Stream bitrate ceiling on the YouTube path, capping the Opus ladder the

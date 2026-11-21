@@ -1,17 +1,17 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.lyrics.CharGrowth
-import com.juni.io.data.lyrics.EnhancedLrc
-import com.juni.io.data.lyrics.GrowingWord
-import com.juni.io.data.lyrics.LyricAlignment
-import com.juni.io.data.lyrics.LyricLine
-import com.juni.io.data.lyrics.LyricSyllable
-import com.juni.io.data.lyrics.LyricWord
-import com.juni.io.data.lyrics.LyricsPlus
+import com.nejuni.juni.data.lyrics.CharGrowth
+import com.nejuni.juni.data.lyrics.EnhancedLrc
+import com.nejuni.juni.data.lyrics.GrowingWord
+import com.nejuni.juni.data.lyrics.LyricAlignment
+import com.nejuni.juni.data.lyrics.LyricLine
+import com.nejuni.juni.data.lyrics.LyricSyllable
+import com.nejuni.juni.data.lyrics.LyricWord
+import com.nejuni.juni.data.lyrics.LyricsPlus
 import kotlinx.serialization.json.JsonPrimitive
 import kotlinx.serialization.json.buildJsonArray
 import kotlinx.serialization.json.buildJsonObject
-import com.juni.io.data.lyrics.TtmlLyrics
+import com.nejuni.juni.data.lyrics.TtmlLyrics
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

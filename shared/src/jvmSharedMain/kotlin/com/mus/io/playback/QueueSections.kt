@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 /** Past this point in a track, back restarts it instead of skipping to the previous one. */
 const val BACK_RESTARTS_AFTER_MS = 10_000L

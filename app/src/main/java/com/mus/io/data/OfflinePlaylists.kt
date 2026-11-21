@@ -1,8 +1,8 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.Song
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -287,6 +287,6 @@ fun OfflinePlaylist.toGroup(): LocalGroup = LocalGroup(
     title = title,
     subtitle = "",
     thumbnailUrl = if (isLiked) null else songs.firstNotNullOfOrNull { it.thumbnailUrl },
-    type = com.juni.io.data.model.BrowseType.PLAYLIST,
+    type = com.nejuni.juni.data.model.BrowseType.PLAYLIST,
     songs = songs,
 )

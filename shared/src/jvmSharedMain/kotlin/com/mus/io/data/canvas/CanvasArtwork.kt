@@ -1,11 +1,11 @@
-package com.juni.io.data.canvas
+package com.nejuni.juni.data.canvas
 
 import java.text.Normalizer
 import java.util.Locale
 
 /**
  * Which provider a clip came from — read in one place, by
- * [CanvasArtworkPlayer][com.juni.io.ui.player.CanvasArtworkPlayer]'s
+ * [CanvasArtworkPlayer][com.nejuni.juni.ui.player.CanvasArtworkPlayer]'s
  * caller, to decide whether the backdrop should keep re-tinting itself off
  * the clip as it loops rather than settling on its first frame. See that
  * call site for source-specific rendering.

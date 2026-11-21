@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.playingRowMatcher
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.playingRowMatcher
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

@@ -1,6 +1,6 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
-import com.juni.io.R
+import com.nejuni.juni.R
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
@@ -51,16 +51,16 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
-import com.juni.io.data.model.ROW_ART_PX
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.artworkAt
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.sharedui.resources.Res as SharedRes
-import com.juni.io.sharedui.resources.ic_player_next
-import com.juni.io.ui.components.thumbnailBorder
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
-import com.juni.io.ui.player.PlayerDock
+import com.nejuni.juni.data.model.ROW_ART_PX
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.sharedui.resources.Res as SharedRes
+import com.nejuni.juni.sharedui.resources.ic_player_next
+import com.nejuni.juni.ui.components.thumbnailBorder
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
+import com.nejuni.juni.ui.player.PlayerDock
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.foundation.layout.fillMaxSize
 import dev.chrisbanes.haze.HazeState

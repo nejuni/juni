@@ -1,6 +1,6 @@
-package com.juni.io.playback.audio.bitperfect
+package com.nejuni.juni.playback.audio.bitperfect
 
-import com.juni.io.playback.audio.bitperfect.usb.UsbVolume
+import com.nejuni.juni.playback.audio.bitperfect.usb.UsbVolume
 import org.junit.After
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse

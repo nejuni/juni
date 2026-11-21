@@ -1,6 +1,6 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
-import com.juni.io.playback.audio.AudioBlock
+import com.nejuni.juni.playback.audio.AudioBlock
 import kotlin.math.abs
 import kotlin.math.exp
 
@@ -77,7 +77,7 @@ class LoudnessProcessor {
 
     /**
      * Keeps the limiter running even with no gain of this stage's own to
-     * apply. Set by [com.juni.io.playback.audio.DspChain] before every
+     * apply. Set by [com.nejuni.juni.playback.audio.DspChain] before every
      * block, on the audio thread, from whether the equaliser is shaping it.
      */
     var holdLimiter = false

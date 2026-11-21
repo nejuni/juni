@@ -1,4 +1,4 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 import java.util.Locale
 
 /**
@@ -23,7 +23,7 @@ data class StreamFormat(
      * True when [kbps] was filled in from the tier the source was asked for
      * rather than stated by the source — an addon's HIGH meaning 320. Still
      * worth ranking a stream by, but not a measurement of what arrived; see
-     * [NerdStats.sourceBitrate][com.juni.io.data.NerdStats.sourceBitrate].
+     * [NerdStats.sourceBitrate][com.nejuni.juni.data.NerdStats.sourceBitrate].
      */
     val kbpsInferred: Boolean = false,
 ) {

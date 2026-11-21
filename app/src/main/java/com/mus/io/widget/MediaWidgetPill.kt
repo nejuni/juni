@@ -1,4 +1,4 @@
-package com.juni.io.widget
+package com.nejuni.juni.widget
 
 import android.app.PendingIntent
 import android.appwidget.AppWidgetManager
@@ -11,9 +11,9 @@ import android.os.Bundle
 import android.graphics.Bitmap
 import android.view.View
 import android.widget.RemoteViews
-import com.juni.io.MainActivity
-import com.juni.io.R
-import com.juni.io.playback.PlayerDeepLink
+import com.nejuni.juni.MainActivity
+import com.nejuni.juni.R
+import com.nejuni.juni.playback.PlayerDeepLink
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

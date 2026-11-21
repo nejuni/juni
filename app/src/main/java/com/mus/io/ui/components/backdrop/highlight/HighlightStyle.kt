@@ -7,7 +7,7 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop.highlight
+package com.nejuni.juni.ui.components.backdrop.highlight
 
 import androidx.annotation.FloatRange
 import androidx.compose.foundation.shape.CornerBasedShape
@@ -19,11 +19,11 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.util.fastCoerceAtMost
-import com.juni.io.ui.components.backdrop.RuntimeShader
-import com.juni.io.ui.components.backdrop.RuntimeShaderCache
-import com.juni.io.ui.components.backdrop.internal.AmbientHighlightShaderString
-import com.juni.io.ui.components.backdrop.internal.DefaultHighlightShaderString
-import com.juni.io.ui.components.backdrop.isRuntimeShaderSupported
+import com.nejuni.juni.ui.components.backdrop.RuntimeShader
+import com.nejuni.juni.ui.components.backdrop.RuntimeShaderCache
+import com.nejuni.juni.ui.components.backdrop.internal.AmbientHighlightShaderString
+import com.nejuni.juni.ui.components.backdrop.internal.DefaultHighlightShaderString
+import com.nejuni.juni.ui.components.backdrop.isRuntimeShaderSupported
 import kotlin.math.PI
 
 @Immutable

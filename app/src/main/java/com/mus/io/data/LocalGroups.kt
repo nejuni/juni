@@ -1,8 +1,8 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
-import com.juni.io.data.model.BrowseType
-import com.juni.io.data.model.Song
-import com.juni.io.data.settings.LocalMusicSort
+import com.nejuni.juni.data.model.BrowseType
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.settings.LocalMusicSort
 import java.util.Locale
 
 /**

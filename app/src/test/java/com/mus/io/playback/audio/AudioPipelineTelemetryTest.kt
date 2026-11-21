@@ -8,13 +8,13 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
 
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import android.media.AudioFormat
-import com.juni.io.data.NerdStats
-import com.juni.io.data.TelemetryProvenance
-import com.juni.io.playback.AudioOutputStatus
-import com.juni.io.playback.AudioRouting
+import com.nejuni.juni.data.NerdStats
+import com.nejuni.juni.data.TelemetryProvenance
+import com.nejuni.juni.playback.AudioOutputStatus
+import com.nejuni.juni.playback.AudioRouting
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotEquals
@@ -345,7 +345,7 @@ class AudioPipelineTelemetryTest {
             deviceName = "Speaker",
             advertisedEncodings = listOf(AudioFormat.ENCODING_PCM_16BIT),
             advertisedSampleRates = listOf(48000),
-            requestedMode = com.juni.io.data.settings.OutputPcmMode.PCM_16,
+            requestedMode = com.nejuni.juni.data.settings.OutputPcmMode.PCM_16,
         )
 
         AudioOutputStatus.publishNegotiation(phoneNegotiation)

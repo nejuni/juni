@@ -1,6 +1,6 @@
-package com.juni.io.ui.screens
+package com.nejuni.juni.ui.screens
 
-import com.juni.io.R
+import com.nejuni.juni.R
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,13 +13,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.UiState
-import com.juni.io.data.model.playingRowMatcher
-import com.juni.io.ui.components.MessageState
-import com.juni.io.ui.components.ROW_DIVIDER_INSET
-import com.juni.io.ui.components.SongRow
-import com.juni.io.ui.components.songListSkeleton
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.UiState
+import com.nejuni.juni.data.model.playingRowMatcher
+import com.nejuni.juni.ui.components.MessageState
+import com.nejuni.juni.ui.components.ROW_DIVIDER_INSET
+import com.nejuni.juni.ui.components.SongRow
+import com.nejuni.juni.ui.components.songListSkeleton
 
 /**
  * What the account has been listening to, most recent first.

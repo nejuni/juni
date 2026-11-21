@@ -8,13 +8,13 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
 
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import android.media.AudioFormat
-import com.juni.io.data.settings.OutputPcmMode
-import com.juni.io.playback.AudioOutputPolicy
-import com.juni.io.playback.AudioRouting
-import com.juni.io.playback.audio.bluetooth.BluetoothTelemetry
+import com.nejuni.juni.data.settings.OutputPcmMode
+import com.nejuni.juni.playback.AudioOutputPolicy
+import com.nejuni.juni.playback.AudioRouting
+import com.nejuni.juni.playback.audio.bluetooth.BluetoothTelemetry
 
 /**
  * Output transport mechanism selected by the universal best-path engine.
@@ -102,9 +102,9 @@ data class OutputNegotiationResult(
  * 4. Safe fallback.
  *
  * This describes the ordinary sink only. A track on the bit-perfect output
- * ([com.juni.io.playback.audio.bitperfect.BitPerfectRoutingSink])
+ * ([com.nejuni.juni.playback.audio.bitperfect.BitPerfectRoutingSink])
  * never reaches it, and reports through
- * [com.juni.io.playback.audio.bitperfect.BitPerfectOutput.status].
+ * [com.nejuni.juni.playback.audio.bitperfect.BitPerfectOutput.status].
  *
  * Core Rules:
  * - Internal DSP is ALWAYS canonical Float32.

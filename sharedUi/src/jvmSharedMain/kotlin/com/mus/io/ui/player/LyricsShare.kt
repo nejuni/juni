@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -32,15 +32,15 @@ import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
-import com.juni.io.data.lyrics.LyricLine
-import com.juni.io.data.model.Song
-import com.juni.io.sharedui.resources.Res
-import com.juni.io.sharedui.resources.cancel
-import com.juni.io.sharedui.resources.lyrics_share_pick_limit
-import com.juni.io.sharedui.resources.share
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.Haptics
-import com.juni.io.ui.haptics.rememberHaptics
+import com.nejuni.juni.data.lyrics.LyricLine
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.sharedui.resources.Res
+import com.nejuni.juni.sharedui.resources.cancel
+import com.nejuni.juni.sharedui.resources.lyrics_share_pick_limit
+import com.nejuni.juni.sharedui.resources.share
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.Haptics
+import com.nejuni.juni.ui.haptics.rememberHaptics
 import org.jetbrains.compose.resources.stringResource
 
 /**

@@ -1,4 +1,4 @@
-package com.juni.io.ui.theme
+package com.nejuni.juni.ui.theme
 
 import android.app.Activity
 import android.content.Context

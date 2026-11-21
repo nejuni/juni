@@ -1,4 +1,4 @@
-package com.juni.io.ui.utils
+package com.nejuni.juni.ui.utils
 
 import androidx.compose.foundation.gestures.awaitEachGesture
 import androidx.compose.foundation.gestures.awaitFirstDown

@@ -1,4 +1,4 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
 /**
  * Debug logging for code both applications run.

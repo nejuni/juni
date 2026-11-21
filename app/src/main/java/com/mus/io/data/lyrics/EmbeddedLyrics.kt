@@ -1,8 +1,8 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 import android.content.Context
 import android.net.Uri
-import com.juni.io.data.DebugLog as Log
+import com.nejuni.juni.data.DebugLog as Log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.ByteArrayOutputStream

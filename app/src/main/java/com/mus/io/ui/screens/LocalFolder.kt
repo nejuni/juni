@@ -1,4 +1,4 @@
-package com.juni.io.ui.screens
+package com.nejuni.juni.ui.screens
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -57,30 +57,30 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import com.juni.io.R
-import com.juni.io.data.LocalGroup
-import com.juni.io.data.LocalGroups
-import com.juni.io.data.OfflinePlaylists
-import com.juni.io.data.model.BrowseType
-import com.juni.io.data.model.CARD_ART_PX
-import com.juni.io.data.model.ROW_ART_PX
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.artworkAt
-import com.juni.io.data.model.playingRowMatcher
-import com.juni.io.data.settings.LibraryViewType
-import com.juni.io.data.settings.LocalMusicSort
-import com.juni.io.ui.components.CoverPlaceholder
-import com.juni.io.ui.components.ExplicitSongTitle
-import com.juni.io.ui.components.LIBRARY_GRID_SPACING
-import com.juni.io.ui.components.MessageState
-import com.juni.io.ui.components.PAGE_GUTTER
-import com.juni.io.ui.components.ROW_DIVIDER_INSET
-import com.juni.io.ui.components.SearchPlayingBars
-import com.juni.io.ui.components.SongRow
-import com.juni.io.ui.components.longPressMenuClickable
-import com.juni.io.ui.components.thumbnailBorder
-import com.juni.io.ui.icons.JuniIcons
-import com.juni.io.ui.theme.ArtworkPalette
+import com.nejuni.juni.R
+import com.nejuni.juni.data.LocalGroup
+import com.nejuni.juni.data.LocalGroups
+import com.nejuni.juni.data.OfflinePlaylists
+import com.nejuni.juni.data.model.BrowseType
+import com.nejuni.juni.data.model.CARD_ART_PX
+import com.nejuni.juni.data.model.ROW_ART_PX
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.data.model.playingRowMatcher
+import com.nejuni.juni.data.settings.LibraryViewType
+import com.nejuni.juni.data.settings.LocalMusicSort
+import com.nejuni.juni.ui.components.CoverPlaceholder
+import com.nejuni.juni.ui.components.ExplicitSongTitle
+import com.nejuni.juni.ui.components.LIBRARY_GRID_SPACING
+import com.nejuni.juni.ui.components.MessageState
+import com.nejuni.juni.ui.components.PAGE_GUTTER
+import com.nejuni.juni.ui.components.ROW_DIVIDER_INSET
+import com.nejuni.juni.ui.components.SearchPlayingBars
+import com.nejuni.juni.ui.components.SongRow
+import com.nejuni.juni.ui.components.longPressMenuClickable
+import com.nejuni.juni.ui.components.thumbnailBorder
+import com.nejuni.juni.ui.icons.JuniIcons
+import com.nejuni.juni.ui.theme.ArtworkPalette
 
 /**
  * What a device folder — Downloads, Local Music, the song cache, a file
@@ -118,7 +118,7 @@ class LocalFolder(
     val tabs: List<LocalFolderTab> = LocalFolderTab.BASIC,
     /**
      * Local Music only: the offline player's own playlists, Liked first, as
-     * the Playlists tab lists them — see [com.juni.io.data.OfflinePlaylists].
+     * the Playlists tab lists them — see [com.nejuni.juni.data.OfflinePlaylists].
      */
     val playlists: List<LocalGroup> = emptyList(),
     /** Puts "New playlist" at the head of the Playlists tab. */

@@ -1,8 +1,8 @@
-package com.juni.io.data.stats
+package com.nejuni.juni.data.stats
 
 import android.content.Context
 import android.util.Log
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.Song
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

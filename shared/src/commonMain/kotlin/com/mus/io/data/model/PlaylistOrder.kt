@@ -1,4 +1,4 @@
-package com.juni.io.data.model
+package com.nejuni.juni.data.model
 
 /**
  * One step of a playlist reorder: put the entry [setVideoId] directly before

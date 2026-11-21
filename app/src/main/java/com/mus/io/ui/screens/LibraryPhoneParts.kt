@@ -1,4 +1,4 @@
-package com.juni.io.ui.screens
+package com.nejuni.juni.ui.screens
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Folder

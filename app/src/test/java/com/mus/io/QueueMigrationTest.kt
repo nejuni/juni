@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString

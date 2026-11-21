@@ -1,8 +1,8 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.ui.layout.ContentScale
-import com.juni.io.ui.AppUi
-import com.juni.io.sharedui.resources.*
+import com.nejuni.juni.ui.AppUi
+import com.nejuni.juni.sharedui.resources.*
 import org.jetbrains.compose.resources.stringResource
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -41,8 +41,8 @@ import androidx.compose.runtime.snapshotFlow
 import androidx.compose.ui.layout.layout
 import androidx.compose.ui.layout.onSizeChanged
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
 import kotlin.math.abs
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -80,10 +80,10 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import com.juni.io.data.model.ROW_ART_PX
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.ROW_ART_PX
+import com.nejuni.juni.data.model.Song
 import androidx.compose.ui.draw.alpha
-import com.juni.io.data.model.artworkAt
+import com.nejuni.juni.data.model.artworkAt
 import androidx.compose.foundation.border
 
 /**
@@ -151,7 +151,7 @@ fun Modifier.trackArtSize(height: Dp, isVideo: Boolean): Modifier =
 /**
  * The "Square video thumbnails" setting, as every surface that sizes a music
  * video reads it. Compose state rather than a flow so a plain read anywhere in
- * composition follows it, [trackArtSize] and [VIDEO_CARD_WIDTH][com.juni.io.ui.screens.VIDEO_CARD_WIDTH]
+ * composition follows it, [trackArtSize] and [VIDEO_CARD_WIDTH][com.nejuni.juni.ui.screens.VIDEO_CARD_WIDTH]
  * included, without each caller collecting it.
  */
 object VideoThumbnails {

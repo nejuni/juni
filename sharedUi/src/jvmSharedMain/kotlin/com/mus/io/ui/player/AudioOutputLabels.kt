@@ -1,7 +1,7 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.runtime.Composable
-import com.juni.io.sharedui.resources.*
+import com.nejuni.juni.sharedui.resources.*
 import org.jetbrains.compose.resources.stringResource
 
 /**

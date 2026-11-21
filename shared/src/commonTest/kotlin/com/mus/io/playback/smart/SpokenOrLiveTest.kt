@@ -1,4 +1,4 @@
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 import kotlin.test.Test
 import kotlin.test.assertFalse

@@ -1,6 +1,6 @@
 {
     global:
-        Java_com_juni_io_playback_audio_bitperfect_*;
+        Java_com_nejuni_juni_playback_audio_bitperfect_*;
     local: *;
 };
 

@@ -1,6 +1,6 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.playback.smart.AutomixAnalysisSource
+import com.nejuni.juni.playback.smart.AutomixAnalysisSource
 import org.junit.Assert.assertTrue
 import org.junit.Assert.assertFalse
 import org.junit.Test

@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -28,9 +28,9 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.ui.utils.containSheetGestures
-import com.juni.io.ui.player.LocalPlayerFrost
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.ui.utils.containSheetGestures
+import com.nejuni.juni.ui.player.LocalPlayerFrost
 import dev.chrisbanes.haze.HazeState
 
 private val POPUP_CARD_SHAPE = RoundedCornerShape(ALERT_CORNER)

@@ -34,7 +34,6 @@ Thumbs.db
 keystore.properties
 *.jks
 *.keystore
-env/
 
 # Project scratch / debug artifacts
 .shots/

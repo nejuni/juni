@@ -1,4 +1,4 @@
-package com.juni.io.ui.haptics
+package com.nejuni.juni.ui.haptics
 
 import androidx.compose.runtime.Composable
 

@@ -1,15 +1,15 @@
 @file:Suppress("DEPRECATION") // AudioProcessor lifecycle compatibility callbacks remain required by the current Media3 sink.
 
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.util.Log
 import androidx.media3.common.C
 import androidx.media3.common.audio.AudioProcessor
 import androidx.media3.common.audio.BaseAudioProcessor
 import androidx.media3.common.util.UnstableApi
-import com.juni.io.playback.audio.AudioBlock
-import com.juni.io.playback.audio.FloatAudioProcessor
-import com.juni.io.playback.audio.PcmBoundary
+import com.nejuni.juni.playback.audio.AudioBlock
+import com.nejuni.juni.playback.audio.FloatAudioProcessor
+import com.nejuni.juni.playback.audio.PcmBoundary
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import kotlin.math.abs

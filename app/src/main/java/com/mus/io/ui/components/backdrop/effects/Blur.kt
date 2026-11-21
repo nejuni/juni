@@ -7,13 +7,13 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop.effects
+package com.nejuni.juni.ui.components.backdrop.effects
 
 import androidx.annotation.FloatRange
 import androidx.compose.ui.graphics.BlurEffect
 import androidx.compose.ui.graphics.TileMode
-import com.juni.io.ui.components.backdrop.BackdropEffectScope
-import com.juni.io.ui.components.backdrop.isRenderEffectSupported
+import com.nejuni.juni.ui.components.backdrop.BackdropEffectScope
+import com.nejuni.juni.ui.components.backdrop.isRenderEffectSupported
 
 fun BackdropEffectScope.blur(
     @FloatRange(from = 0.0) radius: Float,

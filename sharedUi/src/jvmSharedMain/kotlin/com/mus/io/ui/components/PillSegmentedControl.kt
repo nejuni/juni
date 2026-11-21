@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.compose.animation.core.AnimationSpec
 import androidx.compose.animation.core.Spring
@@ -35,8 +35,8 @@ import androidx.compose.ui.unit.Constraints
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.ui.graphics.fadingEdges
-import com.juni.io.ui.player.PlayerSettings
+import com.nejuni.juni.ui.graphics.fadingEdges
+import com.nejuni.juni.ui.player.PlayerSettings
 import kotlinx.coroutines.flow.first
 import kotlin.math.roundToInt
 

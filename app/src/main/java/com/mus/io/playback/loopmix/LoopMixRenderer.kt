@@ -1,4 +1,4 @@
-package com.juni.io.playback.loopmix
+package com.nejuni.juni.playback.loopmix
 
 import android.util.Log
 

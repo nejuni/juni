@@ -19,7 +19,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 /**
  * The log-mel front end the Beat This! model expects, backed by the native analyzer.

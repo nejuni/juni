@@ -1,4 +1,4 @@
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 import android.content.ContentResolver
 import android.media.MediaDataSource

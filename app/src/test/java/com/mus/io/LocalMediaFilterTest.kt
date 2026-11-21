@@ -1,6 +1,6 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.LocalMediaRepository
+import com.nejuni.juni.data.LocalMediaRepository
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test

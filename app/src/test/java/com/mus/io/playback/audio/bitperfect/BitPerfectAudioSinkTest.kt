@@ -1,4 +1,4 @@
-package com.juni.io.playback.audio.bitperfect
+package com.nejuni.juni.playback.audio.bitperfect
 
 import androidx.media3.common.C
 import androidx.media3.common.Format

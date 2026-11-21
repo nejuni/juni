@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.FastOutSlowInEasing
@@ -52,13 +52,13 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.sharedui.resources.*
-import com.juni.io.ui.utils.containSheetGestures
-import com.juni.io.ui.components.MENU_FROST_ALPHA
-import com.juni.io.ui.components.MenuFrostDark
-import com.juni.io.ui.components.liveMenuFrost
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
+import com.nejuni.juni.sharedui.resources.*
+import com.nejuni.juni.ui.utils.containSheetGestures
+import com.nejuni.juni.ui.components.MENU_FROST_ALPHA
+import com.nejuni.juni.ui.components.MenuFrostDark
+import com.nejuni.juni.ui.components.liveMenuFrost
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
 import dev.chrisbanes.haze.HazeState
 import java.util.Locale
 import kotlin.math.roundToInt

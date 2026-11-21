@@ -1,11 +1,11 @@
-package com.juni.io.data.stats
+package com.nejuni.juni.data.stats
 
 import android.content.Context
 import android.net.Uri
 import android.util.Log
-import com.juni.io.BuildConfig
-import com.juni.io.data.Http
-import com.juni.io.data.settings.AppSettings
+import com.nejuni.juni.BuildConfig
+import com.nejuni.juni.data.Http
+import com.nejuni.juni.data.settings.AppSettings
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

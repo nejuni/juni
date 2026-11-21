@@ -7,14 +7,14 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop.backdrops
+package com.nejuni.juni.ui.components.backdrop.backdrops
 
 import androidx.compose.runtime.Immutable
 import androidx.compose.ui.graphics.GraphicsLayerScope
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.layout.LayoutCoordinates
 import androidx.compose.ui.unit.Density
-import com.juni.io.ui.components.backdrop.Backdrop
+import com.nejuni.juni.ui.components.backdrop.Backdrop
 
 @Immutable
 private class Backdrop(

@@ -1,4 +1,4 @@
-package com.juni.io.playback.dsd
+package com.nejuni.juni.playback.dsd
 
 /**
  * Reads a DSD stream's bytes in the container's own layout and hands them on

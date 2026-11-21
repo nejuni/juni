@@ -1,4 +1,4 @@
-package com.juni.io.data.settings
+package com.nejuni.juni.data.settings
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -8,8 +8,8 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.builtins.serializer
 import kotlinx.serialization.json.Json
-import com.juni.io.data.model.SearchHistoryEntity
-import com.juni.io.data.model.withCorrectedType
+import com.nejuni.juni.data.model.SearchHistoryEntity
+import com.nejuni.juni.data.model.withCorrectedType
 
 /**
  * What's been searched for lately, kept on this device only.

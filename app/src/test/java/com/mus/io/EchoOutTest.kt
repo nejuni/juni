@@ -1,7 +1,7 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.playback.TransitionFilterProcessor
-import com.juni.io.playback.audio.AudioBlock
+import com.nejuni.juni.playback.TransitionFilterProcessor
+import com.nejuni.juni.playback.audio.AudioBlock
 import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue

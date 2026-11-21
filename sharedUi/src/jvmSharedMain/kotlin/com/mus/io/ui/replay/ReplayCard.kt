@@ -1,4 +1,4 @@
-package com.juni.io.ui.replay
+package com.nejuni.juni.ui.replay
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -35,11 +35,11 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.sp
-import com.juni.io.sharedui.resources.*
+import com.nejuni.juni.sharedui.resources.*
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
-import com.juni.io.ui.player.MeshGradientBackground
-import com.juni.io.ui.player.rememberArtworkColors
+import com.nejuni.juni.ui.player.MeshGradientBackground
+import com.nejuni.juni.ui.player.rememberArtworkColors
 import java.util.Locale
 
 /**

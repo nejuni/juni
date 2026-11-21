@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 /**
  * Turns parsed lines back into the text of an LRC file.
@@ -6,7 +6,7 @@ package com.juni.io.data.lyrics
  * The counterpart to [LrcLib.parseLrc], and the only writer in this package —
  * everything else here reads. It exists for the download path, which embeds
  * what it gets into the saved file's own metadata (see
- * `com.juni.io.download.LyricsTag`), and LRC is what that field is read
+ * `com.nejuni.juni.download.LyricsTag`), and LRC is what that field is read
  * as: whatever a track's lyrics arrived as, they leave here as `[mm:ss.xx]`
  * stamps, which is the one synced-lyric syntax every other player understands.
  *

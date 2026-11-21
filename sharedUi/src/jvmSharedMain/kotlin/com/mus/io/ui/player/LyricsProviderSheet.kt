@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -36,11 +36,11 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.sharedui.resources.*
-import com.juni.io.data.lyrics.LyricsSource
-import com.juni.io.ui.LyricsProviderState
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
+import com.nejuni.juni.sharedui.resources.*
+import com.nejuni.juni.data.lyrics.LyricsSource
+import com.nejuni.juni.ui.LyricsProviderState
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
 import dev.chrisbanes.haze.HazeState
 
 /**

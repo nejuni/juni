@@ -1,4 +1,4 @@
-package com.juni.io.ui.haptics
+package com.nejuni.juni.ui.haptics
 
 import android.content.Context
 import android.database.ContentObserver

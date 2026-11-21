@@ -7,7 +7,7 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop.highlight
+package com.nejuni.juni.ui.components.backdrop.highlight
 
 import androidx.annotation.FloatRange
 import androidx.compose.runtime.Immutable

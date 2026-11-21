@@ -1,4 +1,4 @@
-package com.juni.io.playback.dsd
+package com.nejuni.juni.playback.dsd
 
 import java.nio.ByteBuffer
 import java.nio.ByteOrder

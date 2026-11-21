@@ -1,4 +1,4 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
 import java.util.Locale
 

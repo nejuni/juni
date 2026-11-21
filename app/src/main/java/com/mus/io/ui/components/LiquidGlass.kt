@@ -1,13 +1,13 @@
 /*
  * The glass rendering itself is Kyant0/backdrop (Apache-2.0), vendored at
- * [com.juni.io.ui.components.backdrop] — see that package for the
+ * [com.nejuni.juni.ui.components.backdrop] — see that package for the
  * upstream attribution. This file is the integration glue, adapted from
  * EchoMusicApp/Echo-Music's GlassEffectConfig/Modifier.liquidGlass
  * (GPL-3.0), cut down from Echo's full per-component/vibrancy-slider config
  * to the single on/off switch bit exposes in Settings. It is used by the
  * floating nav bar and, while enabled, the app-wide floating top controls.
  */
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import android.os.Build
 import androidx.compose.foundation.background
@@ -25,17 +25,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.luminance
 import androidx.compose.ui.platform.LocalDensity
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.ui.components.backdrop.Backdrop
-import com.juni.io.ui.components.backdrop.backdrops.LayerBackdrop
-import com.juni.io.ui.components.backdrop.drawBackdrop
-import com.juni.io.ui.components.backdrop.effects.blur
-import com.juni.io.ui.components.backdrop.effects.colorControls
-import com.juni.io.ui.components.backdrop.effects.lens
-import com.juni.io.ui.components.backdrop.highlight.Highlight
-import com.juni.io.ui.components.backdrop.highlight.HighlightElement
-import com.juni.io.ui.components.backdrop.internal.ShapeProvider
-import com.juni.io.ui.components.backdrop.shadow.Shadow
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.ui.components.backdrop.Backdrop
+import com.nejuni.juni.ui.components.backdrop.backdrops.LayerBackdrop
+import com.nejuni.juni.ui.components.backdrop.drawBackdrop
+import com.nejuni.juni.ui.components.backdrop.effects.blur
+import com.nejuni.juni.ui.components.backdrop.effects.colorControls
+import com.nejuni.juni.ui.components.backdrop.effects.lens
+import com.nejuni.juni.ui.components.backdrop.highlight.Highlight
+import com.nejuni.juni.ui.components.backdrop.highlight.HighlightElement
+import com.nejuni.juni.ui.components.backdrop.internal.ShapeProvider
+import com.nejuni.juni.ui.components.backdrop.shadow.Shadow
 import androidx.compose.ui.unit.dp
 
 /** Whether the liquid glass nav bar is turned on — see [AppSettings.liquidGlass]. */
@@ -49,7 +49,7 @@ val LocalAppBackdrop = staticCompositionLocalOf<Backdrop> { error("No AppBackdro
  * draws — the sampled, blurred and tinted backdrop, without its rim or shadow —
  * so a lens above it can refract that surface rather than the page behind it.
  * The tab bar's travelling selection pill is the one reader; see
- * [com.juni.io.ui.components.floatingtabbar.GlassSelectionPill].
+ * [com.nejuni.juni.ui.components.floatingtabbar.GlassSelectionPill].
  */
 internal val LocalGlassExport = compositionLocalOf<LayerBackdrop?> { null }
 

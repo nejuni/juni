@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 /**
  * Whether a plain lyric line is one of Genius's section markers — `[Chorus]`,

@@ -1,6 +1,6 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
-import com.juni.io.data.Http
+import com.nejuni.juni.data.Http
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock

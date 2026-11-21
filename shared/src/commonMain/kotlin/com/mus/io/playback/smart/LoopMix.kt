@@ -12,7 +12,7 @@
  * section 13 of the AGPL.
  */
 
-package com.juni.io.playback.smart
+package com.nejuni.juni.playback.smart
 
 import kotlin.math.abs
 import kotlin.math.ceil

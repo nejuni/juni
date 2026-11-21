@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope

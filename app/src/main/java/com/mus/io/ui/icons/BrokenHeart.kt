@@ -1,4 +1,4 @@
-package com.juni.io.ui.icons
+package com.nejuni.juni.ui.icons
 
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.Color

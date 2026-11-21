@@ -1,4 +1,4 @@
-package com.juni.io.data.lyrics
+package com.nejuni.juni.data.lyrics
 
 /**
  * One stamped run of text as a provider wrote it, its spacing untouched: a

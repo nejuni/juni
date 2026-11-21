@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION") // Retain Media3 legacy browser and device-volume callbacks for controller compatibility.
 
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.app.PendingIntent
 import android.content.Context
@@ -15,7 +15,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
 import android.os.SystemClock
-import com.juni.io.data.TelemetryProvenance
+import com.nejuni.juni.data.TelemetryProvenance
 import androidx.media3.common.AudioAttributes
 import androidx.media3.common.C
 import androidx.media3.common.DeviceInfo
@@ -60,43 +60,43 @@ import com.google.common.collect.ImmutableList
 import com.google.common.util.concurrent.Futures
 import com.google.common.util.concurrent.ListenableFuture
 import kotlinx.coroutines.guava.future
-import com.juni.io.playback.audio.DspChain
-import com.juni.io.playback.audio.PrecisionAudioSink
-import com.juni.io.playback.dsd.DsdExtractorsFactory
-import com.juni.io.playback.audio.DirectAudioProbe
-import com.juni.io.playback.audio.OutputNegotiator
-import com.juni.io.playback.audio.PcmEncoding
-import com.juni.io.playback.audio.SourceDescriptor
-import com.juni.io.playback.audio.bitperfect.BitPerfectAudioSink
-import com.juni.io.playback.audio.bitperfect.BitPerfectOutput
-import com.juni.io.playback.audio.bitperfect.BitPerfectRoutingSink
-import com.juni.io.playback.audio.bitperfect.DacVolume
-import com.juni.io.playback.audio.bitperfect.usb.UsbDirectDevices
-import com.juni.io.playback.audio.bluetooth.BluetoothAudioTracker
-import com.juni.io.MainActivity
-import com.juni.io.R
-import com.juni.io.data.LocalMediaRepository
-import com.juni.io.data.OfflinePlaylists
-import com.juni.io.data.lyrics.EmbeddedLyrics
-import com.juni.io.data.lyrics.LyricLine
-import com.juni.io.data.lyrics.LyricsRepository
-import com.juni.io.data.model.NOTIFICATION_ART_PX
-import com.juni.io.data.model.artworkAt
-import com.juni.io.data.model.QueueTier
+import com.nejuni.juni.playback.audio.DspChain
+import com.nejuni.juni.playback.audio.PrecisionAudioSink
+import com.nejuni.juni.playback.dsd.DsdExtractorsFactory
+import com.nejuni.juni.playback.audio.DirectAudioProbe
+import com.nejuni.juni.playback.audio.OutputNegotiator
+import com.nejuni.juni.playback.audio.PcmEncoding
+import com.nejuni.juni.playback.audio.SourceDescriptor
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectAudioSink
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectOutput
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectRoutingSink
+import com.nejuni.juni.playback.audio.bitperfect.DacVolume
+import com.nejuni.juni.playback.audio.bitperfect.usb.UsbDirectDevices
+import com.nejuni.juni.playback.audio.bluetooth.BluetoothAudioTracker
+import com.nejuni.juni.MainActivity
+import com.nejuni.juni.R
+import com.nejuni.juni.data.LocalMediaRepository
+import com.nejuni.juni.data.OfflinePlaylists
+import com.nejuni.juni.data.lyrics.EmbeddedLyrics
+import com.nejuni.juni.data.lyrics.LyricLine
+import com.nejuni.juni.data.lyrics.LyricsRepository
+import com.nejuni.juni.data.model.NOTIFICATION_ART_PX
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.data.model.QueueTier
 import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.CopyOnWriteArraySet
-import com.juni.io.data.NerdStats
-import com.juni.io.data.TrackLog
-import com.juni.io.data.stats.ListeningRecorder
-import com.juni.io.data.model.Song
-import com.juni.io.data.scrobbling.LastFM
-import com.juni.io.data.scrobbling.ScrobbleManager
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.data.StartupTrace
-import com.juni.io.data.settings.BitPerfectMode
-import com.juni.io.data.settings.EqualizerMode
-import com.juni.io.widget.MediaWidget
-import com.juni.io.widget.MediaWidgetSnapshot
+import com.nejuni.juni.data.NerdStats
+import com.nejuni.juni.data.TrackLog
+import com.nejuni.juni.data.stats.ListeningRecorder
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.scrobbling.LastFM
+import com.nejuni.juni.data.scrobbling.ScrobbleManager
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.data.StartupTrace
+import com.nejuni.juni.data.settings.BitPerfectMode
+import com.nejuni.juni.data.settings.EqualizerMode
+import com.nejuni.juni.widget.MediaWidget
+import com.nejuni.juni.widget.MediaWidgetSnapshot
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -124,25 +124,25 @@ import java.util.UUID
 /** Session command used by both the player UI and the media notification. */
 
 /** Session command used by album/playlist playback to install a bounded context. */
-const val ACTION_START_BOUNDED_CONTEXT = "com.juni.io.action.START_BOUNDED_CONTEXT"
-const val ACTION_CLEAR_BOUNDED_CONTEXT = "com.juni.io.action.CLEAR_BOUNDED_CONTEXT"
+const val ACTION_START_BOUNDED_CONTEXT = "com.nejuni.juni.action.START_BOUNDED_CONTEXT"
+const val ACTION_CLEAR_BOUNDED_CONTEXT = "com.nejuni.juni.action.CLEAR_BOUNDED_CONTEXT"
 const val EXTRA_BOUNDED_CONTEXT_SONGS = "umesie.boundedContext.songs"
 
 /** Drops every queue row but the one playing (or paused) now. */
-const val ACTION_CLEAR_QUEUE = "com.juni.io.action.CLEAR_QUEUE"
+const val ACTION_CLEAR_QUEUE = "com.nejuni.juni.action.CLEAR_QUEUE"
 
 /** Session command used to smoothly swap the current track's version (film vs release). */
 
 /** Session command used by the media notification's and the 4×1 widget's Favorite button. */
 
-const val ACTION_TOGGLE_FAVORITE = "com.juni.io.action.TOGGLE_FAVORITE"
+const val ACTION_TOGGLE_FAVORITE = "com.nejuni.juni.action.TOGGLE_FAVORITE"
 
 /** Session command used by the media notification's and the 4×1 widget's Shuffle button. */
-const val ACTION_TOGGLE_SHUFFLE = "com.juni.io.action.TOGGLE_SHUFFLE"
+const val ACTION_TOGGLE_SHUFFLE = "com.nejuni.juni.action.TOGGLE_SHUFFLE"
 
 /** Session commands bracketing an explicit radio queue replacement. */
-const val ACTION_BEGIN_RADIO_QUEUE = "com.juni.io.action.BEGIN_RADIO_QUEUE"
-const val ACTION_COMMIT_RADIO_QUEUE = "com.juni.io.action.COMMIT_RADIO_QUEUE"
+const val ACTION_BEGIN_RADIO_QUEUE = "com.nejuni.juni.action.BEGIN_RADIO_QUEUE"
+const val ACTION_COMMIT_RADIO_QUEUE = "com.nejuni.juni.action.COMMIT_RADIO_QUEUE"
 
 
 /**
@@ -263,8 +263,8 @@ class PlaybackService : MediaLibraryService() {
     private fun spareLoudness(): LoudnessProcessor =
         if (activeFilter === transitionFilterA) loudnessB else loudnessA
 
-    /** Automix's DSP analyzer — see [com.juni.io.playback.smart.TrackAnalyzer]. */
-    private val trackAnalyzer = com.juni.io.playback.smart.TrackAnalyzer(this)
+    /** Automix's DSP analyzer — see [com.nejuni.juni.playback.smart.TrackAnalyzer]. */
+    private val trackAnalyzer = com.nejuni.juni.playback.smart.TrackAnalyzer(this)
 
     /** Shared with the crossfade's tail player, so both read the same disk cache. */
     private var mediaSourceFactory: DefaultMediaSourceFactory? = null
@@ -1946,7 +1946,7 @@ class PlaybackService : MediaLibraryService() {
      * correct end state rather than a failure to recover: the error stays on the
      * player, which is what puts a message in front of the listener — see
      * `rememberPlayerState` in
-     * [PlayerConnection][com.juni.io.playback.PlayerConnection].
+     * [PlayerConnection][com.nejuni.juni.playback.PlayerConnection].
      */
     private fun skipPastUnplayable(mediaId: String, reason: String) {
         val exoPlayer = player ?: return

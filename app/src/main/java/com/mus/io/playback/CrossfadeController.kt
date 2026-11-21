@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.os.SystemClock
 import android.util.Log
@@ -9,30 +9,30 @@ import androidx.media3.common.Player
 import androidx.media3.common.Timeline
 import androidx.media3.common.util.UnstableApi
 import androidx.media3.exoplayer.ExoPlayer
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.data.settings.MixBlend
-import com.juni.io.data.settings.MixDeck
-import com.juni.io.data.settings.MixTransitionView
-import com.juni.io.playback.audio.bitperfect.BitPerfectOutput
-import com.juni.io.data.settings.SmartAnalysis
-import com.juni.io.data.settings.TrackAnalysisState
-import com.juni.io.data.settings.TransitionWindow
-import com.juni.io.data.lyrics.LyricLine
-import com.juni.io.playback.loopmix.LoopMixPort
-import com.juni.io.playback.loopmix.LoopMixRenderer
-import com.juni.io.playback.loopmix.LoopMixSession
-import com.juni.io.playback.loopmix.LoopRegion
-import com.juni.io.playback.smart.CrossfadeMode
-import com.juni.io.playback.smart.LoopMix
-import com.juni.io.playback.smart.FILTER_ECHO_AT
-import com.juni.io.playback.smart.FilterTransitionVariant
-import com.juni.io.playback.smart.MixWaveform
-import com.juni.io.playback.smart.TrackAnalysis
-import com.juni.io.playback.smart.TransitionPlan
-import com.juni.io.playback.smart.TransitionStyle
-import com.juni.io.playback.smart.TransitionTrackInfo
-import com.juni.io.playback.smart.echoTailSeconds
-import com.juni.io.playback.smart.planTransition
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.data.settings.MixBlend
+import com.nejuni.juni.data.settings.MixDeck
+import com.nejuni.juni.data.settings.MixTransitionView
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectOutput
+import com.nejuni.juni.data.settings.SmartAnalysis
+import com.nejuni.juni.data.settings.TrackAnalysisState
+import com.nejuni.juni.data.settings.TransitionWindow
+import com.nejuni.juni.data.lyrics.LyricLine
+import com.nejuni.juni.playback.loopmix.LoopMixPort
+import com.nejuni.juni.playback.loopmix.LoopMixRenderer
+import com.nejuni.juni.playback.loopmix.LoopMixSession
+import com.nejuni.juni.playback.loopmix.LoopRegion
+import com.nejuni.juni.playback.smart.CrossfadeMode
+import com.nejuni.juni.playback.smart.LoopMix
+import com.nejuni.juni.playback.smart.FILTER_ECHO_AT
+import com.nejuni.juni.playback.smart.FilterTransitionVariant
+import com.nejuni.juni.playback.smart.MixWaveform
+import com.nejuni.juni.playback.smart.TrackAnalysis
+import com.nejuni.juni.playback.smart.TransitionPlan
+import com.nejuni.juni.playback.smart.TransitionStyle
+import com.nejuni.juni.playback.smart.TransitionTrackInfo
+import com.nejuni.juni.playback.smart.echoTailSeconds
+import com.nejuni.juni.playback.smart.planTransition
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -154,7 +154,7 @@ class CrossfadeController(
     /**
      * The low-pass and high-pass riding each side of a transition. This is what
      * makes a plan's
-     * [com.juni.io.playback.smart.TransitionPlan.transitionStyle] audible
+     * [com.nejuni.juni.playback.smart.TransitionPlan.transitionStyle] audible
      * rather than advisory: see [rideFilters]. Defaults to
      * [TransitionFilters.None], which renders every style as the plain
      * equal-power blend this class ran before.
@@ -391,7 +391,7 @@ class CrossfadeController(
     private var mixViewJob: Job? = null
 
     /**
-     * The style fields of a [com.juni.io.playback.smart.TransitionPlan],
+     * The style fields of a [com.nejuni.juni.playback.smart.TransitionPlan],
      * separated out so the standard (non-Smart) path can pass defaults without
      * constructing a plan it never made.
      *
@@ -995,12 +995,12 @@ class CrossfadeController(
      *
      * Reads the plan's timing (where the fade starts and how long it runs),
      * where the incoming track should be cued
-     * ([com.juni.io.playback.smart.TransitionPlan.incomingCueTime]),
+     * ([com.nejuni.juni.playback.smart.TransitionPlan.incomingCueTime]),
      * and the tempo-stretch to align it with the outgoing track
-     * ([com.juni.io.playback.smart.TransitionPlan.incomingPlaybackRate])
+     * ([com.nejuni.juni.playback.smart.TransitionPlan.incomingPlaybackRate])
      * — see [driveLap], which applies both at the handoff — and the style the
      * blend is rendered in
-     * ([com.juni.io.playback.smart.TransitionPlan.transitionStyle]),
+     * ([com.nejuni.juni.playback.smart.TransitionPlan.transitionStyle]),
      * which [rideFilters] turns into a filter ride or a bass swap over the same
      * equal-power gain curve.
      */
@@ -1288,7 +1288,7 @@ class CrossfadeController(
      * which for the track after this one happens a few seconds before it starts
      * playing. So for almost the whole of the current track this answered zero —
      * and zero is not a harmless "don't know" downstream. It reaches
-     * [com.juni.io.playback.smart.TrackAnalyzer.request] as the next
+     * [com.nejuni.juni.playback.smart.TrackAnalyzer.request] as the next
      * track's duration, and with no duration to check a sibling copy against the
      * analyzer will only read the rendition the cache key resolves to *right
      * now*, which with source substitution on is the `#alt` entry — while the

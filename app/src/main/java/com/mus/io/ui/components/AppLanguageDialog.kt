@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.background
@@ -39,8 +39,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.core.os.LocaleListCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.R
-import com.juni.io.data.settings.AppSettings
+import com.nejuni.juni.R
+import com.nejuni.juni.data.settings.AppSettings
 import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.materials.ExperimentalHazeMaterialsApi
 import dev.chrisbanes.haze.materials.HazeMaterials
@@ -78,9 +78,9 @@ val SUPPORTED_LANGUAGES = listOf(
 )
 
 fun languageDisplayNameRes(languageTag: String): Int {
-    val norm = com.juni.io.data.LocaleTags.normalizeAppTag(languageTag)
+    val norm = com.nejuni.juni.data.LocaleTags.normalizeAppTag(languageTag)
     return SUPPORTED_LANGUAGES.firstOrNull {
-        com.juni.io.data.LocaleTags.normalizeAppTag(it.tag) == norm
+        com.nejuni.juni.data.LocaleTags.normalizeAppTag(it.tag) == norm
     }?.nameRes ?: R.string.english
 }
 
@@ -106,7 +106,7 @@ fun AppLanguageDialog(
 
     val shape = RoundedCornerShape(ALERT_CORNER)
     // Full script tag (zh-Hant / zh-Hans preserved); legacy bare "zh" reads as Simplified.
-    val currentLanguage = com.juni.io.data.LocaleTags.normalizeAppTag(
+    val currentLanguage = com.nejuni.juni.data.LocaleTags.normalizeAppTag(
         AppCompatDelegate.getApplicationLocales().get(0)?.toLanguageTag()
             ?: Locale.getDefault().toLanguageTag(),
     )
@@ -180,7 +180,7 @@ fun AppLanguageDialog(
                     AlertRule()
                     LanguageRow(
                         language = language,
-                        selected = com.juni.io.data.LocaleTags.normalizeAppTag(language.tag) == currentLanguage,
+                        selected = com.nejuni.juni.data.LocaleTags.normalizeAppTag(language.tag) == currentLanguage,
                         onClick = {
                             AppCompatDelegate.setApplicationLocales(
                                 LocaleListCompat.forLanguageTags(language.tag),

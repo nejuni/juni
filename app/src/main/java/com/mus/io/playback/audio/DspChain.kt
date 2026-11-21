@@ -1,11 +1,11 @@
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import android.util.Log
-import com.juni.io.BuildConfig
-import com.juni.io.playback.EqualizerProcessor
-import com.juni.io.playback.LoudnessProcessor
-import com.juni.io.playback.SpatialAudioProcessor
-import com.juni.io.playback.TransitionFilterProcessor
+import com.nejuni.juni.BuildConfig
+import com.nejuni.juni.playback.EqualizerProcessor
+import com.nejuni.juni.playback.LoudnessProcessor
+import com.nejuni.juni.playback.SpatialAudioProcessor
+import com.nejuni.juni.playback.TransitionFilterProcessor
 
 /**
  * Composite DSP chain executing Juni's custom audio processors in their canonical sequence:

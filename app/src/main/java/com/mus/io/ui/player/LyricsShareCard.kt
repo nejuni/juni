@@ -1,16 +1,16 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
-import com.juni.io.ui.replay.Fonts
-import com.juni.io.ui.replay.drawArtwork
-import com.juni.io.ui.replay.drawBackdrop
-import com.juni.io.ui.replay.drawLogo
-import com.juni.io.ui.replay.ellipsised
-import com.juni.io.ui.replay.loadBitmap
+import com.nejuni.juni.ui.replay.Fonts
+import com.nejuni.juni.ui.replay.drawArtwork
+import com.nejuni.juni.ui.replay.drawBackdrop
+import com.nejuni.juni.ui.replay.drawLogo
+import com.nejuni.juni.ui.replay.ellipsised
+import com.nejuni.juni.ui.replay.loadBitmap
 import kotlin.math.roundToInt
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -32,7 +32,7 @@ import kotlinx.coroutines.withContext
  * ## Why it isn't Compose
  *
  * `Bitmap` + `android.graphics.Canvas`, exactly as
- * [com.juni.io.ui.replay.ReplayPoster] does it, and for the same
+ * [com.nejuni.juni.ui.replay.ReplayPoster] does it, and for the same
  * reasons written up there: Compose offscreen on minSdk 26 is a cascade of
  * hardware bitmaps and layers that fails differently per device, while a
  * software canvas draws identically from API 26 up. The backdrop, the logo, the

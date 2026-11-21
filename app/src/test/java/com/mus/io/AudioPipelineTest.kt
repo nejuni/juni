@@ -1,9 +1,9 @@
-package com.juni.io
+package com.nejuni.juni
 
 import android.media.AudioFormat
-import com.juni.io.data.NerdStats
-import com.juni.io.data.StreamFormat
-import com.juni.io.playback.AudioOutputStatus
+import com.nejuni.juni.data.NerdStats
+import com.nejuni.juni.data.StreamFormat
+import com.nejuni.juni.playback.AudioOutputStatus
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull

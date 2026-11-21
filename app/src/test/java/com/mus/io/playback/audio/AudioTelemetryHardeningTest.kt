@@ -8,11 +8,11 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
 
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import android.media.AudioFormat
-import com.juni.io.playback.AudioOutputStatus
-import com.juni.io.playback.AudioRouting
+import com.nejuni.juni.playback.AudioOutputStatus
+import com.nejuni.juni.playback.AudioRouting
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNull
@@ -199,23 +199,23 @@ class AudioTelemetryHardeningTest {
     fun usbDeviceCapabilityFormattingIsHumanReadable() {
         assertEquals(
             "PCM 24-bit / 96 kHz",
-            com.juni.io.ui.components.formatUsbCapability("PCM24 / 96000 Hz"),
+            com.nejuni.juni.ui.components.formatUsbCapability("PCM24 / 96000 Hz"),
         )
         assertEquals(
             "PCM 16-bit / 48 kHz",
-            com.juni.io.ui.components.formatUsbCapability("PCM16 / 48000 Hz"),
+            com.nejuni.juni.ui.components.formatUsbCapability("PCM16 / 48000 Hz"),
         )
         assertEquals(
             "PCM 24-bit / 192 kHz",
-            com.juni.io.ui.components.formatUsbCapability("PCM24 / 192000 Hz"),
+            com.nejuni.juni.ui.components.formatUsbCapability("PCM24 / 192000 Hz"),
         )
         assertEquals(
             "Float 32-bit / 176.4 kHz",
-            com.juni.io.ui.components.formatUsbCapability("Float32 / 176400 Hz"),
+            com.nejuni.juni.ui.components.formatUsbCapability("Float32 / 176400 Hz"),
         )
         assertEquals(
             "PCM 24-bit / 44.1 kHz",
-            com.juni.io.ui.components.formatUsbCapability("PCM24 / 44100 Hz"),
+            com.nejuni.juni.ui.components.formatUsbCapability("PCM24 / 44100 Hz"),
         )
     }
 }

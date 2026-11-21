@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 /**
  * The manual tab's starting points, one gain per centre in

@@ -1,11 +1,11 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.os.Bundle
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
-import com.juni.io.data.settings.AppSettings
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.settings.AppSettings
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow

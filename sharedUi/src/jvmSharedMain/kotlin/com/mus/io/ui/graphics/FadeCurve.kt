@@ -1,4 +1,4 @@
-package com.juni.io.ui.graphics
+package com.nejuni.juni.ui.graphics
 
 /**
  * Smootherstep, `6t⁵ − 15t⁴ + 10t³`, for a fade across `t` in 0..1.

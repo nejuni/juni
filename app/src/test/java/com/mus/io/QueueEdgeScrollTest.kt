@@ -1,6 +1,6 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.ui.player.edgeScrollSpeed
+import com.nejuni.juni.ui.player.edgeScrollSpeed
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
 import org.junit.Test

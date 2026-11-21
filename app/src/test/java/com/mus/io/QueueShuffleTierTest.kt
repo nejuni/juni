@@ -1,15 +1,15 @@
-package com.juni.io
+package com.nejuni.juni
 
 import androidx.media3.common.MediaItem
 import androidx.media3.common.Player
-import com.juni.io.data.model.PlaybackSourceType
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
-import com.juni.io.playback.QueueShuffle
-import com.juni.io.playback.canonicalIndex
-import com.juni.io.playback.queueEntryId
-import com.juni.io.playback.queueTier
-import com.juni.io.playback.toMediaItem
+import com.nejuni.juni.data.model.PlaybackSourceType
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.playback.QueueShuffle
+import com.nejuni.juni.playback.canonicalIndex
+import com.nejuni.juni.playback.queueEntryId
+import com.nejuni.juni.playback.queueTier
+import com.nejuni.juni.playback.toMediaItem
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertNotEquals
@@ -121,9 +121,9 @@ class QueueShuffleTierTest {
         ) { _, method, _ ->
             if (method.name == "edit") editor else null
         } as android.content.SharedPreferences
-        val field = com.juni.io.data.settings.AppSettings::class.java.getDeclaredField("prefs")
+        val field = com.nejuni.juni.data.settings.AppSettings::class.java.getDeclaredField("prefs")
         field.isAccessible = true
-        field.set(com.juni.io.data.settings.AppSettings, prefs)
+        field.set(com.nejuni.juni.data.settings.AppSettings, prefs)
 
         QueueShuffle.setEnabled(false)
         QueueShuffle.clearCanonicalContext()

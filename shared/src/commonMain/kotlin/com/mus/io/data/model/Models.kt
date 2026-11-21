@@ -1,4 +1,4 @@
-package com.juni.io.data.model
+package com.nejuni.juni.data.model
 
 /** Tier of an item in the playback queue. */
 enum class QueueTier {
@@ -85,7 +85,7 @@ data class Song(
     /**
      * Real filesystem path backing [localUri], when MediaStore exposes one.
      * Lets playback swap a content:// row for a raw file:// path on formats
-     * that need it — see [com.juni.io.playback.toMediaItem].
+     * that need it — see [com.nejuni.juni.playback.toMediaItem].
      */
     val localPath: String? = null,
     /** MediaStore timestamps used only to sort device and downloaded libraries. */

@@ -1,10 +1,10 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.lyrics.BiniLyrics
-import com.juni.io.data.lyrics.Unison
-import com.juni.io.data.lyrics.artistForLyricsSearch
-import com.juni.io.data.lyrics.forLyricsSearch
-import com.juni.io.data.lyrics.lyricsJson
+import com.nejuni.juni.data.lyrics.BiniLyrics
+import com.nejuni.juni.data.lyrics.Unison
+import com.nejuni.juni.data.lyrics.artistForLyricsSearch
+import com.nejuni.juni.data.lyrics.forLyricsSearch
+import com.nejuni.juni.data.lyrics.lyricsJson
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Assert.assertTrue

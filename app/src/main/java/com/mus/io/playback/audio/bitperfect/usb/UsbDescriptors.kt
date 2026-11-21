@@ -7,9 +7,9 @@
  *
  * SPDX-License-Identifier: LGPL-3.0-only
  */
-package com.juni.io.playback.audio.bitperfect.usb
+package com.nejuni.juni.playback.audio.bitperfect.usb
 
-import com.juni.io.playback.audio.bitperfect.BitPerfectPcm
+import com.nejuni.juni.playback.audio.bitperfect.BitPerfectPcm
 
 /**
  * USB Audio Class descriptor parsing and format selection for the direct USB

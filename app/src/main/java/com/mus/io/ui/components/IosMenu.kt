@@ -1,13 +1,13 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import android.provider.Settings
-import com.juni.io.ui.player.PlayerBackHandler
-import com.juni.io.ui.player.additiveChrome
-import com.juni.io.ui.utils.containSheetGestures
-import com.juni.io.ui.components.backdrop.Backdrop
-import com.juni.io.ui.components.backdrop.drawBackdrop
-import com.juni.io.ui.components.backdrop.effects.blur
-import com.juni.io.ui.components.backdrop.effects.colorControls
+import com.nejuni.juni.ui.player.PlayerBackHandler
+import com.nejuni.juni.ui.player.additiveChrome
+import com.nejuni.juni.ui.utils.containSheetGestures
+import com.nejuni.juni.ui.components.backdrop.Backdrop
+import com.nejuni.juni.ui.components.backdrop.drawBackdrop
+import com.nejuni.juni.ui.components.backdrop.effects.blur
+import com.nejuni.juni.ui.components.backdrop.effects.colorControls
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.LinearEasing
@@ -75,8 +75,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.util.lerp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.data.settings.AppSettings
-import com.juni.io.ui.components.backdrop.backdrops.SnapshotBackdrop
+import com.nejuni.juni.data.settings.AppSettings
+import com.nejuni.juni.ui.components.backdrop.backdrops.SnapshotBackdrop
 import dev.chrisbanes.haze.HazeState
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.withTimeoutOrNull
@@ -210,7 +210,7 @@ fun Modifier.iosMenuShadow(shape: Shape = IosMenuShape): Modifier = shadow(
 /**
  * The menu panel's frost drawn from a recorded [backdrop], in [shape] under
  * [fill] — the panel's own, and the player's drawers' and popups', so the two
- * are one material (see [com.juni.io.ui.player.PlayerFrost]).
+ * are one material (see [com.nejuni.juni.ui.player.PlayerFrost]).
  */
 fun Modifier.menuBackdropFrost(backdrop: Backdrop, shape: Shape, fill: Color): Modifier = drawBackdrop(
     backdrop = backdrop,

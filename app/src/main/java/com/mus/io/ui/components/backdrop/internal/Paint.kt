@@ -7,12 +7,12 @@
  * scale for cheaper effect rendering. KMP expect/actual declarations were
  * merged into this single Android source set. Package renamed accordingly.
  */
-package com.juni.io.ui.components.backdrop.internal
+package com.nejuni.juni.ui.components.backdrop.internal
 
 import android.graphics.BlurMaskFilter
 import androidx.compose.ui.graphics.Paint
-import com.juni.io.ui.components.backdrop.RuntimeShader
-import com.juni.io.ui.components.backdrop.asAndroidRuntimeShader
+import com.nejuni.juni.ui.components.backdrop.RuntimeShader
+import com.nejuni.juni.ui.components.backdrop.asAndroidRuntimeShader
 
 internal fun Paint.blur(radius: Float) {
     this.asFrameworkPaint().maskFilter =

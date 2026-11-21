@@ -1,4 +1,4 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.background
@@ -44,10 +44,10 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.R
-import com.juni.io.data.lyrics.TRANSLATION_LANGUAGES
-import com.juni.io.data.lyrics.translationLanguageName
-import com.juni.io.data.settings.AppSettings
+import com.nejuni.juni.R
+import com.nejuni.juni.data.lyrics.TRANSLATION_LANGUAGES
+import com.nejuni.juni.data.lyrics.translationLanguageName
+import com.nejuni.juni.data.settings.AppSettings
 import dev.chrisbanes.haze.HazeState
 import dev.chrisbanes.haze.materials.ExperimentalHazeMaterialsApi
 import dev.chrisbanes.haze.materials.HazeMaterials

@@ -1,4 +1,4 @@
-package com.juni.io.ui.icons
+package com.nejuni.juni.ui.icons
 
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -186,7 +186,7 @@ object SfIcons {
     val Reorder: ImageVector by lazy { bold(SfSymbols.Monochrome.SFArrowUpArrowDown) }
     // This SF-style magnifier is drawn locally because the bundled SF symbol
     // catalog does not include Magnifyingglass in this version.
-    val Search: ImageVector by lazy { com.juni.io.ui.icons.JuniIcons.Search }
+    val Search: ImageVector by lazy { com.nejuni.juni.ui.icons.JuniIcons.Search }
     val Shuffle: ImageVector by lazy { bold(SfSymbols.Monochrome.SFShuffle) }
     val SleepTimer: ImageVector by lazy { bold(SfSymbols.Monochrome.SFMoonZzz) }
     val Sliders: ImageVector by lazy { bold(SfSymbols.Monochrome.SFSliderHorizontal3) }

@@ -1,4 +1,4 @@
-package com.juni.io.ui.replay
+package com.nejuni.juni.ui.replay
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -19,10 +19,10 @@ import coil3.request.ImageRequest
 import coil3.request.SuccessResult
 import coil3.request.allowHardware
 import coil3.toBitmap
-import com.juni.io.R
-import com.juni.io.data.model.CARD_ART_PX
-import com.juni.io.data.model.artworkAt
-import com.juni.io.data.stats.ReplaySummary
+import com.nejuni.juni.R
+import com.nejuni.juni.data.model.CARD_ART_PX
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.data.stats.ReplaySummary
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope

@@ -1,11 +1,11 @@
-package com.juni.io.playback.loopmix
+package com.nejuni.juni.playback.loopmix
 
 import androidx.media3.common.C
 import java.util.concurrent.atomic.AtomicLong
 
 /**
  * One player's side of the loop mix, inside its audio sink
- * ([com.juni.io.playback.audio.PrecisionAudioSink]).
+ * ([com.nejuni.juni.playback.audio.PrecisionAudioSink]).
  *
  * **Outgoing** ([armOutgoing]): at the decoded frame where the song reaches its
  * loop start, the sink crosses from the song's own audio to the [LoopMixRenderer]

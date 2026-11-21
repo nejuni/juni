@@ -1,6 +1,6 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.ui.player.LyricClock
+import com.nejuni.juni.ui.player.LyricClock
 import kotlin.math.abs
 import kotlin.random.Random
 import org.junit.Assert.assertEquals

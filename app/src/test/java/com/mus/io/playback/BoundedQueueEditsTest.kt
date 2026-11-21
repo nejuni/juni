@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertFalse

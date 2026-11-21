@@ -1,4 +1,4 @@
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 /**
  * Supported raw PCM sample encodings for audio stream input decoding and output formatting.

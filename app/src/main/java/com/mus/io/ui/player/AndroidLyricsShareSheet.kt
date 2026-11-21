@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION") // Keep the handset share action aligned with older Compose icon artifacts.
 
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import android.content.Intent
 import android.graphics.Bitmap
@@ -39,13 +39,13 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.juni.io.R
-import com.juni.io.ui.haptics.Haptic
-import com.juni.io.ui.haptics.rememberHaptics
-import com.juni.io.ui.replay.ShareAction
-import com.juni.io.ui.replay.cacheForSharing
-import com.juni.io.ui.replay.saveToGallery
-import com.juni.io.ui.replay.sendIntent
+import com.nejuni.juni.R
+import com.nejuni.juni.ui.haptics.Haptic
+import com.nejuni.juni.ui.haptics.rememberHaptics
+import com.nejuni.juni.ui.replay.ShareAction
+import com.nejuni.juni.ui.replay.cacheForSharing
+import com.nejuni.juni.ui.replay.saveToGallery
+import com.nejuni.juni.ui.replay.sendIntent
 import dev.chrisbanes.haze.HazeState
 import kotlinx.coroutines.launch
 

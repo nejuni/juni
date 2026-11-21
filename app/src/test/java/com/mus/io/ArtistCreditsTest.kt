@@ -1,12 +1,12 @@
-package com.juni.io
+package com.nejuni.juni
 
-import com.juni.io.data.model.ArtistCredit
-import com.juni.io.data.model.ArtistNameIndex
-import com.juni.io.data.model.ArtistRef
-import com.juni.io.data.model.completeArtistCredits
-import com.juni.io.data.model.creditSegments
-import com.juni.io.data.scrobbling.primaryArtist
-import com.juni.io.ui.player.artistCredits
+import com.nejuni.juni.data.model.ArtistCredit
+import com.nejuni.juni.data.model.ArtistNameIndex
+import com.nejuni.juni.data.model.ArtistRef
+import com.nejuni.juni.data.model.completeArtistCredits
+import com.nejuni.juni.data.model.creditSegments
+import com.nejuni.juni.data.scrobbling.primaryArtist
+import com.nejuni.juni.ui.player.artistCredits
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Assert.assertNull

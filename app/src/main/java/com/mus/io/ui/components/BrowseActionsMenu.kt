@@ -1,6 +1,6 @@
-package com.juni.io.ui.components
+package com.nejuni.juni.ui.components
 
-import com.juni.io.ui.icons.SfIcons
+import com.nejuni.juni.ui.icons.SfIcons
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.layout.Column
@@ -15,17 +15,17 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.juni.io.R
-import com.juni.io.data.model.BrowseType
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.UserPlaylist
+import com.nejuni.juni.R
+import com.nejuni.juni.data.model.BrowseType
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.UserPlaylist
 
 /**
  * The album or playlist a long-press is acting on.
  *
  * Deliberately not one of the browse models: every surface in the app describes
  * a release with a different type — a card on the Local Music tab, a
- * [com.juni.io.data.model.DetailPage] on the page itself, a plain album name in
+ * [com.nejuni.juni.data.model.DetailPage] on the page itself, a plain album name in
  * the queue — and the menu needs the same five things from all of them.
  */
 data class BrowseTarget(

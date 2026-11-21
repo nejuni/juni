@@ -1,4 +1,4 @@
-package com.juni.io.ui.replay
+package com.nejuni.juni.ui.replay
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.tween
@@ -54,18 +54,18 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil3.compose.AsyncImage
-import com.juni.io.R
-import com.juni.io.data.model.ROW_ART_PX
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.artworkAt
-import com.juni.io.data.stats.ArtistFacts
-import com.juni.io.data.stats.ReplayPeriod
-import com.juni.io.data.stats.ReplaySummary
-import com.juni.io.ui.components.PAGE_GUTTER
-import com.juni.io.ui.icons.JuniIcons
-import com.juni.io.ui.player.MeshGradientBackground
-import com.juni.io.ui.player.rememberArtworkColors
-import com.juni.io.ui.theme.AccentRed
+import com.nejuni.juni.R
+import com.nejuni.juni.data.model.ROW_ART_PX
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.data.stats.ArtistFacts
+import com.nejuni.juni.data.stats.ReplayPeriod
+import com.nejuni.juni.data.stats.ReplaySummary
+import com.nejuni.juni.ui.components.PAGE_GUTTER
+import com.nejuni.juni.ui.icons.JuniIcons
+import com.nejuni.juni.ui.player.MeshGradientBackground
+import com.nejuni.juni.ui.player.rememberArtworkColors
+import com.nejuni.juni.ui.theme.AccentRed
 
 /** Whether the Replay page is being shown in dark mode (vs light). */
 @Composable
@@ -291,7 +291,7 @@ private fun Heading(state: ReplayState, onPeriodChange: (ReplayPeriod) -> Unit, 
  * The four stretches a Replay can cover.
  *
  * Weeks and months rather than a date range, because that is the granularity the
- * listening is actually kept at — see [com.juni.io.data.stats.ListeningStats].
+ * listening is actually kept at — see [com.nejuni.juni.data.stats.ListeningStats].
  * A "last 30 days" chip would have to be answered from monthly totals, which
  * would make it a lie for the first thirty days of every month.
  */

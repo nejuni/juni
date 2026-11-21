@@ -1,6 +1,6 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
-import com.juni.io.data.settings.OutputPcmMode
+import com.nejuni.juni.data.settings.OutputPcmMode
 import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test

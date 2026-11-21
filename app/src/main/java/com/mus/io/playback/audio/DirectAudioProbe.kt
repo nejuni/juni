@@ -8,7 +8,7 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
 
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import android.media.AudioAttributes
 import android.media.AudioDeviceInfo

@@ -1,4 +1,4 @@
-package com.juni.io.data.model
+package com.nejuni.juni.data.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

@@ -1,6 +1,6 @@
-package com.juni.io.data
+package com.nejuni.juni.data
 
-import com.juni.io.data.DebugLog as Log
+import com.nejuni.juni.data.DebugLog as Log
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.jsonArray

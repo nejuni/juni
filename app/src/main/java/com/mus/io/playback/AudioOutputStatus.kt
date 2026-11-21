@@ -8,18 +8,18 @@
  *      http://www.apache.org/licenses/LICENSE-2.0
  */
 
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.media.AudioDeviceInfo
 import android.media.AudioFormat
 import android.media.AudioManager
-import com.juni.io.data.settings.OutputPcmMode
-import com.juni.io.playback.audio.DirectAudioProbe
-import com.juni.io.playback.audio.FallbackReason
-import com.juni.io.playback.audio.OutputNegotiationResult
-import com.juni.io.playback.audio.PcmEncoding
-import com.juni.io.playback.audio.TransportType
-import com.juni.io.playback.audio.bluetooth.BluetoothTelemetry
+import com.nejuni.juni.data.settings.OutputPcmMode
+import com.nejuni.juni.playback.audio.DirectAudioProbe
+import com.nejuni.juni.playback.audio.FallbackReason
+import com.nejuni.juni.playback.audio.OutputNegotiationResult
+import com.nejuni.juni.playback.audio.PcmEncoding
+import com.nejuni.juni.playback.audio.TransportType
+import com.nejuni.juni.playback.audio.bluetooth.BluetoothTelemetry
 import kotlinx.coroutines.flow.MutableStateFlow
 
 /**

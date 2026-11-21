@@ -1,4 +1,4 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import androidx.compose.runtime.Stable
 import androidx.compose.runtime.derivedStateOf

@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.content.Intent
 import android.net.Uri
@@ -15,7 +15,7 @@ sealed interface LinkRequest {
     /**
      * An audio file another app asked to have played — "Open with" from a file
      * manager, a tapped attachment — by the `content://` or `file://` uri it
-     * handed over. See [com.juni.io.data.LocalMediaRepository.songFromUri].
+     * handed over. See [com.nejuni.juni.data.LocalMediaRepository.songFromUri].
      */
     data class LocalFile(val uri: Uri) : LinkRequest
 }
@@ -25,7 +25,7 @@ sealed interface LinkRequest {
  *
  * The same relay [PlayerDeepLink] is, and for the same reason: what has to
  * happen — start a queue, resume one — is all inside `umesieApp`'s composition,
- * which [MainActivity][com.juni.io.MainActivity] has no handle on. The activity
+ * which [MainActivity][com.nejuni.juni.MainActivity] has no handle on. The activity
  * reads the intent, this holds the answer, and the composition serves it once
  * its controller and view model exist.
  *

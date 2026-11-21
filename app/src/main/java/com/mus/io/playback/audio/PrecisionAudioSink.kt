@@ -1,6 +1,6 @@
 @file:Suppress("DEPRECATION") // Media3 still needs the preferred-size override for the precision sink configuration.
 
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import android.util.Log
 import androidx.media3.common.C
@@ -11,9 +11,9 @@ import androidx.media3.common.util.Util
 import androidx.media3.exoplayer.audio.AudioSink
 import androidx.media3.exoplayer.audio.DefaultAudioSink
 import androidx.media3.exoplayer.audio.ForwardingAudioSink
-import com.juni.io.BuildConfig
-import com.juni.io.playback.AudioOutputStatus
-import com.juni.io.playback.loopmix.LoopMixPort
+import com.nejuni.juni.BuildConfig
+import com.nejuni.juni.playback.AudioOutputStatus
+import com.nejuni.juni.playback.loopmix.LoopMixPort
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
 
@@ -491,7 +491,7 @@ class PrecisionAudioSink(
     /**
      * Passed straight through, noting on the way how far the DSP chain is
      * running ahead of it — see
-     * [com.juni.io.playback.TransitionFilterProcessor.leadUs]. The
+     * [com.nejuni.juni.playback.TransitionFilterProcessor.leadUs]. The
      * renderer polls this on every clock tick, so the lead stays current for
      * free.
      */

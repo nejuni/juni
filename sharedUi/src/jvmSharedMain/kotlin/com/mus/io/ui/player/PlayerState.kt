@@ -1,8 +1,8 @@
-package com.juni.io.ui.player
+package com.nejuni.juni.ui.player
 
 import kotlinx.coroutines.flow.first
 import androidx.compose.runtime.snapshotFlow
-import com.juni.io.playback.PlaybackPosition
+import com.nejuni.juni.playback.PlaybackPosition
 import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.FastOutSlowInEasing
 import androidx.compose.animation.core.tween
@@ -24,9 +24,9 @@ import coil3.compose.LocalPlatformContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImagePainter
 import coil3.request.ImageRequest
-import com.juni.io.data.canvas.CanvasArtwork
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.artworkAt
+import com.nejuni.juni.data.canvas.CanvasArtwork
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.artworkAt
 import kotlin.math.abs
 import kotlin.math.roundToInt
 import kotlinx.coroutines.CoroutineScope

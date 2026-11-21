@@ -1,4 +1,4 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
 import android.content.ComponentName
 import android.net.Uri
@@ -23,14 +23,14 @@ import androidx.media3.common.Timeline
 import androidx.media3.session.MediaController
 import androidx.media3.session.SessionCommand
 import androidx.media3.session.SessionToken
-import com.juni.io.data.StartupTrace
-import com.juni.io.data.model.ArtistRef
-import com.juni.io.data.model.NOTIFICATION_ART_PX
-import com.juni.io.data.model.PlaybackSourceType
-import com.juni.io.data.model.QueueTier
-import com.juni.io.data.model.Song
-import com.juni.io.data.model.artworkAt
-import com.juni.io.ui.rememberIsForeground
+import com.nejuni.juni.data.StartupTrace
+import com.nejuni.juni.data.model.ArtistRef
+import com.nejuni.juni.data.model.NOTIFICATION_ART_PX
+import com.nejuni.juni.data.model.PlaybackSourceType
+import com.nejuni.juni.data.model.QueueTier
+import com.nejuni.juni.data.model.Song
+import com.nejuni.juni.data.model.artworkAt
+import com.nejuni.juni.ui.rememberIsForeground
 import com.google.common.util.concurrent.ListenableFuture
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

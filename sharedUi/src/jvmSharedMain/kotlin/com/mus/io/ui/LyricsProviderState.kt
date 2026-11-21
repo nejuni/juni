@@ -1,4 +1,4 @@
-package com.juni.io.ui
+package com.nejuni.juni.ui
 
 /** What the current track's provider picker already knows without another request. */
 enum class LyricsProviderState {

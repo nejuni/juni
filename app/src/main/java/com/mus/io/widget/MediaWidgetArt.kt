@@ -1,4 +1,4 @@
-package com.juni.io.widget
+package com.nejuni.juni.widget
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -20,12 +20,12 @@ import coil3.request.ImageRequest
 import coil3.request.SuccessResult
 import coil3.request.allowHardware
 import coil3.toBitmap
-import com.juni.io.data.model.CARD_ART_PX
-import com.juni.io.data.model.HEADER_ART_PX
-import com.juni.io.data.model.NOTIFICATION_ART_PX
-import com.juni.io.data.model.PLAYER_ART_PX
-import com.juni.io.data.model.ROW_ART_PX
-import com.juni.io.data.model.artworkAt
+import com.nejuni.juni.data.model.CARD_ART_PX
+import com.nejuni.juni.data.model.HEADER_ART_PX
+import com.nejuni.juni.data.model.NOTIFICATION_ART_PX
+import com.nejuni.juni.data.model.PLAYER_ART_PX
+import com.nejuni.juni.data.model.ROW_ART_PX
+import com.nejuni.juni.data.model.artworkAt
 import java.util.concurrent.ConcurrentHashMap
 import kotlin.math.roundToInt
 import kotlin.math.sqrt
@@ -38,7 +38,7 @@ import kotlin.math.sqrt
  * runtime — [android.widget.RemoteViews] has no RenderEffect, no Haze, no
  * shaders, and no way to reach a view's render node. So the effect the app gets
  * live from
- * [BottomFadeBlur][com.juni.io.ui.components.BottomFadeBlur] has to be
+ * [BottomFadeBlur][com.nejuni.juni.ui.components.BottomFadeBlur] has to be
  * drawn here instead, once per track, on the CPU.
  *
  * That component is also where the shape of it comes from, and it is worth
@@ -172,7 +172,7 @@ internal object MediaWidgetArt {
      * The 4×1 widget's body: the cover filling a [widthPx] × [heightPx] capsule,
      * blurred until only its colours are left and darkened just enough for white
      * text — the backdrop the player's lyrics and queue stand on
-     * ([ArtworkMeshBackdrop][com.juni.io.ui.player.ArtworkMeshBackdrop]),
+     * ([ArtworkMeshBackdrop][com.nejuni.juni.ui.player.ArtworkMeshBackdrop]),
      * cut to the widget's shape.
      *
      * The blur runs on a working image a few dozen pixels across and is drawn

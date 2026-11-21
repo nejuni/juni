@@ -1,4 +1,4 @@
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue

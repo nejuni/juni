@@ -1,4 +1,4 @@
-package com.juni.io.playback.audio
+package com.nejuni.juni.playback.audio
 
 /**
  * Reusable, audio-thread-owned memory block holding interleaved Float32 PCM samples.

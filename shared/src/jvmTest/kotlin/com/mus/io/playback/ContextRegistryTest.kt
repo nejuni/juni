@@ -1,6 +1,6 @@
-package com.juni.io.playback
+package com.nejuni.juni.playback
 
-import com.juni.io.data.model.Song
+import com.nejuni.juni.data.model.Song
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFailsWith
