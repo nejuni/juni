@@ -1,0 +1,661 @@
+<resources>
+    <string name="app_name">Juni</string>
+    <string name="playback_channel_name">Şu an çalıyor</string>
+    <string name="cancel">İptal</string>
+    <string name="save">Kaydet</string>
+    <string name="close">Kapat</string>
+    <string name="back">Geri</string>
+    <string name="settings">Ayarlar</string>
+    <string name="search">Ara</string>
+    <string name="clear_search">Aramayı temizle</string>
+    <string name="library">Kitaplık</string>
+    <string name="play">Çal</string>
+    <string name="local_music">Yerel Müzik</string>
+    <string name="audio_files_on_device">Cihazdaki ses dosyaları</string>
+    <string name="playlists">Çalma listeleri</string>
+    <string name="new_playlist">Yeni çalma listesi</string>
+    <string name="sign_in">Giriş yap</string>
+    <string name="shuffle">Karışık</string>
+    <string name="more">Daha fazla</string>
+    <string name="add_to_playlist">Çalma listesine ekle</string>
+    <string name="top_songs">En çok dinlenen şarkılar</string>
+    <plurals name="song_count_plural">
+        <item quantity="one">%1$d şarkı</item>
+        <item quantity="other">%1$d şarkı</item>
+    </plurals>
+    <plurals name="track_count_plural">
+        <item quantity="one">%1$d parça</item>
+        <item quantity="other">%1$d parça</item>
+    </plurals>
+    <string name="songs">Şarkılar</string>
+    <string name="artists">Sanatçılar</string>
+    <string name="albums">Albümler</string>
+    <string name="storage_required_read">Yerel ses dosyalarını okumak için depolama izni gerekiyor</string>
+    <string name="test">Test et</string>
+    <string name="testing">Test ediliyor…</string>
+    <string name="connected">Bağlandı</string>
+    <string name="now_playing">Şu an çalıyor</string>
+    <string name="selected">Seçildi</string>
+    <string name="select_all">Tümünü seç</string>
+    <string name="password">Parola</string>
+    <string name="username">Kullanıcı adı</string>
+    <string name="login_failed">Giriş başarısız oldu</string>
+    <string name="image_cache_cleared">Resim önbelleği temizlendi</string>
+    <string name="no_equalizer">Bu cihazda sistem ekolayzırı yok</string>
+    <string name="try_again">Tekrar Dene</string>
+    <string name="play_next">Sonra çal</string>
+    <string name="queue">Sıra</string>
+    <string name="failed">Başarısız</string>
+    <string name="widget_square_label">Şu an çalıyor 2×2</string>
+    <string name="widget_wide_label">Şu an çalıyor 4×2</string>
+    <string name="widget_square_description">Kare biçimde, çalma kontrollü albüm kapağı.</string>
+    <string name="widget_wide_description">Parça ve çalma kontrolleriyle tam genişlikte albüm kapağı.</string>
+    <string name="widget_play">Çal</string>
+    <string name="widget_pause">Duraklat</string>
+    <string name="widget_next">Sonraki</string>
+    <string name="widget_previous">Önceki</string>
+    <string name="widget_artwork">Albüm kapağı</string>
+    <string name="widget_nothing_played">Henüz bir şey çalınmadı</string>
+    <string name="widget_preview_title">Şarkı adı</string>
+    <string name="widget_preview_artist">Sanatçı</string>
+    <string name="widget_pill_label">Şu an çalıyor 4×1</string>
+    <string name="widget_pill_description">Beğen, karışık çalma ve çalma kontrolleriyle parça, tek satırda.</string>
+    <string name="widget_preview_pill">Şarkı adı - Sanatçı</string>
+    <string name="spatial_audio">Uzamsal ses</string>
+    <string name="spatial_audio_subtitle">Daha sürükleyici bir dinleme için stereo parçaları genişletir</string>
+    <string name="spatial_audio_atmos_subtitle">Bu parça için duraklatıldı — Dolby Atmos zaten uzamsal</string>
+    <string name="replay">Replay</string>
+    <string name="replay_subtitle">En çok dinlediğin şarkılar, sanatçılar, albümler ve türler</string>
+    <string name="work_out_genres">Türleri belirle</string>
+    <string name="export_data">Verileri dışa aktar</string>
+    <string name="export_data_subtitle">Ayarlar ve dinleme geçmişi, tek bir JSON dosyası olarak</string>
+    <string name="import_data">Verileri içe aktar</string>
+    <string name="import_data_subtitle">Bu cihazdaki ayarları ve geçmişi değiştirir</string>
+    <string name="import_backup_title">Bir yedek içe aktarılsın mı?</string>
+    <string name="choose_file">Dosya seç</string>
+    <string name="top_artists">En çok dinlenen sanatçılar</string>
+    <string name="top_albums">En çok dinlenen albümler</string>
+    <string name="top_genres">En çok dinlenen türler</string>
+    <string name="language">Dil</string>
+    <string name="app_language">Uygulama dili</string>
+    <string name="app_language_description">bit tarafından kullanılan dili seçin.</string>
+    <string name="english">İngilizce</string>
+    <string name="spanish">İspanyolca</string>
+    <string name="french">Fransızca</string>
+    <string name="german">Almanca</string>
+    <string name="polish">Lehçe</string>
+    <string name="portuguese">Portekizce</string>
+    <string name="indonesian">Endonezce</string>
+    <string name="hindi">Hintçe</string>
+    <string name="japanese">Japonca</string>
+    <string name="russian">Rusça</string>
+    <string name="chinese_simplified">Çince (Basitleştirilmiş)</string>
+    <string name="chinese_traditional">Çince (Geleneksel)</string>
+    <string name="hebrew">İbranice</string>
+    <string name="italian">İtalyanca</string>
+    <string name="turkish">Türkçe</string>
+    <string name="thai">Tayca</string>
+    <string name="korean">Korece</string>
+    <string name="show_all">Tümünü göster</string>
+    <string name="switch_to_grid_view">Izgara görünümüne geç</string>
+    <string name="switch_to_list_view">Liste görünümüne geç</string>
+    <string name="playback">Oynatma</string>
+    <string name="appearance">Görünüm</string>
+    <string name="storage">Depolama</string>
+    <string name="your_data">Verileriniz</string>
+    <string name="miscellaneous">Diğer</string>
+    <string name="crossfade">Çapraz geçiş</string>
+    <string name="crossfade_subtitle">Bir parçayı diğerine karıştırır</string>
+    <string name="skip_silence">Sessizliği atla</string>
+    <string name="skip_silence_subtitle">Bir saniyeden uzun boşlukları kırp</string>
+    <string name="skip_silence_float_subtitle">32 bit float çıkışta kullanılamaz</string>
+    <string name="equalizer">Ekolayzır</string>
+    <string name="equalizer_subtitle">Cihazınızın sistem paneli</string>
+    <string name="show_nerd_stats">Meraklılar için istatistikleri göster</string>
+    <string name="show_nerd_stats_subtitle">Oynatıcıda codec, bit hızı ve örnekleme oranı</string>
+    <string name="theme">Tema</string>
+    <string name="reduce_animation">Animasyonu azalt</string>
+    <string name="reduce_animation_subtitle">Ana oynatıcının gradyanını kaymak yerine dondurur</string>
+    <string name="reduce_dynamic_blur">Dinamik bulanıklığı azalt</string>
+    <string name="reduce_dynamic_blur_subtitle">Uygulama genelinde buzlu camı düz dolgularla değiştirir</string>
+    <string name="disable_blend_effects">Karışım efektlerini kapat</string>
+    <string name="disable_blend_effects_subtitle">Oynatıcı simgelerini, metni ve koyu menüleri kapak rengiyle boyamak yerine düz beyaz gösterir</string>
+    <string name="liquid_glass">Liquid Glass</string>
+    <string name="liquid_glass_subtitle">Yüzen gezinme çubuğunda gerçek kırılan cam. Yalnızca Android 12+; daha fazla GPU kullanır.</string>
+    <string name="liquid_glass_unavailable">Android 12 veya daha yenisini gerektirir</string>
+    <string name="full_screen_cover_art">Tam ekran kapak resmi</string>
+    <string name="synced_lyrics">Senkronize sözler</string>
+    <string name="synced_lyrics_subtitle">Söylenirken oynatıcıdaki kelimeleri aydınlatır</string>
+    <string name="lyrics_sources">Söz kaynakları</string>
+    <string name="clear_image_cache">Resim önbelleğini temizle</string>
+    <string name="clear_image_cache_subtitle">Albüm kapaklarının kullandığı alanı boşaltır</string>
+    <string name="play_next_on_swipe">Kaydırmada sonra çal</string>
+    <string name="stop_music_on_close">Son kullanılanlardan kapatınca müziği durdur</string>
+    <string name="stop_music_on_close_subtitle">Uygulama son kullanılanlardan kaydırılarak kapatıldığında çalmayı durdurur</string>
+    <string name="hide_volume_bar">Ses çubuğunu gizle</string>
+    <string name="hide_volume_bar_subtitle">Ses kaydırıcısını ana oynatıcıdan kaldırır</string>
+    <string name="hide_status_bar_in_player">Oynatıcıda durum çubuğunu gizle</string>
+    <string name="hide_status_bar_in_player_subtitle">Ana oynatıcı açıkken saat, pil ve bildirim simgelerini gizler</string>
+    <string name="hide_song_status">Şarkı durumunu gizle</string>
+    <string name="hide_song_status_subtitle">Ana oynatıcıdaki “Şuradan çalınıyor” veya “Çalan” yazısını gizler</string>
+    <string name="off">Kapalı</string>
+    <string name="system">Sistem</string>
+    <string name="light">Açık</string>
+    <string name="dark">Koyu</string>
+    <string name="full_screen_cover_art_subtitle">Kapağı kare bir kılıf yerine oynatıcının kenarlarına kadar uzatır</string>
+    <string name="full_screen_detail_cover">Tam ekran albüm/çalma listesi kapağı</string>
+    <string name="full_screen_detail_cover_subtitle">Albüm ve çalma listesi kapaklarını çerçeve yerine sayfanın kenarlarına kadar uzatır</string>
+    <string name="filter_non_music_audio">Müzik olmayan sesleri filtrele</string>
+    <string name="filter_non_music_audio_subtitle">30 saniyeden kısa klipleri, WAV dosyalarını, sesli notları, kayıtları ve sistem seslerini gizler</string>
+    <string name="performance">Performans</string>
+    <string name="high_performance_mode">Yüksek performans modu</string>
+    <string name="high_performance_subtitle">Tam animasyonlar ve bulanıklık kullanır ve daha yüksek bir ekran yenileme hızı ister</string>
+    <string name="high_performance_active">%1$d Hz istendi. Android gerektiğinde bunu düşürebilir.</string>
+    <string name="refresh_rate">Yenileme hızı</string>
+    <string name="high_performance_before_enabling">Etkinleştirmeden önce</string>
+    <string name="high_performance_battery_warning">Önce bit\'un pil kullanımını Sınırsız olarak ayarlayın. Daha yüksek yenileme hızları daha fazla pil, CPU ve GPU kullanır ve cihazınızı ısıtabilir.</string>
+    <string name="open_battery_settings">Pil ayarlarını aç</string>
+    <string name="enable_high_performance_title">Yüksek performans modu etkinleştirilsin mi?</string>
+    <string name="enable_high_performance_confirmation">Yalnızca bit\'un pil kullanımı Sınırsız olarak ayarlıysa etkinleştirin. Cihaz ısındığında veya pil azaldığında Android yine de yenileme hızını sınırlayabilir.</string>
+    <string name="enable">Etkinleştir</string>
+    <string name="not_yet">Henüz değil</string>
+    <string name="add_to_queue">Sıraya ekle</string>
+    <string name="after_this_song">Bu şarkıdan sonra</string>
+    <string name="clear_name">Adı temizle</string>
+    <string name="copy_log">Günlüğü kopyala</string>
+    <string name="couldnt_find">%1$s bulunamadı</string>
+    <string name="create_playlist">Çalma listesi oluştur</string>
+    <string name="done">Tamam</string>
+    <string name="drag_to_reorder">Yeniden sıralamak için sürükleyin</string>
+    <string name="enabled">Etkin</string>
+    <string name="pause">Duraklat</string>
+    <string name="shuffle_on">Karışık çalma açık</string>
+    <string name="shuffle_off">Karışık çalma kapalı</string>
+    <string name="mono">Mono</string>
+    <string name="stereo">Stereo</string>
+    <string name="history">Geçmiş</string>
+    <string name="couldnt_load_tracks">Bu parçalar yüklenemedi</string>
+    <string name="history_empty">Henüz bir şey çalınmadı</string>
+    <string name="no_local_audio_found">Bu cihazda ses dosyası bulunamadı</string>
+    <string name="unknown_artist">Bilinmeyen sanatçı</string>
+    <string name="your_playlists">Çalma listeleriniz</string>
+    <string name="who_can_see_it">Kimler görebilir</string>
+    <string name="nothing_matches">“%1$s” ile eşleşen bir şey yok</string>
+    <string name="close_search">Aramayı kapat</string>
+    <string name="less">Daha az</string>
+    <plurals name="songs_will_play_next">
+        <item quantity="one">%1$d şarkı sonra çalacak</item>
+        <item quantity="other">%1$d şarkı sonra çalacak</item>
+    </plurals>
+    <plurals name="songs_added_to_queue">
+        <item quantity="one">%1$d şarkı sıraya eklendi</item>
+        <item quantity="other">%1$d şarkı sıraya eklendi</item>
+    </plurals>
+    <plurals name="log_copied_line_count">
+        <item quantity="one">Günlük kopyalandı · %1$d satır</item>
+        <item quantity="other">Günlük kopyalandı · %1$d satır</item>
+    </plurals>
+    <string name="like">Beğen</string>
+    <string name="listening_history">Dinleme geçmişi</string>
+    <string name="lyrics_sources_order">Kaynaklar bu sırayla denenir. Yeniden sıralamak için sürükleyin. Heceli sözler önceliklendirilmedikçe sözleri olan ilk kaynak kazanır.</string>
+    <string name="no_playlists_yet">Henüz çalma listesi yok. Bir tane oluşturmak için yukarıdaki satırı kullan.</string>
+    <string name="no_tracks_here">Burada parça yok</string>
+    <string name="one_hour">1 saat</string>
+    <string name="open_album">Albümü aç</string>
+    <string name="open_artist">Sanatçıyı aç</string>
+    <string name="pause_after_a_while">Bir süre sonra çalmayı duraklat</string>
+    <string name="pause_after_song">Bu şarkı bitince duraklatılıyor</string>
+    <string name="pause_countdown">Çalma duraklatılana kadar %1$s</string>
+    <string name="playlist_name">Çalma listesi adı</string>
+    <string name="prioritize_syllable_lyrics">Heceli sözlere öncelik ver</string>
+    <string name="prioritize_syllable_lyrics_subtitle">Kelime kelime sözler için satır senkronlu bir eşleşmeyi geçtikten sonra aramaya devam et</string>
+    <string name="remove_from_liked">Beğenilen Müzikten kaldır</string>
+    <string name="remove_from_playlist">Bu çalma listesinden kaldır</string>
+    <string name="rename_playlist">Çalma listesini yeniden adlandır</string>
+    <string name="reorder_songs">Şarkıları yeniden sırala</string>
+    <string name="reset_to_default">Varsayılana sıfırla</string>
+    <string name="save_name">Adı kaydet</string>
+    <string name="saved_to_youtube_music_account">YouTube Music hesabına kaydedildi</string>
+    <string name="search_this_list">Bu listede ara</string>
+    <string name="share">Paylaş</string>
+    <string name="signed_in_as">%1$s olarak giriş yapıldı</string>
+    <string name="signing_in">Giriş yapılıyor…</string>
+    <string name="sleep_timer">Uyku zamanlayıcısı</string>
+    <string name="clear_queue">Kuyruğu temizle</string>
+    <string name="sleep_timer_custom">Özel</string>
+    <string name="start_sleep_timer">Zamanlayıcıyı başlat</string>
+    <string name="tap_to_sign_in">Giriş yapmak için dokun</string>
+    <string name="turn_off_timer">Zamanlayıcıyı kapat</string>
+    <plurals name="minute_count">
+        <item quantity="one">%1$d dakika</item>
+        <item quantity="other">%1$d dakika</item>
+    </plurals>
+    <string name="biggest_day_note">En yoğun günün %2$s dinlemeyle %1$s oldu.</string>
+    <string name="close_replay">Replay\'i Kapat</string>
+    <string name="couldnt_draw_picture">Resim oluşturulamadı</string>
+    <string name="default_replay_holder">Juni listener</string>
+    <string name="different_albums">Farklı albümler</string>
+    <string name="genres_pending">Dinleme geçmişin büyüdükçe türler görünecek</string>
+    <string name="hour_am">%1$d, sabah</string>
+    <string name="hour_pm">%1$d, akşam</string>
+    <string name="hours_minutes_short">%1$dsa %2$ddk</string>
+    <string name="listen_most_around">En çok %1$s civarında dinliyorsun.</string>
+    <string name="lyrics_share_title">Şarkı sözlerini paylaş</string>
+    <string name="lyrics_share_description">Seçtiğin satırlar, kapakla birlikte bir kart üzerine yerleştirildi.</string>
+    <string name="lyrics_share_story">Hikâyeye çevir</string>
+    <string name="lyrics_share_story_revert">Karta dön</string>
+    <string name="listening_shape">Dinleme örüntün</string>
+    <string name="member_since_value">%1$s tarihinden beri üye</string>
+    <string name="midday">öğlen</string>
+    <string name="midnight">gece yarısı</string>
+    <string name="minutes">Dakika</string>
+    <string name="minutes_grouped_short">%1$s dk</string>
+    <string name="minutes_listened">Dinlenen dakika</string>
+    <string name="minutes_short">%1$d dk</string>
+    <string name="not_enough_listening">Henüz yeterli dinleme yok</string>
+    <string name="not_enough_this_month">Replay\'ini açmak için bu ay birkaç şarkı daha çal.</string>
+    <string name="replay_across"> üzerinde </string>
+    <string name="replay_album_end"> ilgini çekti.</string>
+    <string name="replay_album_focus">Bir albüm</string>
+    <string name="replay_album_start">Bu sefer, </string>
+    <string name="replay_artist_end"> tekrar tekrar dinlendi.</string>
+    <string name="replay_artist_focus">Bir sanatçı</string>
+    <string name="replay_artist_start">Ay boyunca, </string>
+    <string name="replay_empty_description">Biraz daha dinle, bit geçmişini bir Replay\'e dönüştürsün.</string>
+    <string name="replay_genre_end"> tarzını şekillendirdi.</string>
+    <string name="replay_genre_focus">Türlerin</string>
+    <string name="replay_genre_start">Birlikte, </string>
+    <string name="replay_habits_middle"> kaynağından </string>
+    <string name="replay_habits_start">Keşfettin: </string>
+    <string name="replay_hours_across">%1$s saat</string>
+    <string name="replay_intro_end"> hazır.</string>
+    <string name="replay_intro_start">Senin </string>
+    <string name="replay_minutes_end"> geçirdin.</string>
+    <string name="replay_minutes_start">Müzikle </string>
+    <plurals name="replay_minutes_unit">
+        <item quantity="one">%1$s dakika</item>
+        <item quantity="other">%1$s dakika</item>
+    </plurals>
+    <string name="replay_private_counting">Bu cihazdaki dinleme geçmişinden gizlice oluşturuldu</string>
+    <string name="replay_share_card_description">Ana dinleme öne çıkanlarını içeren şık bir kart.</string>
+    <string name="replay_share_summary_description">Şarkılar, sanatçılar, albümler, türler ve alışkanlıklarla dolu tam bir tablo.</string>
+    <string name="replay_songs_end"> ayını doldurdu.</string>
+    <string name="replay_songs_start">Toplamda, </string>
+    <string name="replay_summary_start">Dinlemende bir </string>
+    <string name="saved">Kaydedildi</string>
+    <string name="saved_bang">Kaydedildi!</string>
+    <string name="share_my_replay">Replay\'imi paylaş</string>
+    <string name="share_your_lyrics">Şarkı sözü kartını gönder</string>
+    <string name="share_your_replay">Replay\'ini paylaş</string>
+    <string name="tap_share_for_picture">Bir resim oluşturmak için Paylaş\'a dokun</string>
+    <string name="top_album">En çok dinlenen albüm</string>
+    <string name="top_artist">En çok dinlenen sanatçı</string>
+    <string name="top_genre">En çok dinlenen tür</string>
+    <string name="top_song">En çok dinlenen şarkı</string>
+    <string name="when_you_listen_the_most">En çok ne zaman dinlediğin</string>
+    <string name="your_biggest_day">En yoğun günün: %1$s</string>
+    <string name="your_lyrics_card">Şarkı sözü kartın</string>
+    <string name="your_replay">Replay\'in</string>
+    <plurals name="replay_artist_count">
+        <item quantity="one">%1$s sanatçı</item>
+        <item quantity="other">%1$s sanatçı</item>
+    </plurals>
+    <plurals name="replay_play_count">
+        <item quantity="one">%1$s çalma</item>
+        <item quantity="other">%1$s çalma</item>
+    </plurals>
+    <plurals name="replay_song_count">
+        <item quantity="one">%1$s şarkı</item>
+        <item quantity="other">%1$s şarkı</item>
+    </plurals>
+    <string name="all_audio_folders">Tüm ses klasörleri</string>
+    <string name="local_music_folder">Yerel müzik klasörü</string>
+    <string name="scan_library">Kitaplığı tara</string>
+    <string name="scan_library_subtitle">Yeni ses dosyalarını arar, kaybolanları kaldırır. Uygulama yalnızca istediğinizde tarar.</string>
+    <string name="scanning_library">Cihazdaki ses dosyaları okunuyor…</string>
+    <string name="scanning">Taranıyor…</string>
+    <string name="sort_music">Müziği sırala</string>
+    <string name="sort_title_ascending">Alfabetik (A\'dan Z\'ye)</string>
+    <string name="sort_title_descending">Alfabetik (Z\'den A\'ya)</string>
+    <string name="sort_date_added">Eklenme tarihi (önce en yeni)</string>
+    <string name="sort_date_modified">Değiştirilme tarihi (önce en yeni)</string>
+    <string name="use_all_audio_folders">Tüm ses klasörlerini kullan</string>
+    <string name="use_all_audio_folders_subtitle">Klasör sınırını kaldırır ve tüm cihazda müzik tarar</string>
+    <string name="album">albüm</string>
+    <string name="artist">sanatçı</string>
+    <string name="playlist">çalma listesi</string>
+    <string name="open">Aç</string>
+    <string name="open_playlist">Çalma listesini aç</string>
+    <string name="pin">Sabitle</string>
+    <string name="unpin">Sabitlemeyi kaldır</string>
+    <string name="rename">Yeniden adlandır</string>
+    <string name="delete_playlist">Çalma listesini sil</string>
+    <string name="delete_playlist_confirmation">“%1$s” silinsin mi? Onaylamak için tekrar dokun.</string>
+    <string name="no_lyrics_sources_enabled">Yok. Sözler alınmayacak.</string>
+    <string name="swipe_plays_next">Bir şarkıyı kaydırmak onu sonraki olarak çalar</string>
+    <string name="swipe_adds_to_queue">Kapalıyken kaydırmak şarkıyı sıranın sonuna ekler</string>
+    <string name="import_backup_warning">Bu, dosyanın içeriğiyle bu cihazın ayarlarını ve dinleme geçmişini değiştirir. Korumak istiyorsan önce mevcut verileri dışa aktar.</string>
+    <string name="export_succeeded">Ayarlar ve %1$s dışa aktarıldı</string>
+    <string name="export_failed">Dışa aktarma başarısız: %1$s</string>
+    <string name="import_succeeded">v%2$s\'den %1$s içe aktarıldı</string>
+    <string name="import_failed">İçe aktarma başarısız: %1$s</string>
+    <string name="unknown_error">bilinmeyen hata</string>
+    <string name="no_listening_history">dinleme geçmişi yok</string>
+    <plurals name="listening_month_count">
+        <item quantity="one">%1$d aylık dinleme</item>
+        <item quantity="other">%1$d aylık dinleme</item>
+    </plurals>
+    <string name="no_local_albums">Burada henüz bir albüme veya çalma listesine ait bir şey yok. Tam bir albüm veya çalma listesi indir, burada görünecek.</string>
+    <string name="play_your_replay">Replay\'ini çal</string>
+    <string name="counted_on_device_with_bit">Bu cihazda bit ile sayıldı</string>
+    <string name="this_month">Bu ay</string>
+    <string name="this_year">Bu yıl</string>
+    <string name="all_time">Tüm zamanlar</string>
+
+    <!-- Listen together -->
+
+    <string name="vietnamese">Vietnamca</string>
+
+
+
+    <string name="blur_unfocused_lyrics">Odaklanmamış şarkı sözlerini bulanıklaştır</string>
+
+    <string name="blur_unfocused_lyrics_subtitle">Geçerli satırı vurgular</string>
+
+    <string name="player_theme">Oynatıcı teması</string>
+    <string name="player_theme_default">Varsayılan</string>
+    <string name="player_theme_legacy">Eski</string>
+    <string name="player_theme_simple">Sade</string>
+    <string name="player_theme_default_subtitle">Kapağın renkleri altında devam eder</string>
+    <string name="player_theme_simple_subtitle">Tüm oynatıcının arkasında bulanık kapak</string>
+
+    <string name="player_theme_legacy_subtitle">v1.5\'teki oynatıcı arkasındaki akıcı renk geçişlerini geri getirir</string>
+
+    <string name="output_precision">Çıkış hassasiyeti</string>
+
+    <string name="prefer_usb_dac">USB DAC tercih et</string>
+    <string name="loudness_normalization">Ses yüksekliği normalleştirme</string>
+    <string name="loudness_normalization_subtitle">Her parçayı aynı ses yüksekliğine getirir</string>
+    <string name="loudness_off_on_speaker">Telefon hoparlöründe kapat</string>
+    <string name="pipeline_loudness_gain">Kazanç</string>
+    <string name="pipeline_loudness_measured">Ölçülen</string>
+    <string name="pipeline_bit_exact">Bit düzeyinde birebir</string>
+    <string name="loudness_gain_db">%1$s dB</string>
+    <string name="loudness_lufs">%1$s LUFS</string>
+
+    <string name="sort_date_added_toggle">Eklenme tarihi</string>
+
+    <string name="sort_date_added_oldest">Eklenme tarihi (en eski önce)</string>
+
+    <string name="sort_songs">Şarkıları sırala</string>
+
+    <string name="sort_default">Varsayılan sıra</string>
+
+
+    <string name="lyrics_offset">Söz zamanlama ayarı</string>
+
+
+
+
+
+    <string name="auto_recents">Son dinlenenler</string>
+
+    <string name="auto_liked">Beğenilen şarkılar</string>
+
+    <string name="auto_empty_recents_title">Son çalınan şarkı yok</string>
+
+    <string name="auto_empty_recents_subtitle">Çaldığınız şarkılar burada görünür</string>
+
+    <string name="auto_empty_playlists_title">Kullanılabilir çalma listesi yok</string>
+
+    <string name="auto_empty_playlists_subtitle">Bağlantınızı kontrol edip tekrar deneyin</string>
+
+    <string name="auto_empty_liked_title">Beğenilen şarkı yok</string>
+
+    <string name="auto_empty_liked_subtitle">Bir şarkıyı buraya kaydetmek için kalbe dokunun</string>
+
+    <string name="auto_empty_offline_title">Çevrimdışı şarkı yok</string>
+
+    <string name="auto_empty_offline_subtitle">Burada dinlemek için telefonunuzdan şarkı indirin</string>
+
+    <string name="auto_unavailable_title">İçerik kullanılamıyor</string>
+
+    <string name="auto_unavailable_subtitle">Klasörü yeniden açıp tekrar deneyin</string>
+
+    <string name="settings_search_hint">Ayarlarda ara</string>
+
+    <string name="settings_search_empty">“%1$s” ile eşleşen ayar yok</string>
+
+
+    <string name="equalizer_footer">bit içindeki sesi, sisteme ulaşmadan önce şekillendirir.</string>
+
+    <string name="equalizer_dynamic">Dinamik</string>
+
+    <string name="equalizer_manual">Manuel</string>
+
+    <string name="equalizer_tone">Ton</string>
+
+    <string name="equalizer_tilt">Eğim</string>
+
+    <string name="equalizer_contour">Kontur</string>
+
+    <string name="equalizer_broad">Geniş</string>
+
+    <string name="equalizer_focused">Odaklı</string>
+
+    <string name="equalizer_broad_footer">Daha sıcak bir ses için sola, daha parlak bir ses için sağa sürükleyin; aşağı orta frekansları kısar, yukarı öne çıkarır. Geniş mod, spektrumun geniş aralıklarını aynı anda kaydırır.</string>
+
+    <string name="equalizer_focused_footer">Daha sıcak bir ses için sola, daha parlak bir ses için sağa sürükleyin; aşağı orta frekansları kısar, yukarı öne çıkarır. Odaklı mod daha dar aralıklarda çalışır, bu yüzden dokunduğu bölgenin çevresini daha az etkiler.</string>
+
+    <string name="equalizer_preset">Ön ayar</string>
+
+    <string name="equalizer_bands">Bantlar</string>
+
+    <string name="equalizer_bands_footer">Bir bandı oynattığınızda ön ayar devre dışı kalır ve eğri size özel olur.</string>
+
+    <string name="equalizer_reset">Tüm bantları sıfırla</string>
+
+    <string name="equalizer_balance">Denge</string>
+
+    <string name="equalizer_balance_left">L</string>
+
+    <string name="equalizer_balance_right">R</string>
+
+    <string name="equalizer_balance_footer">Diğer kulağı kısarak sesi bir kulağa doğru kaydırır.</string>
+    <string name="equalizer_bitstream_title">Şu anda çalışmıyor</string>
+    <string name="equalizer_bitstream_subtitle">Bu parça çıkışa çözülmeden gönderiliyor</string>
+    <string name="equalizer_bitstream_footer">Ekolayzır çözülmüş ses üzerinde çalışır. Bu parça, cihazının çözmesi için bitstream olarak aktarılıyor; bu yüzden burada filtrelenecek örnek yok.</string>
+
+    <string name="system_equalizer">Sistem ekolayzırı</string>
+
+    <string name="system_equalizer_subtitle">Cihazınızın kendi paneli</string>
+
+    <string name="system_equalizer_footer">bit\'unkinden sonra, tüm ses oturumunda çalışır. İkisini birden kullanmak ikisini de uygular.</string>
+
+    <string name="eq_preset_flat">Düz</string>
+
+    <string name="eq_preset_acoustic">Akustik</string>
+
+    <string name="eq_preset_bass_boost">Bas artırma</string>
+
+    <string name="eq_preset_bass_cut">Bas kısma</string>
+
+    <string name="eq_preset_vocal">Vokal</string>
+
+    <string name="eq_preset_treble_boost">Tiz artırma</string>
+
+    <string name="eq_preset_treble_cut">Tiz kısma</string>
+
+    <string name="eq_preset_loudness">Loudness</string>
+
+    <string name="eq_preset_spoken_word">Konuşma</string>
+
+    <string name="eq_preset_electronic">Elektronik</string>
+
+    <string name="eq_preset_rock">Rock</string>
+
+    <string name="eq_preset_hip_hop">Hip-hop</string>
+
+    <string name="eq_preset_jazz">Caz</string>
+
+    <string name="eq_preset_classical">Klasik</string>
+
+    <string name="eq_preset_small_speakers">Küçük hoparlörler</string>
+
+    <string name="eq_preset_late_night">Gece dinlemesi</string>
+
+    <string name="eq_preset_custom">Özel</string>
+
+    <string name="translation_language">Çeviri dili</string>
+
+    <string name="translation_language_description">Çeviri düğmesinin sözleri çevirdiği dil.</string>
+
+    <string name="translation_language_app_default">Uygulama dili</string>
+
+    <string name="translation_language_subtitle">Uygulama dilini izler</string>
+
+    <string name="search_languages">Dil ara</string>
+
+    <string name="no_languages_match">Eşleşen dil yok</string>
+
+
+
+
+
+    <string name="audio_pipeline">Ses Hattı</string>
+    <string name="audio_pipeline_subtitle">Kod çözücüden çıkışa canlı sinyal yolu</string>
+
+    <string name="pipeline_track_info">Parça Bilgisi</string>
+
+    <string name="pipeline_decoder">Kod Çözücü</string>
+
+    <string name="pipeline_resampler">Yeniden Örnekleyici</string>
+
+    <string name="pipeline_dsp">DSP</string>
+
+    <string name="pipeline_output_device">Çıkış Cihazı</string>
+
+    <string name="pipeline_source">Kaynak</string>
+
+    <string name="pipeline_format">Biçim</string>
+
+    <string name="pipeline_bit_depth">Bit Derinliği</string>
+
+    <string name="pipeline_sample_rate">Örnekleme Oranı</string>
+
+    <string name="pipeline_bitrate">Bit Hızı</string>
+
+    <string name="pipeline_channels">Kanallar</string>
+
+    <string name="pipeline_decoder_name">Kod Çözücü Adı</string>
+
+    <string name="pipeline_io_rate">G/Ç Hızı</string>
+
+    <string name="pipeline_type">Tür</string>
+
+    <string name="pipeline_cutoff">Kesme Frekansı</string>
+
+    <string name="pipeline_quality">Kalite</string>
+
+    <string name="pipeline_pcm_format">PCM Biçimi</string>
+
+    <string name="pipeline_eq_preset">EQ Ön Ayarı</string>
+
+    <string name="pipeline_stereo_expand">Stereo Genişletme</string>
+
+    <string name="pipeline_buffers">Tamponlar</string>
+
+    <string name="pipeline_output_api">Çıkış API\'si</string>
+
+    <string name="pipeline_device_name">Cihaz Adı</string>
+
+
+
+    <string name="song_will_play_next">Şarkı sonra çalacak</string>
+
+    <string name="song_added_to_queue">Şarkı sıraya eklendi</string>
+    <string name="song_added_to_playlist">Çalma listesine eklendi</string>
+    <string name="song_already_in_playlist">Zaten çalma listesinde</string>
+    <plurals name="add_to_playlists_count">
+        <item quantity="one">%1$d çalma listesine ekle</item>
+        <item quantity="other">%1$d çalma listesine ekle</item>
+    </plurals>
+    <plurals name="added_to_playlists_notice">
+        <item quantity="one">%1$d çalma listesine eklendi</item>
+        <item quantity="other">%1$d çalma listesine eklendi</item>
+    </plurals>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="local_playlist_subtitle">%1$d şarkı · Bu cihazda</string>
+    <string name="spotify_import_empty_playlist">Bu çalma listesinde şarkı yok</string>
+    <string name="show_queue_history">Sıra geçmişini göster</string>
+    <string name="show_queue_history_subtitle">Sırada “Şimdi çalıyor” öğesinin üstünde daha önce çalınan en fazla 25 şarkıyı gösterir</string>
+    <string name="not_enough_this_week">Replay’inizin kilidini açmak için bu hafta birkaç şarkı daha dinleyin.</string>
+    <string name="replay_artist_start_week">Hafta boyunca, </string>
+    <string name="replay_songs_end_week"> haftanızı doldurdu.</string>
+    <string name="replay_summary_end_week">hafta</string>
+    <string name="replay_this_week">Bu hafta</string>
+    <string name="replay_period_weekly">Haftalık</string>
+    <string name="replay_period_monthly">Aylık</string>
+    <string name="replay_period_yearly">Yıllık</string>
+    <string name="replay_period_lifetime">Tüm zamanlar</string>
+    <string name="opened_file">Açılan dosya</string>
+    <string name="folders">Klasörler</string>
+    <string name="folder">Klasör</string>
+    <string name="no_local_folders">Müzik içeren klasör yok</string>
+    <string name="offline_playlist_empty">Bu çalma listesi henüz boş. Şarkıları menülerinden ekleyin.</string>
+    <string name="offline_liked_empty">Bu cihazda beğendiğin şarkılar burada görünür</string>
+    <string name="saved_on_this_device">Bu cihaza kaydedildi</string>
+    <string name="progressive_blur">Kademeli bulanıklık</string>
+    <string name="glass_performance">Cam için daha iyi performans</string>
+    <string name="remove_from_history">Geçmişten kaldır</string>
+    <string name="font">Yazı tipi</string>
+    <string name="font_default">Varsayılan</string>
+    <string name="font_legacy">Eski</string>
+    <string name="font_default_subtitle">SF Pro Display · Apple Music ağırlıkları</string>
+    <string name="font_legacy_subtitle">SF Pro Display · Orijinal kalın ağırlıklar</string>
+    <string name="font_footer">Eski, uygulamanın Apple Music\'e uyarlanmadan önce kullandığı daha kalın ve sıkı yazı tipini geri getirir.</string>
+    <string name="bit_perfect_output">Bit-perfect çıkış</string>
+    <string name="bit_perfect_bypassed_footer">Bit-perfect çıkış hazır, bu nedenle soluk ayarlar atlanır ve Dolby Atmos sürümleri istenmez. DAC çıkarıldığında veya mod kapatıldığında yeniden çalışırlar.</string>
+    <string name="bit_perfect_sheet_warning">Parçayı DAC\'a değiştirmeden gönderir. Ekolayzır, ses yüksekliği normalleştirme, çapraz geçiş, çalma hızı ve bit\'un ses düzeyi atlanır.</string>
+    <string name="bit_perfect_mode_off_subtitle">Ses, Android\'in mikseri ve bit\'un efektlerinden geçer.</string>
+    <string name="bit_perfect_mode_usb_android">USB DAC</string>
+    <string name="bit_perfect_mode_usb_android_subtitle">Android 14, DAC\'ı her parçanın kendi hızında ve bit derinliğinde, miksleme veya yeniden örnekleme olmadan açar.</string>
+    <string name="bit_perfect_requires_android_14">Android 14 veya üstü gerekir</string>
+    <string name="bit_perfect_mode_dap_exclusive">Dahili DAC (AAudio özel)</string>
+    <string name="bit_perfect_mode_dap_exclusive_subtitle">Kendi DAC\'ı olan müzik çalarlar için. Kulaklık veya hat çıkışını her parçanın kendi hızında özel olarak açar. Her cihaz özel moda izin vermez.</string>
+    <string name="bit_perfect_requires_android_8_1">Android 8.1 veya üstü gerekir</string>
+    <string name="bit_perfect_mode_usb_direct">USB DAC (doğrudan sürücü)</string>
+    <string name="bit_perfect_mode_usb_direct_subtitle">bit, DAC\'ı her Android sürümünde kendisi yönetir ve ses düzeyini DAC üzerinde ayarlar. USB izni ister. Normal çıkıştan çok daha yüksek ses verebilir.</string>
+    <string name="dac_volume">DAC ses düzeyi</string>
+    <string name="dac_volume_subtitle">DAC\'ın kendisinde ayarlanır; müzik ölçeklenmez</string>
+    <string name="usb_allow_fixed_volume">Ses kontrolü olmayan DAC\'lara izin ver</string>
+    <string name="usb_allow_fixed_volume_subtitle">Aksi takdirde böyle bir DAC normal çıkıştan çalar</string>
+    <string name="usb_allow_fixed_volume_confirm_title">Tam ölçekte çalınsın mı?</string>
+    <string name="usb_allow_fixed_volume_confirm_message">bit bu tür bir DAC\'ın ses düzeyini ayarlayamaz, bu yüzden tam ölçekte çalar ve yalnızca varsa DAC\'ın kendi düğmesi ses düzeyini denetler. Hassas kulaklıklarla tehlikeli derecede yüksek olabilir.</string>
+    <string name="convert_for_limited_dac">Düşük özellikli DAC\'lar için dönüştür</string>
+    <string name="convert_for_limited_dac_subtitle">DAC\'ınızın sınırını aşan parçaları en yüksek biçimine dönüştürür. Parçaların başlaması daha uzun sürebilir ve özgün kayda göre bit-perfect olmaz.</string>
+    <string name="bit_perfect_confirm_title">Bit-perfect çıkış açılsın mı?</string>
+    <string name="bit_perfect_confirm_message">DAC müziği tam ölçekte alır ve telefonun ses düğmeleri çalışmayabilir. Çalmadan önce DAC\'ın veya amfinin sesini kısın.</string>
+    <string name="bit_perfect_status_active">%1$s · %2$s kHz · %3$d bit</string>
+    <string name="bit_perfect_status_dac_limited">%1$s · %2$s kHz · %3$d bit · DAC üst sınırı, bu parçanın biçiminden dönüştürüldü</string>
+    <string name="bit_perfect_status_inexact">%1$s · tam değil: bu kaynak kayıpsız PCM değil</string>
+    <string name="bit_perfect_status_waiting">Desteklenen bir çıkışta kayıpsız parça bekleniyor</string>
+    <string name="bit_perfect_status_unavailable">Bu parça için kullanılamıyor (%1$s)</string>
+    <string name="diwali_title">bit wishes you a Happy Diwali</string>
+    <string name="diwali_subtitle">May this festival of lights fill your home with joy and your days with music.</string>
+    <string name="diwali_cta">Let\'s Celebrate</string>
+    <string name="sort_size_descending">Boyut (önce en büyük)</string>
+</resources>

@@ -1,0 +1,665 @@
+<resources>
+    <string name="app_name">Juni</string>
+    <string name="playback_channel_name">Wird wiedergegeben</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="save">Speichern</string>
+    <string name="close">Schließen</string>
+    <string name="back">Zurück</string>
+    <string name="settings">Einstellungen</string>
+    <string name="search">Suchen</string>
+    <string name="clear_search">Suche löschen</string>
+    <string name="library">Bibliothek</string>
+    <string name="play">Wiedergabe</string>
+    <string name="local_music">Lokale Musik</string>
+    <string name="audio_files_on_device">Audiodateien auf dem Gerät</string>
+    <string name="playlists">Playlists</string>
+    <string name="new_playlist">Neue Playlist</string>
+    <string name="sign_in">Anmelden</string>
+    <string name="shuffle">Zufallswiedergabe</string>
+    <string name="more">Mehr</string>
+    <string name="add_to_playlist">Zur Playlist hinzufügen</string>
+    <string name="top_songs">Meistgehörte Songs</string>
+    <plurals name="song_count_plural">
+        <item quantity="one">%1$d Song</item>
+        <item quantity="other">%1$d Songs</item>
+    </plurals>
+    <string name="songs">Songs</string>
+    <string name="artists">Künstler</string>
+    <string name="albums">Alben</string>
+    <string name="storage_required_read">Speicherberechtigung ist erforderlich, um lokale Audiodateien zu lesen</string>
+    <string name="test">Testen</string>
+    <string name="testing">Wird getestet…</string>
+    <string name="connected">Verbunden</string>
+    <string name="now_playing">Wird wiedergegeben</string>
+    <string name="selected">Ausgewählt</string>
+    <string name="password">Passwort</string>
+    <string name="username">Benutzername</string>
+    <string name="login_failed">Anmeldung fehlgeschlagen</string>
+    <string name="image_cache_cleared">Bild-Cache geleert</string>
+    <string name="no_equalizer">Kein System-Equalizer auf diesem Gerät</string>
+    <string name="try_again">Erneut versuchen</string>
+    <string name="play_next">Als Nächstes wiedergeben</string>
+    <string name="queue">Warteschlange</string>
+    <string name="failed">Fehlgeschlagen</string>
+    <string name="widget_square_label">Wird wiedergegeben 2×2</string>
+    <string name="widget_wide_label">Wird wiedergegeben 4×2</string>
+    <string name="widget_square_description">Albumcover mit Wiedergabesteuerung, quadratisch.</string>
+    <string name="widget_wide_description">Albumcover mit Titel und Wiedergabesteuerung in voller Breite.</string>
+    <string name="widget_play">Wiedergabe</string>
+    <string name="widget_pause">Pause</string>
+    <string name="widget_next">Weiter</string>
+    <string name="widget_previous">Zurück</string>
+    <string name="widget_artwork">Albumcover</string>
+    <string name="widget_nothing_played">Noch nichts wiedergegeben</string>
+    <string name="widget_preview_title">Songtitel</string>
+    <string name="widget_preview_artist">Künstler</string>
+    <string name="widget_pill_label">Wird wiedergegeben 4×1</string>
+    <string name="widget_pill_description">Titel mit „Gefällt mir“, Zufallswiedergabe und Wiedergabesteuerung in einer Zeile.</string>
+    <string name="widget_preview_pill">Songtitel - Künstler</string>
+    <string name="spatial_audio">Räumliches Audio</string>
+    <string name="spatial_audio_subtitle">Verbreitert Stereo-Tracks für ein intensiveres Klangerlebnis</string>
+    <string name="spatial_audio_atmos_subtitle">Für diesen Titel pausiert – Dolby Atmos ist bereits räumlich</string>
+    <string name="replay">Replay</string>
+    <string name="replay_subtitle">Deine meistgehörten Songs, Künstler, Alben und Genres</string>
+    <string name="work_out_genres">Genres ermitteln</string>
+    <string name="export_data">Daten exportieren</string>
+    <string name="export_data_subtitle">Einstellungen und Hörverlauf als eine JSON-Datei</string>
+    <string name="import_data">Daten importieren</string>
+    <string name="import_data_subtitle">Ersetzt die Einstellungen und den Verlauf auf diesem Gerät</string>
+    <string name="import_backup_title">Backup importieren?</string>
+    <string name="choose_file">Datei auswählen</string>
+    <string name="top_artists">Meistgehörte Künstler</string>
+    <string name="top_albums">Meistgehörte Alben</string>
+    <string name="top_genres">Meistgehörte Genres</string>
+    <string name="language">Sprache</string>
+    <string name="app_language">App-Sprache</string>
+    <string name="app_language_description">Wähle die von bit verwendete Sprache.</string>
+    <string name="english">Englisch</string>
+    <string name="spanish">Spanisch</string>
+    <string name="french">Französisch</string>
+    <string name="german">Deutsch</string>
+    <string name="polish">Polnisch</string>
+    <string name="portuguese">Portugiesisch</string>
+    <string name="indonesian">Indonesisch</string>
+    <string name="hindi">Hindi</string>
+    <string name="japanese">Japanisch</string>
+    <string name="russian">Russisch</string>
+    <string name="chinese_simplified">Chinesisch (vereinfacht)</string>
+    <string name="chinese_traditional">Chinesisch (traditionell)</string>
+    <string name="hebrew">Hebräisch</string>
+    <string name="italian">Italienisch</string>
+    <string name="turkish">Türkisch</string>
+    <string name="thai">Thailändisch</string>
+    <string name="korean">Koreanisch</string>
+    <string name="show_all">Alle anzeigen</string>
+    <string name="switch_to_grid_view">Zur Rasteransicht wechseln</string>
+    <string name="switch_to_list_view">Zur Listenansicht wechseln</string>
+    <string name="playback">Wiedergabe</string>
+    <string name="appearance">Erscheinungsbild</string>
+    <string name="storage">Speicher</string>
+    <string name="your_data">Deine Daten</string>
+    <string name="miscellaneous">Sonstiges</string>
+    <string name="crossfade">Überblendung</string>
+    <string name="crossfade_subtitle">Blendet einen Track in den nächsten über</string>
+    <string name="skip_silence">Stille überspringen</string>
+    <string name="skip_silence_subtitle">Kürzt Pausen länger als eine Sekunde</string>
+    <string name="skip_silence_float_subtitle">Bei 32-Bit-Float-Ausgabe nicht verfügbar</string>
+    <string name="equalizer">Equalizer</string>
+    <string name="equalizer_subtitle">Das Systempanel deines Geräts</string>
+    <string name="show_nerd_stats">Technische Details anzeigen</string>
+    <string name="show_nerd_stats_subtitle">Codec, Bitrate und Abtastrate im Player</string>
+    <string name="theme">Design</string>
+    <string name="reduce_animation">Animationen reduzieren</string>
+    <string name="reduce_animation_subtitle">Friert den Farbverlauf des Hauptplayers ein, statt ihn treiben zu lassen</string>
+    <string name="reduce_dynamic_blur">Dynamische Unschärfe reduzieren</string>
+    <string name="reduce_dynamic_blur_subtitle">Ersetzt Milchglas-Effekte durch einfarbige Flächen in der ganzen App</string>
+    <string name="disable_blend_effects">Mischeffekte deaktivieren</string>
+    <string name="disable_blend_effects_subtitle">Zeigt Player-Symbole, Text und dunkle Menüs in reinem Weiß, statt sie mit dem Cover einzufärben</string>
+    <string name="full_screen_cover_art">Vollbild-Cover</string>
+    <string name="synced_lyrics">Synchronisierte Songtexte</string>
+    <string name="synced_lyrics_subtitle">Hebt die Wörter im Player passend zum Gesang hervor</string>
+    <string name="lyrics_sources">Songtext-Quellen</string>
+    <string name="clear_image_cache">Bild-Cache leeren</string>
+    <string name="clear_image_cache_subtitle">Gibt den von Albumcovern belegten Speicher frei</string>
+    <string name="play_next_on_swipe">Beim Wischen als Nächstes wiedergeben</string>
+    <string name="stop_music_on_close">Musik beim Schließen aus den letzten Apps stoppen</string>
+    <string name="stop_music_on_close_subtitle">Stoppt die Wiedergabe, wenn die App aus den letzten Apps entfernt wird</string>
+    <string name="hide_volume_bar">Lautstärkeleiste ausblenden</string>
+    <string name="hide_volume_bar_subtitle">Entfernt den Lautstärkeregler aus dem Hauptplayer</string>
+    <string name="hide_status_bar_in_player">Statusleiste im Player ausblenden</string>
+    <string name="hide_status_bar_in_player_subtitle">Blendet Uhr, Akku und Benachrichtigungssymbole aus, solange der Hauptplayer geöffnet ist</string>
+    <string name="hide_song_status">Songstatus ausblenden</string>
+    <string name="hide_song_status_subtitle">Blendet den Text „Wiedergabe aus“ bzw. „Abgespielt von“ im Player aus</string>
+    <string name="off">Aus</string>
+    <string name="system">System</string>
+    <string name="light">Hell</string>
+    <string name="dark">Dunkel</string>
+    <string name="full_screen_cover_art_subtitle">Zieht das Cover bis an die Ränder des Players statt es quadratisch darzustellen</string>
+    <string name="full_screen_detail_cover">Vollbild-Album-/Playlist-Cover</string>
+    <string name="full_screen_detail_cover_subtitle">Zieht Album- und Playlist-Cover bis an die Ränder der Seite statt sie gerahmt darzustellen</string>
+    <string name="filter_non_music_audio">Nicht-Musik-Audio filtern</string>
+    <string name="filter_non_music_audio_subtitle">Blendet Clips unter 30 Sekunden, WAV-Dateien, Sprachnotizen, Aufnahmen und Systemtöne aus</string>
+    <string name="performance">Leistung</string>
+    <string name="high_performance_mode">Hochleistungsmodus</string>
+    <string name="high_performance_subtitle">Verwendet vollständige Animationen und Unschärfe und fordert eine höhere Bildwiederholrate an</string>
+    <string name="high_performance_active">%1$d Hz angefordert. Android kann die Rate bei Bedarf verringern.</string>
+    <string name="refresh_rate">Bildwiederholrate</string>
+    <string name="high_performance_before_enabling">Vor der Aktivierung</string>
+    <string name="high_performance_battery_warning">Stelle zuerst den Akkuverbrauch von bit auf Uneingeschränkt. Höhere Bildwiederholraten verbrauchen mehr Akku, CPU und GPU und können dein Gerät erwärmen.</string>
+    <string name="open_battery_settings">Akku-Einstellungen öffnen</string>
+    <string name="enable_high_performance_title">Hochleistungsmodus aktivieren?</string>
+    <string name="enable_high_performance_confirmation">Aktiviere dies nur, wenn der Akkuverbrauch von bit auf Uneingeschränkt gesetzt ist. Android kann die Bildwiederholrate weiterhin einschränken, wenn das Gerät heiß ist oder der Akku schwach ist.</string>
+    <string name="enable">Aktivieren</string>
+    <string name="not_yet">Noch nicht</string>
+    <string name="add_to_queue">Zur Warteschlange hinzufügen</string>
+    <string name="after_this_song">Nach diesem Song</string>
+    <string name="clear_name">Namen löschen</string>
+    <string name="copy_log">Protokoll kopieren</string>
+    <string name="couldnt_find">%1$s konnte nicht gefunden werden</string>
+    <string name="create_playlist">Playlist erstellen</string>
+    <string name="done">Fertig</string>
+    <string name="drag_to_reorder">Ziehen, um die Reihenfolge zu ändern</string>
+    <string name="enabled">Aktiviert</string>
+    <string name="pause">Pause</string>
+    <string name="shuffle_on">Zufallswiedergabe an</string>
+    <string name="shuffle_off">Zufallswiedergabe aus</string>
+    <string name="mono">Mono</string>
+    <string name="stereo">Stereo</string>
+    <string name="history">Verlauf</string>
+    <string name="couldnt_load_tracks">Diese Titel konnten nicht geladen werden</string>
+    <string name="history_empty">Noch nichts gespielt</string>
+    <string name="no_local_audio_found">Keine Audiodateien auf diesem Gerät gefunden</string>
+    <string name="unknown_artist">Unbekannter Künstler</string>
+    <string name="your_playlists">Deine Playlists</string>
+    <string name="who_can_see_it">Wer es sehen kann</string>
+    <string name="nothing_matches">Hier passt nichts zu „%1$s“</string>
+    <string name="close_search">Suche schließen</string>
+    <string name="less">Weniger</string>
+    <plurals name="songs_will_play_next">
+        <item quantity="one">%1$d Song wird als Nächstes gespielt</item>
+        <item quantity="other">%1$d Songs werden als Nächstes gespielt</item>
+    </plurals>
+    <plurals name="songs_added_to_queue">
+        <item quantity="one">%1$d Song zur Warteschlange hinzugefügt</item>
+        <item quantity="other">%1$d Songs zur Warteschlange hinzugefügt</item>
+    </plurals>
+    <plurals name="log_copied_line_count">
+        <item quantity="one">Protokoll kopiert · %1$d Zeile</item>
+        <item quantity="other">Protokoll kopiert · %1$d Zeilen</item>
+    </plurals>
+    <string name="like">Gefällt mir</string>
+    <string name="listening_history">Hörverlauf</string>
+    <string name="lyrics_sources_order">Die Quellen werden in dieser Reihenfolge ausprobiert. Ziehe, um sie neu anzuordnen. Die erste Quelle mit Songtexten gewinnt, sofern nicht Silben-Songtexte priorisiert werden.</string>
+    <string name="no_playlists_yet">Noch keine Playlists. Nutze die Zeile oben, um eine zu erstellen.</string>
+    <string name="no_tracks_here">Keine Titel hier</string>
+    <string name="one_hour">1 Stunde</string>
+    <string name="open_album">Album öffnen</string>
+    <string name="open_artist">Künstler öffnen</string>
+    <string name="pause_after_a_while">Wiedergabe nach einer Weile pausieren</string>
+    <string name="pause_after_song">Pausiert, wenn dieser Song endet</string>
+    <string name="pause_countdown">%1$s bis die Wiedergabe pausiert</string>
+    <string name="playlist_name">Playlist-Name</string>
+    <string name="prioritize_syllable_lyrics">Silben-Songtexte priorisieren</string>
+    <string name="prioritize_syllable_lyrics_subtitle">Sucht über einen zeilensynchronen Treffer hinaus nach wortgenauen Songtexten weiter</string>
+    <string name="remove_from_liked">Aus „Gefällt mir“-Musik entfernen</string>
+    <string name="remove_from_playlist">Aus dieser Playlist entfernen</string>
+    <string name="rename_playlist">Playlist umbenennen</string>
+    <string name="reorder_songs">Titel neu anordnen</string>
+    <string name="reset_to_default">Auf Standard zurücksetzen</string>
+    <string name="save_name">Namen speichern</string>
+    <string name="saved_to_youtube_music_account">In deinem YouTube-Music-Konto gespeichert</string>
+    <string name="search_this_list">Diese Liste durchsuchen</string>
+    <string name="share">Teilen</string>
+    <string name="signed_in_as">Angemeldet als %1$s</string>
+    <string name="signing_in">Wird angemeldet…</string>
+    <string name="sleep_timer">Sleep-Timer</string>
+    <string name="clear_queue">Warteschlange leeren</string>
+    <string name="sleep_timer_custom">Benutzerdefiniert</string>
+    <string name="start_sleep_timer">Timer starten</string>
+    <string name="tap_to_sign_in">Tippen, um sich anzumelden</string>
+    <string name="turn_off_timer">Timer ausschalten</string>
+    <plurals name="minute_count">
+        <item quantity="one">%1$d Minute</item>
+        <item quantity="other">%1$d Minuten</item>
+    </plurals>
+    <string name="biggest_day_note">Dein größter Tag war %1$s mit %2$s Hörzeit.</string>
+    <string name="close_replay">Replay schließen</string>
+    <string name="couldnt_draw_picture">Das Bild konnte nicht erstellt werden</string>
+    <string name="default_replay_holder">Juni listener</string>
+    <string name="different_albums">Verschiedene Alben</string>
+    <string name="genres_pending">Genres erscheinen, sobald dein Hörverlauf wächst</string>
+    <string name="hour_am">%1$d Uhr vorm.</string>
+    <string name="hour_pm">%1$d Uhr nachm.</string>
+    <string name="hours_minutes_short">%1$dh %2$dm</string>
+    <string name="listen_most_around">Du hörst am meisten gegen %1$s.</string>
+    <string name="lyrics_share_title">Songtext teilen</string>
+    <string name="lyrics_share_description">Die Zeilen, die du ausgewählt hast, auf einer Karte mit dem Cover.</string>
+    <string name="lyrics_share_story">Als Story formatieren</string>
+    <string name="lyrics_share_story_revert">Zurück zur Karte</string>
+    <string name="listening_shape">Dein Hörmuster</string>
+    <string name="member_since_value">Mitglied seit %1$s</string>
+    <string name="midday">mittags</string>
+    <string name="midnight">Mitternacht</string>
+    <string name="minutes">Minuten</string>
+    <string name="minutes_grouped_short">%1$s Min.</string>
+    <string name="minutes_listened">Gehörte Minuten</string>
+    <string name="minutes_short">%1$d Min.</string>
+    <string name="not_enough_listening">Noch nicht genug gehört</string>
+    <string name="not_enough_this_month">Höre diesen Monat noch ein paar Songs mehr, um dein Replay freizuschalten.</string>
+    <string name="replay_across"> über </string>
+    <string name="replay_album_end"> deine Aufmerksamkeit gefesselt.</string>
+    <string name="replay_album_focus">Ein Album</string>
+    <string name="replay_album_start">Diesmal hat </string>
+    <string name="replay_artist_end"> zurück.</string>
+    <string name="replay_artist_focus">Ein Künstler</string>
+    <string name="replay_artist_start">Den ganzen Monat kehrtest du immer wieder zu </string>
+    <string name="replay_empty_description">Höre etwas mehr, und bit verwandelt deinen Verlauf in ein Replay.</string>
+    <string name="replay_genre_end"> deinen Sound.</string>
+    <string name="replay_genre_focus">Deine Genres</string>
+    <string name="replay_genre_start">Zusammen prägten </string>
+    <string name="replay_habits_middle"> aus </string>
+    <string name="replay_habits_start">Du hast </string>
+    <string name="replay_hours_across">%1$s Stunden</string>
+    <string name="replay_intro_end"> ist bereit.</string>
+    <string name="replay_intro_start">Dein </string>
+    <string name="replay_minutes_end"> mit Musik verbracht.</string>
+    <string name="replay_minutes_start">Du hast </string>
+    <plurals name="replay_minutes_unit">
+        <item quantity="one">%1$s Minute</item>
+        <item quantity="other">%1$s Minuten</item>
+    </plurals>
+    <string name="replay_private_counting">Privat aus deinem Hörverlauf auf diesem Gerät erstellt</string>
+    <string name="replay_share_card_description">Eine übersichtliche Karte mit deinen wichtigsten Höhepunkten.</string>
+    <string name="replay_share_summary_description">Ein vollständiges Bild mit Songs, Künstlern, Alben, Genres und Gewohnheiten.</string>
+    <string name="replay_songs_end"> deinen Monat.</string>
+    <string name="replay_songs_start">Insgesamt füllten </string>
+    <string name="replay_summary_start">Dein Hörverhalten hatte </string>
+    <string name="saved">Gespeichert</string>
+    <string name="saved_bang">Gespeichert!</string>
+    <string name="share_my_replay">Mein Replay teilen</string>
+    <string name="share_your_lyrics">Textkarte senden</string>
+    <string name="share_your_replay">Dein Replay teilen</string>
+    <string name="tap_share_for_picture">Tippe auf Teilen, um ein Bild zu erstellen</string>
+    <string name="top_album">Top-Album</string>
+    <string name="top_artist">Top-Künstler</string>
+    <string name="top_genre">Top-Genre</string>
+    <string name="top_song">Top-Song</string>
+    <string name="when_you_listen_the_most">Wann du am meisten hörst</string>
+    <string name="your_biggest_day">Dein größter Tag: %1$s</string>
+    <string name="your_lyrics_card">Deine Textkarte</string>
+    <string name="your_replay">Dein Replay</string>
+    <plurals name="replay_artist_count">
+        <item quantity="one">%1$s Künstler</item>
+        <item quantity="other">%1$s Künstler</item>
+    </plurals>
+    <plurals name="replay_play_count">
+        <item quantity="one">%1$s Wiedergabe</item>
+        <item quantity="other">%1$s Wiedergaben</item>
+    </plurals>
+    <plurals name="replay_song_count">
+        <item quantity="one">%1$s Song</item>
+        <item quantity="other">%1$s Songs</item>
+    </plurals>
+    <string name="all_audio_folders">Alle Audioordner</string>
+    <string name="local_music_folder">Lokaler Musikordner</string>
+    <string name="scan_library">Bibliothek scannen</string>
+    <string name="scan_library_subtitle">Sucht neue Audiodateien und entfernt verschwundene. Die App scannt nur auf Anfrage.</string>
+    <string name="scanning_library">Audiodateien des Geräts werden gelesen…</string>
+    <string name="scanning">Scannen…</string>
+    <string name="sort_music">Musik sortieren</string>
+    <string name="sort_title_ascending">Alphabetisch (A bis Z)</string>
+    <string name="sort_title_descending">Alphabetisch (Z bis A)</string>
+    <string name="sort_date_added">Hinzugefügt (neueste zuerst)</string>
+    <string name="sort_date_modified">Geändert (neueste zuerst)</string>
+    <string name="use_all_audio_folders">Alle Audioordner verwenden</string>
+    <string name="use_all_audio_folders_subtitle">Entfernt die Ordnerbegrenzung und durchsucht Musik auf dem gesamten Gerät</string>
+    <string name="album">Album</string>
+    <string name="artist">Künstler</string>
+    <string name="playlist">Playlist</string>
+    <string name="open">Öffnen</string>
+    <string name="open_playlist">Playlist öffnen</string>
+    <string name="pin">Anheften</string>
+    <string name="unpin">Lösen</string>
+    <string name="rename">Umbenennen</string>
+    <string name="delete_playlist">Playlist löschen</string>
+    <string name="delete_playlist_confirmation">„%1$s“ löschen? Erneut tippen, um zu bestätigen.</string>
+    <string name="no_lyrics_sources_enabled">Keine. Songtexte werden nicht abgerufen.</string>
+    <string name="swipe_plays_next">Ein gewischter Song wird als Nächstes gespielt</string>
+    <string name="swipe_adds_to_queue">Wenn deaktiviert, fügt Wischen den Song ans Ende der Warteschlange hinzu</string>
+    <string name="import_backup_warning">Dies ersetzt die Einstellungen und den Hörverlauf dieses Geräts durch den Inhalt der Datei. Exportiere zuerst die aktuellen Daten, wenn du sie behalten möchtest.</string>
+    <string name="export_succeeded">Einstellungen und %1$s exportiert</string>
+    <string name="export_failed">Export fehlgeschlagen: %1$s</string>
+    <string name="import_succeeded">%1$s von v%2$s importiert</string>
+    <string name="import_failed">Import fehlgeschlagen: %1$s</string>
+    <string name="unknown_error">unbekannter Fehler</string>
+    <string name="no_listening_history">kein Hörverlauf</string>
+    <plurals name="listening_month_count">
+        <item quantity="one">%1$d Monat Hörverlauf</item>
+        <item quantity="other">%1$d Monate Hörverlauf</item>
+    </plurals>
+    <string name="no_local_albums">Hier gehört noch nichts zu einem Album oder einer Playlist. Lade ein vollständiges Album oder eine Playlist herunter, dann erscheint es hier.</string>
+    <string name="play_your_replay">Dein Replay abspielen</string>
+    <string name="counted_on_device_with_bit">Auf diesem Gerät mit bit gezählt</string>
+    <string name="this_month">Dieser Monat</string>
+    <string name="this_year">Dieses Jahr</string>
+    <string name="all_time">Gesamt</string>
+
+    <!-- Listen together -->
+
+    <string name="vietnamese">Vietnamesisch</string>
+
+
+    <plurals name="track_count_plural">
+        <item quantity="one">%1$d Titel</item>
+        <item quantity="other">%1$d Titel</item>
+    </plurals>
+    <string name="blur_unfocused_lyrics">Nicht aktive Songtexte weichzeichnen</string>
+
+    <string name="blur_unfocused_lyrics_subtitle">Hält den Fokus auf der aktuellen Zeile</string>
+
+    <string name="player_theme">Player-Design</string>
+    <string name="player_theme_default">Standard</string>
+    <string name="player_theme_legacy">Klassisch</string>
+    <string name="player_theme_simple">Einfach</string>
+    <string name="player_theme_default_subtitle">Die Farben des Covers setzen sich darunter fort</string>
+    <string name="player_theme_simple_subtitle">Ein weich gezeichnetes Cover hinter dem gesamten Player</string>
+
+    <string name="player_theme_legacy_subtitle">Bringt die sanft fließenden Farbflecken aus v1.5 zurück</string>
+
+    <string name="liquid_glass">Flüssiges Glas</string>
+
+    <string name="liquid_glass_subtitle">Echtes brechendes Glas auf der Navigationsleiste. Nur Android 12+.</string>
+
+    <string name="liquid_glass_unavailable">Erfordert Android 12 oder neuer</string>
+
+    <string name="output_precision">Ausgabegenauigkeit</string>
+
+
+    <string name="prefer_usb_dac">USB-DAC bevorzugen</string>
+    <string name="loudness_normalization">Lautstärkenormalisierung</string>
+    <string name="loudness_normalization_subtitle">Bringt jeden Titel auf dieselbe Lautheit</string>
+    <string name="loudness_off_on_speaker">Auf dem Handylautsprecher deaktivieren</string>
+    <string name="pipeline_loudness_gain">Verstärkung</string>
+    <string name="pipeline_loudness_measured">Gemessen</string>
+    <string name="pipeline_bit_exact">Bit-genau</string>
+    <string name="loudness_gain_db">%1$s dB</string>
+    <string name="loudness_lufs">%1$s LUFS</string>
+
+
+
+    <string name="select_all">Alle auswählen</string>
+
+    <string name="sort_date_added_oldest">Hinzugefügt am (älteste zuerst)</string>
+
+    <string name="sort_date_added_toggle">Hinzugefügt am</string>
+
+    <string name="sort_default">Standardreihenfolge</string>
+
+    <string name="sort_songs">Titel sortieren</string>
+
+
+    <string name="lyrics_offset">Lyrics offset</string>
+
+
+
+
+
+    <string name="auto_recents">Recent</string>
+
+    <string name="auto_liked">Liked songs</string>
+
+    <string name="auto_empty_recents_title">No recent songs</string>
+
+    <string name="auto_empty_recents_subtitle">Songs you play will appear here</string>
+
+    <string name="auto_empty_playlists_title">No playlists available</string>
+
+    <string name="auto_empty_playlists_subtitle">Check your connection and try again</string>
+
+    <string name="auto_empty_liked_title">No liked songs</string>
+
+    <string name="auto_empty_liked_subtitle">Tap the heart on a song to save it here</string>
+
+    <string name="auto_empty_offline_title">No offline songs</string>
+
+    <string name="auto_empty_offline_subtitle">Download songs on your phone to listen here</string>
+
+    <string name="auto_unavailable_title">Content unavailable</string>
+
+    <string name="auto_unavailable_subtitle">Reopen the folder and try again</string>
+
+    <string name="settings_search_hint">Search settings</string>
+
+    <string name="settings_search_empty">No settings match “%1$s”</string>
+
+
+    <string name="equalizer_footer">Shapes the sound inside bit, before it reaches the system.</string>
+
+    <string name="equalizer_dynamic">Dynamic</string>
+
+    <string name="equalizer_manual">Manual</string>
+
+    <string name="equalizer_tone">Tone</string>
+
+    <string name="equalizer_tilt">Tilt</string>
+
+    <string name="equalizer_contour">Contour</string>
+
+    <string name="equalizer_broad">Broad</string>
+
+    <string name="equalizer_focused">Focused</string>
+
+    <string name="equalizer_broad_footer">Drag left for a warmer sound and right for a brighter one; down scoops the middle, up brings it forward. Broad moves wide stretches of the spectrum at once.</string>
+
+    <string name="equalizer_focused_footer">Drag left for a warmer sound and right for a brighter one; down scoops the middle, up brings it forward. Focused works on narrower stretches, so it changes less around what it moves.</string>
+
+    <string name="equalizer_preset">Preset</string>
+
+    <string name="equalizer_bands">Bands</string>
+
+    <string name="equalizer_bands_footer">Moving a band leaves the preset behind and the curve becomes your own.</string>
+
+    <string name="equalizer_reset">Reset all bands</string>
+
+    <string name="equalizer_balance">Balance</string>
+
+    <string name="equalizer_balance_left">L</string>
+
+    <string name="equalizer_balance_right">R</string>
+
+    <string name="equalizer_balance_footer">Shifts the sound towards one ear by quietening the other.</string>
+    <string name="equalizer_bitstream_title">Gerade nicht aktiv</string>
+    <string name="equalizer_bitstream_subtitle">Dieser Titel wird undekodiert an die Ausgabe gesendet</string>
+    <string name="equalizer_bitstream_footer">Der Equalizer arbeitet mit dekodiertem Audio. Dieser Titel wird als Bitstream durchgereicht, den dein Gerät selbst dekodiert – hier gibt es also keine Samples zum Filtern.</string>
+
+    <string name="system_equalizer">System equalizer</string>
+
+    <string name="system_equalizer_subtitle">Your device\'s own panel</string>
+
+    <string name="system_equalizer_footer">Runs after bit\'s, on the whole audio session. Using both applies both.</string>
+
+    <string name="eq_preset_flat">Flat</string>
+
+    <string name="eq_preset_acoustic">Acoustic</string>
+
+    <string name="eq_preset_bass_boost">Bass boost</string>
+
+    <string name="eq_preset_bass_cut">Bass cut</string>
+
+    <string name="eq_preset_vocal">Vocal</string>
+
+    <string name="eq_preset_treble_boost">Treble boost</string>
+
+    <string name="eq_preset_treble_cut">Treble cut</string>
+
+    <string name="eq_preset_loudness">Loudness</string>
+
+    <string name="eq_preset_spoken_word">Spoken word</string>
+
+    <string name="eq_preset_electronic">Electronic</string>
+
+    <string name="eq_preset_rock">Rock</string>
+
+    <string name="eq_preset_hip_hop">Hip-hop</string>
+
+    <string name="eq_preset_jazz">Jazz</string>
+
+    <string name="eq_preset_classical">Classical</string>
+
+    <string name="eq_preset_small_speakers">Small speakers</string>
+
+    <string name="eq_preset_late_night">Late night</string>
+
+    <string name="eq_preset_custom">Custom</string>
+
+    <string name="translation_language">Translation language</string>
+
+    <string name="translation_language_description">The language the translate button turns lyrics into.</string>
+
+    <string name="translation_language_app_default">App language</string>
+
+    <string name="translation_language_subtitle">Follows the app language</string>
+
+    <string name="search_languages">Search languages</string>
+
+    <string name="no_languages_match">No languages match</string>
+
+
+
+    <string name="audio_pipeline">Audio Pipeline</string>
+    <string name="audio_pipeline_subtitle">Live-Signalweg vom Decoder bis zur Ausgabe</string>
+
+    <string name="pipeline_track_info">Track Info</string>
+
+    <string name="pipeline_decoder">Decoder</string>
+
+    <string name="pipeline_resampler">Resampler</string>
+
+    <string name="pipeline_dsp">DSP</string>
+
+    <string name="pipeline_output_device">Output Device</string>
+
+    <string name="pipeline_source">Source</string>
+
+    <string name="pipeline_format">Format</string>
+
+    <string name="pipeline_bit_depth">Bit Depth</string>
+
+    <string name="pipeline_sample_rate">Sample Rate</string>
+
+    <string name="pipeline_bitrate">Bitrate</string>
+
+    <string name="pipeline_channels">Channels</string>
+
+    <string name="pipeline_decoder_name">Decoder Name</string>
+
+    <string name="pipeline_io_rate">I/O Rate</string>
+
+    <string name="pipeline_type">Type</string>
+
+    <string name="pipeline_cutoff">Cutoff</string>
+
+    <string name="pipeline_quality">Quality</string>
+
+    <string name="pipeline_pcm_format">PCM Format</string>
+
+    <string name="pipeline_eq_preset">EQ Preset</string>
+
+    <string name="pipeline_stereo_expand">Stereo Expand</string>
+
+    <string name="pipeline_buffers">Buffers</string>
+
+    <string name="pipeline_output_api">Output API</string>
+
+    <string name="pipeline_device_name">Device Name</string>
+
+
+
+    <string name="song_will_play_next">Song will play next</string>
+
+    <string name="song_added_to_queue">Song added to queue</string>
+    <string name="song_added_to_playlist">Zur Playlist hinzugefügt</string>
+    <string name="song_already_in_playlist">Bereits in der Playlist</string>
+    <plurals name="add_to_playlists_count">
+        <item quantity="one">Zu %1$d Playlist hinzufügen</item>
+        <item quantity="other">Zu %1$d Playlists hinzufügen</item>
+    </plurals>
+    <plurals name="added_to_playlists_notice">
+        <item quantity="one">Zu %1$d Playlist hinzugefügt</item>
+        <item quantity="other">Zu %1$d Playlists hinzugefügt</item>
+    </plurals>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="local_playlist_subtitle">%1$d Titel · Auf diesem Gerät</string>
+    <string name="spotify_import_empty_playlist">Keine Titel in dieser Playlist</string>
+    <string name="show_queue_history">Wiedergabeverlauf anzeigen</string>
+    <string name="show_queue_history_subtitle">Bis zu 25 zuletzt gespielte Songs über „Aktuelle Wiedergabe“ in der Warteschlange anzeigen</string>
+    <string name="not_enough_this_week">Höre diese Woche noch ein paar Songs mehr, um dein Replay freizuschalten.</string>
+    <string name="replay_artist_start_week">Diese Woche kehrtest du immer wieder zu </string>
+    <string name="replay_songs_end_week"> deine Woche.</string>
+    <string name="replay_summary_end_week">Woche</string>
+    <string name="replay_this_week">Diese Woche</string>
+    <string name="replay_period_weekly">Wöchentlich</string>
+    <string name="replay_period_monthly">Monatlich</string>
+    <string name="replay_period_yearly">Jährlich</string>
+    <string name="replay_period_lifetime">Gesamt</string>
+    <string name="opened_file">Geöffnete Datei</string>
+    <string name="folders">Ordner</string>
+    <string name="folder">Ordner</string>
+    <string name="no_local_folders">Keine Ordner mit Musik</string>
+    <string name="offline_playlist_empty">Diese Playlist ist noch leer. Füge Songs über ihr Menü hinzu.</string>
+    <string name="offline_liked_empty">Songs, die dir auf diesem Gerät gefallen, erscheinen hier</string>
+    <string name="saved_on_this_device">Auf diesem Gerät gespeichert</string>
+    <string name="progressive_blur">Progressive Unschärfe</string>
+    <string name="glass_performance">Bessere Leistung für Glas</string>
+    <string name="remove_from_history">Aus dem Verlauf entfernen</string>
+    <string name="font">Schriftart</string>
+    <string name="font_default">Standard</string>
+    <string name="font_legacy">Klassisch</string>
+    <string name="font_default_subtitle">SF Pro Display · Schriftschnitte wie bei Apple Music</string>
+    <string name="font_legacy_subtitle">SF Pro Display · Ursprüngliche kräftige Schriftschnitte</string>
+    <string name="font_footer">„Klassisch“ bringt die kräftigere, engere Schrift zurück, die die App verwendete, bevor sie an Apple Music angepasst wurde.</string>
+    <string name="bit_perfect_output">Bit-perfekte Ausgabe</string>
+    <string name="bit_perfect_bypassed_footer">Die bit-perfekte Ausgabe ist bereit, daher werden die ausgegrauten Einstellungen umgangen und keine Dolby-Atmos-Versionen angefordert. Sie funktionieren wieder, wenn der DAC getrennt oder der Modus ausgeschaltet wird.</string>
+    <string name="bit_perfect_sheet_warning">Sendet den Titel unverändert an den DAC. Equalizer, Lautstärkenormalisierung, Überblendung, Wiedergabegeschwindigkeit und die Lautstärke von bit werden umgangen.</string>
+    <string name="bit_perfect_mode_off_subtitle">Der Ton läuft über den Android-Mixer und die Effekte von bit.</string>
+    <string name="bit_perfect_mode_usb_android">USB-DAC</string>
+    <string name="bit_perfect_mode_usb_android_subtitle">Android 14 öffnet den DAC mit der Abtastrate und Bittiefe des jeweiligen Titels, ohne Mischen oder Resampling.</string>
+    <string name="bit_perfect_requires_android_14">Erfordert Android 14 oder neuer</string>
+    <string name="bit_perfect_mode_dap_exclusive">Integrierter DAC (AAudio exklusiv)</string>
+    <string name="bit_perfect_mode_dap_exclusive_subtitle">Für Musikplayer mit eigenem DAC. Öffnet den Kopfhörer- oder Line-Ausgang exklusiv mit der Abtastrate des jeweiligen Titels. Nicht jedes Gerät gewährt den Exklusivmodus.</string>
+    <string name="bit_perfect_requires_android_8_1">Erfordert Android 8.1 oder neuer</string>
+    <string name="bit_perfect_mode_usb_direct">USB-DAC (direkter Treiber)</string>
+    <string name="bit_perfect_mode_usb_direct_subtitle">bit steuert den DAC selbst, unter jeder Android-Version, und stellt die Lautstärke am DAC ein. Fragt nach der USB-Berechtigung. Kann deutlich lauter sein als die normale Ausgabe.</string>
+    <string name="dac_volume">DAC-Lautstärke</string>
+    <string name="dac_volume_subtitle">Wird am DAC selbst eingestellt; die Musik wird nicht skaliert</string>
+    <string name="usb_allow_fixed_volume">DACs ohne Lautstärkeregelung zulassen</string>
+    <string name="usb_allow_fixed_volume_subtitle">Sonst spielt ein solcher DAC über die normale Ausgabe</string>
+    <string name="usb_allow_fixed_volume_confirm_title">Mit voller Aussteuerung abspielen?</string>
+    <string name="usb_allow_fixed_volume_confirm_message">bit kann die Lautstärke dieser Art von DAC nicht einstellen. Er spielt daher mit voller Aussteuerung, und nur sein eigener Regler, falls vorhanden, ändert die Lautstärke. Mit empfindlichen Kopfhörern kann das gefährlich laut sein.</string>
+    <string name="convert_for_limited_dac">Für einfachere DACs umwandeln</string>
+    <string name="convert_for_limited_dac_subtitle">Wandelt Titel, die über dem Limit deines DACs liegen, in sein höchstes Format um. Titel starten eventuell langsamer und sind nicht bit-perfekt zum Original.</string>
+    <string name="bit_perfect_confirm_title">Bit-perfekte Ausgabe einschalten?</string>
+    <string name="bit_perfect_confirm_message">Der DAC erhält die Musik mit voller Aussteuerung, und die Lautstärketasten des Telefons funktionieren möglicherweise nicht mehr. Dreh den DAC oder Verstärker vor der Wiedergabe herunter.</string>
+    <string name="bit_perfect_status_active">%1$s · %2$s kHz · %3$d Bit</string>
+    <string name="bit_perfect_status_dac_limited">%1$s · %2$s kHz · %3$d Bit · DAC-Maximum, aus dem Format dieses Titels umgewandelt</string>
+    <string name="bit_perfect_status_inexact">%1$s · nicht exakt: Diese Quelle ist kein verlustfreies PCM</string>
+    <string name="bit_perfect_status_waiting">Warte auf einen verlustfreien Titel an einem unterstützten Ausgang</string>
+    <string name="bit_perfect_status_unavailable">Für diesen Titel nicht verfügbar (%1$s)</string>
+    <string name="diwali_title">bit wishes you a Happy Diwali</string>
+    <string name="diwali_subtitle">May this festival of lights fill your home with joy and your days with music.</string>
+    <string name="diwali_cta">Let\'s Celebrate</string>
+    <string name="sort_size_descending">Größe (größte zuerst)</string>
+</resources>

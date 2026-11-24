@@ -1,0 +1,697 @@
+<resources>
+    <string name="app_name">Juni</string>
+    <string name="playback_channel_name">กำลังเล่น</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="save">บันทึก</string>
+    <string name="close">ปิด</string>
+    <string name="back">กลับ</string>
+    <string name="settings">การตั้งค่า</string>
+    <string name="search">ค้นหา</string>
+    <string name="clear_search">ล้างการค้นหา</string>
+    <string name="library">คลังเพลง</string>
+    <string name="play">เล่น</string>
+    <string name="local_music">เพลงในเครื่อง</string>
+    <string name="audio_files_on_device">ไฟล์เสียงในอุปกรณ์</string>
+    <string name="playlists">เพลย์ลิสต์</string>
+    <string name="new_playlist">เพลย์ลิสต์ใหม่</string>
+    <string name="sign_in">ลงชื่อเข้าใช้</string>
+    <string name="shuffle">สุ่มเล่น</string>
+    <string name="more">เพิ่มเติม</string>
+    <string name="add_to_playlist">เพิ่มลงเพลย์ลิสต์</string>
+    <string name="top_songs">เพลงยอดนิยม</string>
+    <plurals name="song_count_plural">
+        <item quantity="other">%1$d เพลง</item>
+    </plurals>
+    <plurals name="track_count_plural">
+        <item quantity="other">%1$d แทร็ก</item>
+    </plurals>
+    <string name="songs">เพลง</string>
+    <string name="artists">ศิลปิน</string>
+    <string name="albums">อัลบั้ม</string>
+    <string name="storage_required_read">ต้องได้รับสิทธิ์เข้าถึงพื้นที่จัดเก็บเพื่ออ่านไฟล์เสียงในเครื่อง</string>
+    <string name="test">ทดสอบ</string>
+    <string name="testing">กำลังทดสอบ…</string>
+    <string name="connected">เชื่อมต่อแล้ว</string>
+    <string name="now_playing">กำลังเล่น</string>
+    <string name="selected">เลือกแล้ว</string>
+    <string name="select_all">เลือกทั้งหมด</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="username">ชื่อผู้ใช้</string>
+    <string name="login_failed">เข้าสู่ระบบไม่สำเร็จ</string>
+    <string name="image_cache_cleared">ล้างแคชรูปภาพแล้ว</string>
+    <string name="no_equalizer">อุปกรณ์นี้ไม่มีอีควอไลเซอร์ของระบบ</string>
+    <string name="try_again">ลองอีกครั้ง</string>
+    <string name="play_next">เล่นต่อไป</string>
+    <string name="queue">คิว</string>
+    <string name="failed">ล้มเหลว</string>
+    <string name="widget_square_label">กำลังเล่น 2×2</string>
+    <string name="widget_wide_label">กำลังเล่น 4×2</string>
+    <string name="widget_square_description">ปกอัลบั้มพร้อมปุ่มควบคุมการเล่น แบบสี่เหลี่ยมจัตุรัส</string>
+    <string name="widget_wide_description">ปกอัลบั้มพร้อมชื่อเพลงและปุ่มควบคุมการเล่น ความกว้างเต็มจอ</string>
+    <string name="widget_play">เล่น</string>
+    <string name="widget_pause">หยุดชั่วคราว</string>
+    <string name="widget_next">ถัดไป</string>
+    <string name="widget_previous">ก่อนหน้า</string>
+    <string name="widget_artwork">ปกอัลบั้ม</string>
+    <string name="widget_nothing_played">ยังไม่มีการเล่นเพลง</string>
+    <string name="widget_preview_title">ชื่อเพลง</string>
+    <string name="widget_preview_artist">ศิลปิน</string>
+    <string name="widget_pill_label">กำลังเล่น 4×1</string>
+    <string name="widget_pill_description">เพลงพร้อมปุ่มถูกใจ สุ่มเล่น และปุ่มควบคุมการเล่นในแถวเดียว</string>
+    <string name="widget_preview_pill">ชื่อเพลง - ศิลปิน</string>
+    <string name="spatial_audio">เสียงเชิงพื้นที่</string>
+    <string name="spatial_audio_subtitle">ขยายแทร็กสเตอริโอให้ดื่มด่ำยิ่งขึ้น</string>
+    <string name="spatial_audio_atmos_subtitle">หยุดไว้สำหรับแทร็กนี้ — Dolby Atmos เป็นเสียงรอบทิศทางอยู่แล้ว</string>
+    <string name="replay">Replay</string>
+    <string name="replay_subtitle">เพลง ศิลปิน อัลบั้ม และแนวเพลงยอดนิยมของคุณ</string>
+    <string name="work_out_genres">คำนวณแนวเพลง</string>
+    <string name="export_data">ส่งออกข้อมูล</string>
+    <string name="export_data_subtitle">การตั้งค่าและประวัติการฟัง เป็นไฟล์ JSON เดียว</string>
+    <string name="import_data">นำเข้าข้อมูล</string>
+    <string name="import_data_subtitle">แทนที่การตั้งค่าและประวัติในอุปกรณ์นี้</string>
+    <string name="import_backup_title">นำเข้าข้อมูลสำรองหรือไม่</string>
+    <string name="choose_file">เลือกไฟล์</string>
+    <string name="top_artists">ศิลปินยอดนิยม</string>
+    <string name="top_albums">อัลบั้มยอดนิยม</string>
+    <string name="top_genres">แนวเพลงยอดนิยม</string>
+    <string name="language">ภาษา</string>
+    <string name="app_language">ภาษาแอป</string>
+    <string name="app_language_description">เลือกภาษาที่ใช้ใน bit</string>
+    <string name="english">อังกฤษ</string>
+    <string name="spanish">สเปน</string>
+    <string name="french">ฝรั่งเศส</string>
+    <string name="german">เยอรมัน</string>
+    <string name="polish">โปแลนด์</string>
+    <string name="portuguese">โปรตุเกส</string>
+    <string name="indonesian">อินโดนีเซีย</string>
+    <string name="hindi">ฮินดี</string>
+    <string name="japanese">ญี่ปุ่น</string>
+    <string name="russian">รัสเซีย</string>
+    <string name="chinese_simplified">จีน (ตัวย่อ)</string>
+    <string name="chinese_traditional">จีน (ตัวเต็ม)</string>
+    <string name="hebrew">ฮีบรู</string>
+    <string name="italian">อิตาลี</string>
+    <string name="turkish">ตุรกี</string>
+    <string name="thai">ไทย</string>
+    <string name="korean">เกาหลี</string>
+    <string name="show_all">แสดงทั้งหมด</string>
+    <string name="switch_to_grid_view">สลับเป็นมุมมองกริด</string>
+    <string name="switch_to_list_view">สลับเป็นมุมมองรายการ</string>
+    <string name="playback">การเล่น</string>
+    <string name="appearance">ลักษณะที่ปรากฏ</string>
+    <string name="storage">พื้นที่จัดเก็บ</string>
+    <string name="your_data">ข้อมูลของคุณ</string>
+    <string name="miscellaneous">เบ็ดเตล็ด</string>
+    <string name="crossfade">ครอสเฟด</string>
+    <string name="crossfade_subtitle">ผสานเพลงหนึ่งเข้ากับเพลงถัดไป</string>
+    <string name="skip_silence">ข้ามช่วงเงียบ</string>
+    <string name="skip_silence_subtitle">ตัดช่วงเงียบที่นานกว่าหนึ่งวินาที</string>
+    <string name="skip_silence_float_subtitle">ใช้ไม่ได้กับเอาต์พุตแบบ float 32 บิต</string>
+    <string name="equalizer">อีควอไลเซอร์</string>
+    <string name="equalizer_subtitle">แผงควบคุมของระบบในอุปกรณ์ของคุณ</string>
+    <string name="show_nerd_stats">แสดงสถิติเชิงลึก</string>
+    <string name="show_nerd_stats_subtitle">โคเดก อัตราบิต และอัตราสุ่มตัวอย่างบนหน้าเครื่องเล่น</string>
+    <string name="theme">ธีม</string>
+    <string name="reduce_animation">ลดแอนิเมชัน</string>
+    <string name="reduce_animation_subtitle">หยุดเกรเดียนต์ของเครื่องเล่นหลักแทนการเคลื่อนไหว</string>
+    <string name="reduce_dynamic_blur">ลดเบลอแบบไดนามิก</string>
+    <string name="reduce_dynamic_blur_subtitle">เปลี่ยนกระจกฝ้าเป็นพื้นทึบทั่วทั้งแอป</string>
+    <string name="disable_blend_effects">ปิดเอฟเฟกต์ผสมสี</string>
+    <string name="disable_blend_effects_subtitle">แสดงไอคอน ข้อความ และเมนูสีเข้มของเครื่องเล่นเป็นสีขาวล้วน แทนการย้อมด้วยสีจากปกอัลบั้ม</string>
+    <string name="liquid_glass">Liquid Glass</string>
+    <string name="liquid_glass_subtitle">กระจกหักเหแสงจริงบนแถบนำทางแบบลอย ใช้ได้เฉพาะ Android 12 ขึ้นไป และใช้ GPU มากขึ้น</string>
+    <string name="liquid_glass_unavailable">ต้องใช้ Android 12 ขึ้นไป</string>
+    <string name="full_screen_cover_art">ปกอัลบั้มเต็มจอ</string>
+    <string name="synced_lyrics">เนื้อเพลงซิงค์</string>
+    <string name="synced_lyrics_subtitle">ไฮไลต์คำร้องบนหน้าเครื่องเล่นตามจังหวะที่ร้อง</string>
+    <string name="lyrics_sources">แหล่งเนื้อเพลง</string>
+    <string name="clear_image_cache">ล้างแคชรูปภาพ</string>
+    <string name="clear_image_cache_subtitle">คืนพื้นที่ที่ใช้โดยปกอัลบั้ม</string>
+    <string name="play_next_on_swipe">ปัดเพื่อเล่นต่อไป</string>
+    <string name="stop_music_on_close">หยุดเพลงเมื่อปิดจากหน้าแอปล่าสุด</string>
+    <string name="stop_music_on_close_subtitle">หยุดการเล่นเมื่อปัดแอปออกจากหน้าแอปล่าสุด</string>
+    <string name="hide_volume_bar">ซ่อนแถบระดับเสียง</string>
+    <string name="hide_volume_bar_subtitle">เอาแถบเลื่อนระดับเสียงออกจากเครื่องเล่นหลัก</string>
+    <string name="hide_status_bar_in_player">ซ่อนแถบสถานะในเครื่องเล่น</string>
+    <string name="hide_status_bar_in_player_subtitle">ซ่อนนาฬิกา แบตเตอรี่ และไอคอนการแจ้งเตือนขณะเปิดเครื่องเล่นหลัก</string>
+    <string name="hide_song_status">ซ่อนสถานะเพลง</string>
+    <string name="hide_song_status_subtitle">ซ่อนข้อความ “กำลังเล่นจาก” หรือ “เล่นโดย” ในเพลเยอร์หลัก</string>
+    <string name="off">ปิด</string>
+    <string name="system">ระบบ</string>
+    <string name="light">สว่าง</string>
+    <string name="dark">มืด</string>
+    <string name="full_screen_cover_art_subtitle">ขยายปกอัลบั้มเต็มขอบเครื่องเล่นแทนปกสี่เหลี่ยมจัตุรัส</string>
+    <string name="full_screen_detail_cover">ปกอัลบั้ม/เพลย์ลิสต์เต็มจอ</string>
+    <string name="full_screen_detail_cover_subtitle">ขยายปกอัลบั้มและเพลย์ลิสต์เต็มขอบหน้าแทนการแสดงในกรอบ</string>
+    <string name="filter_non_music_audio">กรองเสียงที่ไม่ใช่เพลง</string>
+    <string name="filter_non_music_audio_subtitle">ซ่อนคลิปสั้นกว่า 30 วินาที ไฟล์ WAV บันทึกเสียง การอัดเสียง และเสียงระบบ</string>
+    <string name="performance">ประสิทธิภาพ</string>
+    <string name="high_performance_mode">โหมดประสิทธิภาพสูง</string>
+    <string name="high_performance_subtitle">ใช้แอนิเมชันและเบลอเต็มรูปแบบ และขออัตรารีเฟรชหน้าจอที่สูงขึ้น</string>
+    <string name="high_performance_active">ขออัตรารีเฟรช %1$d Hz ระบบ Android อาจลดลงเมื่อจำเป็น</string>
+    <string name="refresh_rate">อัตรารีเฟรช</string>
+    <string name="high_performance_before_enabling">ก่อนเปิดใช้งาน</string>
+    <string name="high_performance_battery_warning">ตั้งค่าการใช้แบตเตอรี่ของ bit เป็นไม่จำกัดก่อน อัตรารีเฟรชที่สูงขึ้นใช้แบตเตอรี่ CPU และ GPU มากขึ้น และอาจทำให้อุปกรณ์ร้อนขึ้น</string>
+    <string name="open_battery_settings">เปิดการตั้งค่าแบตเตอรี่</string>
+    <string name="enable_high_performance_title">เปิดใช้งานโหมดประสิทธิภาพสูงหรือไม่</string>
+    <string name="enable_high_performance_confirmation">เปิดใช้งานเฉพาะเมื่อการใช้แบตเตอรี่ของ bit ตั้งเป็นไม่จำกัด Android ยังสามารถจำกัดอัตรารีเฟรชเมื่ออุปกรณ์ร้อนหรือแบตเตอรี่ต่ำ</string>
+    <string name="enable">เปิดใช้งาน</string>
+    <string name="not_yet">ยังไม่ใช่ตอนนี้</string>
+    <string name="add_to_queue">เพิ่มลงคิว</string>
+    <string name="after_this_song">หลังเพลงนี้</string>
+    <string name="clear_name">ล้างชื่อ</string>
+    <string name="copy_log">คัดลอกล็อก</string>
+    <string name="couldnt_find">หา %1$s ไม่พบ</string>
+    <string name="create_playlist">สร้างเพลย์ลิสต์</string>
+    <string name="done">เสร็จสิ้น</string>
+    <string name="drag_to_reorder">ลากเพื่อจัดลำดับใหม่</string>
+    <string name="enabled">เปิดใช้งาน</string>
+    <string name="pause">หยุดชั่วคราว</string>
+    <string name="shuffle_on">เปิดสุ่มเล่น</string>
+    <string name="shuffle_off">ปิดสุ่มเล่น</string>
+    <string name="mono">โมโน</string>
+    <string name="stereo">สเตอริโอ</string>
+    <string name="history">ประวัติ</string>
+    <string name="couldnt_load_tracks">โหลดแทร็กเหล่านี้ไม่ได้</string>
+    <string name="history_empty">ยังไม่มีการเล่นเพลง</string>
+    <string name="no_local_audio_found">ไม่พบไฟล์เสียงในอุปกรณ์นี้</string>
+    <string name="unknown_artist">ศิลปินที่ไม่ทราบชื่อ</string>
+    <string name="your_playlists">เพลย์ลิสต์ของคุณ</string>
+    <string name="who_can_see_it">ใครสามารถดูได้บ้าง</string>
+    <string name="nothing_matches">ไม่มีอะไรตรงกับ “%1$s”</string>
+    <string name="close_search">ปิดการค้นหา</string>
+    <string name="less">น้อยลง</string>
+    <plurals name="songs_will_play_next">
+        <item quantity="other">%1$d เพลงจะเล่นต่อไป</item>
+    </plurals>
+    <plurals name="songs_added_to_queue">
+        <item quantity="other">เพิ่ม %1$d เพลงลงในคิวแล้ว</item>
+    </plurals>
+    <plurals name="log_copied_line_count">
+        <item quantity="other">คัดลอกล็อกแล้ว · %1$d บรรทัด</item>
+    </plurals>
+    <string name="like">ถูกใจ</string>
+    <string name="listening_history">ประวัติการฟัง</string>
+    <string name="lyrics_sources_order">แหล่งข้อมูลจะถูกลองตามลำดับนี้ ลากเพื่อจัดลำดับใหม่ แหล่งข้อมูลแรกที่มีเนื้อเพลงจะถูกใช้ เว้นแต่ตั้งค่าให้เนื้อเพลงแบบพยางค์มาก่อน</string>
+    <string name="no_playlists_yet">ยังไม่มีเพลย์ลิสต์ ใช้แถวด้านบนเพื่อสร้างเพลย์ลิสต์</string>
+    <string name="no_tracks_here">ไม่มีแทร็กที่นี่</string>
+    <string name="one_hour">1 ชั่วโมง</string>
+    <string name="open_album">เปิดอัลบั้ม</string>
+    <string name="open_artist">เปิดหน้าศิลปิน</string>
+    <string name="pause_after_a_while">หยุดเล่นชั่วคราวหลังจากผ่านไปสักครู่</string>
+    <string name="pause_after_song">จะหยุดชั่วคราวเมื่อเพลงนี้จบ</string>
+    <string name="pause_countdown">อีก %1$s จะหยุดเล่นชั่วคราว</string>
+    <string name="playlist_name">ชื่อเพลย์ลิสต์</string>
+    <string name="prioritize_syllable_lyrics">จัดลำดับความสำคัญเนื้อเพลงแบบพยางค์</string>
+    <string name="prioritize_syllable_lyrics_subtitle">ค้นหาต่อแม้เจอเนื้อเพลงแบบซิงค์รายบรรทัดแล้ว เพื่อหาแบบซิงค์ทีละคำ</string>
+    <string name="remove_from_liked">นำออกจากเพลงที่ถูกใจ</string>
+    <string name="remove_from_playlist">นำออกจากเพลย์ลิสต์นี้</string>
+    <string name="rename_playlist">เปลี่ยนชื่อเพลย์ลิสต์</string>
+    <string name="reorder_songs">จัดลำดับเพลงใหม่</string>
+    <string name="reset_to_default">รีเซ็ตเป็นค่าเริ่มต้น</string>
+    <string name="save_name">บันทึกชื่อ</string>
+    <string name="saved_to_youtube_music_account">บันทึกลงบัญชี YouTube Music ของคุณแล้ว</string>
+    <string name="search_this_list">ค้นหาในรายการนี้</string>
+    <string name="share">แชร์</string>
+    <string name="signed_in_as">ลงชื่อเข้าใช้ในชื่อ %1$s</string>
+    <string name="signing_in">กำลังลงชื่อเข้าใช้…</string>
+    <string name="sleep_timer">ตัวจับเวลาปิดเพลง</string>
+    <string name="clear_queue">ล้างคิว</string>
+    <string name="sleep_timer_custom">กำหนดเอง</string>
+    <string name="start_sleep_timer">เริ่มตั้งเวลา</string>
+    <string name="tap_to_sign_in">แตะเพื่อลงชื่อเข้าใช้</string>
+    <string name="turn_off_timer">ปิดตัวจับเวลา</string>
+    <plurals name="minute_count">
+        <item quantity="other">%1$d นาที</item>
+    </plurals>
+    <string name="biggest_day_note">วันที่คุณฟังมากที่สุดคือ %1$s ด้วยเวลาฟัง %2$s</string>
+    <string name="close_replay">ปิด Replay</string>
+    <string name="couldnt_draw_picture">สร้างภาพไม่สำเร็จ</string>
+    <string name="default_replay_holder">Juni listener</string>
+    <string name="different_albums">อัลบั้มที่แตกต่างกัน</string>
+    <string name="genres_pending">แนวเพลงจะปรากฏขึ้นเมื่อประวัติการฟังของคุณเพิ่มมากขึ้น</string>
+    <string name="hour_am">%1$d โมงเช้า</string>
+    <string name="hour_pm">%1$d โมงเย็น</string>
+    <string name="hours_minutes_short">%1$dชม. %2$dนาที</string>
+    <string name="listen_most_around">คุณฟังเพลงมากที่สุดช่วง %1$s</string>
+    <string name="lyrics_share_title">แชร์เนื้อเพลง</string>
+    <string name="lyrics_share_description">บรรทัดที่คุณเลือก เรียงเป็นการ์ดพร้อมปก</string>
+    <string name="lyrics_share_story">แปลงเป็นสตอรี่</string>
+    <string name="lyrics_share_story_revert">กลับเป็นการ์ด</string>
+    <string name="listening_shape">รูปแบบการฟังของคุณ</string>
+    <string name="member_since_value">เป็นสมาชิกตั้งแต่ %1$s</string>
+    <string name="midday">เที่ยงวัน</string>
+    <string name="midnight">เที่ยงคืน</string>
+    <string name="minutes">นาที</string>
+    <string name="minutes_grouped_short">%1$s นาที</string>
+    <string name="minutes_listened">นาทีที่ฟัง</string>
+    <string name="minutes_short">%1$d นาที</string>
+    <string name="not_enough_listening">ยังฟังไม่มากพอ</string>
+    <string name="not_enough_this_month">ฟังเพลงเพิ่มอีกสักหน่อยในเดือนนี้เพื่อปลดล็อก Replay ของคุณ</string>
+    <string name="replay_across"> ใน </string>
+    <string name="replay_album_end"> ครองใจคุณไว้</string>
+    <string name="replay_album_focus">หนึ่งอัลบั้ม</string>
+    <string name="replay_album_start">ครั้งนี้ </string>
+    <string name="replay_artist_end"> คือคนที่คุณกลับมาฟังซ้ำแล้วซ้ำอีก</string>
+    <string name="replay_artist_focus">หนึ่งศิลปิน</string>
+    <string name="replay_artist_start">ตลอดทั้งเดือน </string>
+    <string name="replay_empty_description">ฟังเพลงเพิ่มอีกนิด แล้ว bit จะเปลี่ยนประวัติการฟังของคุณให้เป็น Replay</string>
+    <string name="replay_genre_end"> หล่อหลอมสไตล์เสียงเพลงของคุณ</string>
+    <string name="replay_genre_focus">แนวเพลงของคุณ</string>
+    <string name="replay_genre_start">รวมกันแล้ว </string>
+    <string name="replay_habits_middle"> จาก </string>
+    <string name="replay_habits_start">คุณได้สำรวจ </string>
+    <string name="replay_hours_across">%1$s ชั่วโมง</string>
+    <string name="replay_intro_end"> พร้อมแล้ว</string>
+    <string name="replay_intro_start">Replay ของคุณ</string>
+    <string name="replay_minutes_end"> กับดนตรี</string>
+    <string name="replay_minutes_start">คุณใช้เวลา </string>
+    <plurals name="replay_minutes_unit">
+        <item quantity="other">%1$s นาที</item>
+    </plurals>
+    <string name="replay_private_counting">สร้างขึ้นแบบส่วนตัวจากประวัติการฟังบนอุปกรณ์นี้</string>
+    <string name="replay_share_card_description">การ์ดสวยงามพร้อมไฮไลต์การฟังหลักของคุณ</string>
+    <string name="replay_share_summary_description">ภาพรวมทั้งหมดพร้อมเพลง ศิลปิน อัลบั้ม แนวเพลง และพฤติกรรมการฟัง</string>
+    <string name="replay_songs_end"> เติมเต็มเดือนของคุณ</string>
+    <string name="replay_songs_start">รวมทั้งหมด </string>
+    <string name="replay_summary_start">การฟังของคุณมี</string>
+    <string name="saved">บันทึกแล้ว</string>
+    <string name="saved_bang">บันทึกแล้ว!</string>
+    <string name="share_my_replay">แชร์ Replay ของฉัน</string>
+    <string name="share_your_lyrics">ส่งการ์ดเนื้อเพลงของคุณ</string>
+    <string name="share_your_replay">แชร์ Replay ของคุณ</string>
+    <string name="tap_share_for_picture">แตะแชร์เพื่อสร้างภาพ</string>
+    <string name="top_album">อัลบั้มยอดนิยม</string>
+    <string name="top_artist">ศิลปินยอดนิยม</string>
+    <string name="top_genre">แนวเพลงยอดนิยม</string>
+    <string name="top_song">เพลงยอดนิยม</string>
+    <string name="when_you_listen_the_most">ช่วงเวลาที่คุณฟังมากที่สุด</string>
+    <string name="your_biggest_day">วันที่คุณฟังมากที่สุด: %1$s</string>
+    <string name="your_lyrics_card">การ์ดเนื้อเพลงของคุณ</string>
+    <string name="your_replay">Replay ของคุณ</string>
+    <plurals name="replay_artist_count">
+        <item quantity="other">%1$s ศิลปิน</item>
+    </plurals>
+    <plurals name="replay_play_count">
+        <item quantity="other">%1$s ครั้ง</item>
+    </plurals>
+    <plurals name="replay_song_count">
+        <item quantity="other">%1$s เพลง</item>
+    </plurals>
+    <string name="all_audio_folders">โฟลเดอร์เสียงทั้งหมด</string>
+    <string name="local_music_folder">โฟลเดอร์เพลงในเครื่อง</string>
+    <string name="scan_library">สแกนคลังเพลง</string>
+    <string name="scan_library_subtitle">ค้นหาไฟล์เสียงใหม่และนำไฟล์ที่หายไปออก แอปจะสแกนเมื่อคุณขอเท่านั้น</string>
+    <string name="scanning_library">กำลังอ่านไฟล์เสียงในอุปกรณ์…</string>
+    <string name="scanning">กำลังสแกน…</string>
+    <string name="sort_music">จัดเรียงเพลง</string>
+    <string name="sort_title_ascending">ตามตัวอักษร (ก ถึง ฮ)</string>
+    <string name="sort_title_descending">ตามตัวอักษร (ฮ ถึง ก)</string>
+    <string name="sort_date_added">วันที่เพิ่ม (ใหม่สุดก่อน)</string>
+    <string name="sort_date_modified">วันที่แก้ไข (ใหม่สุดก่อน)</string>
+    <string name="use_all_audio_folders">ใช้โฟลเดอร์เสียงทั้งหมด</string>
+    <string name="use_all_audio_folders_subtitle">ยกเลิกขีดจำกัดโฟลเดอร์และสแกนเพลงทั่วทั้งอุปกรณ์</string>
+    <string name="album">อัลบั้ม</string>
+    <string name="artist">ศิลปิน</string>
+    <string name="playlist">เพลย์ลิสต์</string>
+    <string name="open">เปิด</string>
+    <string name="open_playlist">เปิดเพลย์ลิสต์</string>
+    <string name="pin">ปักหมุด</string>
+    <string name="unpin">ยกเลิกปักหมุด</string>
+    <string name="rename">เปลี่ยนชื่อ</string>
+    <string name="delete_playlist">ลบเพลย์ลิสต์</string>
+    <string name="delete_playlist_confirmation">ลบ “%1$s” หรือไม่ แตะอีกครั้งเพื่อยืนยัน</string>
+    <string name="no_lyrics_sources_enabled">ไม่มี จะไม่มีการดึงเนื้อเพลง</string>
+    <string name="swipe_plays_next">การปัดเพลงจะเล่นเพลงนั้นต่อไป</string>
+    <string name="swipe_adds_to_queue">เมื่อปิด การปัดจะเพิ่มเพลงไปที่ท้ายคิวแทน</string>
+    <string name="import_backup_warning">การดำเนินการนี้จะแทนที่การตั้งค่าและประวัติการฟังของอุปกรณ์นี้ด้วยเนื้อหาในไฟล์ ส่งออกข้อมูลปัจจุบันก่อนหากต้องการเก็บไว้</string>
+    <string name="export_succeeded">ส่งออกการตั้งค่าและ %1$s แล้ว</string>
+    <string name="export_failed">ส่งออกไม่สำเร็จ: %1$s</string>
+    <string name="import_succeeded">นำเข้า %1$s จาก v%2$s แล้ว</string>
+    <string name="import_failed">นำเข้าไม่สำเร็จ: %1$s</string>
+    <string name="unknown_error">ข้อผิดพลาดที่ไม่ทราบสาเหตุ</string>
+    <string name="no_listening_history">ไม่มีประวัติการฟัง</string>
+    <plurals name="listening_month_count">
+        <item quantity="other">ฟังมาแล้ว %1$d เดือน</item>
+    </plurals>
+    <string name="no_local_albums">ยังไม่มีอะไรที่นี่เป็นของอัลบั้มหรือเพลย์ลิสต์ ดาวน์โหลดอัลบั้มหรือเพลย์ลิสต์ทั้งชุดแล้วจะปรากฏที่นี่</string>
+    <string name="play_your_replay">เล่น Replay ของคุณ</string>
+    <string name="counted_on_device_with_bit">นับบนอุปกรณ์นี้ด้วย bit</string>
+    <string name="this_month">เดือนนี้</string>
+    <string name="this_year">ปีนี้</string>
+    <string name="all_time">ตลอดเวลา</string>
+
+    <!-- Listen together -->
+
+    <string name="lyrics_offset">Lyrics offset</string>
+
+
+
+
+
+    <string name="auto_recents">Recent</string>
+
+    <string name="auto_liked">Liked songs</string>
+
+    <string name="auto_empty_recents_title">No recent songs</string>
+
+    <string name="auto_empty_recents_subtitle">Songs you play will appear here</string>
+
+    <string name="auto_empty_playlists_title">No playlists available</string>
+
+    <string name="auto_empty_playlists_subtitle">Check your connection and try again</string>
+
+    <string name="auto_empty_liked_title">No liked songs</string>
+
+    <string name="auto_empty_liked_subtitle">Tap the heart on a song to save it here</string>
+
+    <string name="auto_empty_offline_title">No offline songs</string>
+
+    <string name="auto_empty_offline_subtitle">Download songs on your phone to listen here</string>
+
+    <string name="auto_unavailable_title">Content unavailable</string>
+
+    <string name="auto_unavailable_subtitle">Reopen the folder and try again</string>
+
+    <string name="settings_search_hint">Search settings</string>
+
+    <string name="settings_search_empty">No settings match “%1$s”</string>
+
+
+    <string name="equalizer_footer">Shapes the sound inside bit, before it reaches the system.</string>
+
+    <string name="equalizer_dynamic">Dynamic</string>
+
+    <string name="equalizer_manual">Manual</string>
+
+    <string name="equalizer_tone">Tone</string>
+
+    <string name="equalizer_tilt">Tilt</string>
+
+    <string name="equalizer_contour">Contour</string>
+
+    <string name="equalizer_broad">Broad</string>
+
+    <string name="equalizer_focused">Focused</string>
+
+    <string name="equalizer_broad_footer">Drag left for a warmer sound and right for a brighter one; down scoops the middle, up brings it forward. Broad moves wide stretches of the spectrum at once.</string>
+
+    <string name="equalizer_focused_footer">Drag left for a warmer sound and right for a brighter one; down scoops the middle, up brings it forward. Focused works on narrower stretches, so it changes less around what it moves.</string>
+
+    <string name="equalizer_preset">Preset</string>
+
+    <string name="equalizer_bands">Bands</string>
+
+    <string name="equalizer_bands_footer">Moving a band leaves the preset behind and the curve becomes your own.</string>
+
+    <string name="equalizer_reset">Reset all bands</string>
+
+    <string name="equalizer_balance">Balance</string>
+
+    <string name="equalizer_balance_left">L</string>
+
+    <string name="equalizer_balance_right">R</string>
+
+    <string name="equalizer_balance_footer">Shifts the sound towards one ear by quietening the other.</string>
+    <string name="equalizer_bitstream_title">ไม่ได้ทำงานในขณะนี้</string>
+    <string name="equalizer_bitstream_subtitle">แทร็กนี้ถูกส่งไปยังเอาต์พุตโดยไม่ถอดรหัส</string>
+    <string name="equalizer_bitstream_footer">อีควอไลเซอร์ทำงานกับเสียงที่ถอดรหัสแล้ว แทร็กนี้ถูกส่งผ่านเป็นบิตสตรีมให้อุปกรณ์ของคุณถอดรหัสเอง จึงไม่มีตัวอย่างเสียงให้กรองที่นี่</string>
+
+    <string name="system_equalizer">System equalizer</string>
+
+    <string name="system_equalizer_subtitle">Your device\'s own panel</string>
+
+    <string name="system_equalizer_footer">Runs after bit\'s, on the whole audio session. Using both applies both.</string>
+
+    <string name="eq_preset_flat">Flat</string>
+
+    <string name="eq_preset_acoustic">Acoustic</string>
+
+    <string name="eq_preset_bass_boost">Bass boost</string>
+
+    <string name="eq_preset_bass_cut">Bass cut</string>
+
+    <string name="eq_preset_vocal">Vocal</string>
+
+    <string name="eq_preset_treble_boost">Treble boost</string>
+
+    <string name="eq_preset_treble_cut">Treble cut</string>
+
+    <string name="eq_preset_loudness">Loudness</string>
+
+    <string name="eq_preset_spoken_word">Spoken word</string>
+
+    <string name="eq_preset_electronic">Electronic</string>
+
+    <string name="eq_preset_rock">Rock</string>
+
+    <string name="eq_preset_hip_hop">Hip-hop</string>
+
+    <string name="eq_preset_jazz">Jazz</string>
+
+    <string name="eq_preset_classical">Classical</string>
+
+    <string name="eq_preset_small_speakers">Small speakers</string>
+
+    <string name="eq_preset_late_night">Late night</string>
+
+    <string name="eq_preset_custom">Custom</string>
+
+    <string name="player_theme">ธีมเครื่องเล่น</string>
+    <string name="player_theme_default">ค่าเริ่มต้น</string>
+    <string name="player_theme_legacy">แบบเดิม</string>
+    <string name="player_theme_simple">เรียบง่าย</string>
+    <string name="player_theme_default_subtitle">สีของปกต่อเนื่องลงมาด้านล่าง</string>
+    <string name="player_theme_simple_subtitle">ปกแบบเบลอด้านหลังเครื่องเล่นทั้งหมด</string>
+
+    <string name="player_theme_legacy_subtitle">Brings back the drifting colour blobs behind the player from v1.5</string>
+
+    <string name="translation_language">Translation language</string>
+
+    <string name="translation_language_description">The language the translate button turns lyrics into.</string>
+
+    <string name="translation_language_app_default">App language</string>
+
+    <string name="translation_language_subtitle">Follows the app language</string>
+
+    <string name="search_languages">Search languages</string>
+
+    <string name="no_languages_match">No languages match</string>
+
+
+
+    <string name="audio_pipeline">Audio Pipeline</string>
+    <string name="audio_pipeline_subtitle">เส้นทางสัญญาณแบบเรียลไทม์ จากตัวถอดรหัสถึงเอาต์พุต</string>
+
+    <string name="pipeline_track_info">Track Info</string>
+
+    <string name="pipeline_decoder">Decoder</string>
+
+    <string name="pipeline_resampler">Resampler</string>
+
+    <string name="pipeline_dsp">DSP</string>
+
+    <string name="pipeline_output_device">Output Device</string>
+
+    <string name="pipeline_source">Source</string>
+
+    <string name="pipeline_format">Format</string>
+
+    <string name="pipeline_bit_depth">Bit Depth</string>
+
+    <string name="pipeline_sample_rate">Sample Rate</string>
+
+    <string name="pipeline_bitrate">Bitrate</string>
+
+    <string name="pipeline_channels">Channels</string>
+
+    <string name="pipeline_decoder_name">Decoder Name</string>
+
+    <string name="pipeline_io_rate">I/O Rate</string>
+
+    <string name="pipeline_type">Type</string>
+
+    <string name="pipeline_cutoff">Cutoff</string>
+
+    <string name="pipeline_quality">Quality</string>
+
+    <string name="pipeline_pcm_format">PCM Format</string>
+
+    <string name="pipeline_eq_preset">EQ Preset</string>
+
+    <string name="pipeline_stereo_expand">Stereo Expand</string>
+
+    <string name="pipeline_buffers">Buffers</string>
+
+    <string name="pipeline_output_api">Output API</string>
+
+    <string name="pipeline_device_name">Device Name</string>
+
+
+
+    <string name="song_will_play_next">Song will play next</string>
+
+    <string name="song_added_to_queue">Song added to queue</string>
+    <string name="song_added_to_playlist">เพิ่มลงในเพลย์ลิสต์แล้ว</string>
+    <string name="song_already_in_playlist">อยู่ในเพลย์ลิสต์แล้ว</string>
+    <plurals name="add_to_playlists_count">
+        <item quantity="other">เพิ่มลงใน %1$d เพลย์ลิสต์</item>
+    </plurals>
+    <plurals name="added_to_playlists_notice">
+        <item quantity="other">เพิ่มลงใน %1$d เพลย์ลิสต์แล้ว</item>
+    </plurals>
+
+
+
+
+    <string name="sort_date_added_oldest">Date added (oldest first)</string>
+
+    <string name="sort_date_added_toggle">Date added</string>
+
+    <string name="sort_default">Default order</string>
+
+    <string name="sort_songs">Sort songs</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string name="vietnamese">Vietnamese</string>
+
+
+
+
+    <string name="output_precision">Output precision</string>
+
+
+    <string name="prefer_usb_dac">Prefer USB DAC</string>
+    <string name="loudness_normalization">ปรับระดับความดังให้เท่ากัน</string>
+    <string name="loudness_normalization_subtitle">ปรับทุกแทร็กให้ดังเท่ากัน</string>
+    <string name="loudness_off_on_speaker">ปิดบนลำโพงโทรศัพท์</string>
+    <string name="pipeline_loudness_gain">เกน</string>
+    <string name="pipeline_loudness_measured">วัดได้</string>
+    <string name="pipeline_bit_exact">บิตตรงต้นฉบับ</string>
+    <string name="loudness_gain_db">%1$s dB</string>
+    <string name="loudness_lufs">%1$s LUFS</string>
+
+
+    <string name="blur_unfocused_lyrics">Blur unfocused lyrics</string>
+
+
+    <string name="blur_unfocused_lyrics_subtitle">Keeps the spotlight on the current line</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="local_playlist_subtitle">%1$d เพลง · ในเครื่องนี้</string>
+    <string name="spotify_import_empty_playlist">ไม่มีเพลงในเพลย์ลิสต์นี้</string>
+    <string name="show_queue_history">แสดงประวัติคิว</string>
+    <string name="show_queue_history_subtitle">แสดงเพลงที่เล่นไปแล้วสูงสุด 25 เพลงเหนือ “กำลังเล่น” ในคิว</string>
+    <string name="not_enough_this_week">ฟังเพลงอีกสักหน่อยในสัปดาห์นี้เพื่อปลดล็อก Replay ของคุณ</string>
+    <string name="replay_artist_start_week">ตลอดทั้งสัปดาห์ </string>
+    <string name="replay_songs_end_week"> เติมเต็มสัปดาห์ของคุณ</string>
+    <string name="replay_summary_end_week">สัปดาห์</string>
+    <string name="replay_this_week">สัปดาห์นี้</string>
+    <string name="replay_period_weekly">รายสัปดาห์</string>
+    <string name="replay_period_monthly">รายเดือน</string>
+    <string name="replay_period_yearly">รายปี</string>
+    <string name="replay_period_lifetime">ตลอดกาล</string>
+    <string name="opened_file">ไฟล์ที่เปิด</string>
+    <string name="folders">โฟลเดอร์</string>
+    <string name="folder">โฟลเดอร์</string>
+    <string name="no_local_folders">ไม่มีโฟลเดอร์ที่มีเพลง</string>
+    <string name="offline_playlist_empty">เพลย์ลิสต์นี้ยังว่างอยู่ เพิ่มเพลงได้จากเมนูของเพลง</string>
+    <string name="offline_liked_empty">เพลงที่คุณถูกใจในอุปกรณ์นี้จะแสดงที่นี่</string>
+    <string name="saved_on_this_device">บันทึกไว้ในอุปกรณ์นี้</string>
+    <string name="progressive_blur">เบลอแบบไล่ระดับ</string>
+    <string name="glass_performance">ประสิทธิภาพกระจกที่ดีขึ้น</string>
+    <string name="remove_from_history">นำออกจากประวัติ</string>
+    <string name="font">ฟอนต์</string>
+    <string name="font_default">ค่าเริ่มต้น</string>
+    <string name="font_legacy">แบบเดิม</string>
+    <string name="font_default_subtitle">SF Pro Display · น้ำหนักแบบ Apple Music</string>
+    <string name="font_legacy_subtitle">SF Pro Display · น้ำหนักหนาแบบดั้งเดิม</string>
+    <string name="font_footer">แบบเดิมจะนำตัวอักษรที่หนาและชิดกว่าซึ่งแอปเคยใช้ก่อนปรับให้เข้ากับ Apple Music กลับมา</string>
+    <string name="bit_perfect_output">เอาต์พุต Bit-perfect</string>
+    <string name="bit_perfect_bypassed_footer">เอาต์พุต Bit-perfect พร้อมแล้ว การตั้งค่าที่จางจึงถูกข้ามและจะไม่ขอเวอร์ชัน Dolby Atmos การตั้งค่าเหล่านี้จะกลับมาทำงานเมื่อถอด DAC หรือปิดโหมดนี้</string>
+    <string name="bit_perfect_sheet_warning">ส่งแทร็กไปยัง DAC โดยไม่เปลี่ยนแปลง อีควอไลเซอร์ การปรับระดับความดัง ครอสเฟด ความเร็วในการเล่น และระดับเสียงของ bit จะถูกข้าม</string>
+    <string name="bit_perfect_mode_off_subtitle">เสียงจะผ่านมิกเซอร์ของ Android และเอฟเฟกต์ของ bit</string>
+    <string name="bit_perfect_mode_usb_android">USB DAC</string>
+    <string name="bit_perfect_mode_usb_android_subtitle">Android 14 เปิด DAC ที่อัตราและความลึกบิตของแต่ละแทร็ก โดยไม่มิกซ์หรือรีแซมเปิล</string>
+    <string name="bit_perfect_requires_android_14">ต้องใช้ Android 14 ขึ้นไป</string>
+    <string name="bit_perfect_mode_dap_exclusive">DAC ในตัว (AAudio แบบเอกสิทธิ์)</string>
+    <string name="bit_perfect_mode_dap_exclusive_subtitle">สำหรับเครื่องเล่นเพลงที่มี DAC ของตัวเอง เปิดเอาต์พุตหูฟังหรือไลน์แบบเอกสิทธิ์ที่อัตราของแต่ละแทร็ก บางอุปกรณ์อาจไม่อนุญาตโหมดเอกสิทธิ์</string>
+    <string name="bit_perfect_requires_android_8_1">ต้องใช้ Android 8.1 ขึ้นไป</string>
+    <string name="bit_perfect_mode_usb_direct">USB DAC (ไดรเวอร์โดยตรง)</string>
+    <string name="bit_perfect_mode_usb_direct_subtitle">bit ควบคุม DAC เองบน Android ทุกเวอร์ชัน และตั้งระดับเสียงที่ DAC ต้องขอสิทธิ์ USB เสียงอาจดังกว่าเอาต์พุตปกติมาก</string>
+    <string name="dac_volume">ระดับเสียงของ DAC</string>
+    <string name="dac_volume_subtitle">ตั้งที่ตัว DAC เอง เพลงจะไม่ถูกปรับสเกล</string>
+    <string name="usb_allow_fixed_volume">อนุญาต DAC ที่ไม่มีการควบคุมระดับเสียง</string>
+    <string name="usb_allow_fixed_volume_subtitle">มิฉะนั้น DAC ดังกล่าวจะเล่นผ่านเอาต์พุตปกติ</string>
+    <string name="usb_allow_fixed_volume_confirm_title">เล่นที่ระดับเต็มสเกลไหม</string>
+    <string name="usb_allow_fixed_volume_confirm_message">bit ตั้งระดับเสียงของ DAC ประเภทนี้ไม่ได้ จึงเล่นที่ระดับเต็มสเกล และมีเพียงปุ่มหมุนของ DAC เอง (หากมี) ที่ควบคุมความดังได้ เสียงอาจดังจนเป็นอันตรายกับหูฟังที่มีความไวสูง</string>
+    <string name="convert_for_limited_dac">แปลงสำหรับ DAC สเปกต่ำ</string>
+    <string name="convert_for_limited_dac_subtitle">แปลงแทร็กที่เกินขีดจำกัดของ DAC เป็นฟอร์แมตสูงสุดของ DAC แทร็กอาจเริ่มเล่นช้าลงและจะไม่เป็น Bit-perfect เมื่อเทียบกับต้นฉบับ</string>
+    <string name="bit_perfect_confirm_title">เปิดเอาต์พุต Bit-perfect ไหม</string>
+    <string name="bit_perfect_confirm_message">DAC จะได้รับเพลงที่ระดับเต็มสเกล และปุ่มระดับเสียงของโทรศัพท์อาจใช้ไม่ได้ ลดระดับเสียงของ DAC หรือแอมป์ก่อนเล่น</string>
+    <string name="bit_perfect_status_active">%1$s · %2$s kHz · %3$d บิต</string>
+    <string name="bit_perfect_status_dac_limited">%1$s · %2$s kHz · %3$d บิต · สูงสุดของ DAC แปลงจากฟอร์แมตของแทร็กนี้</string>
+    <string name="bit_perfect_status_inexact">%1$s · ไม่ตรงทุกบิต: แหล่งนี้ไม่ใช่ PCM แบบไม่สูญเสียคุณภาพ</string>
+    <string name="bit_perfect_status_waiting">กำลังรอแทร็กแบบไม่สูญเสียคุณภาพบนเอาต์พุตที่รองรับ</string>
+    <string name="bit_perfect_status_unavailable">ไม่พร้อมใช้งานสำหรับแทร็กนี้ (%1$s)</string>
+    <string name="diwali_title">bit wishes you a Happy Diwali</string>
+    <string name="diwali_subtitle">May this festival of lights fill your home with joy and your days with music.</string>
+    <string name="diwali_cta">Let\'s Celebrate</string>
+    <string name="sort_size_descending">ขนาด (ใหญ่ที่สุดก่อน)</string>
+</resources>

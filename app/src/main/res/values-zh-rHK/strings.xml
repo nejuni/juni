@@ -1,0 +1,651 @@
+<resources>
+    <string name="app_name">Juni</string>
+    <string name="playback_channel_name">正在播放</string>
+    <string name="cancel">取消</string>
+    <string name="save">儲存</string>
+    <string name="close">關閉</string>
+    <string name="back">返回</string>
+    <string name="settings">設定</string>
+    <string name="search">搜尋</string>
+    <string name="clear_search">清除搜尋</string>
+    <string name="library">資料庫</string>
+    <string name="play">播放</string>
+    <string name="local_music">本地音樂</string>
+    <string name="audio_files_on_device">裝置上的音訊檔案</string>
+    <string name="playlists">播放列表</string>
+    <string name="new_playlist">新建播放列表</string>
+    <string name="sign_in">登入</string>
+    <string name="shuffle">隨機播放</string>
+    <string name="more">更多</string>
+    <string name="add_to_playlist">新增到播放列表</string>
+    <string name="top_songs">熱門歌曲</string>
+    <plurals name="song_count_plural">
+        <item quantity="other">%1$d 首歌曲</item>
+    </plurals>
+    <string name="songs">歌曲</string>
+    <string name="artists">藝人</string>
+    <string name="albums">專輯</string>
+    <string name="storage_required_read">需要儲存許可權才能讀取本地音訊檔案</string>
+    <string name="test">測試</string>
+    <string name="testing">測試中…</string>
+    <string name="connected">已連線</string>
+    <string name="now_playing">正在播放</string>
+    <string name="selected">已選擇</string>
+    <string name="password">密碼</string>
+    <string name="username">使用者名稱</string>
+    <string name="login_failed">登入失敗</string>
+    <string name="image_cache_cleared">圖片快取已清除</string>
+    <string name="no_equalizer">此裝置沒有系統均衡器</string>
+    <string name="try_again">重試</string>
+    <string name="play_next">下一首播放</string>
+    <string name="queue">播放佇列</string>
+    <string name="failed">失敗</string>
+    <string name="widget_square_label">正在播放 2×2</string>
+    <string name="widget_wide_label">正在播放 4×2</string>
+    <string name="widget_square_description">帶有播放控制元件的正方形專輯封面。</string>
+    <string name="widget_wide_description">帶有曲目和播放控制元件的全寬專輯封面。</string>
+    <string name="widget_play">播放</string>
+    <string name="widget_pause">暫停</string>
+    <string name="widget_next">下一首</string>
+    <string name="widget_previous">上一首</string>
+    <string name="widget_artwork">專輯封面</string>
+    <string name="widget_nothing_played">尚未播放任何內容</string>
+    <string name="widget_preview_title">歌曲標題</string>
+    <string name="widget_preview_artist">藝人</string>
+    <string name="widget_pill_label">正在播放 4×1</string>
+    <string name="widget_pill_description">單行顯示曲目，以及喜歡、隨機播放和播放控制元件。</string>
+    <string name="widget_preview_pill">歌曲標題 - 藝人</string>
+    <string name="spatial_audio">空間音訊</string>
+    <string name="spatial_audio_subtitle">拓寬立體聲音軌，帶來更沉浸的體驗</string>
+    <string name="spatial_audio_atmos_subtitle">此曲目已暫停 — Dolby Atmos 本身就是空間音訊</string>
+    <string name="replay">Replay</string>
+    <string name="replay_subtitle">你的熱門歌曲、藝人、專輯和流派</string>
+    <string name="work_out_genres">推算流派</string>
+    <string name="export_data">匯出資料</string>
+    <string name="export_data_subtitle">將設定和收聽記錄匯出為一個 JSON 檔案</string>
+    <string name="import_data">匯入資料</string>
+    <string name="import_data_subtitle">替換此裝置上的設定和記錄</string>
+    <string name="import_backup_title">要匯入備份嗎？</string>
+    <string name="choose_file">選擇檔案</string>
+    <string name="top_artists">熱門藝人</string>
+    <string name="top_albums">熱門專輯</string>
+    <string name="top_genres">熱門流派</string>
+    <string name="language">語言</string>
+    <string name="app_language">應用語言</string>
+    <string name="app_language_description">選擇 bit 使用的語言。</string>
+    <string name="english">英語</string>
+    <string name="spanish">西班牙語</string>
+    <string name="french">法語</string>
+    <string name="german">德語</string>
+    <string name="polish">波蘭語</string>
+    <string name="portuguese">葡萄牙語</string>
+    <string name="indonesian">印度尼西亞語</string>
+    <string name="hindi">印地語</string>
+    <string name="japanese">日語</string>
+    <string name="russian">俄語</string>
+    <string name="chinese_simplified">中文（簡體）</string>
+    <string name="chinese_traditional">中文（繁體）</string>
+    <string name="hebrew">希伯來語</string>
+    <string name="italian">義大利語</string>
+    <string name="turkish">土耳其語</string>
+    <string name="thai">泰語</string>
+    <string name="korean">韓語</string>
+    <string name="show_all">檢視全部</string>
+    <string name="switch_to_grid_view">切換到網格檢視</string>
+    <string name="switch_to_list_view">切換到列表檢視</string>
+    <string name="playback">播放</string>
+    <string name="appearance">外觀</string>
+    <string name="storage">儲存空間</string>
+    <string name="your_data">你的資料</string>
+    <string name="miscellaneous">其他</string>
+    <string name="crossfade">交叉淡入淡出</string>
+    <string name="crossfade_subtitle">將一首曲目漸變過渡到下一首</string>
+    <string name="skip_silence">跳過靜音</string>
+    <string name="skip_silence_subtitle">裁剪超過一秒的靜音間隙</string>
+    <string name="skip_silence_float_subtitle">32 位浮點輸出時不可用</string>
+    <string name="equalizer">均衡器</string>
+    <string name="equalizer_subtitle">裝置的系統面板</string>
+    <string name="show_nerd_stats">顯示技術統計資訊</string>
+    <string name="show_nerd_stats_subtitle">在播放器上顯示編解碼器、位元率和取樣率</string>
+    <string name="theme">主題</string>
+    <string name="reduce_animation">減少動畫</string>
+    <string name="reduce_animation_subtitle">讓主播放器的漸變保持靜止，而不是流動</string>
+    <string name="reduce_dynamic_blur">減少動態模糊</string>
+    <string name="reduce_dynamic_blur_subtitle">在整個應用中用純色填充替代磨砂玻璃效果</string>
+    <string name="disable_blend_effects">關閉混合效果</string>
+    <string name="disable_blend_effects_subtitle">播放器圖示、文字和深色選單以純白顯示，不再混入封面顏色</string>
+    <string name="full_screen_cover_art">全屏封面</string>
+    <string name="synced_lyrics">同步歌詞</string>
+    <string name="synced_lyrics_subtitle">隨著演唱在播放器上高亮顯示歌詞</string>
+    <string name="lyrics_sources">歌詞來源</string>
+    <string name="clear_image_cache">清除圖片快取</string>
+    <string name="clear_image_cache_subtitle">釋放專輯封面佔用的空間</string>
+    <string name="play_next_on_swipe">滑動時下一首播放</string>
+    <string name="stop_music_on_close">從最近任務中關閉時停止音樂</string>
+    <string name="stop_music_on_close_subtitle">從最近任務中划走應用時停止播放</string>
+    <string name="hide_volume_bar">隱藏音量條</string>
+    <string name="hide_volume_bar_subtitle">從主播放器中移除音量滑塊</string>
+    <string name="hide_status_bar_in_player">在播放器中隱藏狀態列</string>
+    <string name="hide_status_bar_in_player_subtitle">主播放器開啟時隱藏時鐘、電量和通知圖示</string>
+    <string name="hide_song_status">隱藏歌曲狀態</string>
+    <string name="hide_song_status_subtitle">隱藏主播放器中的“播放自”或“播放者”文字</string>
+    <string name="off">關閉</string>
+    <string name="system">跟隨系統</string>
+    <string name="light">淺色</string>
+    <string name="dark">深色</string>
+    <string name="full_screen_cover_art_subtitle">讓封面延伸至播放器邊緣，而不是顯示為方形</string>
+    <string name="full_screen_detail_cover">全屏專輯/播放清單封面</string>
+    <string name="full_screen_detail_cover_subtitle">讓專輯和播放清單封面延伸至頁面邊緣，而不是顯示為方形</string>
+    <string name="filter_non_music_audio">過濾非音樂音訊</string>
+    <string name="filter_non_music_audio_subtitle">隱藏時長低於 30 秒的片段、WAV 檔案、語音備忘錄、錄音和系統提示音</string>
+    <string name="performance">效能</string>
+    <string name="high_performance_mode">高效能模式</string>
+    <string name="high_performance_subtitle">使用完整動畫和模糊效果，並請求更高的螢幕重新整理率</string>
+    <string name="high_performance_active">已請求 %1$d Hz。Android 可能會在需要時降低此數值。</string>
+    <string name="refresh_rate">重新整理率</string>
+    <string name="high_performance_before_enabling">啟用前</string>
+    <string name="high_performance_battery_warning">請先將 bit 的電量使用設定為“不受限制”。更高的重新整理率會消耗更多電量、CPU 和 GPU 資源，並可能使裝置發熱。</string>
+    <string name="open_battery_settings">開啟電量設定</string>
+    <string name="enable_high_performance_title">要啟用高效能模式嗎？</string>
+    <string name="enable_high_performance_confirmation">僅當 bit 的電量使用設定為“不受限制”時才啟用。裝置發熱或電量不足時，Android 仍可能限制重新整理率。</string>
+    <string name="enable">啟用</string>
+    <string name="not_yet">暫不</string>
+    <string name="add_to_queue">新增到播放佇列</string>
+    <string name="after_this_song">在這首歌之後</string>
+    <string name="clear_name">清除名稱</string>
+    <string name="copy_log">複製日誌</string>
+    <string name="couldnt_find">找不到%1$s</string>
+    <string name="create_playlist">建立播放列表</string>
+    <string name="done">完成</string>
+    <string name="drag_to_reorder">拖動以重新排序</string>
+    <string name="enabled">已啟用</string>
+    <string name="pause">暫停</string>
+    <string name="shuffle_on">隨機播放已開啟</string>
+    <string name="shuffle_off">隨機播放已關閉</string>
+    <string name="mono">單聲道</string>
+    <string name="stereo">立體聲</string>
+    <string name="history">歷史記錄</string>
+    <string name="couldnt_load_tracks">無法載入這些曲目</string>
+    <string name="history_empty">尚未播放過任何內容</string>
+    <string name="no_local_audio_found">此裝置上未找到音訊檔案</string>
+    <string name="unknown_artist">未知藝人</string>
+    <string name="your_playlists">你的播放列表</string>
+    <string name="who_can_see_it">誰可以看到</string>
+    <string name="nothing_matches">這裡沒有與“%1$s”匹配的內容</string>
+    <string name="close_search">關閉搜尋</string>
+    <string name="less">收起</string>
+    <plurals name="songs_will_play_next">
+        <item quantity="other">將有 %1$d 首歌曲接下來播放</item>
+    </plurals>
+    <plurals name="songs_added_to_queue">
+        <item quantity="other">已將 %1$d 首歌曲新增到播放佇列</item>
+    </plurals>
+    <plurals name="log_copied_line_count">
+        <item quantity="other">日誌已複製 · %1$d 行</item>
+    </plurals>
+    <string name="like">喜歡</string>
+    <string name="listening_history">收聽記錄</string>
+    <string name="lyrics_sources_order">系統會按此順序嘗試各個來源。拖動即可調整順序。除非優先使用逐字歌詞，否則會採用第一個找到歌詞的來源。</string>
+    <string name="no_playlists_yet">還沒有播放列表，使用上方的選項建立一個吧。</string>
+    <string name="no_tracks_here">這裡沒有曲目</string>
+    <string name="one_hour">1 小時</string>
+    <string name="open_album">開啟專輯</string>
+    <string name="open_artist">開啟藝人</string>
+    <string name="pause_after_a_while">一段時間後暫停播放</string>
+    <string name="pause_after_song">這首歌結束後暫停</string>
+    <string name="pause_countdown">還有 %1$s 播放將暫停</string>
+    <string name="playlist_name">播放列表名稱</string>
+    <string name="prioritize_syllable_lyrics">優先使用逐字歌詞</string>
+    <string name="prioritize_syllable_lyrics_subtitle">即使已找到逐行同步的歌詞，也繼續搜尋逐字歌詞</string>
+    <string name="remove_from_liked">從喜歡的音樂中移除</string>
+    <string name="remove_from_playlist">從此播放列表中移除</string>
+    <string name="rename_playlist">重新命名播放列表</string>
+    <string name="reorder_songs">重新排序歌曲</string>
+    <string name="reset_to_default">恢復預設設定</string>
+    <string name="save_name">儲存名稱</string>
+    <string name="saved_to_youtube_music_account">已儲存到你的 YouTube Music 賬號</string>
+    <string name="search_this_list">搜尋此列表</string>
+    <string name="share">分享</string>
+    <string name="signed_in_as">已登入為 %1$s</string>
+    <string name="signing_in">正在登入…</string>
+    <string name="sleep_timer">睡眠定時器</string>
+    <string name="clear_queue">清除播放佇列</string>
+    <string name="sleep_timer_custom">自訂</string>
+    <string name="start_sleep_timer">開始計時</string>
+    <string name="tap_to_sign_in">點按以登入</string>
+    <string name="turn_off_timer">關閉定時器</string>
+    <plurals name="minute_count">
+        <item quantity="other">%1$d 分鐘</item>
+    </plurals>
+    <string name="biggest_day_note">你收聽最多的一天是 %1$s，共收聽了 %2$s。</string>
+    <string name="close_replay">關閉 Replay</string>
+    <string name="couldnt_draw_picture">無法生成圖片</string>
+    <string name="default_replay_holder">Juni listener</string>
+    <string name="different_albums">不同專輯</string>
+    <string name="genres_pending">隨著收聽記錄增多，流派資訊會逐漸顯示</string>
+    <string name="hour_am">上午%1$d點</string>
+    <string name="hour_pm">下午%1$d點</string>
+    <string name="hours_minutes_short">%1$d時%2$d分</string>
+    <string name="listen_most_around">你通常在%1$s左右收聽最多。</string>
+    <string name="lyrics_share_title">分享歌詞</string>
+    <string name="lyrics_share_description">你選中的幾行，連同封面排在一張卡片上。</string>
+    <string name="lyrics_share_story">轉為快拍尺寸</string>
+    <string name="lyrics_share_story_revert">恢復為卡片</string>
+    <string name="listening_shape">你的收聽規律</string>
+    <string name="member_since_value">加入時間：%1$s</string>
+    <string name="midday">中午</string>
+    <string name="midnight">午夜</string>
+    <string name="minutes">分鐘</string>
+    <string name="minutes_grouped_short">%1$s 分鐘</string>
+    <string name="minutes_listened">收聽分鐘數</string>
+    <string name="minutes_short">%1$d 分鐘</string>
+    <string name="not_enough_listening">收聽記錄還不夠多</string>
+    <string name="not_enough_this_month">本月再多播放幾首歌曲即可解鎖你的 Replay。</string>
+    <string name="replay_across">跨越</string>
+    <string name="replay_album_end">佔據了你的關注。</string>
+    <string name="replay_album_focus">同一張專輯</string>
+    <string name="replay_album_start">這一次，</string>
+    <string name="replay_artist_end">讓你一聽再聽。</string>
+    <string name="replay_artist_focus">同一位藝人</string>
+    <string name="replay_artist_start">整月裡，</string>
+    <string name="replay_empty_description">再多聽一會兒，bit 就會把你的收聽記錄變成一份 Replay。</string>
+    <string name="replay_genre_end">塑造了你的聽感。</string>
+    <string name="replay_genre_focus">你的流派</string>
+    <string name="replay_genre_start">總的來說，</string>
+    <string name="replay_habits_middle"> 來自 </string>
+    <string name="replay_habits_start">你探索了 </string>
+    <string name="replay_hours_across">%1$s 小時</string>
+    <string name="replay_intro_end"> 已準備就緒。</string>
+    <string name="replay_intro_start">你的 </string>
+    <string name="replay_minutes_end"> 的時間聆聽音樂。</string>
+    <string name="replay_minutes_start">你花了 </string>
+    <plurals name="replay_minutes_unit">
+        <item quantity="other">%1$s 分鐘</item>
+    </plurals>
+    <string name="replay_private_counting">根據你在此裝置上的收聽記錄私密生成</string>
+    <string name="replay_share_card_description">一張精美的卡片，展示你的主要收聽亮點。</string>
+    <string name="replay_share_summary_description">完整呈現歌曲、藝人、專輯、流派和收聽習慣。</string>
+    <string name="replay_songs_end"> 填滿了你的這個月。</string>
+    <string name="replay_songs_start">總共，</string>
+    <string name="replay_summary_start">你的收聽呈現出 </string>
+    <string name="saved">已儲存</string>
+    <string name="saved_bang">已儲存！</string>
+    <string name="share_my_replay">分享我的 Replay</string>
+    <string name="share_your_lyrics">傳送歌詞卡片</string>
+    <string name="share_your_replay">分享你的 Replay</string>
+    <string name="tap_share_for_picture">點按分享以生成圖片</string>
+    <string name="top_album">熱門專輯</string>
+    <string name="top_artist">熱門藝人</string>
+    <string name="top_genre">熱門流派</string>
+    <string name="top_song">熱門歌曲</string>
+    <string name="when_you_listen_the_most">你最常收聽的時段</string>
+    <string name="your_biggest_day">你收聽最多的一天：%1$s</string>
+    <string name="your_lyrics_card">你的歌詞卡片</string>
+    <string name="your_replay">你的 Replay</string>
+    <plurals name="replay_artist_count">
+        <item quantity="other">%1$s 位藝人</item>
+    </plurals>
+    <plurals name="replay_play_count">
+        <item quantity="other">%1$s 次播放</item>
+    </plurals>
+    <plurals name="replay_song_count">
+        <item quantity="other">%1$s 首歌曲</item>
+    </plurals>
+    <string name="all_audio_folders">所有音訊資料夾</string>
+    <string name="local_music_folder">本地音樂資料夾</string>
+    <string name="scan_library">掃描音樂庫</string>
+    <string name="scan_library_subtitle">尋找新的音訊檔案並移除已消失的檔案。僅在您要求時掃描。</string>
+    <string name="scanning_library">正在讀取裝置音訊…</string>
+    <string name="scanning">正在掃描…</string>
+    <string name="sort_music">排序方式</string>
+    <string name="sort_title_ascending">按字母順序（A 到 Z）</string>
+    <string name="sort_title_descending">按字母順序（Z 到 A）</string>
+    <string name="sort_date_added">新增日期（最新優先）</string>
+    <string name="sort_date_modified">修改日期（最新優先）</string>
+    <string name="use_all_audio_folders">使用所有音訊資料夾</string>
+    <string name="use_all_audio_folders_subtitle">取消資料夾限制，掃描整個裝置上的音樂</string>
+    <string name="album">專輯</string>
+    <string name="artist">藝人</string>
+    <string name="playlist">播放列表</string>
+    <string name="open">開啟</string>
+    <string name="open_playlist">開啟播放列表</string>
+    <string name="pin">固定</string>
+    <string name="unpin">取消固定</string>
+    <string name="rename">重新命名</string>
+    <string name="delete_playlist">刪除播放列表</string>
+    <string name="delete_playlist_confirmation">刪除“%1$s”？再次點按以確認。</string>
+    <string name="no_lyrics_sources_enabled">無。將不會獲取歌詞。</string>
+    <string name="swipe_plays_next">滑動歌曲後將其設為下一首播放</string>
+    <string name="swipe_adds_to_queue">關閉後，滑動會將歌曲新增到播放佇列末尾</string>
+    <string name="import_backup_warning">這將用檔案中的內容替換此裝置上的設定和收聽記錄。如果想保留當前資料，請先將其匯出。</string>
+    <string name="export_succeeded">已匯出設定和%1$s</string>
+    <string name="export_failed">匯出失敗：%1$s</string>
+    <string name="import_succeeded">已從 v%2$s 匯入%1$s</string>
+    <string name="import_failed">匯入失敗：%1$s</string>
+    <string name="unknown_error">未知錯誤</string>
+    <string name="no_listening_history">無收聽記錄</string>
+    <plurals name="listening_month_count">
+        <item quantity="other">%1$d 個月的收聽記錄</item>
+    </plurals>
+    <string name="no_local_albums">這裡還沒有任何屬於專輯或播放列表的內容。下載完整的專輯或播放列表後，它們會顯示在這裡。</string>
+    <string name="play_your_replay">播放你的 Replay</string>
+    <string name="counted_on_device_with_bit">由 bit 在此裝置上統計</string>
+    <string name="this_month">本月</string>
+    <string name="this_year">今年</string>
+    <string name="all_time">全部時間</string>
+
+    <!-- Listen together -->
+
+    <string name="vietnamese">越南語</string>
+
+
+    <plurals name="track_count_plural">
+        <item quantity="other">%1$d 首曲目</item>
+    </plurals>
+    <string name="blur_unfocused_lyrics">虛化非焦點歌詞</string>
+
+    <string name="blur_unfocused_lyrics_subtitle">突出顯示當前歌詞行</string>
+
+    <string name="player_theme">播放器主題</string>
+    <string name="player_theme_default">預設</string>
+    <string name="player_theme_legacy">舊版</string>
+    <string name="player_theme_simple">簡潔</string>
+    <string name="player_theme_default_subtitle">封面的色彩向下延伸</string>
+    <string name="player_theme_simple_subtitle">在整個播放器背後顯示模糊的封面</string>
+
+    <string name="player_theme_legacy_subtitle">恢復 v1.5 中播放器背後的流動色塊效果</string>
+
+    <string name="liquid_glass">液態玻璃 （Liquid Glass）</string>
+
+    <string name="liquid_glass_subtitle">浮動導航欄上的折射玻璃效果。僅限 Android 12+；會佔用更多 GPU。</string>
+
+    <string name="liquid_glass_unavailable">需要 Android 12 或更高版本</string>
+
+    <string name="output_precision">輸出精度</string>
+
+
+    <string name="prefer_usb_dac">首選 USB DAC</string>
+    <string name="loudness_normalization">響度標準化</string>
+    <string name="loudness_normalization_subtitle">將每首曲目調整到相同響度</string>
+    <string name="loudness_off_on_speaker">在手機揚聲器上停用</string>
+    <string name="pipeline_loudness_gain">增益</string>
+    <string name="pipeline_loudness_measured">測量值</string>
+    <string name="pipeline_bit_exact">位元精確</string>
+    <string name="loudness_gain_db">%1$s dB</string>
+    <string name="loudness_lufs">%1$s LUFS</string>
+
+
+
+    <string name="select_all">全選</string>
+
+    <string name="sort_date_added_oldest">新增日期（最舊優先）</string>
+
+    <string name="sort_date_added_toggle">新增日期</string>
+
+    <string name="sort_default">預設排序</string>
+
+    <string name="sort_songs">排序列</string>
+
+
+    <string name="lyrics_offset">Lyrics offset</string>
+
+
+
+
+
+    <string name="auto_recents">Recent</string>
+
+    <string name="auto_liked">Liked songs</string>
+
+    <string name="auto_empty_recents_title">No recent songs</string>
+
+    <string name="auto_empty_recents_subtitle">Songs you play will appear here</string>
+
+    <string name="auto_empty_playlists_title">No playlists available</string>
+
+    <string name="auto_empty_playlists_subtitle">Check your connection and try again</string>
+
+    <string name="auto_empty_liked_title">No liked songs</string>
+
+    <string name="auto_empty_liked_subtitle">Tap the heart on a song to save it here</string>
+
+    <string name="auto_empty_offline_title">No offline songs</string>
+
+    <string name="auto_empty_offline_subtitle">Download songs on your phone to listen here</string>
+
+    <string name="auto_unavailable_title">Content unavailable</string>
+
+    <string name="auto_unavailable_subtitle">Reopen the folder and try again</string>
+
+    <string name="settings_search_hint">Search settings</string>
+
+    <string name="settings_search_empty">No settings match “%1$s”</string>
+
+
+    <string name="equalizer_footer">Shapes the sound inside bit， before it reaches the system.</string>
+
+    <string name="equalizer_dynamic">Dynamic</string>
+
+    <string name="equalizer_manual">Manual</string>
+
+    <string name="equalizer_tone">Tone</string>
+
+    <string name="equalizer_tilt">Tilt</string>
+
+    <string name="equalizer_contour">Contour</string>
+
+    <string name="equalizer_broad">Broad</string>
+
+    <string name="equalizer_focused">Focused</string>
+
+    <string name="equalizer_broad_footer">Drag left for a warmer sound and right for a brighter one； down scoops the middle， up brings it forward. Broad moves wide stretches of the spectrum at once.</string>
+
+    <string name="equalizer_focused_footer">Drag left for a warmer sound and right for a brighter one； down scoops the middle， up brings it forward. Focused works on narrower stretches， so it changes less around what it moves.</string>
+
+    <string name="equalizer_preset">Preset</string>
+
+    <string name="equalizer_bands">Bands</string>
+
+    <string name="equalizer_bands_footer">Moving a band leaves the preset behind and the curve becomes your own.</string>
+
+    <string name="equalizer_reset">Reset all bands</string>
+
+    <string name="equalizer_balance">Balance</string>
+
+    <string name="equalizer_balance_left">L</string>
+
+    <string name="equalizer_balance_right">R</string>
+
+    <string name="equalizer_balance_footer">Shifts the sound towards one ear by quietening the other.</string>
+    <string name="equalizer_bitstream_title">當前未執行</string>
+    <string name="equalizer_bitstream_subtitle">此曲目未經解碼直接傳送到輸出</string>
+    <string name="equalizer_bitstream_footer">均衡器作用於解碼後的音訊。此曲目以位元流形式直通，由你的裝置解碼，因此這裡沒有可供處理的取樣。</string>
+
+    <string name="system_equalizer">System equalizer</string>
+
+    <string name="system_equalizer_subtitle">Your device\'s own panel</string>
+
+    <string name="system_equalizer_footer">Runs after bit\'s， on the whole audio session. Using both applies both.</string>
+
+    <string name="eq_preset_flat">Flat</string>
+
+    <string name="eq_preset_acoustic">Acoustic</string>
+
+    <string name="eq_preset_bass_boost">Bass boost</string>
+
+    <string name="eq_preset_bass_cut">Bass cut</string>
+
+    <string name="eq_preset_vocal">Vocal</string>
+
+    <string name="eq_preset_treble_boost">Treble boost</string>
+
+    <string name="eq_preset_treble_cut">Treble cut</string>
+
+    <string name="eq_preset_loudness">Loudness</string>
+
+    <string name="eq_preset_spoken_word">Spoken word</string>
+
+    <string name="eq_preset_electronic">Electronic</string>
+
+    <string name="eq_preset_rock">Rock</string>
+
+    <string name="eq_preset_hip_hop">Hip-hop</string>
+
+    <string name="eq_preset_jazz">Jazz</string>
+
+    <string name="eq_preset_classical">Classical</string>
+
+    <string name="eq_preset_small_speakers">Small speakers</string>
+
+    <string name="eq_preset_late_night">Late night</string>
+
+    <string name="eq_preset_custom">Custom</string>
+
+    <string name="translation_language">Translation language</string>
+
+    <string name="translation_language_description">The language the translate button turns lyrics into.</string>
+
+    <string name="translation_language_app_default">App language</string>
+
+    <string name="translation_language_subtitle">Follows the app language</string>
+
+    <string name="search_languages">Search languages</string>
+
+    <string name="no_languages_match">No languages match</string>
+
+
+
+    <string name="audio_pipeline">Audio Pipeline</string>
+    <string name="audio_pipeline_subtitle">實時訊號路徑，從解碼器到輸出</string>
+
+    <string name="pipeline_track_info">Track Info</string>
+
+    <string name="pipeline_decoder">Decoder</string>
+
+    <string name="pipeline_resampler">Resampler</string>
+
+    <string name="pipeline_dsp">DSP</string>
+
+    <string name="pipeline_output_device">Output Device</string>
+
+    <string name="pipeline_source">Source</string>
+
+    <string name="pipeline_format">Format</string>
+
+    <string name="pipeline_bit_depth">Bit Depth</string>
+
+    <string name="pipeline_sample_rate">Sample Rate</string>
+
+    <string name="pipeline_bitrate">Bitrate</string>
+
+    <string name="pipeline_channels">Channels</string>
+
+    <string name="pipeline_decoder_name">Decoder Name</string>
+
+    <string name="pipeline_io_rate">I/O Rate</string>
+
+    <string name="pipeline_type">Type</string>
+
+    <string name="pipeline_cutoff">Cutoff</string>
+
+    <string name="pipeline_quality">Quality</string>
+
+    <string name="pipeline_pcm_format">PCM Format</string>
+
+    <string name="pipeline_eq_preset">EQ Preset</string>
+
+    <string name="pipeline_stereo_expand">Stereo Expand</string>
+
+    <string name="pipeline_buffers">Buffers</string>
+
+    <string name="pipeline_output_api">Output API</string>
+
+    <string name="pipeline_device_name">Device Name</string>
+
+
+
+    <string name="song_will_play_next">Song will play next</string>
+
+    <string name="song_added_to_queue">Song added to queue</string>
+    <string name="song_added_to_playlist">已新增到播放列表</string>
+    <string name="song_already_in_playlist">已在播放列表中</string>
+    <plurals name="add_to_playlists_count">
+        <item quantity="other">新增到 %1$d 個播放列表</item>
+    </plurals>
+    <plurals name="added_to_playlists_notice">
+        <item quantity="other">已新增到 %1$d 個播放列表</item>
+    </plurals>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="local_playlist_subtitle">%1$d 首歌曲 · 本裝置上</string>
+    <string name="spotify_import_empty_playlist">此播放列表中沒有歌曲</string>
+    <string name="opened_file">已開啟的檔案</string>
+    <string name="folders">資料夾</string>
+    <string name="folder">資料夾</string>
+    <string name="no_local_folders">沒有包含音樂的資料夾</string>
+    <string name="offline_playlist_empty">這個播放清單仍是空的。可從歌曲選單中加入。</string>
+    <string name="offline_liked_empty">你在這部裝置上喜歡的歌曲會顯示在這裡</string>
+    <string name="saved_on_this_device">已儲存在這部裝置上</string>
+    <string name="progressive_blur">漸進模糊</string>
+    <string name="glass_performance">提升玻璃效能</string>
+    <string name="show_queue_history">顯示佇列記錄</string>
+    <string name="show_queue_history_subtitle">在佇列中「正在播放」上方顯示最多 25 首已播放的歌曲</string>
+    <string name="not_enough_this_week">本週再多播放幾首歌曲即可解鎖你的 Replay。</string>
+    <string name="replay_artist_start_week">整週裡，</string>
+    <string name="replay_songs_end_week"> 填滿了你的這一週。</string>
+    <string name="replay_summary_end_week">週</string>
+    <string name="replay_this_week">本週</string>
+    <string name="replay_period_weekly">每週</string>
+    <string name="replay_period_monthly">每月</string>
+    <string name="replay_period_yearly">每年</string>
+    <string name="replay_period_lifetime">全部</string>
+    <string name="remove_from_history">從歷史記錄中移除</string>
+    <string name="font">字型</string>
+    <string name="font_default">預設</string>
+    <string name="font_legacy">舊版</string>
+    <string name="font_default_subtitle">SF Pro Display · Apple Music 字重</string>
+    <string name="font_legacy_subtitle">SF Pro Display · 原始粗字重</string>
+    <string name="font_footer">舊版會恢復應用程式在配合 Apple Music 之前使用的較粗、較緊湊的字型。</string>
+    <string name="bit_perfect_output">位元完美輸出</string>
+    <string name="bit_perfect_bypassed_footer">位元完美輸出已就緒，因此變灰的設定會被略過，也不會要求 Dolby Atmos 版本。中斷 DAC 連線或關閉此模式後，它們會恢復運作。</string>
+    <string name="bit_perfect_sheet_warning">將曲目原樣傳送到 DAC。均衡器、響度標準化、交叉淡入淡出、播放速度和 bit 的音量都會被略過。</string>
+    <string name="bit_perfect_mode_off_subtitle">音訊會經過 Android 的混音器和 bit 的音效。</string>
+    <string name="bit_perfect_mode_usb_android">USB DAC</string>
+    <string name="bit_perfect_mode_usb_android_subtitle">Android 14 會以每首曲目本身的取樣率和位元深度開啟 DAC，不進行混音或重新取樣。</string>
+    <string name="bit_perfect_requires_android_14">需要 Android 14 或以上版本</string>
+    <string name="bit_perfect_mode_dap_exclusive">內建 DAC（AAudio 獨佔）</string>
+    <string name="bit_perfect_mode_dap_exclusive_subtitle">適用於內建 DAC 的音樂播放器。以每首曲目本身的取樣率獨佔開啟耳機或線路輸出。並非所有裝置都允許獨佔模式。</string>
+    <string name="bit_perfect_requires_android_8_1">需要 Android 8.1 或以上版本</string>
+    <string name="bit_perfect_mode_usb_direct">USB DAC（直接驅動）</string>
+    <string name="bit_perfect_mode_usb_direct_subtitle">bit 可在任何 Android 版本上直接驅動 DAC，並在 DAC 上設定音量。需要 USB 權限。聲音可能比一般輸出大得多。</string>
+    <string name="dac_volume">DAC 音量</string>
+    <string name="dac_volume_subtitle">在 DAC 本身設定；音樂資料不會被縮放</string>
+    <string name="usb_allow_fixed_volume">允許沒有音量控制的 DAC</string>
+    <string name="usb_allow_fixed_volume_subtitle">否則這類 DAC 會透過一般輸出播放</string>
+    <string name="usb_allow_fixed_volume_confirm_title">以滿刻度播放？</string>
+    <string name="usb_allow_fixed_volume_confirm_message">bit 無法設定這類 DAC 的音量，因此會以滿刻度播放，只有 DAC 本身的旋鈕（如果有）才能控制響度。使用靈敏的耳機時，聲音可能大到危險。</string>
+    <string name="convert_for_limited_dac">為低規格 DAC 轉換</string>
+    <string name="convert_for_limited_dac_subtitle">將超出 DAC 上限的曲目轉換為其支援的最高格式。曲目可能需要更久才能開始播放，且相對原始音訊不再是位元完美。</string>
+    <string name="bit_perfect_confirm_title">開啟位元完美輸出？</string>
+    <string name="bit_perfect_confirm_message">DAC 會以滿刻度接收音樂，手機的音量鍵可能會失效。播放前請先調低 DAC 或擴大機的音量。</string>
+    <string name="bit_perfect_status_active">%1$s · %2$s kHz · %3$d 位元</string>
+    <string name="bit_perfect_status_dac_limited">%1$s · %2$s kHz · %3$d 位元 · DAC 上限，由此曲目的格式轉換而來</string>
+    <string name="bit_perfect_status_inexact">%1$s · 不精確：此音源不是無損 PCM</string>
+    <string name="bit_perfect_status_waiting">正在等待受支援輸出上的無損曲目</string>
+    <string name="bit_perfect_status_unavailable">此曲目無法使用（%1$s）</string>
+    <string name="diwali_title">bit wishes you a Happy Diwali</string>
+    <string name="diwali_subtitle">May this festival of lights fill your home with joy and your days with music.</string>
+    <string name="diwali_cta">Let\'s Celebrate</string>
+</resources>
