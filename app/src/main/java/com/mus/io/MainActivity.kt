@@ -1384,6 +1384,7 @@ private fun juniApp(
             },
             onRemoveFromQueue = { controller?.removeMediaItem(it) },
             onMoveInQueue = { from, to -> controller?.moveMediaItem(from, to) },
+            onPlayNextSong = playNext,
             // The enriched copy, not player.song — otherwise the menu
             // hides the album and artist rows even once their browse
             // ids have been resolved.

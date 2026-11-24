@@ -10,6 +10,7 @@ import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.detectDragGestures
+import androidx.compose.foundation.gestures.detectHorizontalDragGestures
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -67,6 +68,7 @@ import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
 import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.layout.onSizeChanged
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.text.TextStyle
@@ -221,6 +223,7 @@ internal fun InlineQueue(
     onJumpTo: (Int) -> Unit,
     onRemove: (Int) -> Unit,
     onMove: (Int, Int) -> Unit,
+    onPlayNext: (Song) -> Unit = {},
     onClear: () -> Unit,
     onScrollingChange: (Boolean) -> Unit = {},
     /** Phone only: let queue scrolling dismiss/restore the lower half player. */
@@ -340,7 +343,7 @@ internal fun InlineQueue(
                             QueueClearButton(MaterialTheme.typography.labelLarge, onClear)
                         }
                     }
-                    queueSection(tracks.user, QueueSection.USER, drag, onJumpTo, onRemove)
+                    queueSection(tracks.user, QueueSection.USER, drag, onJumpTo, onRemove, onPlayNext)
                 }
                 if (tracks.context.isNotEmpty()) {
                     item(key = "header-context") {
@@ -353,13 +356,13 @@ internal fun InlineQueue(
                             modifier = Modifier.padding(top = 16.dp, bottom = 6.dp).then(queueMotion()),
                         )
                     }
-                    queueSection(tracks.context, QueueSection.CONTEXT, drag, onJumpTo, onRemove)
+                    queueSection(tracks.context, QueueSection.CONTEXT, drag, onJumpTo, onRemove, onPlayNext)
                 }
                 if (tracks.autoplay.isNotEmpty()) {
                     item(key = "autoplay-heading") {
                         AutoplayHeading(hasTracks = tracks.autoplay.isNotEmpty(), modifier = queueMotion())
                     }
-                    queueSection(tracks.autoplay, QueueSection.AUTOPLAY, drag, onJumpTo, onRemove)
+                    queueSection(tracks.autoplay, QueueSection.AUTOPLAY, drag, onJumpTo, onRemove, onPlayNext)
                 }
             }
             // The held row, drawn over the list where the finger is. Positioned
@@ -394,6 +397,7 @@ private fun LazyListScope.queueSection(
     drag: QueueDrag,
     onJumpTo: (Int) -> Unit,
     onRemove: (Int) -> Unit,
+    onPlayNext: (Song) -> Unit,
 ) {
     items(rows, key = { it.key }) { track ->
         val held = drag.held?.key == track.key
@@ -402,17 +406,71 @@ private fun LazyListScope.queueSection(
             // with it and neither drag-end callback runs — end the drag here.
             DisposableEffect(Unit) { onDispose { drag.end(track.key) } }
         }
-        InlineQueueRow(
-            song = track.song,
-            isCurrent = false,
-            onClick = { onJumpTo(track.timelineIndex) },
+        QueueSwipeRow(
+            key = track.key,
             onRemove = { onRemove(track.timelineIndex) },
-            draggable = true,
-            onDragStart = { drag.start(track.key, section) },
-            onDrag = drag::drag,
-            onDragEnd = { drag.end(track.key) },
+            onPlayNext = { onPlayNext(track.song) },
+            enabled = !held,
             modifier = if (held) Modifier.alpha(0f) else queueMotion(),
-        )
+        ) {
+            InlineQueueRow(
+                song = track.song,
+                isCurrent = false,
+                onClick = { onJumpTo(track.timelineIndex) },
+                onRemove = { onRemove(track.timelineIndex) },
+                draggable = true,
+                onDragStart = { drag.start(track.key, section) },
+                onDrag = drag::drag,
+                onDragEnd = { drag.end(track.key) },
+            )
+        }
+    }
+}
+
+@Composable
+private fun QueueSwipeRow(
+    key: String,
+    onRemove: () -> Unit,
+    onPlayNext: () -> Unit,
+    enabled: Boolean,
+    modifier: Modifier = Modifier,
+    content: @Composable () -> Unit,
+) {
+    var offsetX by remember(key) { mutableFloatStateOf(0f) }
+    var rowWidth by remember(key) { mutableFloatStateOf(0f) }
+    Box(
+        modifier = modifier
+            .fillMaxWidth()
+            .onSizeChanged { rowWidth = it.width.toFloat() }
+            .pointerInput(key, enabled, rowWidth) {
+                if (!enabled) return@pointerInput
+                detectHorizontalDragGestures(
+                    onHorizontalDrag = { change, delta ->
+                        change.consume()
+                        offsetX = (offsetX + delta).coerceIn(-rowWidth, rowWidth)
+                    },
+                    onDragEnd = {
+                        val action = when {
+                            rowWidth > 0f && offsetX <= -rowWidth * 0.34f -> onRemove
+                            rowWidth > 0f && offsetX >= rowWidth * 0.34f -> onPlayNext
+                            else -> null
+                        }
+                        offsetX = 0f
+                        action?.invoke()
+                    },
+                    onDragCancel = { offsetX = 0f },
+                )
+            },
+    ) {
+        if (offsetX != 0f) {
+            Box(
+                Modifier.matchParentSize().background(
+                    if (offsetX < 0f) Color(0xFFE35B67).copy(alpha = 0.24f)
+                    else MaterialTheme.colorScheme.primary.copy(alpha = 0.24f),
+                ),
+            )
+        }
+        Box(Modifier.graphicsLayer { translationX = offsetX }) { content() }
     }
 }
 

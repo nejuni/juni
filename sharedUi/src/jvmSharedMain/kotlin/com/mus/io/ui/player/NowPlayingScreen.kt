@@ -784,6 +784,7 @@ fun NowPlayingScreen(
     onJumpTo: (Int) -> Unit,
     onRemoveFromQueue: (Int) -> Unit,
     onMoveInQueue: (Int, Int) -> Unit,
+    onPlayNextSong: (Song) -> Unit = {},
     onClearQueue: () -> Unit,
     onOpenMenu: () -> Unit,
     onOpenAlbum: (String) -> Unit,
@@ -2118,6 +2119,7 @@ fun NowPlayingScreen(
                             onJumpTo = onJumpTo,
                             onRemove = onRemoveFromQueue,
                             onMove = onMoveInQueue,
+                            onPlayNext = onPlayNextSong,
                             onClear = onClearQueue,
                             modifier = Modifier.fillMaxSize(),
                         )
@@ -3637,6 +3639,7 @@ fun NowPlayingScreen(
                                     onJumpTo = onJumpTo,
                                     onRemove = onRemoveFromQueue,
                                     onMove = onMoveInQueue,
+                                    onPlayNext = onPlayNextSong,
                                     onClear = onClearQueue,
                                     onScrollingChange = { queueScrolling = it },
                                     collapsePlayerOnScroll = true,
