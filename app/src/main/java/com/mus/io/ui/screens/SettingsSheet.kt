@@ -218,6 +218,7 @@ fun SettingsScreen(
 
     val spatialAudio by AppSettings.spatialAudio.collectAsStateWithLifecycle()
     val nerdStats by AppSettings.showNerdStats.collectAsStateWithLifecycle()
+    val highResCoverArt by AppSettings.highResCoverArt.collectAsStateWithLifecycle()
     val reduceAnimation by AppSettings.reduceAnimation.collectAsStateWithLifecycle()
     val reduceDynamicBlur by AppSettings.reduceDynamicBlur.collectAsStateWithLifecycle()
     val disableBlendEffects by AppSettings.disableBlendEffects.collectAsStateWithLifecycle()
@@ -1187,6 +1188,21 @@ fun SettingsScreen(
                         )
                     },
                     onClick = { AppSettings.setShowNerdStats(!nerdStats) },
+                )
+            }
+            val highResCoverArtTitle = stringResource(R.string.high_res_cover_art)
+            row(highResCoverArtTitle, "cover art", "embedded", "resolution", "metadata") {
+                SettingsRow(
+                    icon = SfIcons.Album,
+                    title = highResCoverArtTitle,
+                    subtitle = stringResource(R.string.high_res_cover_art_subtitle),
+                    trailing = {
+                        IosSwitch(
+                            checked = highResCoverArt,
+                            onCheckedChange = AppSettings::setHighResCoverArt,
+                        )
+                    },
+                    onClick = { AppSettings.setHighResCoverArt(!highResCoverArt) },
                 )
             }
         }

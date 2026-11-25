@@ -463,6 +463,7 @@ object BoundedContextPersistence {
         val playbackSourceType: String? = null,
         val playbackSourceId: String? = null,
         val localFileSizeBytes: Long? = null,
+        val highResArtworkUrl: String? = null,
     ) {
         fun toSong(): Song? {
             if (videoId.isBlank()) return null
@@ -498,6 +499,7 @@ object BoundedContextPersistence {
                 playbackSourceType = sourceType,
                 playbackSourceId = playbackSourceId,
                 localFileSizeBytes = localFileSizeBytes,
+                highResArtworkUrl = highResArtworkUrl,
             )
         }
 
@@ -529,6 +531,7 @@ object BoundedContextPersistence {
                 playbackSourceType = song.playbackSourceType?.name,
                 playbackSourceId = song.playbackSourceId,
                 localFileSizeBytes = song.localFileSizeBytes,
+                highResArtworkUrl = song.highResArtworkUrl,
             )
         }
     }

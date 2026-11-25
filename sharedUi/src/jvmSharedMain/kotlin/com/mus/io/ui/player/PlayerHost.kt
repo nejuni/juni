@@ -126,6 +126,7 @@ interface PlayerSettingsSource {
     /** Turns [LocalPlayerChrome] off: glyphs and text over the artwork in plain white. */
     val disableBlendEffects: StateFlow<Boolean>
     val showNerdStats: StateFlow<Boolean>
+    val highResCoverArt: StateFlow<Boolean>
     val canvasAutoHide: StateFlow<Boolean>
     val syncedLyrics: StateFlow<Boolean>
     /** Hides the one-line lyric strip on the main player; the lyrics panel is unaffected. */

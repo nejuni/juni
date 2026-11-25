@@ -323,10 +323,6 @@ internal fun TransportRow(
     onNext: () -> Unit,
     compact: Boolean = false,
 ) {
-    val reduceMotion by PlayerSettings.reduceAnimation.collectAsStateWithLifecycle()
-    val playPauseMotion = rememberExpandedPlayPauseMotion(isPlaying, active = true, reduceMotion = reduceMotion)
-    val previousMotion = rememberPlayerSkipMotion(active = true, reduceMotion = reduceMotion)
-    val nextMotion = rememberPlayerSkipMotion(active = true, reduceMotion = reduceMotion)
     val playSize = if (compact) 58.dp else 74.dp
     val playTouch = if (compact) 76.dp else 92.dp
     val skipSize = if (compact) 44.dp else PLAYER_SKIP_ICON_SIZE
@@ -346,8 +342,6 @@ internal fun TransportRow(
             onClick = onPrevious,
             enabled = previousEnabled,
             haptic = Haptic.SkipPrevious,
-            skipMotion = previousMotion,
-            skipPrevious = true,
         )
         if (isLoading) {
             // Same footprint as the play/pause target — a smaller box here
@@ -367,7 +361,6 @@ internal fun TransportRow(
                 touchSize = playTouch,
                 onClick = onPlayPause,
                 haptic = if (isPlaying) Haptic.Pause else Haptic.Resume,
-                playPauseMotion = playPauseMotion,
             )
         }
         TransportGlyph(
@@ -379,7 +372,6 @@ internal fun TransportRow(
             onClick = onNext,
             enabled = nextEnabled,
             haptic = Haptic.SkipNext,
-            skipMotion = nextMotion,
         )
     }
 }
@@ -641,12 +633,8 @@ private fun TransportGlyph(
     haptic: Haptic = Haptic.Tap,
     /** Vertical squash of the glyph alone; its width and touch box are untouched. */
     heightScale: Float = 1f,
-    skipMotion: PlayerSkipMotion? = null,
-    skipPrevious: Boolean = false,
-    playPauseMotion: ExpandedPlayPauseMotion? = null,
 ) {
     val haptics = rememberHaptics()
-    val interactionSource = remember { MutableInteractionSource() }
     // Faded rather than hidden: the row keeps its shape at the ends of a queue.
     val alpha by animateFloatAsState(
         targetValue = if (enabled) 1f else 0.3f,
@@ -656,45 +644,23 @@ private fun TransportGlyph(
         modifier = Modifier
             .size(touchSize)
             .clickable(
-                interactionSource = interactionSource,
+                interactionSource = remember { MutableInteractionSource() },
                 indication = null,
                 enabled = enabled,
             ) {
                 haptics.play(haptic)
-                skipMotion?.onTap()
-                playPauseMotion?.onTap()
                 onClick()
             },
         contentAlignment = Alignment.Center,
     ) {
-        when {
-            skipMotion != null -> PlayerSkipGlyph(
-                motion = skipMotion,
-                contentDescription = contentDescription,
-                tint = Color.White.copy(alpha = alpha),
-                modifier = Modifier.size(size).then(
-                    if (heightScale != 1f) Modifier.graphicsLayer { scaleY = heightScale } else Modifier,
-                ),
-                previous = skipPrevious,
-            )
-            playPauseMotion != null -> ExpandedPlayPauseGlyph(
-                motion = playPauseMotion,
-                interactionSource = interactionSource,
-                playPainter = painterResource(Res.drawable.ic_player_play),
-                pausePainter = painterResource(Res.drawable.ic_player_pause),
-                contentDescription = contentDescription,
-                tint = Color.White.copy(alpha = alpha),
-                modifier = Modifier.size(size),
-            )
-            else -> Icon(
-                painter = painterResource(icon),
-                contentDescription = contentDescription,
-                tint = Color.White.copy(alpha = alpha),
-                modifier = Modifier
-                    .size(size)
-                    .then(if (heightScale != 1f) Modifier.graphicsLayer { scaleY = heightScale } else Modifier),
-            )
-        }
+        Icon(
+            painter = painterResource(icon),
+            contentDescription = contentDescription,
+            tint = Color.White.copy(alpha = alpha),
+            modifier = Modifier
+                .size(size)
+                .then(if (heightScale != 1f) Modifier.graphicsLayer { scaleY = heightScale } else Modifier),
+        )
     }
 }
 

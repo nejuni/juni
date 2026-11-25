@@ -222,14 +222,7 @@ fun rememberArtworkMesh(
     LaunchedEffect(mesh) { heldMesh.value = mesh }
 
     LaunchedEffect(imageUrl, artPx) {
-        if (imageUrl == null) {
-            // Don't let the previous track's colours stand in for a track with
-            // no usable cover; settle on the neutral backdrop instead.
-            mesh = null
-            meshUrl = null
-            return@LaunchedEffect
-        }
-        if (meshUrl == imageUrl) return@LaunchedEffect
+        if (imageUrl == null || meshUrl == imageUrl) return@LaunchedEffect
         val request = ImageRequest.Builder(context)
             .data(imageUrl.artworkAt(artPx))
             .size(MESH_PX)
@@ -257,10 +250,6 @@ fun rememberArtworkMesh(
                 return@LaunchedEffect
             }
         }
-        // A failed read belongs to this track. Keeping the prior track's mesh
-        // made the player appear to use the wrong cover palette indefinitely.
-        mesh = null
-        meshUrl = null
     }
 
     LaunchedEffect(canvasFrame) {

@@ -784,7 +784,6 @@ fun NowPlayingScreen(
     onJumpTo: (Int) -> Unit,
     onRemoveFromQueue: (Int) -> Unit,
     onMoveInQueue: (Int, Int) -> Unit,
-    onPlayNextSong: (Song) -> Unit = {},
     onClearQueue: () -> Unit,
     onOpenMenu: () -> Unit,
     onOpenAlbum: (String) -> Unit,
@@ -830,7 +829,8 @@ fun NowPlayingScreen(
     // Remote tracks whose art lives inside the file resolve it here, once —
     // every surface below reads the same value rather than each triggering
     // its own extraction.
-    val remoteArt = song.thumbnailUrl
+    val useHighResCoverArt by PlayerSettings.highResCoverArt.collectAsStateWithLifecycle()
+    val remoteArt = song.highResArtworkUrl.takeIf { useHighResCoverArt } ?: song.thumbnailUrl
     // This is produced by the palette's existing 128 px decode and cache. It
     // samples the upper band rather than the whole sleeve because that is what
     // lies beneath the status bar when the player expands to full bleed.
@@ -2119,7 +2119,6 @@ fun NowPlayingScreen(
                             onJumpTo = onJumpTo,
                             onRemove = onRemoveFromQueue,
                             onMove = onMoveInQueue,
-                            onPlayNext = onPlayNextSong,
                             onClear = onClearQueue,
                             modifier = Modifier.fillMaxSize(),
                         )
@@ -3639,7 +3638,6 @@ fun NowPlayingScreen(
                                     onJumpTo = onJumpTo,
                                     onRemove = onRemoveFromQueue,
                                     onMove = onMoveInQueue,
-                                    onPlayNext = onPlayNextSong,
                                     onClear = onClearQueue,
                                     onScrollingChange = { queueScrolling = it },
                                     collapsePlayerOnScroll = true,
