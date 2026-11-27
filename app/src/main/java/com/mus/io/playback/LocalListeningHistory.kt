@@ -55,7 +55,6 @@ object LocalListeningHistory {
         val album: String? = null,
         val localUri: String,
         val localPath: String? = null,
-        val highResArtworkUrl: String? = null,
     ) {
         fun toSong() = Song(
             videoId = id,
@@ -66,7 +65,6 @@ object LocalListeningHistory {
             albumName = album,
             localUri = localUri,
             localPath = localPath,
-            highResArtworkUrl = highResArtworkUrl,
         )
 
         companion object {
@@ -79,7 +77,6 @@ object LocalListeningHistory {
                 album = song.albumName,
                 localUri = requireNotNull(song.localUri),
                 localPath = song.localPath,
-                highResArtworkUrl = song.highResArtworkUrl,
             )
         }
     }

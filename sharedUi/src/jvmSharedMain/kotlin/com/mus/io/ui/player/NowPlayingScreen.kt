@@ -829,8 +829,7 @@ fun NowPlayingScreen(
     // Remote tracks whose art lives inside the file resolve it here, once —
     // every surface below reads the same value rather than each triggering
     // its own extraction.
-    val useHighResCoverArt by PlayerSettings.highResCoverArt.collectAsStateWithLifecycle()
-    val remoteArt = song.highResArtworkUrl.takeIf { useHighResCoverArt } ?: song.thumbnailUrl
+    val remoteArt = song.thumbnailUrl
     // This is produced by the palette's existing 128 px decode and cache. It
     // samples the upper band rather than the whole sleeve because that is what
     // lies beneath the status bar when the player expands to full bleed.

@@ -200,7 +200,6 @@ object OfflinePlaylists {
         localDateModifiedSeconds = localDateModifiedSeconds,
         localFileSizeBytes = localFileSizeBytes,
         trackNumber = trackNumber,
-        highResArtworkUrl = highResArtworkUrl,
     )
 
     private fun load(): List<OfflinePlaylist> {
@@ -244,7 +243,6 @@ object OfflinePlaylists {
         put("title", title)
         put("artist", artist)
         putOpt("thumbnailUrl", thumbnailUrl)
-        putOpt("highResArtworkUrl", highResArtworkUrl)
         putOpt("durationText", durationText)
         putOpt("artistId", artistId)
         putOpt("albumId", albumId)
@@ -265,7 +263,6 @@ object OfflinePlaylists {
             title = obj.optString("title"),
             artist = obj.optString("artist"),
             thumbnailUrl = obj.text("thumbnailUrl"),
-            highResArtworkUrl = obj.text("highResArtworkUrl"),
             durationText = obj.text("durationText"),
             artistId = obj.text("artistId"),
             albumId = obj.text("albumId"),

@@ -137,8 +137,6 @@ data class Song(
     val playbackSourceId: String? = null,
     /** File size in bytes, populated for audio rows available on this device. */
     val localFileSizeBytes: Long? = null,
-    /** Original embedded cover image cached privately for the Now Playing screen. */
-    val highResArtworkUrl: String? = null,
 ) {
     /** Legacy derived property: true if and only if [queueTier] is [QueueTier.AUTOPLAY]. */
     val fromAutoplay: Boolean get() = queueTier == QueueTier.AUTOPLAY

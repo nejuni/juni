@@ -73,7 +73,6 @@ class AndroidPlayerHost(context: Context) : PlayerHost {
         override val reduceDynamicBlur get() = AppSettings.reduceDynamicBlur
         override val disableBlendEffects get() = AppSettings.disableBlendEffects
         override val showNerdStats get() = AppSettings.showNerdStats
-        override val highResCoverArt get() = AppSettings.highResCoverArt
         override val canvasAutoHide get() = AppSettings.canvasAutoHide
         override val syncedLyrics get() = AppSettings.syncedLyrics
         override val hideLyricsPreview get() = AppSettings.hideLyricsPreview

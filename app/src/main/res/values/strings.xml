@@ -170,8 +170,6 @@
     <string name="eq_preset_custom">Custom</string>
     <string name="show_nerd_stats">Show stats for nerds</string>
     <string name="show_nerd_stats_subtitle">Codec, bitrate and sample rate on the player</string>
-    <string name="high_res_cover_art">High-res cover art</string>
-    <string name="high_res_cover_art_subtitle">Extract original embedded artwork during scans and show it on Now Playing. Scan your library after turning this on.</string>
     <string name="theme">Theme</string>
     <string name="font">Font</string>
     <string name="font_default">Default</string>

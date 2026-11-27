@@ -148,7 +148,6 @@ object LastPlayed {
         val source: String? = null,
         val sourceType: String? = null,
         val sourceId: String? = null,
-        val highResArtworkUrl: String? = null,
     ) {
         fun toSong(): Song {
             val resolvedTier = when (tier) {
@@ -176,7 +175,6 @@ object LastPlayed {
                 playbackSourceId = sourceId,
                 localUri = local,
                 localPath = path,
-                highResArtworkUrl = highResArtworkUrl,
             )
         }
 
@@ -199,7 +197,6 @@ object LastPlayed {
                 source = song.playbackSource,
                 sourceType = song.playbackSourceType?.name,
                 sourceId = song.playbackSourceId,
-                highResArtworkUrl = song.highResArtworkUrl,
             )
         }
     }

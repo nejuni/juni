@@ -30,8 +30,7 @@ internal object LocalLibraryCache {
     private const val FILE_NAME = "local_library.bin"
     private const val SCAN_CHECKPOINT_FILE = "local_music_scan_checkpoint.bin"
     private const val MAGIC = 0x4249544C // "BITL"
-    private const val LEGACY_VERSION = 3
-    private const val VERSION = 4
+    private const val VERSION = 3
 
     /** The snapshot read this process, if any. */
     @Volatile
@@ -145,13 +144,12 @@ internal object LocalLibraryCache {
 
     internal fun readFrom(input: DataInputStream): List<Song>? {
         if (input.readInt() != MAGIC) return null
-        val version = input.readInt()
-        if (version !in LEGACY_VERSION..VERSION) return null
+        if (input.readInt() != VERSION) return null
         val at = input.readLong()
         val count = input.readInt()
         if (count < 0 || count > 200_000) return null
         val out = ArrayList<Song>(count)
-        repeat(count) { out += input.readSong(hasHighResArtwork = version >= VERSION) }
+        repeat(count) { out += input.readSong() }
         savedAt = at
         return out
     }
@@ -176,10 +174,9 @@ internal object LocalLibraryCache {
             writeNullable(artist.name)
             writeNullable(artist.browseId)
         }
-        writeNullable(song.highResArtworkUrl)
     }
 
-    private fun DataInputStream.readSong(hasHighResArtwork: Boolean): Song = Song(
+    private fun DataInputStream.readSong(): Song = Song(
         videoId = readNullable().orEmpty(),
         title = readNullable().orEmpty(),
         artist = readNullable().orEmpty(),
@@ -199,7 +196,6 @@ internal object LocalLibraryCache {
                 add(ArtistRef(name = readNullable().orEmpty(), browseId = readNullable()))
             }
         },
-        highResArtworkUrl = if (hasHighResArtwork) readNullable() else null,
     )
 
     private fun DataOutputStream.writeNullable(value: String?) {

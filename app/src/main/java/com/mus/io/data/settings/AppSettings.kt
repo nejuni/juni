@@ -249,9 +249,6 @@ object AppSettings {
     /** Put the playing track's codec, bitrate and sample rate on the player. */
     val showNerdStats = MutableStateFlow(false)
 
-    /** Extract and retain original embedded cover art during local music scans. */
-    val highResCoverArt = MutableStateFlow(false)
-
     /** Freezes the main player's mesh gradient instead of letting it drift/crossfade. */
     val reduceAnimation = MutableStateFlow(false)
 
@@ -496,7 +493,6 @@ object AppSettings {
         }.getOrDefault(LastPlayerScreen.MAIN)
         syncedLyrics.value = prefs.getBoolean(KEY_SYNCED_LYRICS, true)
         hideLyricsPreview.value = prefs.getBoolean(KEY_HIDE_LYRICS_PREVIEW, false)
-        highResCoverArt.value = prefs.getBoolean(KEY_HIGH_RES_COVER_ART, false)
         prefs.edit()
             .remove("prioritize_syllable_sync").remove("paxsenix_api_key")
             .apply()
@@ -685,11 +681,6 @@ object AppSettings {
     fun setShowNerdStats(value: Boolean) {
         showNerdStats.value = value
         prefs.edit().putBoolean(KEY_NERD_STATS, value).apply()
-    }
-
-    fun setHighResCoverArt(value: Boolean) {
-        highResCoverArt.value = value
-        prefs.edit().putBoolean(KEY_HIGH_RES_COVER_ART, value).apply()
     }
 
     fun setThemeMode(value: ThemeMode) {
@@ -1045,7 +1036,6 @@ object AppSettings {
     private const val KEY_SHUFFLE_ENABLED = "shuffle_enabled"
     private const val KEY_REPEAT_MODE = "repeat_mode"
     private const val KEY_NERD_STATS = "show_nerd_stats"
-    private const val KEY_HIGH_RES_COVER_ART = "high_res_cover_art"
     private const val KEY_REDUCE_ANIMATION = "reduce_animation"
     private const val KEY_DIWALI_GREETING_SHOWN = "diwali_greeting_2026_shown"
     private const val KEY_HIGH_PERFORMANCE_MODE = "high_performance_mode"

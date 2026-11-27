@@ -280,17 +280,7 @@ object LocalMediaRepository {
 
                     if (filterNonMusic && !isEligibleLocalMusic(durationMs, displayName, path)) continue
                     if (selectedTree.isNotBlank() && !isInFolder(path, selectedPath)) continue
-                    val song = columns.song(cursor)
-                    songs.add(
-                        if (AppSettings.highResCoverArt.value) {
-                            song.copy(
-                                highResArtworkUrl = extractHighResArtwork(
-                                    context = context,
-                                    sourceUri = song.localUri.orEmpty(),
-                                ),
-                            )
-                        } else song,
-                    )
+                    songs.add(columns.song(cursor))
                     if (songs.size % 100 == 0) _scanProgress.value = ScanProgress(songs.size, songs.size, "MediaStore fallback")
                 }
             }
@@ -351,8 +341,7 @@ object LocalMediaRepository {
         }
 
         val result = ArrayList<Song>(candidates.size)
-        val highResEnabled = AppSettings.highResCoverArt.value
-        val checkpointKey = "$treeUri|filterNonMusic=$filterNonMusic|highResArt=$highResEnabled"
+        val checkpointKey = "$treeUri|filterNonMusic=$filterNonMusic"
         val validUris = candidates.asSequence().map { it.first }.toHashSet()
         val resumed = LocalLibraryCache.scanCheckpoint(context, checkpointKey)
             .orEmpty()
@@ -639,7 +628,6 @@ object LocalMediaRepository {
         var durationText: String? = null
         var trackNumber: Int? = null
         var embeddedPicture: ByteArray? = null
-        var highResPicture: ByteArray? = null
 
         runCatching {
             val retriever = MediaMetadataRetriever()
@@ -650,11 +638,7 @@ object LocalMediaRepository {
                 val metaAlbum = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_ALBUM)
                 val metaDur = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION)?.toLongOrNull()
                 val metaTrack = retriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_CD_TRACK_NUMBER)
-                val picture = retriever.embeddedPicture?.takeIf { it.isNotEmpty() }
-                embeddedPicture = picture?.takeIf { it.size <= MAX_EMBEDDED_ART_BYTES }
-                if (AppSettings.highResCoverArt.value) {
-                    highResPicture = picture?.takeIf { it.size <= MAX_HIGH_RES_ART_BYTES }
-                }
+                embeddedPicture = retriever.embeddedPicture?.takeIf { it.isNotEmpty() && it.size <= MAX_EMBEDDED_ART_BYTES }
 
                 if (!metaTitle.isNullOrBlank()) title = metaTitle
                 if (!metaArtist.isNullOrBlank()) artist = metaArtist
@@ -669,16 +653,12 @@ object LocalMediaRepository {
         val artwork = scanned?.artworkUrl ?: embeddedPicture?.let {
             persistEmbeddedArtwork(context, it, artist, albumName, uriStr)
         }
-        val highResArtwork = highResPicture?.let {
-            persistHighResEmbeddedArtwork(context, it, uriStr)
-        }
 
         return Song(
             videoId = uriStr,
             title = title,
             artist = artist,
             thumbnailUrl = artwork,
-            highResArtworkUrl = highResArtwork,
             durationText = durationText,
             albumName = albumName ?: scanned?.albumName,
             localUri = uriStr,
@@ -743,63 +723,7 @@ object LocalMediaRepository {
         Uri.fromFile(output).toString()
     }.onFailure { Log.w(TAG, "Could not cache embedded cover art: ${it.message}") }.getOrNull()
 
-    /** Keeps the encoded source image intact; the normal thumbnail remains a separate small JPEG. */
-    private fun persistHighResEmbeddedArtwork(
-        context: Context,
-        encoded: ByteArray,
-        sourceUri: String,
-    ): String? = runCatching {
-        val key = MessageDigest.getInstance("SHA-256")
-            .digest(encoded)
-            .joinToString("") { "%02x".format(Locale.ROOT, it) }
-        val extension = when {
-            encoded.size >= 8 && encoded[0] == 0x89.toByte() && encoded[1] == 0x50.toByte() -> "png"
-            encoded.size >= 12 && encoded[0] == 'R'.code.toByte() && encoded[1] == 'I'.code.toByte() &&
-                encoded[8] == 'W'.code.toByte() && encoded[9] == 'E'.code.toByte() -> "webp"
-            encoded.size >= 6 && encoded[0] == 'G'.code.toByte() && encoded[1] == 'I'.code.toByte() -> "gif"
-            encoded.size >= 2 && encoded[0] == 0xFF.toByte() && encoded[1] == 0xD8.toByte() -> "jpg"
-            else -> "img"
-        }
-        val directory = File(context.filesDir, HIGH_RES_ART_DIRECTORY).apply { mkdirs() }
-        val output = File(directory, "$key.$extension")
-        if (!output.isFile || output.length() != encoded.size.toLong()) {
-            val temporary = File(directory, "$key.$extension.tmp")
-            FileOutputStream(temporary).use { stream ->
-                stream.write(encoded)
-                stream.fd.sync()
-            }
-            if (!temporary.renameTo(output)) {
-                temporary.delete()
-                if (!output.isFile) error("could not save full-resolution cover image")
-            }
-        }
-        Uri.fromFile(output).toString()
-    }.onFailure { Log.w(TAG, "Could not cache high-res cover art for $sourceUri: ${it.message}") }.getOrNull()
-
-    /** Extracts original metadata art for MediaStore rows, whose regular art is only an album thumbnail URI. */
-    private fun extractHighResArtwork(
-        context: Context,
-        sourceUri: String,
-    ): String? {
-        if (sourceUri.isBlank()) return null
-        var encoded: ByteArray? = null
-        runCatching {
-            val retriever = MediaMetadataRetriever()
-            try {
-                retriever.setDataSource(context, Uri.parse(sourceUri))
-                encoded = retriever.embeddedPicture?.takeIf {
-                    it.isNotEmpty() && it.size <= MAX_HIGH_RES_ART_BYTES
-                }
-            } finally {
-                retriever.release()
-            }
-        }.onFailure { Log.w(TAG, "Could not read embedded cover art for $sourceUri: ${it.message}") }
-        return encoded?.let { persistHighResEmbeddedArtwork(context, it, sourceUri) }
-    }
-
     private const val MAX_EMBEDDED_ART_BYTES = 20 * 1024 * 1024
-    private const val MAX_HIGH_RES_ART_BYTES = 64 * 1024 * 1024
-    private const val HIGH_RES_ART_DIRECTORY = "high-res-art"
     private const val ARTWORK_MAX_EDGE_PX = 512
     private const val ARTWORK_JPEG_QUALITY = 88
 

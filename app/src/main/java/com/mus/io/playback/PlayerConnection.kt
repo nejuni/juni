@@ -379,7 +379,6 @@ fun MediaItem.toSong() = Song(
     playbackSourceId = mediaMetadata.extras?.getString(EXTRA_PLAYBACK_SOURCE_ID),
     localUri = mediaMetadata.extras?.getString(EXTRA_LOCAL_URI),
     localPath = mediaMetadata.extras?.getString(EXTRA_LOCAL_PATH),
-    highResArtworkUrl = mediaMetadata.extras?.getString(EXTRA_HIGH_RES_ARTWORK),
 )
 
 internal val mediaItemTiers = java.util.Collections.synchronizedMap(java.util.WeakHashMap<MediaItem, QueueTier>())
@@ -460,7 +459,6 @@ internal const val EXTRA_LOCAL_URI = "juni.localUri"
 
 /** @see Song.localPath */
 internal const val EXTRA_LOCAL_PATH = "juni.localPath"
-private const val EXTRA_HIGH_RES_ARTWORK = "juni.highResArtwork"
 
 /**
  * How long the track runs, as the row that queued it said.
@@ -581,8 +579,7 @@ fun Song.toMediaItem(): MediaItem {
                     artistId != null || albumId != null || setVideoId != null ||
                     isExplicit != null || isVideo || isVideoOrigin || radioName != null ||
                     sourceQuality != null ||
-                    playbackSource != null || playbackSourceType != null || playbackSourceId != null ||
-                    highResArtworkUrl != null
+                    playbackSource != null || playbackSourceType != null || playbackSourceId != null
                 ) {
                     setExtras(
                         bundleOf(
@@ -595,7 +592,6 @@ fun Song.toMediaItem(): MediaItem {
                             EXTRA_PLAYBACK_SOURCE_ID to playbackSourceId,
                             EXTRA_LOCAL_URI to offlineUri,
                             EXTRA_LOCAL_PATH to localPath,
-                            EXTRA_HIGH_RES_ARTWORK to highResArtworkUrl,
                             EXTRA_DURATION to durationText,
                             EXTRA_ARTIST_ID to artistId,
                             EXTRA_ALBUM_ID to albumId,

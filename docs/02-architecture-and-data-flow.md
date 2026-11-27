@@ -9,7 +9,7 @@
 
 ## Local library path
 
-The app obtains audio using SAF document-tree grants and scans granted trees recursively; MediaStore is a fallback/index source. The scanner persists media metadata and artwork/thumbnail data in the app's local library cache/database. When Settings > Miscellaneous > High-res cover art is enabled, the scan also stores each embedded image's original encoded bytes under app-private `files/high-res-art/`; the library cache carries its `file://` URI on that song. The Now Playing UI chooses that URI only while the setting is enabled, otherwise it uses regular thumbnail artwork. Existing tracks need a library scan after enabling the setting. A grant is scoped to a storage tree and can be revoked by Android or disappear after uninstall. Scanner changes should preserve `content://` access and handle providers that paginate or return delayed metadata.
+The app obtains audio using SAF document-tree grants and scans granted trees recursively; MediaStore is a fallback/index source. The scanner persists media metadata and artwork/thumbnail data in the app's local library cache/database. A grant is scoped to a storage tree and can be revoked by Android or disappear after uninstall. Scanner changes should preserve `content://` access and handle providers that paginate or return delayed metadata.
 
 ## Playback and queue
 
