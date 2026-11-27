@@ -1,6 +1,6 @@
 # Juni
 
-Juni is an offline Android music player for your local library. It reads embedded tags, artwork, and lyrics from your music files and does not request Android's Internet or network-state permissions. It is a community fork of [BitChord](https://github.com/kushagrasinghx/BitChord), by Kushagra Singh. The upstream project and contributors retain credit for their original code; Juni changes and additions are maintained by Sharavan Kumar.
+Juni is an offline Android music player for your local library. It reads embedded tags, artwork, and lyrics from your music files and does not request Android's Internet or network-state permissions. It is a community fork of BitChord.The upstream project and contributors retain credit for their original code; Juni changes and additions are maintained by Sharavan Kumar.
 
 ## Features
 
@@ -16,7 +16,7 @@ Playback, library scanning, embedded lyrics and local listening statistics work 
 - App name: **Juni**
 - Android application ID: `com.nejuni.juni`
 - Minimum Android version: API 26 (Android 8.0)
-- Maintainer: [Sharavan Kumar](https://github.com/nejuni) · <juni@aster.cx>
+- Maintainer: [Sharavan Kumar](https://github.com/nejuni) · <ume@aster.cx>
 
 The new application ID means Android installs Juni as a separate app instead of updating an older release in place. Android keeps app data separate. Export data from an older installation and import it into Juni if needed.
 
@@ -68,10 +68,11 @@ The application source is licensed under GPL-3.0-only as shown in [LICENSE](LICE
 
 ## Credits
 
-- [BitChord](https://github.com/kushagrasinghx/BitChord) and its original author, Kushagra Singh.
+- [BitChord](https://github.com/kushagrasinghx/BitChord) by Kushagra Singh.1.9.1
 - The maintainers of the open-source libraries and projects listed in their respective license notices.
 
 ## Contributing
 
-Bug reports and pull requests are welcome. Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and the licensing and attribution terms before contributing. For questions about the Juni name or artwork, contact <juni@aster.cx>.
-
+Bug reports and pull requests are welcome. Please read [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) and the licensing and attribution terms before contributing. For questions about the Juni name or artwork, contact <ume@aster.cx>.
+---
+> Code is GPLv3. Icons and branding are not; see TRADEMARK.md
